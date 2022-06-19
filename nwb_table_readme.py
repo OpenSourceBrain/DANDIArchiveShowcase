@@ -57,6 +57,6 @@ readme +='Scripts for interacting with the [DANDI Archive](https://www.dandiarch
 readme +='\n\n'
 rmd = open('../README.md', 'w')
 rmd.write(readme)
-rmd.write(markdown_string_table)
+# rmd.write(markdown_string_table)
 rmd.close()
 
