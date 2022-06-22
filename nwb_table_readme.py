@@ -51,6 +51,9 @@ yaml_df_flatten.extend(tmp_col)
 dandi_metadata_final = dandi_metadata[yaml_df_flatten]
 dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                      'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
+# remove faux dandisets
+# dandi_metadata_final.drop(dandi_metadata_final[dandi_metadata_final['num_bytes'] == 0].index, inplace=True)
+# get table for readme
 dandi_metadata_readme = dandi_metadata_final[readme_table]
 # save table to csv
 dandi_metadata_final.to_csv('../dandiset_summary.csv')

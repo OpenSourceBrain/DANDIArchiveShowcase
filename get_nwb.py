@@ -5,20 +5,19 @@ import datalad.api as dl
 import sys
 import pandas as pd
 import json
+import os
 
-# TODO: file directories need to be made clear, otherwise install conflict
+# TODO: add test.py and test_compatibility.py
 
 def get_nwb(dandiset_id):
-    # print("NWB dataset to be examined:", str(sys.argv[1]))
-    # nwb_dataset = sys.argv[1]
-    dataset_path = input('Target directory')
+    dataset_path = input('Target directory (has to be an empty folder) ')
     github_link_format = 'https://github.com/dandisets/'
     json_file = '.dandi/assets.json'
 
     dl.install(path=dataset_path,source=github_link_format+dandiset_id,recursive=True)
 
     # import json
-    with open(json_file) as f:
+    with open(os.path.join(dataset_path,json_file)) as f:
       data = json.load(f)
     # flatten json file to pandas table
     json_df = pd.json_normalize(data)
@@ -27,34 +26,34 @@ def get_nwb(dandiset_id):
     json_df = json_df[cols]
 
     # print table here with total bytes info
-    print('Files in dandiset and its size')
+    print('Files in dandiset and their sizes')
+    pd.set_option('display.max_colwidth',1000)
+    pd.set_option('display.max_rows',1000)
     print(json_df)
-    pd.set_option('display.width',1000)
-    pd.set_option('display.max_rows')
 
     # ask if user wants to download entire dataset or selective files
     total_bytes = json_df['size'].sum()
-    ans = input('The dandiset is' + str(total_bytes) + 'bytes big. Do you want to download the dandiset or some of its files? (0:dandiset | 1: some files')
-    # before downlooading, has to remove first because datalad doesn't install the dataset if folder is not empty
-    dl.remove(path=os.path.join(dataset_path, 'dandisets', nwb_dataset))
+    ans = input('The dandiset is ' + str(total_bytes) + ' bytes big. Do you want to download the dandiset or some of its files? (0:dandiset | 1: some files) ')
 
-    if ans == 0:
-        dl.install(path=dataset_path, source=github_link_format + dataset_path, recursive=True, get_data=True)
+    if ans == '0':
+        dl.get(dataset_path, recursive=True, get_data=True)
     else:
-        num_file = input('Number of files to download:')
-        if num_file == 0:
+        num_file = input('Number of files to download: ')
+        if num_file == '0':
             print('No files wanted. Exiting...')
             exit()
+        else:
+            file_path = input('Please specify the file path(s) as shown in the table. If multiple files, please separate them by commas. ')
+            try:
+                nwb_file_list = list(file_path.split(','))
+                # to get rid of possible white spaces
+                for i in range(len(nwb_file_list)):
+                    nwb_file_list[i] = nwb_file_list[i].strip()
+            except:
+                nwb_file_list = list(file_path.strip())
 
-        file_path = input('Please specify the file path(s) as shown in the table. If multiple files, please separate them by commas.')
-        try:
-            nwb_file = list(file_path.strip().split(','))
-        except:
-            nwb_file = list(file_path)
-
-        # need to check argument source
-        for i in range(len(nwb_file)):
-            dl.install(path=dataset_path,source=github_link_format+dataset_path+nwb_file[i], get_data=True)
+            for nwb_file in nwb_file_list:
+                dl.get(os.path.join(dataset_path,nwb_file))
 
 # validate pynwb
 # test.py nwb_filename
