@@ -1,4 +1,3 @@
-
 name: Continuous build
 
 on:
@@ -16,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.7, "3.10" ]
+        python-version: [ 3.9 ]
 
     steps:
     - uses: actions/checkout@v2
@@ -28,7 +27,7 @@ jobs:
         
     - name: Test scripts
       run: |
-       echo Testing scripts...
+         echo Testing scripts...
         
     - name: Final version info
       run: |
