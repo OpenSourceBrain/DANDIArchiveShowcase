@@ -104,9 +104,9 @@ def validate_nwb_file(dandiset_id,nwb_file_list, dataset_path):
     if os.path.isfile(report_path):
         report_name = report_name +'_'
         print('File already exists. Saving file with a new name.')
-    save_report(report_file_path=os.path.join(save_dir,report_name+'.csv'),
+    save_report(report_file_path=os.path.join(save_dir,report_name+'.txt'),
                 formatted_messages=format_messages(report_message, levels=['importance', 'location']), overwrite=True)
-    print('Validation finished. Report is saved as ' +report_name+'.csv' + ' at '+ save_dir)
+    print('Validation finished. Report is saved as ' +report_name+'.txt' + ' at '+ save_dir)
 
 # test compatibility
 # test_compatibility nwb_filename

@@ -1,0 +1,25 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-06-30 09:16:14.435640+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 2 issues over 1 files:
+       1 - PYNWB_VALIDATION
+       1 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  units/waveforms: ./scratch_files/test/sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161004_behavior+ecephys.nwb - Units/waveforms/unit - 'None' object with name 'None'
+       Message: argument missing
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.1  /stimulus/presentation/DS2.ch10: ./scratch_files/test/sub-YutaMouse57/sub-YutaMouse57_ses-YutaMouse57-161004_behavior+ecephys.nwb - check_timestamps_ascending - 'AnnotationSeries' object with name 'DS2.ch10'
+       Message: DS2.ch10 timestamps are not ascending.
+
