@@ -32,8 +32,10 @@ jobs:
         sudo apt-key adv --recv-keys --keyserver hkps://keyserver.ubuntu.com 0xA5D32F012649A5A9
         sudo apt-get update
 
+    # use standalone from Neurodebian
+    # http://neuro.debian.net/pkgs/git-annex-standalone.html
     - name: Install git-annex
-      run: sudo apt-get install git-annex
+      run: sudo apt-get install git-annex-standalone
 
     - name: Install additional Python dependencies
       run: |
