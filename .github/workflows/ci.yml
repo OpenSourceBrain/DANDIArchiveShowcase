@@ -28,11 +28,13 @@ jobs:
     - name: Install Python dependencies
       run: |
         pip install --requirement requirements.txt --quiet
-        pip install --upgrade --upgrade-strategy=eager datalad-installer
         pip list
 
-    - name: Install git-annex
-      run: datalad-installer --sudo ok neurodebian git-annex -m neurodebian
+    - name: Install Datalad (Ubuntu-specific)
+      run: sudo apt-get install datalad
+
+#    - name: Install git-annex
+#      run: datalad-installer --sudo ok neurodebian git-annex -m neurodebian
 
     - name: Configure Git
       run: |
