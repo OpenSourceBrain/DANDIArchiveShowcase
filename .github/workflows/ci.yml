@@ -11,29 +11,38 @@ on:
 jobs:
   build:
 
-    runs-on: [ubuntu-latest, macos-latest ]
+    runs-on: [ubuntu-latest]
     strategy:
       fail-fast: false
       matrix:
         python-version: [ 3.9 ]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
 
     - name: Set up Python  ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version:  ${{ matrix.python-version }}
 
-    - name: Test scripts
+    - name: Install Python dependencies
       run: |
-         pip install datalad
-         pip install mdtable
-         echo Testing scripts...
+        pip install --requirement requirements.txt --quiet
+        pip install --upgrade --upgrade-strategy=eager datalad-installer
+        pip list
 
-         python nwb_table_readme.py
+    - name: Install git-annex
+      run: datalad-installer --sudo ok neurodebian git-annex -m neurodebian
 
+    - name: Configure Git
+      run: |
+        git config --global user.email "github_ci@test.test"
+        git config --global user.name "github ci"
 
+    - name: Tests
+      run: |
+        echo Testing scripts...
+        python nwb_table_readme.py
 
     - name: Final file info
       run: |

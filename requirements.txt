@@ -1,4 +1,4 @@
-datalad
 pandas
 mdtable
 pyyaml
+
