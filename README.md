@@ -2,7 +2,7 @@
 
 Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).
 
-Summary statistics for the available NWB dandisets (Updated on 2022-07-02)
+Summary statistics for the available NWB dandisets (Updated on 2022-07-04)
 
 - Total number of NWB dandisets: 96
 

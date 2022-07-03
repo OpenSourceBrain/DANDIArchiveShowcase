@@ -56,7 +56,6 @@ for dandiset_name in dandiset_folder_name:
     dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
     f.close()
 
-print(dandi_metadata)
 # only get the relevant columns
 yaml_df_flatten.extend(tmp_col)
 dandi_metadata_final = dandi_metadata[yaml_df_flatten].sort_values(by=['identifier'],ignore_index=True)
@@ -100,5 +99,5 @@ rmd.write(readme)
 rmd.write(markdown_string_table)
 rmd.close()
 
-# remove the cloned dandisets folder
-dl.remove(dataset=root_folder)
+# # remove the cloned dandisets folder
+# dl.remove(dataset=root_folder)
