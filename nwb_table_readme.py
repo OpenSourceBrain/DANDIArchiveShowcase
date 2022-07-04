@@ -8,15 +8,17 @@ from datetime import date
 
 # Getting Datetime from timestamp
 date_time = date.today()
+# directory for dandisets
+root_folder = '/tmp/dandisets'
+if os.path.exists(root_folder):
+    if len(os.listdir((root_folder))) != 0:
+        dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
+    else:
+        os.mkdir(root_folder)
+        dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
+else:
+    dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
 
-# clone the dandisets in the current directory, if directory already exists, update the local repo
-try:
-    root_folder = os.mkdir('./dandisets')
-    dl.install(source='https://github.com/dandi/dandisets.git',path=root_folder,recursive=True)
-except:
-    # root folder where dandisets repo is cloned
-    root_folder = 'dandisets'
-    dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
 dandiset_folder_name = [item for item in os.listdir(root_folder) if item.startswith('0')]
 yaml_file = 'dandiset.yaml'
 
@@ -56,7 +58,7 @@ for dandiset_name in dandiset_folder_name:
 
 # only get the relevant columns
 yaml_df_flatten.extend(tmp_col)
-dandi_metadata_final = dandi_metadata[yaml_df_flatten].sort_values(by=['data_type'])
+dandi_metadata_final = dandi_metadata[yaml_df_flatten].sort_values(by=['identifier'],ignore_index=True)
 dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                      'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
 # get table for readme
@@ -97,3 +99,5 @@ rmd.write(readme)
 rmd.write(markdown_string_table)
 rmd.close()
 
+# # remove the cloned dandisets folder
+# dl.remove(dataset=root_folder)
