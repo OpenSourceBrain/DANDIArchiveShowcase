@@ -15,7 +15,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [ 3.9 ]
+        python-version: [ "3.9", "3.10" ]
 
     steps:
     - uses: actions/checkout@v3
@@ -25,16 +25,25 @@ jobs:
       with:
         python-version:  ${{ matrix.python-version }}
 
-    - name: Install Python dependencies
+    # required because the version of git-annex in Ubuntu is too old.
+    - name: Install Neurodebian repos
       run: |
+        wget -O- http://neuro.debian.net/lists/focal.de-fzj.libre | sudo tee /etc/apt/sources.list.d/neurodebian.sources.list
+        sudo apt-key adv --recv-keys --keyserver hkps://keyserver.ubuntu.com 0xA5D32F012649A5A9
+        sudo apt-get update
+
+    # use standalone from Neurodebian
+    # http://neuro.debian.net/pkgs/git-annex-standalone.html
+    - name: Install git-annex
+      run: sudo apt-get install git-annex-standalone
+
+    - name: Install additional Python dependencies
+      run: |
+        pip install wheel
         pip install --requirement requirements.txt --quiet
+        pip install datalad
         pip list
 
-    - name: Install Datalad (Ubuntu-specific)
-      run: sudo apt-get install datalad
-
-#    - name: Install git-annex
-#      run: datalad-installer --sudo ok neurodebian git-annex -m neurodebian
 
     - name: Configure Git
       run: |
