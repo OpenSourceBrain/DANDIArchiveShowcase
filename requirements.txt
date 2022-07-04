@@ -2,4 +2,6 @@ pandas
 mdtable
 pyyaml
 nwbinspector
+datalad
+h5py>=3.2
 dandi
