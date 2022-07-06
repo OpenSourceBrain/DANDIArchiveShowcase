@@ -47,6 +47,7 @@ jobs:
     - name: Tests
       run: |
         echo Testing scripts...
+        python nwb_table_readme.py
         python validate_and_test_nwb.py --test
 
     - name: Final file info
