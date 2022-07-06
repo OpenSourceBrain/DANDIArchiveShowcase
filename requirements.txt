@@ -2,3 +2,5 @@ datalad
 pandas
 mdtable
 pyyaml
+nwbinspector
+dandi
