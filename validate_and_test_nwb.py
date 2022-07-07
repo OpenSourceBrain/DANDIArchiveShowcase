@@ -9,11 +9,14 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report
 from nwbinspector.inspector_tools import format_messages
 from dandi.dandiapi import DandiAPIClient
-
+from subprocess import check_output, STDOUT, PIPE
 
 # def test_compatibility(nwb_id):
 
 def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
+
+    timeout_s = 300  # how many seconds to wait
+
     # check if dandiset_summary file exists, if not, run nwb_table_readme.py
     if not os.path.exists('dandiset_summary.csv'):
         os.system('python nwb_table_readme.py')
@@ -27,11 +30,14 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
     nwb_dds_df = dds_table[['identifier','version']].loc[dds_table.data_type == nwb_type_id]
     # modify the list to get id with 000xxx format
     nwb_dds_df['identifier'] = [i.split(':')[1] for i in nwb_dds_df.identifier]
-    # decide message detail levels
+    # decide message detail levels - since we're streaming files, file names are urls
     if arge_parse_message:
         message_levels = ['importance', 'file_path']
     else:
         message_levels = ['importance', 'location']
+    # create text file to hold failed reading of nwb files
+    f = open('failed_nwb_files.txt','w+')
+    f.close()
 
     for dds_index in range(len(nwb_dds_df)):
         # get dds id and version from the table
@@ -46,18 +52,30 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
         # decide the number of files we should test
         if arge_parse_bulk:
             report_name = 'report_' + dds_id + '_files.txt'
-            if len(s3_url) < 10:
-                num_files = len(s3_url)
-            else:
-                num_files = round(len(s3_url) * .1)
+            # if len(s3_url) < 10:
+            #     num_files = len(s3_url)
+            # else:
+            #     num_files = round(len(s3_url) * .1)
+            num_files = 2
         else:
             report_name = 'report_' + dds_id + '.txt'
             num_files = len(s3_url)
         # start testing
         report_message = []
         for i in range(num_files):
-            report_message.extend(list(inspect_nwb(nwbfile_path=s3_url[i], driver='ros3',
+            print('Start validating '+dds_id+': '+s3_url[i])
+            # cmd = ['python fiop.py '+s3_url[i]]  # the external command to run
+            try:
+                report_message.extend(list(inspect_nwb(nwbfile_path=s3_url[i], driver='ros3',
                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
+                # m = check_output(cmd, timeout=timeout_s, shell=True)
+                # print(m)
+                # report_message.extend(m)
+            except:
+                f=open('failed_nwb_files.txt','a')
+                f.write(dds_id+': '+s3_url[i]+'\n')
+                f.close()
+                continue
         print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
         save_report(report_file_path=report_name,
                     formatted_messages=format_messages(report_message, levels=message_levels),
@@ -67,7 +85,7 @@ if __name__ == "__main__":
     # option for testing and option for bulk
     parser = argparse.ArgumentParser(description='bulk validating nwb dandisets')
     parser.add_argument('--test', default=False, action='store_true', help='only test 10% of the files in each dandiset')
-    parser.add_argument('--detailed', default=False, action='store_true',
+    parser.add_argument('--succint', default=False, action='store_true',
                         help='return detailed report messages')
     args = parser.parse_args()
-    validate_nwb(args.test,args.detailed)
+    validate_nwb(args.test,args.succint)
