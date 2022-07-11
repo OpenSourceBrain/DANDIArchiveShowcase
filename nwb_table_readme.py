@@ -76,6 +76,9 @@ def update_readme():
     # Getting Datetime from timestamp
     date_time = date.today()
     dandi_metadata_readme = pd.read_csv('dandiset_summary_readme.csv')
+    dandi_metadata_readme.drop(dandi_metadata_readme.filter(regex="Unnamed"), axis=1, inplace=True)
+    dandi_metadata_readme.to_csv('dandiset_summary_readme.csv',index=False)
+    print(dandi_metadata_readme)
     # summary statistics here
     data_type_dict = dandi_metadata_readme['data_type'].value_counts().to_dict()
     # get data_type values
@@ -105,7 +108,7 @@ def update_readme():
     rmd.write(markdown_string_table)
     rmd.close()
 
-if 'name' == '__main__':
+if __name__ == '__main__':
     create_dandiset_summary()
     update_readme()
 

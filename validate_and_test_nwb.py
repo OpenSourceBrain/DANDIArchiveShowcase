@@ -31,11 +31,11 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
         if 'NWB' in i:
             nwb_type_id = i
 
-    # get the list of nwb dds
-    nwb_dds_df = dds_table.loc[dds_table['data_type'] == nwb_type_id]
+    # get the list of nwb dds - copy() method so that Pandas knows a new df is being operated on
+    nwb_dds_df = dds_table.loc[dds_table['data_type'] == nwb_type_id].copy()
     # modify the list to get id with 000xxx format
     dds_id_prefix = nwb_dds_df['identifier'].iloc[0].split(':')[0]
-    nwb_dds_df['identifier'] = [i.split(':')[1] for i in nwb_dds_df.identifier]
+    nwb_dds_df.loc[:,'identifier'] = [i.split(':')[1] for i in nwb_dds_df.loc[:,'identifier']]
     # decide message detail levels - since we're streaming files, file names are urls
     if arge_parse_message:
         message_levels = ['importance', 'file_path']
@@ -47,7 +47,7 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
         # number of dandiset to test
         num_dds = 5
         # number of files per dandiset to test
-        nwb_dds_df['num_files'] = 2
+        nwb_dds_df.loc[:,'num_files'] = 2
         report_suffix = '_test.txt'
     else:
         num_dds = len(nwb_dds_df)
@@ -123,13 +123,13 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
 
         # update validation result column for the dandiset_summary csv files
         dds_id_full = dds_id_prefix+':'+dds_id
-        dds_table['validation_result'].loc[dds_table['identifier']==dds_id_full] = validation_summary
+        dds_table.loc[dds_table['identifier']==dds_id_full,'validation_result'] = validation_summary
     dds_table_all = pd.read_csv('dandiset_summary.csv')
     dds_table_readme = pd.read_csv('dandiset_summary_readme.csv')
-    dds_table_all['validation_result'] = dds_table['validation_result']
-    dds_table_readme['validation_result'] = dds_table['validation_result']
-    dds_table_all.to_csv('dandiset_summary.csv')
-    dds_table_readme.to_csv('dandiset_summary_readme.csv')
+    dds_table_all['validation_result'] = dds_table.loc[:,'validation_result']
+    dds_table_readme['validation_result'] = dds_table.loc[:,'validation_result']
+    dds_table_all.to_csv('dandiset_summary.csv',index=False)
+    dds_table_readme.to_csv('dandiset_summary_readme.csv',index=False)
 
 if __name__ == "__main__":
     # option for testing and option for bulk
