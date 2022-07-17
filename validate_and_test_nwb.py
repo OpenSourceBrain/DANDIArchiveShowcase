@@ -8,6 +8,7 @@ from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi.dandiapi import DandiAPIClient
+from dandi import download
 from datetime import date
 from nwb_table_readme import update_readme
 # def test_compatibility(nwb_id):
@@ -92,6 +93,12 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_message=None):
 
                 exit_loop += 1
                 if exit_loop == num_files:
+                    # download 1 file here
+                    dandi_url = asset.get_raw_metadata().get('contentUrl')[0]
+                    download.download(dandi_url, output_dir=save_folder)
+                    # get nwb_schema version
+
+                    # uninstall file
                     break
 
         print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
