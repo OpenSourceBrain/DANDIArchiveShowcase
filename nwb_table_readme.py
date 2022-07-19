@@ -1,10 +1,13 @@
 import os
+from pathlib import Path
 import pandas as pd
 import yaml
 import math
 import datalad.api as dl
 from mdtable import MDTable
 from datetime import date
+from dandi.pynwb_utils import get_nwb_version
+from dandi import download
 
 def create_dandiset_summary():
 
@@ -24,7 +27,7 @@ def create_dandiset_summary():
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles','assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
     tmp_col = ['species','data_type','doi_link']
-    readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url']
+    readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url', 'nwb_version']
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
@@ -49,8 +52,19 @@ def create_dandiset_summary():
 
         # flatten the yaml file and read in into dataframe
         yaml_df = pd.json_normalize(my_dict)
+
         # concatenate the additional variables to the flattened pdf
-        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link]],index=yaml_df.index,columns=tmp_col)],axis=1 )
+        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link]],index=yaml_df.index,columns=tmp_col)],axis=1)
+
+        # get nwb version for NWB dandisets
+        yaml_df['nwb_version'] = nanval
+        if 'NWB' in yaml_df['data_type'].iloc[0]:
+            # loop through folder, look for nwb file name
+            dataset_path = os.path.join(root_folder,dandiset_name)
+            in_path = Path(dataset_path)
+            nwbfile_tmp = list(in_path.rglob('*.nwb'))[0]
+            nwb_version = extract_nwb_version(nwb_file_name=nwbfile_tmp.strip(dandiset_name+'/')[1], dataset_path=dataset_path)
+            yaml_df['nwb_version'].iloc[0] = nwb_version
 
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
@@ -69,6 +83,30 @@ def create_dandiset_summary():
 
     # remove the cloned dandisets folder
     dl.remove(dataset=root_folder)
+
+def extract_nwb_version(nwb_file_name,dandi_url=None, dataset_path=None):
+    # if dandi_url is None, this functions assumes that the dandiset already been cloned via datalad
+    # create save folder
+    save_folder = '/tmp/nwb_versions'
+    if not os.path.exists(save_folder):
+        os.mkdir(save_folder)
+    tmp_nwb_path = os.path.join(save_folder, nwb_file_name.split('/')[1])
+
+    if dandi_url != None:
+        # download 1 file here
+        download.download(dandi_url, output_dir=save_folder)
+    else:
+        dl.get(os.path.join(dataset_path, nwb_file_name), dir)
+
+    # get nwb_schema version
+    nwb_version = get_nwb_version(tmp_nwb_path)
+    # uninstall file
+    try:
+        os.unlink(tmp_nwb_path)
+    except OSError:
+        print('OSError from os.unlink for file ' + nwb_file_name)
+
+    return nwb_version
 
 def update_readme():
     if not os.path.exists('dandiset_summary_readme.csv'):
