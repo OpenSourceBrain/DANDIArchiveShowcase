@@ -42,7 +42,8 @@ def get_nwb(dandiset_id):
     ans = input('The dandiset is ' + str(total_bytes) + ' bytes big. '
                 'Do you want to download the dandiset or some of its files? (0:dandiset | 1: some files) ')
     if ans == '0':
-        dl.get(dataset_path, recursive=True, get_data=True)
+        # params dataset is for instances where current working directory does not contain the cloned datasets
+        dl.get(dataset_path, recursive=True, get_data=True,dataset=dataset_path)
         nwb_file_list = dandiset_id
     elif ans == '1':
         file_path = input('Please specify the file path(s) as shown in the table. '
@@ -56,7 +57,7 @@ def get_nwb(dandiset_id):
             nwb_file_list = list(file_path.strip())
 
         for nwb_file in nwb_file_list:
-            dl.get(os.path.join(dataset_path,nwb_file))
+            dl.get(os.path.join(dataset_path,nwb_file),dataset=dataset_path)
     else:
         exit()
     return nwb_file_list, dataset_path

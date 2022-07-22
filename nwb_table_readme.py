@@ -67,13 +67,16 @@ def create_dandiset_summary():
             json_df = pd.json_normalize(data)
             smallest_file_size = json_df['size'].min(axis=0)
             json_df.set_index('size', inplace=True)
-            # there might be more than one file that has the smallest file size
-            dandi_url = json_df.at[smallest_file_size, 'metadata.contentUrl']
-            print(dandi_url)
+            # there might be more than one file that has the smallest file size. if so, dandi_url will be return as a series
+            dandi_url_gen = json_df.at[smallest_file_size, 'metadata.contentUrl']
+            if type(dandi_url) == list:
+                dandi_url = dandi_url_gen[0]
+            else:
+                dandi_url = dandi_url_gen.iloc[0][0]
             nwb_file_name = json_df.at[smallest_file_size, 'path']
             # only download files that has size lower than the hard limit
             if smallest_file_size < hard_limit:
-                nwb_version = extract_nwb_version(dandi_url[0],nwb_file_name,nwb_version)
+                nwb_version = extract_nwb_version(dandi_url,nwb_file_name,nwb_version)
 
             print(data_type)
             print(nwb_version)
