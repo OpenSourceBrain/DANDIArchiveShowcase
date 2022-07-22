@@ -74,9 +74,11 @@ def create_dandiset_summary():
             dandi_url_gen = json_df.at[smallest_file_size, 'metadata.contentUrl']
             if type(dandi_url_gen) == list:
                 dandi_url = dandi_url_gen[0]
+                nwb_file_name = json_df.at[smallest_file_size, 'path']
             else:
                 dandi_url = dandi_url_gen.iloc[0][0]
-            nwb_file_name = json_df.at[smallest_file_size, 'path']
+                nwb_file_name = json_df.at[smallest_file_size, 'path'].iloc[0]
+
             # only download files that has size lower than the hard limit
             if smallest_file_size < hard_limit:
                 nwb_version = extract_nwb_version(dandi_url,nwb_file_name,nwb_version)
