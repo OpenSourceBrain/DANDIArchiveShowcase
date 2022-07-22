@@ -31,7 +31,7 @@ def create_dandiset_summary():
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles','assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
     tmp_col = ['species','data_type','doi_link','nwb_version']
-    readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url', 'nwb_version']
+    readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url', 'nwb_version','max_file_size','min_file_size']
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
@@ -59,17 +59,20 @@ def create_dandiset_summary():
 
         # get nwb version for NWB dandisets
         nwb_version = nanval
+        largest_file_size = nanval
+        smallest_file_size = nanval
         if data_type != nanval and 'NWB' in str(data_type):
             # get the json file that has individual files info
             with open(os.path.join(root_folder, dandiset_name, json_file)) as f:
                 data = json.load(f)
             # flatten json file to pandas table
             json_df = pd.json_normalize(data)
+            largest_file_size = json_df['size'].max(axis=0)
             smallest_file_size = json_df['size'].min(axis=0)
             json_df.set_index('size', inplace=True)
             # there might be more than one file that has the smallest file size. if so, dandi_url will be return as a series
             dandi_url_gen = json_df.at[smallest_file_size, 'metadata.contentUrl']
-            if type(dandi_url) == list:
+            if type(dandi_url_gen) == list:
                 dandi_url = dandi_url_gen[0]
             else:
                 dandi_url = dandi_url_gen.iloc[0][0]
@@ -81,7 +84,7 @@ def create_dandiset_summary():
             print(data_type)
             print(nwb_version)
         # concatenate the additional variables to the flattened pdf
-        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version]],index=yaml_df.index,columns=tmp_col)],axis=1)
+        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,largest_file_size,smallest_file_size]],index=yaml_df.index,columns=tmp_col)],axis=1)
 
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
