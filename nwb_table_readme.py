@@ -30,7 +30,7 @@ def create_dandiset_summary():
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles','assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
-    tmp_col = ['species','data_type','doi_link','nwb_version']
+    tmp_col = ['species','data_type','doi_link','nwb_version','max_file_size','min_file_size']
     readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url', 'nwb_version','max_file_size','min_file_size']
 
     dandi_metadata = pd.DataFrame()
