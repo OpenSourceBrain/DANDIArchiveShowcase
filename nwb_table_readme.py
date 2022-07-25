@@ -8,8 +8,9 @@ from mdtable import MDTable
 import json
 from datetime import date
 from dandi.pynwb_utils import get_nwb_version
-from dandi.dandiapi import DandiAPIClient
-from hdmf.backends.hdf5 import HDF5IO
+from nwbinspector import inspect_nwb
+from nwbinspector.register_checks import Importance
+from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi import download
 
 def create_dandiset_summary():
@@ -35,7 +36,7 @@ def create_dandiset_summary():
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
-    lst_count =[]
+
     for dandiset_name in dandiset_folder_name:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
@@ -67,26 +68,45 @@ def create_dandiset_summary():
                 data = json.load(f)
             # flatten json file to pandas table
             json_df = pd.json_normalize(data)
-            largest_file_size = json_df['size'].max(axis=0)
-            smallest_file_size = json_df['size'].min(axis=0)
-            json_df.set_index('size', inplace=True)
-            # there might be more than one file that has the smallest file size. if so, dandi_url will be return as a series
-            dandi_url_gen = json_df.at[smallest_file_size, 'metadata.contentUrl']
-            if type(dandi_url_gen) == list:
-                dandi_url = dandi_url_gen[0]
-                nwb_file_name = json_df.at[smallest_file_size, 'path']
-            else:
-                dandi_url = dandi_url_gen.iloc[0][0]
-                nwb_file_name = json_df.at[smallest_file_size, 'path'].iloc[0]
-
+            # sort the dataframe by column size will prevent returning series of files that have the same size
+            json_df.sort_values(by='size', inplace=True)
+            # get the file path with the smallest size first, and check if it is a valid nwb file in the while loop
+            path_file = json_df['path'].iloc[0]
+            counter = 0
+            path_lst = []
+            url_lst = []
+            smallest_size_lst = []
+            valid_path_url = 0
+            while valid_path_url < 2:
+                # check if the file with smallest file size is nwb, if not, get the next row
+                if path_file.split('.')[-1] != 'nwb':
+                    counter += 1
+                    path_file = json_df['path'].iloc[counter]
+                # if it is, return the path
+                else:
+                    valid_path_url += 1
+                    path_lst.append(path_file)
+                    dandi_url = json_df['metadata.contentUrl'].iloc[counter][0]
+                    url_lst.append(dandi_url)
+                    smallest_size_lst.append(json_df['size'].iloc[counter])
+                    # reinsatntiate path_file so it passes the first if
+                    path_file = 't.blah'
+            largest_file_size = json_df['size'].iloc[-1]
+            report_message = []
             # only download files that has size lower than the hard limit
-            if smallest_file_size < hard_limit:
-                nwb_version = extract_nwb_version(dandi_url,nwb_file_name,nwb_version)
-
-            print(data_type)
-            print(nwb_version)
+            for i in range(len(path_lst)):
+                if smallest_size_lst[i] < hard_limit:
+                    # download files
+                    nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                    # validate file here first
+                    report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
+                                                           importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
+                    # get nwb_version
+                    nwb_version = get_nwb_version(nwb_path)
+                    # uninstall file
+                    os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
-        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,largest_file_size,smallest_file_size]],index=yaml_df.index,columns=tmp_col)],axis=1)
+        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,largest_file_size,smallest_size_lst[0]]],index=yaml_df.index,columns=tmp_col)],axis=1)
 
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
@@ -106,60 +126,20 @@ def create_dandiset_summary():
     # # remove the cloned dandisets folder
     # dl.remove(dataset=root_folder)
 
-def extract_nwb_version(dandi_url,nwb_file_name,nwb_version=None):
+def download_nwb_with_path(dandi_url,nwb_file_name):
     # the argument nwb_version is in case the function exits with error
     # create save folder
     save_folder = '/tmp/nwb_versions'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
-    # # tracker to only get
-    # count = 0
-    # if dandi_url == None:
-    #     with DandiAPIClient() as client:
-    #         dandiset = client.get_dandiset(dds_id, dds_version)
-    #         for asset in dandiset.get_assets():
-    #             dandi_url = asset.get_raw_metadata().get('contentUrl')[0]
-    #             nwb_file_name = asset.get_raw_metadata().get('path')
-    #             count +=1
-    #             if count == 1:
-    #                 break
-
-    # assumes that nwb_file_name follows the format subdataset_name/file_name
     if '/' in nwb_file_name:
         tmp_nwb_path = os.path.join(save_folder, nwb_file_name.split('/')[-1])
     else:
         tmp_nwb_path = os.path.join(save_folder, nwb_file_name)
+
     # download 1 file here
     download.download(dandi_url, output_dir=save_folder)
-    # get nwb_schema version
-    nwb_version = get_nwb_version(tmp_nwb_path)
-    os.unlink(tmp_nwb_path)
-    # except:
-    #     print('error somewhere ' + nwb_file_name)
-
-    # if dandi_url != None:
-    #     # download 1 file here
-    #     download.download(dandi_url, output_dir=save_folder)
-    #     # get nwb_schema version
-    #     nwb_version = get_nwb_version(tmp_nwb_path)
-    #     # uninstall file
-    #     try:
-    #         os.unlink(tmp_nwb_path)
-    #     except OSError:
-    #         print('OSError from os.unlink for file ' + nwb_file_name)
-    # else:
-    #     dl.get(path=os.path.join(dataset_path, nwb_file_name))
-    #     # get nwb_schema version
-    #     nwb_version = get_nwb_version(path=os.path.join(dataset_path, nwb_file_name))
-    #     # print(a)
-    #     # namespaces = HDF5IO.get_namespaces(path=os.path.join(dataset_path, nwb_file_name))
-    #     # nwb_version = namespaces['core']
-    #     # uninstall file
-    #     try:
-    #         dl.drop(os.path.join(dataset_path, nwb_file_name))
-    #     except:
-    #         print('datalad is crazy')
-    return nwb_version
+    return tmp_nwb_path
 
 def update_readme():
     if not os.path.exists('dandiset_summary_readme.csv'):
