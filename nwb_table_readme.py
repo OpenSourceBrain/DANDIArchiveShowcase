@@ -1,5 +1,4 @@
 import os
-from pathlib import Path
 import pandas as pd
 import yaml
 import math
@@ -27,17 +26,18 @@ def create_dandiset_summary():
     else:
         dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
 
-    dandiset_folder_name = [item for item in os.listdir(root_folder) if item.startswith('0')]
+    dandiset_folder_name = sorted([item for item in os.listdir(root_folder) if item.startswith('0')])
     yaml_file = 'dandiset.yaml'
 
-    yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles','assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
-    tmp_col = ['species','data_type','doi_link','nwb_version','max_file_size','min_file_size']
-    readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url', 'nwb_version','max_file_size','min_file_size']
+    yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
+                       'assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
+    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary','max_file_size','min_file_size']
+    readme_table = ['identifier','data_type','num_files','num_bytes','dandiset_schemaver','url', 'nwb_version','validation_summary','max_file_size','min_file_size']
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
 
-    for dandiset_name in dandiset_folder_name:
+    for dandiset_name in dandiset_folder_name[48:]:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -49,7 +49,6 @@ def create_dandiset_summary():
             data_type = my_dict['assetsSummary']['dataStandard'][0]['name']
         except:
             data_type = nanval
-            # nwb_version = nanval
         try:
             doi_link = my_dict['relatedResource'][0]['url']
         except:
@@ -58,10 +57,11 @@ def create_dandiset_summary():
         # flatten the yaml file and read in into dataframe
         yaml_df = pd.json_normalize(my_dict)
 
-        # get nwb version for NWB dandisets
+        # get nwb version for NWB dandisets, dummy for datasets that are not NWB
         nwb_version = nanval
         largest_file_size = nanval
-        smallest_file_size = nanval
+        smallest_size_lst = [nanval,nanval]
+        validation_summary = nanval
         if data_type != nanval and 'NWB' in str(data_type):
             # get the json file that has individual files info
             with open(os.path.join(root_folder, dandiset_name, json_file)) as f:
@@ -72,12 +72,16 @@ def create_dandiset_summary():
             json_df.sort_values(by='size', inplace=True)
             # get the file path with the smallest size first, and check if it is a valid nwb file in the while loop
             path_file = json_df['path'].iloc[0]
-            counter = 0
             path_lst = []
             url_lst = []
             smallest_size_lst = []
+            counter = 0
             valid_path_url = 0
-            while valid_path_url < 2:
+            # a dataset might only have 1 file or several files, so don't hardcode max_counter
+            max_counter = 2
+            if len(json_df) == 1:
+                max_counter = 1
+            while valid_path_url < max_counter:
                 # check if the file with smallest file size is nwb, if not, get the next row
                 if path_file.split('.')[-1] != 'nwb':
                     counter += 1
@@ -91,6 +95,9 @@ def create_dandiset_summary():
                     smallest_size_lst.append(json_df['size'].iloc[counter])
                     # reinsatntiate path_file so it passes the first if
                     path_file = 't.blah'
+                # in case the while loop loops through all the length of the dataframe
+                if counter == len(json_df)-1:
+                    break
             largest_file_size = json_df['size'].iloc[-1]
             report_message = []
             # only download files that has size lower than the hard limit
@@ -98,18 +105,25 @@ def create_dandiset_summary():
                 if smallest_size_lst[i] < hard_limit:
                     # download files
                     nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                    try:
                     # validate file here first
-                    report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
-                                                           importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
+                        report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
+                                                               importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
+                        validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
+                    except:
+                        validation_summary = 'UNABLE'
+                        continue
                     # get nwb_version
                     nwb_version = get_nwb_version(nwb_path)
                     # uninstall file
                     os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
-        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,largest_file_size,smallest_size_lst[0]]],index=yaml_df.index,columns=tmp_col)],axis=1)
+        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,largest_file_size,smallest_size_lst[0]]],
+                                                   index=yaml_df.index,columns=tmp_col)],axis=1)
 
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
+        dandi_metadata.to_csv('dandiset_summary_tmp_tmp_tmp.csv')
         f.close()
 
     # only get the relevant columns
@@ -137,9 +151,28 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
     else:
         tmp_nwb_path = os.path.join(save_folder, nwb_file_name)
 
-    # download 1 file here
-    download.download(dandi_url, output_dir=save_folder)
+    if not os.path.exists(tmp_nwb_path):
+        # download 1 file here
+        download.download(dandi_url, output_dir=save_folder)
     return tmp_nwb_path
+
+def nwb_inspector_message_format(report_message,dds_id):
+    print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
+    save_report(report_file_path=dds_id+'_validation.txt',
+                formatted_messages=format_messages(report_message, levels=['importance','file_path']),
+                overwrite=True)
+
+    # get validation types summary
+    message_form = MessageFormatter(messages=report_message, levels=['file_path', 'importance'])
+    validation_summary = ''
+    count_tmp = 0
+    for k, v in message_form.message_count_by_importance.items():
+        if count_tmp == 0:
+            validation_summary += k
+        else:
+            validation_summary += ',' + k
+        count_tmp += 1
+    return validation_summary
 
 def update_readme():
     if not os.path.exists('dandiset_summary_readme.csv'):
@@ -180,7 +213,7 @@ def update_readme():
     rmd.close()
 
 if __name__ == '__main__':
-    create_dandiset_summary()
-    # update_readme()
+    # create_dandiset_summary()
+    update_readme()
 
 

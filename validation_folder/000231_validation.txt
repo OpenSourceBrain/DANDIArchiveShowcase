@@ -1,0 +1,28 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 15:47:28.937519+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 3 issues over 2 files:
+       2 - CRITICAL
+       1 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-219CR_ses-20190408T153246_behavior+image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/behavioral video'
+       Message: The external file 'sub-219CR_ses-20190408T153246_behavior+image/723067dc-aaed-4e23-acaf-83782a04bc3f_external_file_0.mkv' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-KF119_ses-20180110T161350_behavior+image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/behavioral video'
+       Message: The external file 'sub-KF119_ses-20180110T161350_behavior+image/ce5a402d-a753-44e6-8a81-c9b23f191580_external_file_0.mkv' does not exist. Please confirm the relative location to the NWBFile.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.2  /tmp/nwb_versions/sub-KF119_ses-20180110T161350_behavior+image.nwb: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+       Message: ['choice_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+

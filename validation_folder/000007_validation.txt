@@ -1,0 +1,43 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-26 22:37:44.516590+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 14 issues over 2 files:
+      12 - PYNWB_VALIDATION
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
+       Message: argument missing
+
+0.1  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
+       Message: incorrect type - expected 'uint8', got 'int64'
+
+0.2  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/obs_intervals_index'
+       Message: argument missing
+
+0.3  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb and 1 other file: VectorIndex - 'None' object at location 'units/obs_intervals_index'
+       Message: incorrect type - expected 'uint8', got 'int64'
+
+0.4  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
+       Message: argument missing
+
+0.5  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
+       Message: incorrect type - expected 'uint8', got 'int64'
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.6  /tmp/nwb_versions/sub-anm00314756_ses-20151023T141029.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'Dentate'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+
+1.7  /tmp/nwb_versions/sub-anm00314758_ses-20151021T101014.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'Fastigial'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+

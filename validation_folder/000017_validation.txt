@@ -1,0 +1,56 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 00:20:34.319915+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 20 issues over 2 files:
+      14 - PYNWB_VALIDATION
+       4 - CRITICAL
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
+       Message: argument missing
+
+0.1  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
+       Message: incorrect type - expected 'uint8', got 'int64'
+
+0.2  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
+       Message: argument missing
+
+0.3  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
+       Message: incorrect type - expected 'uint8', got 'int64'
+
+0.4  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: Units/waveform_mean/unit - 'None' object at location 'units/waveform_mean'
+       Message: argument missing
+
+0.5  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: VectorData/description - 'None' object at location 'units/spike_amps_index'
+       Message: argument missing
+
+0.6  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: VectorData/description - 'None' object at location 'units/spike_depths_index'
+       Message: argument missing
+
+1  CRITICAL
+===========
+
+1.7  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/behavior/PupilTracking/eye_xy_positions'
+       Message: The length of the first dimension of data does not match the length of timestamps.
+
+1.8  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/behavior/PupilTracking/eye_area'
+       Message: The length of the first dimension of data does not match the length of timestamps.
+
+1.9  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: check_timestamps_match_first_dimension - 'IntervalSeries' object at location '/processing/behavior/BehavioralEpochs/wheel_moves'
+       Message: The length of the first dimension of data does not match the length of timestamps.
+
+2  BEST_PRACTICE_VIOLATION
+==========================
+
+2.10  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/stimulus/presentation/receptive_field_mapping_sparse_noise'
+        Message: receptive_field_mapping_sparse_noise timestamps are not ascending.
+

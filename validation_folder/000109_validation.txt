@@ -1,0 +1,28 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 10:10:33.724068+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 6 issues over 2 files:
+       4 - PYNWB_VALIDATION
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-720619787_ses-721231135_icephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: argument missing
+
+0.1  /tmp/nwb_versions/sub-720619787_ses-721231135_icephys.nwb and 1 other file: VectorIndex - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.2  /tmp/nwb_versions/sub-720619787_ses-721231135_icephys.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+       Message: Subject species 'Homo Sapiens' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+

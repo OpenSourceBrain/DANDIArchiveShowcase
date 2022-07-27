@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 12:48:14.529994+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 4 issues over 2 files:
+       4 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-Mouse 2071_ses-Session 03_obj-1tukgyk.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+       Message: Subject species 'Mouse' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+0.1  /tmp/nwb_versions/sub-Mouse 2071_ses-Session 03_obj-1tukgyk.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+       Message: ['start_time', 'stop_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+
