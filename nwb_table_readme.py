@@ -37,7 +37,7 @@ def create_dandiset_summary():
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
 
-    for dandiset_name in dandiset_folder_name[48:]:
+    for dandiset_name in dandiset_folder_name:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -110,9 +110,10 @@ def create_dandiset_summary():
                         report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
                                                                importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
                         validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
+                    # this is bad practice, will change in the near future
                     except:
                         validation_summary = 'UNABLE'
-                        continue
+                        pass
                     # get nwb_version
                     nwb_version = get_nwb_version(nwb_path)
                     # uninstall file
@@ -123,7 +124,7 @@ def create_dandiset_summary():
 
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
-        dandi_metadata.to_csv('dandiset_summary_tmp_tmp_tmp.csv')
+        dandi_metadata.to_csv('dandiset_summary_tmp.csv')
         f.close()
 
     # only get the relevant columns
@@ -157,8 +158,11 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
     return tmp_nwb_path
 
 def nwb_inspector_message_format(report_message,dds_id):
+    save_folder = 'validation_folder'
+    if not os.path.exists(save_folder):
+        os.mkdir(save_folder)
     print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
-    save_report(report_file_path=dds_id+'_validation.txt',
+    save_report(report_file_path=os.path.join(save_folder, dds_id+'_validation.txt'),
                 formatted_messages=format_messages(report_message, levels=['importance','file_path']),
                 overwrite=True)
 
@@ -175,45 +179,85 @@ def nwb_inspector_message_format(report_message,dds_id):
     return validation_summary
 
 def update_readme():
-    if not os.path.exists('dandiset_summary_readme.csv'):
+    rd_file = 'README.md'
+    if not os.path.exists('dandiset_summary.csv'):
         exit()
     # Getting Datetime from timestamp
     date_time = date.today()
-    dandi_metadata_readme = pd.read_csv('dandiset_summary_readme.csv')
+    dandi_metadata_readme = pd.read_csv('dandiset_summary.csv')
     dandi_metadata_readme.drop(dandi_metadata_readme.filter(regex="Unnamed"), axis=1, inplace=True)
-    dandi_metadata_readme.to_csv('dandiset_summary_readme.csv',index=False)
+    dandi_metadata_readme.to_csv('dandiset_summary.csv', index=False)
     print(dandi_metadata_readme)
     # summary statistics here
     data_type_dict = dandi_metadata_readme['data_type'].value_counts().to_dict()
     # get data_type values
-    for k,vals in data_type_dict.items():
+    for k, vals in data_type_dict.items():
         if 'NWB' in k:
             nwb_type_id = k
 
-    markdown = MDTable('dandiset_summary_readme.csv')
-    markdown_string_table = markdown.get_table()
+    nwb_pd = dandi_metadata_readme.loc[dandi_metadata_readme['data_type'] == nwb_type_id].copy()
+    nwb_pd.reset_index(inplace=True)
+    dds_id_prefix = nwb_pd['identifier'].iloc[0].split(':')[0]
+    nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
+    nwbe_compatible = [i + ',' for i in
+                       nwb_pd['identifier'].loc[nwb_pd['validation_summary'] == 'BEST_PRACTICE_VIOLATION']]
 
     readme = '# DANDI Archive Showcase\n'
-    readme +='\n'
-    readme +='Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).\n'
-    readme +='\n'
-    readme +='Summary statistics for the available NWB dandisets (Updated on ' + str(date_time) +')' '\n'
-    readme +='\n'
-    readme +='- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
-    readme +='\n'
-    readme +='- Median number of files in each NWB dandiset: ' + str(dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type==nwb_type_id].median()) + '\n'
-    readme +='\n'
-    readme +='- Median number of bytes in each NWB dandiset: ' + str(dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type==nwb_type_id].median()) + '\n'
-    readme +='\n'
-    readme +='Summary table for the available dandisets (more details in dandiset_summary.csv).\n'
-    readme +='\n\n'
-    rmd = open('README.md', 'w')
+    readme += '\n'
+    readme += 'Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).\n'
+    readme += '\n'
+    readme += '## Summary statistics for the available NWB dandisets (Updated on ' + str(date_time) + ')' '\n'
+    readme += '\n'
+    readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
+    readme += '\n'
+    readme += '- Median number of files in each NWB dandiset: ' + str(
+        dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == nwb_type_id].median()) + '\n'
+    readme += '\n'
+    readme += '- Median number of bytes in each NWB dandiset: ' + str(
+        dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median()) + '\n'
+    readme += '\n'
+    readme += '- NWB dandiset that are possibly NWBE compatible: ' + ' '.join(nwbe_compatible)[:-2] + '\n'
+    readme += '\n'
+    readme += '<details><summary> Summary information on the available NWB dandisets (more details in dandiset_summary.csv).\n</summary><p>'
+    readme += '\n\n\n\n'
+
+    for row in nwb_pd.index:
+        ref = nwb_pd['identifier'].iloc[row]
+        validation_file = 'validation_folder/' + ref + '_validation'
+        try:
+            readme += '*[DANDI:' + nwb_pd['identifier'].iloc[row] + ']' + '(' + nwb_pd['url'].iloc[
+                row] + ')*' + ': **' + nwb_pd['name'].iloc[row] + '**\n\n'
+        except:
+            pass
+        try:
+            readme += '- NWB version: ' + nwb_pd['nwb_version'].iloc[row] + '\n\n' '- Dandiset size: ' + str(
+                nwb_pd['num_bytes'].iloc[row]) + '\n\n'
+        except:
+            pass
+        try:
+            readme += '- Validation results summary: [' + nwb_pd['validation_summary'].iloc[
+                row] + ']' + '(%s.txt) \n\n' % (validation_file)
+        except:
+            pass
+        try:
+            var_measured = nwb_pd['variableMeasured'].iloc[row]
+            readme += '- Species: ' + nwb_pd['species'].iloc[row] + '\n\n' '- Variables measured: ' + ''.join(
+                var_measured) + '\n\n'
+        except:
+            pass
+        try:
+            readme += '- Source paper: ' + nwb_pd['citation'].iloc[row].split('(Vers')[0] + '\n\n'
+        except:
+            pass
+        readme += '---'
+        readme += '\n\n'
+    readme += '</p></details>'
+    rmd = open(rd_file, 'w')
     rmd.write(readme)
-    rmd.write(markdown_string_table)
     rmd.close()
 
 if __name__ == '__main__':
-    # create_dandiset_summary()
+    create_dandiset_summary()
     update_readme()
 
 

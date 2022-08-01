@@ -9,7 +9,7 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi.dandiapi import DandiAPIClient
 from datetime import date
-from nwb_table_readme import update_readme, extract_nwb_version
+from nwb_table_readme import update_readme
 # def test_compatibility(nwb_id):
 
 def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=None):
@@ -24,7 +24,7 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
     # read dandiset summary csv file to get dandiset info
-    dds_table = pd.read_csv('dandiset_summary.csv',usecols=['identifier','version','data_type','num_files'])
+    dds_table = pd.read_csv('dandiset_summary.csv',usecols=['identifier','version','data_type','num_files','nwb_version'])
     dds_table['validation_result'] = ''
     data_type = dds_table.data_type.dropna().unique()
     for i in data_type:
@@ -37,6 +37,7 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
         nwb_dds_df = dds_table.loc[(dds_table['data_type'] == nwb_type_id) & (dds_table['nwb_version'] == NaN)].copy()
     else:
         nwb_dds_df = dds_table.loc[dds_table['data_type'] == nwb_type_id].copy()
+    # nwb_dds_df = dds_table.loc[dds_table['data_type'] == nwb_type_id].copy()
     # modify the list to get id with 000xxx format
     dds_id_prefix = nwb_dds_df['identifier'].iloc[0].split(':')[0]
     nwb_dds_df.loc[:,'identifier'] = [i.split(':')[1] for i in nwb_dds_df.loc[:,'identifier']]
@@ -96,9 +97,6 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
 
                 exit_loop += 1
                 if exit_loop == num_files:
-                    # download 1 file here
-                    dandi_url = asset.get_raw_metadata().get('contentUrl')[0]
-                    nwb_version = extract_nwb_version(nwb_file_name,dandi_url=dandi_url)
                     break
 
         print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
@@ -141,10 +139,10 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
 if __name__ == "__main__":
     # option for testing and option for bulk
     parser = argparse.ArgumentParser(description='bulk validating nwb dandisets')
-    parser.add_argument('--test', default=False, action='store_true', help='only test 2 files in 10 dandisets')
+    parser.add_argument('--test', default=False, action='store_true', help='only test 2 files in 5 dandisets')
     parser.add_argument('--update', default=False, action='store_true', help='only test non-tested dandisets')
     parser.add_argument('--succint', default=False, action='store_true',
                         help='return detailed report messages')
     args = parser.parse_args()
     validate_nwb(args.test,args.update, args.succint)
-    update_readme()
+    # update_readme()
