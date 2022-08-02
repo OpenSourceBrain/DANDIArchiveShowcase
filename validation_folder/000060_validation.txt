@@ -1,0 +1,27 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 09:32:17.772663+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 134 issues over 2 files:
+     134 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-353938_ses-20170622_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'LaserGem473_1'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+
+0.1  /tmp/nwb_versions/sub-353938_ses-20170622_behavior+ecephys+ogen.nwb and 127 other files: check_table_values_for_dict - 'DynamicTable' object with name 'electrodes'
+       Message: The column 'location' contains a string value that contains a dictionary! Please unpack dictionaries as additional rows or columns of the table. This string is also JSON loadable, so call `json.loads(...)` on the string to unpack.
+
+0.2  /tmp/nwb_versions/sub-353938_ses-20170622_behavior+ecephys+ogen.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/PhotostimEvents/photostim_stop_times'
+       Message: photostim_stop_times timestamps are not ascending.
+
+0.3  /tmp/nwb_versions/sub-353938_ses-20170622_behavior+ecephys+ogen.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/PhotostimEvents/photostim_start_times'
+       Message: photostim_start_times timestamps are not ascending.
+

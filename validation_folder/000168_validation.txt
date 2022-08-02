@@ -1,0 +1,40 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 11:51:15.062049+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 7 issues over 1 files:
+       6 - CRITICAL
+       1 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys of movie 0/Fluorescence/RoiResponseSeries'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.1  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys of movie 0/Fluorescence/NeuropilResponseSeries'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.2  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys of movie 0/Fluorescence/RoiResponseSeries'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.3  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys of movie 0/Fluorescence/NeuropilResponseSeries'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.4  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys of movie 0/Fluorescence/RoiResponseSeries'
+       Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.5  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys of movie 0/Fluorescence/NeuropilResponseSeries'
+       Message: The length of the first dimension of data does not match the length of timestamps.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.6  /tmp/nwb_versions/jGCaMP7f_ANM471991_cell02.nwb: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+       Message: Subject species 'mus musculus' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+

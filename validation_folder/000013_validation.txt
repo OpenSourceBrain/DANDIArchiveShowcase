@@ -1,0 +1,24 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-26 22:59:01.979659+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 6 issues over 2 files:
+       6 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+       Message: Subject species 'mus musculus' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+0.1  /tmp/nwb_versions/sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'left-barrel'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+
+0.2  /tmp/nwb_versions/sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+       Message: ['first_lick_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+

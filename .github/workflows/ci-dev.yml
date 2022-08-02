@@ -1,0 +1,65 @@
+name: Continuous build
+
+on:
+  schedule:
+    - cron: "1 1 1 */1 *"
+  push:
+    branches: [ main, dev]
+  pull_request:
+    branches: [ main, dev]
+
+jobs:
+  build:
+
+    runs-on: [ubuntu-latest]
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.9", "3.10" ]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python  ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version:  ${{ matrix.python-version }}
+
+    # required because the version of git-annex in Ubuntu is too old.
+    - name: Install Neurodebian repos
+      run: |
+        wget -O- http://neuro.debian.net/lists/focal.de-fzj.libre | sudo tee /etc/apt/sources.list.d/neurodebian.sources.list
+        sudo apt-key adv --recv-keys --keyserver hkps://keyserver.ubuntu.com 0xA5D32F012649A5A9
+        sudo apt-get update
+
+    # use standalone from Neurodebian
+    # http://neuro.debian.net/pkgs/git-annex-standalone.html
+    - name: Install git-annex
+      run: sudo apt-get install git-annex-standalone
+
+    - name: Install additional Python dependencies
+      run: |
+        pip install wheel
+        pip install --requirement requirements.txt --quiet
+        pip list
+
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "github_ci@test.test"
+        git config --global user.name "github ci"
+
+    - name: Tests
+      run: |
+        echo Testing scripts...
+        python nwb_table_readme.py
+
+    - name: Final file info
+      run: |
+        ls -alt
+        df -h
+        du -h
+
+    - name: Final version info
+      run: |
+        pip list

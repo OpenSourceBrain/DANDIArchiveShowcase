@@ -1,0 +1,52 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-26 22:37:33.275673+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 22 issues over 2 files:
+      12 - PYNWB_VALIDATION
+      10 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: root/general/experimenter - 'None' object at location 'general/experimenter'
+       Message: incorrect shape - expected an array of shape '[None]', got non-array data 'Mike Economo'
+
+0.1  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: root/general/related_publications - 'None' object at location 'general/related_publications'
+       Message: incorrect shape - expected an array of shape '[None]', got non-array data 'doi:10.1038/s41586-018-0642-9'
+
+0.2  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
+       Message: argument missing
+
+0.3  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+0.4  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
+       Message: argument missing
+
+0.5  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.6  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+       Message: ['stop_time', 'cue_start_time', 'pole_in_time', 'pole_out_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+
+1.7  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/lick_times/lick_right_times'
+       Message: lick_right_times timestamps are not ascending.
+
+1.8  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/lick_times/lick_left_times'
+       Message: lick_left_times timestamps are not ascending.
+
+1.9  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_resolution - 'TimeSeries' object at location '/acquisition/lick_times/lick_right_times'
+       Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.10  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_resolution - 'TimeSeries' object at location '/acquisition/lick_times/lick_left_times'
+        Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+

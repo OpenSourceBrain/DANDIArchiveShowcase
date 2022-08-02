@@ -1,0 +1,40 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 13:23:02.939951+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 10 issues over 2 files:
+       2 - CRITICAL
+       8 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-DT5_ses-20161027-1944um-2232um-161027-194125_behavior+ecephys.nwb and 1 other file: check_spatial_series_dims - 'SpatialSeries' object at location '/processing/behavior/allocentric_frame_tracking/orientation'
+       Message: SpatialSeries should have 1 column (x), 2 columns (x, y), or 3 columns (x, y, z).
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.1  /tmp/nwb_versions/sub-DT5_ses-20161027-1944um-2232um-161027-194125_behavior+ecephys.nwb and 1 other file: check_compass_direction_unit - 'CompassDirection' object with name 'allocentric_frame_tracking'
+       Message: SpatialSeries objects inside a CompassDirection object should be angular and should have a unit of 'degrees' or 'radians', but 'orientation' has units 'meters'.
+
+1.2  /tmp/nwb_versions/sub-DT5_ses-20161027-1944um-2232um-161027-194125_behavior+ecephys.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/central_alternation_task/position'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.008333333333333333 instead of timestamps.
+
+1.3  /tmp/nwb_versions/sub-DT5_ses-20161027-1944um-2232um-161027-194125_behavior+ecephys.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/central_alternation_task/error_per_marker'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.008333333333333333 instead of timestamps.
+
+1.4  /tmp/nwb_versions/sub-DT5_ses-20161027-1944um-2232um-161027-194125_behavior+ecephys.nwb and 1 other file: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/allocentric_frame_tracking/orientation'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.008333333333333333 instead of timestamps.
+
+1.5  /tmp/nwb_versions/sub-DT7_ses-20170315-288um-0um-170315-191240_behavior+ecephys.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/wheel_alternation_task/position'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.008333333333333333 instead of timestamps.
+
+1.6  /tmp/nwb_versions/sub-DT7_ses-20170315-288um-0um-170315-191240_behavior+ecephys.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/wheel_alternation_task/error_per_marker'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.008333333333333333 instead of timestamps.
+

@@ -1,0 +1,27 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 09:29:11.288693+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 8 issues over 2 files:
+       8 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-Ella_ses-20190414_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/head_direction'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.02 instead of timestamps.
+
+0.1  /tmp/nwb_versions/sub-Ella_ses-20190414_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/body_speed'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.02 instead of timestamps.
+
+0.2  /tmp/nwb_versions/sub-Ella_ses-20190414_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/azimuthal_head_velocity'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.02 instead of timestamps.
+
+0.3  /tmp/nwb_versions/sub-Ella_ses-20190414_behavior.nwb and 1 other file: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/Position/position'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.02 instead of timestamps.
+

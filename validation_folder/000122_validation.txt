@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 10:11:41.385647+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 4 issues over 2 files:
+       4 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-P2_ses-20200102T002921.nwb and 1 other file: check_subject_species_exists - 'Subject' object at location '/general/subject'
+       Message: Subject species is missing.
+
+0.1  /tmp/nwb_versions/sub-P2_ses-20200102T002921.nwb and 1 other file: check_regular_timestamps - 'NIRSSeries' object at location '/acquisition/nirs_data'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.128 instead of timestamps.
+

@@ -1,0 +1,18 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 09:31:56.000717+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 1 issues over 1 files:
+       1 - CRITICAL
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-R2_ses-20190206T210000_ophys.nwb: check_data_orientation - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+

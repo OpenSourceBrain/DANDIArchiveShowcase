@@ -1,0 +1,33 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 06:24:28.255376+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 12 issues over 2 files:
+      12 - PYNWB_VALIDATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_locations_x_index'
+       Message: argument missing
+
+0.1  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_locations_y_index'
+       Message: argument missing
+
+0.2  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_orientations_index'
+       Message: argument missing
+
+0.3  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_sizes_index'
+       Message: argument missing
+
+0.4  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/square_locations_x_index'
+       Message: argument missing
+
+0.5  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/square_locations_y_index'
+       Message: argument missing
+

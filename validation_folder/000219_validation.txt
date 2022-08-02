@@ -1,0 +1,31 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 14:41:37.652448+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 4 issues over 2 files:
+       2 - CRITICAL
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-210226-210308-1_ses-210308-a000_behavior+image+ophys.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/behavior_cam_23109588'
+       Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210308_1\210308_a000\behavior_210226_2103008_1_210308_a000\behavior_p10_210226_210308_1_cam_23109588_cam2_a000_fps_20.avi' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-210226-210308-1_ses-210308-a000_behavior+image+ophys.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/behavior_cam_22983298'
+       Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210308_1\210308_a000\behavior_210226_2103008_1_210308_a000\behavior_p10_210226_210308_1_cam_22983298_cam1_a000_fps_20.avi' does not exist. Please confirm the relative location to the NWBFile.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.2  /tmp/nwb_versions/sub-180201-180207_ses-180207-a002_behavior+ophys.nwb: check_time_interval_time_columns - 'TimeIntervals' object with name 'invalid_times'
+       Message: ['start_time', 'stop_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+
+1.3  /tmp/nwb_versions/sub-180201-180207_ses-180207-a002_behavior+ophys.nwb: check_time_intervals_stop_after_start - 'TimeIntervals' object with name 'invalid_times'
+       Message: stop_times should be greater than start_times. Make sure the stop times are with respect to the session start time.
+

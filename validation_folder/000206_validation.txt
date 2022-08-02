@@ -1,0 +1,24 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 11:59:18.946766+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 3 issues over 1 files:
+       3 - CRITICAL
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-TIGRE296_behavior+ophys.nwb: check_spatial_series_dims - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeries'
+       Message: SpatialSeries should have 1 column (x), 2 columns (x, y), or 3 columns (x, y, z).
+
+0.1  /tmp/nwb_versions/sub-TIGRE296_behavior+ophys.nwb: check_data_orientation - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeries'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.2  /tmp/nwb_versions/sub-TIGRE296_behavior+ophys.nwb: check_timestamps_match_first_dimension - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeries'
+       Message: The length of the first dimension of data does not match the length of timestamps.
+

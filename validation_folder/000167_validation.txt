@@ -1,0 +1,109 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-07-27 10:50:28.484779+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 58 issues over 2 files:
+      55 - CRITICAL
+       3 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb: check_image_series_external_file_valid - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
+       Message: The external file 'G:/DATA/2P/RAW/20200213/Mouse#7/exp/PLANES/Plane_1\plane_Z0.ome.tiff' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_3'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.2  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_2'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.3  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_1'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.4  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_3'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.5  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_2'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.6  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_1'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.7  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_3'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.8  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_2'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.9  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_1'
+       Message: The second dimension of data does not match the length of rois. Your data may be transposed.
+
+0.10  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_3'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.11  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_2'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.12  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_1'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.13  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_3'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.14  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_2'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.15  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_1'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.16  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_3'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.17  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_2'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.18  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_1'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.19  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_3'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.20  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_2'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.21  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Neuropil/Plane_1'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.22  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_3'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.23  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_2'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.24  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Fluorescence/Plane_1'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.25  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_3'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.26  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_2'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+0.27  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/Deconvolved/Plane_1'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.28  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+        Message: Subject species 'mouse' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+1.29  /tmp/nwb_versions/sub-8_ses-20200204T180138_ophys.nwb: check_image_series_external_file_relative - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
+        Message: The external file '/Volumes/Simon_2018/DATA/2P/RAW/20200204/Mouse#8/exp/PLANES/Plane_1/plane_Z0.ome.tiff' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
+
