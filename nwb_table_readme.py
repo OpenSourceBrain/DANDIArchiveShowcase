@@ -3,7 +3,6 @@ import pandas as pd
 import yaml
 import math
 import datalad.api as dl
-from mdtable import MDTable
 import json
 from datetime import date
 from dandi.pynwb_utils import get_nwb_version
@@ -77,7 +76,7 @@ def create_dandiset_summary():
             smallest_size_lst = []
             counter = 0
             valid_path_url = 0
-            # a dataset might only have 1 file or several files, so don't hardcode max_counter
+            # a dataset might only have 1 file, and max_counter is the number of valid nwb files we want
             max_counter = 2
             if len(json_df) == 1:
                 max_counter = 1
@@ -100,22 +99,24 @@ def create_dandiset_summary():
                     break
             largest_file_size = json_df['size'].iloc[-1]
             report_message = []
+            # in case files larger than the hard_limit
+            validation_summary = 'NULL_FILE_LIMIT'
             # only download files that has size lower than the hard limit
             for i in range(len(path_lst)):
                 if smallest_size_lst[i] < hard_limit:
                     # download files
                     nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
-                    try:
-                    # validate file here first
-                        report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
-                                                               importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
-                        validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
-                    # this is bad practice, will change in the near future
-                    except:
-                        validation_summary = 'UNABLE'
-                        pass
                     # get nwb_version
                     nwb_version = get_nwb_version(nwb_path)
+                    # validate file here first
+                    try:
+                        report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
+                                                               importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
+
+                        validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
+                    except ValueError:
+                        validation_summary = 'UNABLE'
+                        pass
                     # uninstall file
                     os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
@@ -139,7 +140,7 @@ def create_dandiset_summary():
     dandi_metadata_readme.to_csv('dandiset_summary_readme.csv')
 
     # # remove the cloned dandisets folder
-    # dl.remove(dataset=root_folder)
+    dl.remove(dataset=root_folder)
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
     # the argument nwb_version is in case the function exits with error
@@ -161,8 +162,9 @@ def nwb_inspector_message_format(report_message,dds_id):
     save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
+    validation_file = os.path.join(save_folder, dds_id+'_validation.txt')
     print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
-    save_report(report_file_path=os.path.join(save_folder, dds_id+'_validation.txt'),
+    save_report(report_file_path=validation_file,
                 formatted_messages=format_messages(report_message, levels=['importance','file_path']),
                 overwrite=True)
 
@@ -176,6 +178,9 @@ def nwb_inspector_message_format(report_message,dds_id):
         else:
             validation_summary += ',' + k
         count_tmp += 1
+    # if a report is saved and validation_summary is not updated, its likely that no issues were found
+    if os.path.exists(validation_file) and validation_summary == '':
+        validation_summary = 'PASSED_VALIDATION'
     return validation_summary
 
 def update_readme():
@@ -199,8 +204,9 @@ def update_readme():
     nwb_pd.reset_index(inplace=True)
     dds_id_prefix = nwb_pd['identifier'].iloc[0].split(':')[0]
     nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
-    nwbe_compatible = [i + ',' for i in
-                       nwb_pd['identifier'].loc[nwb_pd['validation_summary'] == 'BEST_PRACTICE_VIOLATION']]
+    nwbe_compatible = sorted([i+',' for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
+                                                               | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
+    nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
     readme = '# DANDI Archive Showcase\n'
     readme += '\n'
@@ -229,26 +235,22 @@ def update_readme():
                 row] + ')*' + ': **' + nwb_pd['name'].iloc[row] + '**\n\n'
         except:
             pass
-        try:
-            readme += '- NWB version: ' + nwb_pd['nwb_version'].iloc[row] + '\n\n' '- Dandiset size: ' + str(
-                nwb_pd['num_bytes'].iloc[row]) + '\n\n'
-        except:
-            pass
-        try:
+        if not pd.isna(nwb_pd['nwb_version'].iloc[row]):
+            readme += '- NWB version: ' + nwb_pd['nwb_version'].iloc[row] + '\n\n'
+        if not pd.isna(nwb_pd['num_bytes'].iloc[row]):
+            readme += '- Dandiset size (in bytes): ' + str(nwb_pd['num_bytes'].iloc[row]) + '\n\n'
+        if not nwb_pd['validation_summary'].iloc[row] in ['NULL_FILE_LIMIT', 'UNABLE']:
             readme += '- Validation results summary: [' + nwb_pd['validation_summary'].iloc[
                 row] + ']' + '(%s.txt) \n\n' % (validation_file)
-        except:
-            pass
-        try:
-            var_measured = nwb_pd['variableMeasured'].iloc[row]
-            readme += '- Species: ' + nwb_pd['species'].iloc[row] + '\n\n' '- Variables measured: ' + ''.join(
-                var_measured) + '\n\n'
-        except:
-            pass
-        try:
+        else:
+            readme += '- Validation results summary: ' + nwb_pd['validation_summary'].iloc[row] + ' \n\n'
+        if not pd.isna(nwb_pd['species'].iloc[row]):
+            readme += '- Species: ' + nwb_pd['species'].iloc[row] + '\n\n'
+        if not pd.isna(nwb_pd['variableMeasured'].iloc[row]):
+            readme += '- Variables measured: ' + nwb_pd['variableMeasured'].iloc[row] + '\n\n'
+        if not pd.isna(nwb_pd['citation'].iloc[row]):
             readme += '- Source paper: ' + nwb_pd['citation'].iloc[row].split('(Vers')[0] + '\n\n'
-        except:
-            pass
+
         readme += '---'
         readme += '\n\n'
     readme += '</p></details>'

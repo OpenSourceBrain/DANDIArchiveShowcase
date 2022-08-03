@@ -2,15 +2,15 @@
 
 Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).
 
-## Summary statistics for the available NWB dandisets (Updated on 2022-08-01)
+## Summary statistics for the available NWB dandisets (Updated on 2022-08-03)
 
-- Total number of NWB dandisets: 100
+- Total number of NWB dandisets: 102
 
 - Median number of files in each NWB dandiset: 54.5
 
 - Median number of bytes in each NWB dandiset: 12161956576.5
 
-- NWB dandiset that are possibly NWBE compatible: 000005, 000013, 000021, 000034, 000043, 000048, 000053, 000060, 000064, 000067, 000068, 000069, 000107, 000117, 000122, 000126, 000147, 000165, 000173, 000212, 000217, 00022
+- NWB dandiset that are possibly NWBE compatible: 000005, 000008, 000010, 000012, 000013, 000015, 000021, 000027, 000034, 000035, 000043, 000048, 000053, 000060, 000064, 000067, 000068, 000069, 000107, 000117, 000122, 000126, 000127, 000128, 000129, 000130, 000138, 000139, 000140, 000147, 000148, 000165, 000173, 000212, 000217, 000220, 000221, 000226, 000230, 000232, 000233, 000239, 000245, 000292, 000293, 000295, 000297, 00029
 
 <details><summary> Summary information on the available NWB dandisets (more details in dandiset_summary.csv).
 </summary><p>
@@ -18,6 +18,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 
 *[DANDI:000003](https://dandiarchive.org/dandiset/000003/draft)*: **Physiological Properties and Behavioral Correlates of Hippocampal Granule Cells and Mossy Cells**
+
+- Dandiset size (in bytes): 2559248010229
+
+- Validation results summary: NULL_FILE_LIMIT 
 
 - Species: House mouse
 
@@ -31,7 +35,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 6197474020
+- Dandiset size (in bytes): 6197474020
 
 - Validation results summary: [PYNWB_VALIDATION,CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000004_validation.txt) 
 
@@ -47,7 +51,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.2
 
-- Dandiset size: 46436686324
+- Dandiset size (in bytes): 46436686324
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000005_validation.txt) 
 
@@ -63,7 +67,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.0.2
 
-- Dandiset size: 139600500
+- Dandiset size (in bytes): 139600500
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000006_validation.txt) 
 
@@ -79,7 +83,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.2
 
-- Dandiset size: 199439472
+- Dandiset size (in bytes): 199439472
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000007_validation.txt) 
 
@@ -95,7 +99,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 11922334254
+- Dandiset size (in bytes): 11922334254
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000008_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -109,7 +115,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 12919706852
+- Dandiset size (in bytes): 12919706852
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000009_validation.txt) 
 
@@ -125,7 +131,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 40006570644
+- Dandiset size (in bytes): 40006570644
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000010_validation.txt) 
 
 - Species: House mouse
 
@@ -139,7 +147,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 32435325542
+- Dandiset size (in bytes): 32435325542
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000011_validation.txt) 
 
@@ -155,7 +163,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 487524911
+- Dandiset size (in bytes): 487524911
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000012_validation.txt) 
 
 - Species: Human
 
@@ -169,7 +179,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.2
 
-- Dandiset size: 11408735292
+- Dandiset size (in bytes): 11408735292
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000013_validation.txt) 
 
@@ -185,7 +195,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 17159727736
+- Dandiset size (in bytes): 17159727736
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000015_validation.txt) 
 
 - Species: House mouse
 
@@ -199,9 +211,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.2
 
-- Dandiset size: 62572042499
+- Dandiset size (in bytes): 62572042499
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000016_validation.txt) 
+
+- Variables measured: ['BehavioralTimeSeries', 'PlaneSegmentation']
 
 - Source paper: Najafi, Farzaneh; Churchland, Anne K. (2022) Excitatory and inhibitory subnetworks are equally selective during decision-making and emerge simultaneously during learning 
 
@@ -211,7 +225,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 14682586049
+- Dandiset size (in bytes): 14682586049
 
 - Validation results summary: [PYNWB_VALIDATION,CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000017_validation.txt) 
 
@@ -227,7 +241,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.0.2
 
-- Dandiset size: 55585858956
+- Dandiset size (in bytes): 55585858956
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000019_validation.txt) 
 
@@ -243,7 +257,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 141856436428
+- Dandiset size (in bytes): 141856436428
 
 - Validation results summary: [PYNWB_VALIDATION](validation_folder/000020_validation.txt) 
 
@@ -259,7 +273,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.2
 
-- Dandiset size: 477562344354
+- Dandiset size (in bytes): 477562344354
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000021_validation.txt) 
 
@@ -273,6 +287,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000022](https://dandiarchive.org/dandiset/000022/draft)*: **20191003_AIBS_mouse_ecephys_functional_connectivity**
 
+- Dandiset size (in bytes): 374956840341
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: House mouse
 
 - Variables measured: ['LFP', 'ProcessingModule', 'Units']
@@ -285,7 +303,23 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 12401578899
+- Dandiset size (in bytes): 12401578899
+
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000023_validation.txt) 
+
+- Species: Human
+
+- Variables measured: ['ProcessingModule']
+
+- Source paper: Allen Institute for Brian Science (2022) Patch-seq recordings from human cortex (June 2020) 
+
+---
+
+*[DANDI:000023](https://dandiarchive.org/dandiset/000023/draft)*: **Patch-seq recordings from human cortex (June 2020)**
+
+- NWB version: 2.2.5
+
+- Dandiset size (in bytes): 12401578899
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000023_validation.txt) 
 
@@ -299,7 +333,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000025](https://dandiarchive.org/dandiset/000025/draft)*: **Example intracellular ephys data from LNMC & BBP**
 
-- Validation results summary: [UNABLE](validation_folder/000025_validation.txt) 
+- NWB version: 2.4.0
+
+- Dandiset size (in bytes): 13664814
+
+- Validation results summary: UNABLE 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -313,7 +351,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.0b
 
-- Dandiset size: 18792
+- Dandiset size (in bytes): 18792
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000027_validation.txt) 
 
 - Species: Brown rat
 
@@ -327,7 +367,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 42942229688
+- Dandiset size (in bytes): 42942229688
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000028_validation.txt) 
 
@@ -343,7 +383,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.0.2
 
-- Dandiset size: 20716164
+- Dandiset size (in bytes): 20716164
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000029_validation.txt) 
 
@@ -359,7 +399,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 74351014076
+- Dandiset size (in bytes): 74351014076
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000034_validation.txt) 
 
@@ -375,7 +415,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.1.0
 
-- Dandiset size: 1656166654
+- Dandiset size (in bytes): 1656166654
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000035_validation.txt) 
 
 - Species: House mouse
 
@@ -387,6 +429,12 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000036](https://dandiarchive.org/dandiset/000036/draft)*: **Allen Institute Openscope - Meaningful project**
 
+- Dandiset size (in bytes): 79771339536
+
+- Validation results summary: NULL_FILE_LIMIT 
+
+- Variables measured: ['BehavioralTimeSeries', 'PlaneSegmentation']
+
 - Source paper: Last, First (2022) Allen Institute Openscope - Meaningful project 
 
 ---
@@ -395,7 +443,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 115952997660
+- Dandiset size (in bytes): 115952997660
 
 - Validation results summary: [PYNWB_VALIDATION](validation_folder/000037_validation.txt) 
 
@@ -411,7 +459,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 22607247880
+- Dandiset size (in bytes): 22607247880
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000039_validation.txt) 
 
@@ -425,6 +473,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000041](https://dandiarchive.org/dandiset/000041/draft)*: **Network Homeostasis and State Dynamics of Neocortical Sleep**
 
+- Dandiset size (in bytes): 154863459017
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Brown rat
 
 - Variables measured: ['Units', 'LFP', 'ElectricalSeries']
@@ -437,7 +489,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 3271279661
+- Dandiset size (in bytes): 3271279661
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000043_validation.txt) 
 
@@ -451,6 +503,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000044](https://dandiarchive.org/dandiset/000044/draft)*: **Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences**
 
+- Dandiset size (in bytes): 65708919583
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Brown rat
 
 - Variables measured: ['ElectricalSeries', 'LFP', 'Units']
@@ -463,7 +519,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 97844923040
+- Dandiset size (in bytes): 97844923040
 
 - Validation results summary: [ERROR](validation_folder/000045_validation.txt) 
 
@@ -479,9 +535,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 590267164
+- Dandiset size (in bytes): 590267164
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000048_validation.txt) 
+
+- Variables measured: ['PlaneSegmentation', 'TwoPhotonSeries', 'ElectrodeGroup', 'Units']
 
 - Source paper: Ledochowitsch, Peter; Huang, Lawrence; Knoblich, Ulf; Oliver, Michael; Lecoq, Jerome; Reid, Clay; Li, Lu; Zeng, Hongkui; Koch, Christof; Waters, Jack; Vries, Saskia E.J. de; Buice, Michael A. (2022) Electrical and optical physiology in in vivo population-scale two-photon calcium imaging 
 
@@ -491,7 +549,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 22211886496
+- Dandiset size (in bytes): 22211886496
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000049_validation.txt) 
 
@@ -507,7 +565,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 26372579632
+- Dandiset size (in bytes): 26372579632
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000050_validation.txt) 
 
@@ -523,7 +581,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 585926072
+- Dandiset size (in bytes): 585926072
 
 - Validation results summary: [CRITICAL](validation_folder/000051_validation.txt) 
 
@@ -539,7 +597,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 1393128766605
+- Dandiset size (in bytes): 1393128766605
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000053_validation.txt) 
 
@@ -555,7 +613,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 1959122435577
+- Dandiset size (in bytes): 1959122435577
 
 - Validation results summary: [CRITICAL](validation_folder/000054_validation.txt) 
 
@@ -569,6 +627,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000055](https://dandiarchive.org/dandiset/000055/draft)*: **AJILE12: Long-term naturalistic human intracranial neural recordings and pose**
 
+- Dandiset size (in bytes): 845869698341
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Human
 
 - Variables measured: ['Position', 'ProcessingModule', 'ElectricalSeries', 'ElectrodeGroup']
@@ -579,6 +641,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000056](https://dandiarchive.org/dandiset/000056/draft)*: **Internally organized mechanisms of the head direction sense**
 
+- Dandiset size (in bytes): 207733008367
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: House mouse
 
 - Variables measured: ['ElectricalSeries', 'Units', 'LFP', 'Position', 'ProcessingModule']
@@ -588,6 +654,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 ---
 
 *[DANDI:000059](https://dandiarchive.org/dandiset/000059/draft)*: **Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies**
+
+- Dandiset size (in bytes): 3261512040681
+
+- Validation results summary: NULL_FILE_LIMIT 
 
 - Species: Brown rat
 
@@ -601,7 +671,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 1009087545
+- Dandiset size (in bytes): 1009087545
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000060_validation.txt) 
 
@@ -615,6 +685,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000061](https://dandiarchive.org/dandiset/000061/draft)*: **Reactivations of emotional memory in the hippocampus–amygdala system during sleep**
 
+- Dandiset size (in bytes): 1952634651805
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Brown rat
 
 - Variables measured: ['Units', 'LFP', 'ElectricalSeries', 'ProcessingModule']
@@ -627,9 +701,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 218366752
+- Dandiset size (in bytes): 218366752
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000064_validation.txt) 
+
+- Variables measured: []
 
 - Source paper: Simulation extension example (2022). 
 
@@ -639,7 +715,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 94565736755
+- Dandiset size (in bytes): 94565736755
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000067_validation.txt) 
 
@@ -655,9 +731,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 362448
+- Dandiset size (in bytes): 362448
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000068_validation.txt) 
+
+- Variables measured: ['VoltageClampSeries', 'CurrentClampStimulusSeries', 'CurrentClampSeries', 'VoltageClampStimulusSeries']
 
 - Source paper: Testing (2022). 
 
@@ -667,7 +745,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.2
 
-- Dandiset size: 297607244
+- Dandiset size (in bytes): 297607244
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000069_validation.txt) 
 
@@ -681,6 +759,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000070](https://dandiarchive.org/dandiset/000070/draft)*: **Neural population dynamics during reaching**
 
+- Dandiset size (in bytes): 45909708322
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Rhesus monkey
 
 - Variables measured: ['Position', 'Units']
@@ -693,9 +775,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.4
 
-- Dandiset size: 39294842
+- Dandiset size (in bytes): 39294842
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000107_validation.txt) 
+
+- Variables measured: []
 
 - Source paper: IVSCC stimulus sets (2022). 
 
@@ -705,7 +789,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 14212577893
+- Dandiset size (in bytes): 14212577893
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000109_validation.txt) 
 
@@ -719,6 +803,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000115](https://dandiarchive.org/dandiset/000115/draft)*: **Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice**
 
+- Dandiset size (in bytes): 9103698757665
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Rat; norway rat; rats; brown rat
 
 - Variables measured: ['ElectricalSeries', 'Position', 'SpatialSeries', 'BehavioralEvents', 'ProcessingModule']
@@ -731,9 +819,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 142552658
+- Dandiset size (in bytes): 142552658
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000117_validation.txt) 
+
+- Variables measured: ['CurrentClampStimulusSeries', 'CurrentClampSeries', 'VoltageClampSeries', 'VoltageClampStimulusSeries']
 
 - Source paper: Zhang, Guang-Wei (2022) 1U01MH116990-01_July_2021 
 
@@ -743,9 +833,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 49898320
+- Dandiset size (in bytes): 49898320
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000122_validation.txt) 
+
+- Variables measured: []
 
 - Source paper: Erat Sleiter, Darin (2022) Human fNIRS recordings of motor cortex during finger-tapping task 
 
@@ -755,7 +847,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 167058036
+- Dandiset size (in bytes): 167058036
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000126_validation.txt) 
 
@@ -771,7 +863,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 1823368810
+- Dandiset size (in bytes): 1823368810
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000127_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -785,7 +879,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 694004935
+- Dandiset size (in bytes): 694004935
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000128_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -799,7 +895,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 50965512
+- Dandiset size (in bytes): 50965512
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000129_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -813,7 +911,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 15673496
+- Dandiset size (in bytes): 15673496
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000130_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -827,7 +927,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 149392888
+- Dandiset size (in bytes): 149392888
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000138_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -841,7 +943,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 77300692
+- Dandiset size (in bytes): 77300692
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000139_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -855,7 +959,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 29896840
+- Dandiset size (in bytes): 29896840
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000140_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -869,7 +975,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 26800026646
+- Dandiset size (in bytes): 26800026646
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000142_validation.txt) 
 
@@ -885,9 +991,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 589064856
+- Dandiset size (in bytes): 589064856
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000144_validation.txt) 
+
+- Variables measured: ['PlaneSegmentation', 'ProcessingModule', 'TwoPhotonSeries']
 
 - Source paper: Roat, Chris (2022) croat-test 
 
@@ -897,7 +1005,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 77665528
+- Dandiset size (in bytes): 77665528
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000147_validation.txt) 
 
@@ -913,7 +1021,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 929635440
+- Dandiset size (in bytes): 929635440
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000148_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -924,6 +1034,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 ---
 
 *[DANDI:000149](https://dandiarchive.org/dandiset/000149/draft)*: **IBL ephys data**
+
+- Dandiset size (in bytes): 1980839948948
+
+- Validation results summary: NULL_FILE_LIMIT 
 
 - Species: House mouse
 
@@ -937,7 +1051,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 98043538088
+- Dandiset size (in bytes): 98043538088
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000165_validation.txt) 
 
@@ -951,6 +1065,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000166](https://dandiarchive.org/dandiset/000166/draft)*: **Layer-Specific Physiological Features and Interlaminar Interactions in the Primary Visual Cortex of the Mouse**
 
+- Dandiset size (in bytes): 787191910918
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: House mouse
 
 - Variables measured: ['ElectrodeGroup', 'Units', 'LFP']
@@ -963,7 +1081,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 975789016
+- Dandiset size (in bytes): 975789016
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000167_validation.txt) 
 
@@ -979,7 +1097,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 1379111602445
+- Dandiset size (in bytes): 1379111602445
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000168_validation.txt) 
 
@@ -995,7 +1113,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 240963992
+- Dandiset size (in bytes): 240963992
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000173_validation.txt) 
 
@@ -1011,7 +1129,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 118359600
+- Dandiset size (in bytes): 118359600
 
 - Validation results summary: [CRITICAL](validation_folder/000206_validation.txt) 
 
@@ -1027,7 +1145,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 50344811
+- Dandiset size (in bytes): 50344811
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000207_validation.txt) 
 
@@ -1043,7 +1161,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 11109213211
+- Dandiset size (in bytes): 11109213211
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000209_validation.txt) 
 
@@ -1055,25 +1173,11 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 ---
 
-*[DANDI:000211](https://dandiarchive.org/dandiset/000211/draft)*: **UHN whole-cell excitability recordings from human cortical neurons**
-
-- NWB version: 2.2.5
-
-- Dandiset size: 252235346
-
-- Species: Human
-
-- Variables measured: []
-
-- Source paper: Howard, Derek; Chameh, Homeira Moradi; Valiante, Taufik; Tripathy, Shreejoy (2022) UHN whole-cell excitability recordings from human cortical neurons 
-
----
-
 *[DANDI:000212](https://dandiarchive.org/dandiset/000212/draft)*: **Tracking of Drosophila during egg-laying decisions**
 
 - NWB version: 2.4.0
 
-- Dandiset size: 8226021592
+- Dandiset size (in bytes): 8226021592
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000212_validation.txt) 
 
@@ -1089,7 +1193,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 1527009268863
+- Dandiset size (in bytes): 1527009268863
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000213_validation.txt) 
 
@@ -1105,7 +1209,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 2152038728
+- Dandiset size (in bytes): 2152038728
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000217_validation.txt) 
 
@@ -1121,7 +1225,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 1512863479850
+- Dandiset size (in bytes): 1512863479850
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000218_validation.txt) 
 
@@ -1137,7 +1241,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 73147035938
+- Dandiset size (in bytes): 73147035938
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000219_validation.txt) 
 
@@ -1153,7 +1257,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 1202846808
+- Dandiset size (in bytes): 1202846808
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000220_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1167,7 +1273,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 4422550232
+- Dandiset size (in bytes): 4422550232
 
 - Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000221_validation.txt) 
 
@@ -1181,6 +1287,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 *[DANDI:000223](https://dandiarchive.org/dandiset/000223/draft)*: **Inferring monosynaptic connections from paired spine calcium imaging and large-scale recording of extracellular spiking**
 
+- Dandiset size (in bytes): 84273722669
+
+- Validation results summary: NULL_FILE_LIMIT 
+
 - Species: Rattus norvegicus - Norway rat
 
 - Variables measured: ['PlaneSegmentation', 'ElectrodeGroup', 'ProcessingModule', 'ElectricalSeries', 'TwoPhotonSeries', 'Units']
@@ -1193,7 +1303,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 13745152235
+- Dandiset size (in bytes): 13745152235
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000226_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1207,7 +1319,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.2.5
 
-- Dandiset size: 5816158527
+- Dandiset size (in bytes): 5816158527
 
 - Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000228_validation.txt) 
 
@@ -1223,7 +1335,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 244968456
+- Dandiset size (in bytes): 244968456
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000230_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1237,7 +1351,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 1996516623953
+- Dandiset size (in bytes): 1996516623953
 
 - Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000231_validation.txt) 
 
@@ -1253,7 +1367,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 36639903614
+- Dandiset size (in bytes): 36639903614
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000232_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1267,7 +1383,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 12320920243380
+- Dandiset size (in bytes): 12320920243380
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000233_validation.txt) 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -1281,7 +1399,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 11769901909
+- Dandiset size (in bytes): 11769901909
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000239_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1292,6 +1412,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 ---
 
 *[DANDI:000244](https://dandiarchive.org/dandiset/000244/draft)*: **One photon mesoscale calcium imaging of multiple cell types**
+
+- Dandiset size (in bytes): 1068310244612
+
+- Validation results summary: NULL_FILE_LIMIT 
 
 - Species: Mus musculus - House mouse
 
@@ -1305,7 +1429,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 408910387
+- Dandiset size (in bytes): 408910387
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000245_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1316,6 +1442,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 ---
 
 *[DANDI:000246](https://dandiarchive.org/dandiset/000246/draft)*: **developing CaMPARI3**
+
+- Dandiset size (in bytes): 34485962600
+
+- Validation results summary: NULL_FILE_LIMIT 
 
 - Species: Mus musculus - House mouse
 
@@ -1329,7 +1459,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 97968237237
+- Dandiset size (in bytes): 97968237237
 
 - Validation results summary: [CRITICAL](validation_folder/000249_validation.txt) 
 
@@ -1345,7 +1475,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.4.0
 
-- Dandiset size: 2175642248
+- Dandiset size (in bytes): 2175642248
 
 - Validation results summary: [ERROR,BEST_PRACTICE_VIOLATION](validation_folder/000251_validation.txt) 
 
@@ -1361,7 +1491,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 1049737334
+- Dandiset size (in bytes): 1049737334
 
 - Validation results summary: [PYNWB_VALIDATION](validation_folder/000288_validation.txt) 
 
@@ -1377,7 +1507,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 13764872
+- Dandiset size (in bytes): 13764872
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000292_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1391,7 +1523,9 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.3.0
 
-- Dandiset size: 234976142
+- Dandiset size (in bytes): 234976142
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000293_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1402,6 +1536,10 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 ---
 
 *[DANDI:000294](https://dandiarchive.org/dandiset/000294/draft)*: **A multi-modal fitting approach to construct single-neuron models with patch-clamp and high-density microelectrode arrays**
+
+- Dandiset size (in bytes): 18173614543
+
+- Validation results summary: NULL_FILE_LIMIT 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -1415,13 +1553,47 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - NWB version: 2.5.0
 
-- Dandiset size: 476091831
+- Dandiset size (in bytes): 476091831
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000295_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
 - Variables measured: ['CurrentClampSeries', 'CurrentClampStimulusSeries']
 
 - Source paper: Zhang, Guang-Wei; Tao, Can (2022) Electrophysiological properties of adult mouse spinal cord neurons - 22Q2_Ephys_DANDI 
+
+---
+
+*[DANDI:000297](https://dandiarchive.org/dandiset/000297/draft)*: **UHN whole-cell patch-clamp excitability recordings from human cortical neurons**
+
+- NWB version: 2.3.0
+
+- Dandiset size (in bytes): 231099211
+
+- Validation results summary: [PASSED_VALIDATION](validation_folder/000297_validation.txt) 
+
+- Species: Homo sapiens - Human
+
+- Variables measured: ['CurrentClampSeries', 'VoltageClampStimulusSeries', 'CurrentClampStimulusSeries']
+
+- Source paper: Howard, Derek; Homeira Moradi, Chameh; Taufik A Valiante; Shreejoy Tripathy (2022) UHN whole-cell patch-clamp excitability recordings from human cortical neurons 
+
+---
+
+*[DANDI:000299](https://dandiarchive.org/dandiset/000299/draft)*: **Stephen Test Set**
+
+- NWB version: 2.4.0
+
+- Dandiset size (in bytes): 232448
+
+- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000299_validation.txt) 
+
+- Species: Rattus norvegicus - Norway rat
+
+- Variables measured: ['ElectricalSeries', 'ElectrodeGroup', 'Units']
+
+- Source paper: Cowen, Stephen (2022) Stephen Test Set 
 
 ---
 

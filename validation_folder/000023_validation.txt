@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-07-27 00:57:41.099992+07:00
+Timestamp: 2022-08-02 13:50:56.122697+07:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.5
 
