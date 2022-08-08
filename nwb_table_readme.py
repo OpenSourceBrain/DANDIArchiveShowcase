@@ -4,6 +4,7 @@ import yaml
 import math
 import datalad.api as dl
 import json
+import argparse
 from datetime import date
 from dandi.pynwb_utils import get_nwb_version
 from nwbinspector import inspect_nwb
@@ -11,8 +12,11 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi import download
 
-def create_dandiset_summary():
-    hard_limit = 1000000000
+def create_dandiset_summary(args_sizelimit=None):
+    if args_sizelimit:
+        hard_limit = 1000000000
+    else:
+        hard_limit = 100000000000
     json_file = '.dandi/assets.json'
     # directory for dandisets
     root_folder = '/tmp/dandisets'
@@ -259,7 +263,11 @@ def update_readme():
     rmd.close()
 
 if __name__ == '__main__':
-    create_dandiset_summary()
+    # option for filesize limit
+    parser = argparse.ArgumentParser(description='cap limit on downloaded file size')
+    parser.add_argument('--size_limit', default=False, action='store_true', help='only download files whose sizes are less than a defined hard limit')
+    args = parser.parse_args()
+    create_dandiset_summary(args.size_limit)
     update_readme()
 
 

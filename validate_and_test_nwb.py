@@ -9,7 +9,7 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi.dandiapi import DandiAPIClient
 from datetime import date
-from nwb_table_readme import update_readme
+
 # def test_compatibility(nwb_id):
 
 def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=None):
@@ -145,4 +145,3 @@ if __name__ == "__main__":
                         help='return detailed report messages')
     args = parser.parse_args()
     validate_nwb(args.test,args.update, args.succint)
-    # update_readme()
