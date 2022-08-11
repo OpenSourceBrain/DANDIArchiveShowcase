@@ -2,17 +2,20 @@ import os
 import pandas as pd
 import yaml
 import math
-import datalad.api as dl
 import json
 from datetime import date
-from dandi.pynwb_utils import get_nwb_version
 from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
-from dandi import download
 
-def create_dandiset_summary():
-    hard_limit = 1000000000
+
+def create_dandiset_summary(hard_limit = 1000000000):
+
+    from dandi.pynwb_utils import get_nwb_version
+    import datalad.api as dl
+    from dandi import download
+
+
     json_file = '.dandi/assets.json'
     # directory for dandisets
     root_folder = '/tmp/dandisets'
@@ -259,7 +262,5 @@ def update_readme():
     rmd.close()
 
 if __name__ == '__main__':
-    create_dandiset_summary()
+    create_dandiset_summary(hard_limit=10)
     update_readme()
-
-
