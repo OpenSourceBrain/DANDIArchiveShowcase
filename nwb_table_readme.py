@@ -29,6 +29,10 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
             dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
     else:
         dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
+    # directory for storing validation files and readme file
+    save_folder = 'validation_folder'
+    if not os.path.exists(save_folder):
+        os.mkdir(save_folder)
 
     dandiset_folder_name = sorted([item for item in os.listdir(root_folder) if item.startswith('0')])
 
@@ -126,7 +130,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
 
-                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
+                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name,path_lst)
                         except ValueError:
                             validation_summary = 'UNABLE'
                             pass
@@ -139,7 +143,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
-        dandi_metadata.to_csv('dandiset_summary_tmp.csv')
+        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
 
     # only get the relevant columns
@@ -148,7 +152,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                          'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv('dandiset_summary.csv')
+    dandi_metadata_final.to_csv(os.path.join(save_folder,'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
     dl.remove(dataset=root_folder)
@@ -170,7 +174,7 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
         download.download(dandi_url, output_dir=save_folder)
     return tmp_nwb_path
 
-def nwb_inspector_message_format(report_message,dds_id):
+def nwb_inspector_message_format(report_message,dds_id,path_lst):
     save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
@@ -179,7 +183,6 @@ def nwb_inspector_message_format(report_message,dds_id):
     save_report(report_file_path=validation_file,
                 formatted_messages=format_messages(report_message, levels=['importance','file_path']),
                 overwrite=True)
-
     # get validation types summary
     message_form = MessageFormatter(messages=report_message, levels=['file_path', 'importance'])
     validation_summary = ''
@@ -196,14 +199,16 @@ def nwb_inspector_message_format(report_message,dds_id):
     return validation_summary
 
 def update_readme():
-    rd_file = 'README.md'
-    if not os.path.exists('dandiset_summary.csv'):
+    save_folder = 'validation_folder'
+    rd_file = os.path.join(save_folder,'README.md')
+    summary_file = os.path.join(save_folder,'dandiset_summary.csv')
+    if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
     date_time = date.today()
-    dandi_metadata_readme = pd.read_csv('dandiset_summary.csv')
+    dandi_metadata_readme = pd.read_csv(summary_file)
     dandi_metadata_readme.drop(dandi_metadata_readme.filter(regex="Unnamed"), axis=1, inplace=True)
-    dandi_metadata_readme.to_csv('dandiset_summary.csv', index=False)
+    dandi_metadata_readme.to_csv(summary_file, index=False)
     print(dandi_metadata_readme)
     # summary statistics here
     data_type_dict = dandi_metadata_readme['data_type'].value_counts().to_dict()
@@ -220,11 +225,11 @@ def update_readme():
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
     nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
-    readme = '# DANDI Archive Showcase\n'
-    readme += '\n'
-    readme += 'Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).\n'
-    readme += '\n'
-    readme += '## Summary statistics for the available NWB dandisets (Updated on ' + str(date_time) + ')' '\n'
+    # readme = '# DANDI Archive Showcase\n'
+    # readme += '\n'
+    # readme += 'Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).\n'
+    # readme += '\n'
+    readme = '# Summary statistics for the available NWB dandisets (Updated on ' + str(date_time) + ')' '\n'
     readme += '\n'
     readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
     readme += '\n'
