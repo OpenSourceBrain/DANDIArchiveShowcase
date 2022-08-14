@@ -47,7 +47,7 @@ jobs:
     - name: Tests
       run: |
         echo Testing scripts...
-        python nwb_table_readme.py
+        python nwb_table_readme.py --dandiset_limit
 #        python validate_and_test_nwb.py --test --succint
 
     - name: Final file info

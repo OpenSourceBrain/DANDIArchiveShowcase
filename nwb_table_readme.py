@@ -156,7 +156,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                          'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv(os.path.join(save_folder, 'validation_folder/dandiset_summary.csv'))
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
     dl.remove(dataset=root_folder)
