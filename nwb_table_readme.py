@@ -12,7 +12,11 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi import download
 
-def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,args_updatereadme=None):
+def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
+                            args_updatereadme=None,args_readmeonly=None):
+    # if users want to update readme only
+    if args_readmeonly:
+        return args_readmeonly
     # if users want no limit on file size for downloading
     if args_nosizelimit:
         hard_limit = 100000000000
@@ -152,7 +156,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                          'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv(os.path.join(save_folder,'dandiset_summary.csv'))
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
     dl.remove(dataset=root_folder)
@@ -201,7 +205,7 @@ def nwb_inspector_message_format(report_message,dds_id,path_lst):
 def update_readme():
     save_folder = 'validation_folder'
     rd_file = os.path.join(save_folder,'README.md')
-    summary_file = os.path.join(save_folder,'dandiset_summary.csv')
+    summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
@@ -246,7 +250,7 @@ def update_readme():
 
     for row in nwb_pd.index:
         ref = nwb_pd['identifier'].iloc[row]
-        validation_file = 'validation_folder/' + ref + '_validation'
+        validation_file = ref + '_validation'
         try:
             readme += '*[DANDI:' + nwb_pd['identifier'].iloc[row] + ']' + '(' + nwb_pd['url'].iloc[
                 row] + ')*' + ': **' + nwb_pd['name'].iloc[row] + '**\n\n'
@@ -286,8 +290,11 @@ if __name__ == '__main__':
                         help='only process first 10 dandisets if so chosen')
     parser.add_argument('--update_readme_option', default=False, action='store_true',
                         help='update readme file after summary file is created')
+    parser.add_argument('--update_readme_only', default=False, action='store_true',
+                        help='update readme file without creating summary file')
     args = parser.parse_args()
-    update_readme_option=create_dandiset_summary(args.no_download,args.no_sizelimit,args.dandiset_limit,args.update_readme_option)
+    update_readme_option=create_dandiset_summary(args.no_download,args.no_sizelimit,args.dandiset_limit,
+                                                 args.update_readme_option,args.update_readme_only)
 
     if update_readme_option:
         update_readme()

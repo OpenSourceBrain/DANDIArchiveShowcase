@@ -1,8 +1,4 @@
-# DANDI Archive Showcase
-
-Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).
-
-## Summary statistics for the available NWB dandisets (Updated on 2022-08-03)
+# Summary statistics for the available NWB dandisets (Updated on 2022-08-14)
 
 - Total number of NWB dandisets: 102
 
@@ -37,7 +33,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 6197474020
 
-- Validation results summary: [PYNWB_VALIDATION,CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000004_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,CRITICAL,BEST_PRACTICE_VIOLATION](000004_validation.txt) 
 
 - Species: Human
 
@@ -53,7 +49,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 46436686324
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000005_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000005_validation.txt) 
 
 - Species: House mouse
 
@@ -69,7 +65,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 139600500
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000006_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000006_validation.txt) 
 
 - Species: House mouse
 
@@ -85,7 +81,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 199439472
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000007_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000007_validation.txt) 
 
 - Species: House mouse
 
@@ -101,7 +97,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 11922334254
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000008_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000008_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -117,7 +113,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 12919706852
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000009_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000009_validation.txt) 
 
 - Species: House mouse
 
@@ -133,7 +129,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 40006570644
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000010_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000010_validation.txt) 
 
 - Species: House mouse
 
@@ -149,7 +145,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 32435325542
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000011_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000011_validation.txt) 
 
 - Species: House mouse
 
@@ -165,7 +161,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 487524911
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000012_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000012_validation.txt) 
 
 - Species: Human
 
@@ -181,7 +177,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 11408735292
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000013_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000013_validation.txt) 
 
 - Species: House mouse
 
@@ -197,7 +193,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 17159727736
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000015_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000015_validation.txt) 
 
 - Species: House mouse
 
@@ -213,7 +209,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 62572042499
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000016_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000016_validation.txt) 
 
 - Variables measured: ['BehavioralTimeSeries', 'PlaneSegmentation']
 
@@ -227,7 +223,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 14682586049
 
-- Validation results summary: [PYNWB_VALIDATION,CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000017_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,CRITICAL,BEST_PRACTICE_VIOLATION](000017_validation.txt) 
 
 - Species: House mouse
 
@@ -243,7 +239,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 55585858956
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000019_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000019_validation.txt) 
 
 - Species: Human
 
@@ -259,7 +255,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 141856436428
 
-- Validation results summary: [PYNWB_VALIDATION](validation_folder/000020_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION](000020_validation.txt) 
 
 - Species: House mouse
 
@@ -275,7 +271,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 477562344354
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000021_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000021_validation.txt) 
 
 - Species: House mouse
 
@@ -305,7 +301,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 12401578899
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000023_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000023_validation.txt) 
 
 - Species: Human
 
@@ -321,7 +317,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 12401578899
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000023_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000023_validation.txt) 
 
 - Species: Human
 
@@ -353,7 +349,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 18792
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000027_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000027_validation.txt) 
 
 - Species: Brown rat
 
@@ -369,7 +365,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 42942229688
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000028_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000028_validation.txt) 
 
 - Species: House mouse
 
@@ -385,7 +381,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 20716164
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000029_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000029_validation.txt) 
 
 - Species: House mouse
 
@@ -401,7 +397,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 74351014076
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000034_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000034_validation.txt) 
 
 - Species: House mouse
 
@@ -417,7 +413,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1656166654
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000035_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000035_validation.txt) 
 
 - Species: House mouse
 
@@ -445,7 +441,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 115952997660
 
-- Validation results summary: [PYNWB_VALIDATION](validation_folder/000037_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION](000037_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -461,7 +457,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 22607247880
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000039_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000039_validation.txt) 
 
 - Species: House mouse
 
@@ -491,7 +487,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 3271279661
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000043_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000043_validation.txt) 
 
 - Species: House mouse
 
@@ -521,7 +517,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 97844923040
 
-- Validation results summary: [ERROR](validation_folder/000045_validation.txt) 
+- Validation results summary: [ERROR](000045_validation.txt) 
 
 - Species: House mouse
 
@@ -537,7 +533,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 590267164
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000048_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000048_validation.txt) 
 
 - Variables measured: ['PlaneSegmentation', 'TwoPhotonSeries', 'ElectrodeGroup', 'Units']
 
@@ -551,7 +547,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 22211886496
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000049_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000049_validation.txt) 
 
 - Species: House mouse
 
@@ -567,7 +563,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 26372579632
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000050_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000050_validation.txt) 
 
 - Species: House mouse
 
@@ -583,7 +579,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 585926072
 
-- Validation results summary: [CRITICAL](validation_folder/000051_validation.txt) 
+- Validation results summary: [CRITICAL](000051_validation.txt) 
 
 - Species: Human
 
@@ -599,7 +595,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1393128766605
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000053_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000053_validation.txt) 
 
 - Species: House mouse
 
@@ -615,7 +611,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1959122435577
 
-- Validation results summary: [CRITICAL](validation_folder/000054_validation.txt) 
+- Validation results summary: [CRITICAL](000054_validation.txt) 
 
 - Species: House mouse
 
@@ -673,7 +669,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1009087545
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000060_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000060_validation.txt) 
 
 - Species: House mouse
 
@@ -703,7 +699,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 218366752
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000064_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000064_validation.txt) 
 
 - Variables measured: []
 
@@ -717,7 +713,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 94565736755
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000067_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000067_validation.txt) 
 
 - Species: Brown rat
 
@@ -733,7 +729,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 362448
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000068_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000068_validation.txt) 
 
 - Variables measured: ['VoltageClampSeries', 'CurrentClampStimulusSeries', 'CurrentClampSeries', 'VoltageClampStimulusSeries']
 
@@ -747,7 +743,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 297607244
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000069_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000069_validation.txt) 
 
 - Species: House mouse
 
@@ -777,7 +773,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 39294842
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000107_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000107_validation.txt) 
 
 - Variables measured: []
 
@@ -791,7 +787,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 14212577893
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000109_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000109_validation.txt) 
 
 - Species: Human
 
@@ -821,7 +817,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 142552658
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000117_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000117_validation.txt) 
 
 - Variables measured: ['CurrentClampStimulusSeries', 'CurrentClampSeries', 'VoltageClampSeries', 'VoltageClampStimulusSeries']
 
@@ -835,7 +831,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 49898320
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000122_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000122_validation.txt) 
 
 - Variables measured: []
 
@@ -849,7 +845,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 167058036
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000126_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000126_validation.txt) 
 
 - Species: House mouse
 
@@ -865,7 +861,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1823368810
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000127_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000127_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -881,7 +877,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 694004935
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000128_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000128_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -897,7 +893,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 50965512
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000129_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000129_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -913,7 +909,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 15673496
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000130_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000130_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -929,7 +925,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 149392888
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000138_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000138_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -945,7 +941,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 77300692
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000139_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000139_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -961,7 +957,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 29896840
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000140_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000140_validation.txt) 
 
 - Species: Rhesus monkey
 
@@ -977,7 +973,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 26800026646
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000142_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000142_validation.txt) 
 
 - Species: Human
 
@@ -993,7 +989,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 589064856
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000144_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000144_validation.txt) 
 
 - Variables measured: ['PlaneSegmentation', 'ProcessingModule', 'TwoPhotonSeries']
 
@@ -1007,7 +1003,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 77665528
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000147_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000147_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1023,7 +1019,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 929635440
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000148_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000148_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1053,7 +1049,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 98043538088
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000165_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000165_validation.txt) 
 
 - Species: House mouse
 
@@ -1083,7 +1079,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 975789016
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000167_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000167_validation.txt) 
 
 - Species: House mouse
 
@@ -1099,7 +1095,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1379111602445
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000168_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000168_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1115,7 +1111,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 240963992
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000173_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000173_validation.txt) 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -1131,7 +1127,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 118359600
 
-- Validation results summary: [CRITICAL](validation_folder/000206_validation.txt) 
+- Validation results summary: [CRITICAL](000206_validation.txt) 
 
 - Species: House mouse
 
@@ -1147,7 +1143,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 50344811
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000207_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000207_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1163,7 +1159,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 11109213211
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000209_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000209_validation.txt) 
 
 - Species: Human
 
@@ -1179,7 +1175,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 8226021592
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000212_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000212_validation.txt) 
 
 - Species: Drosophila melanogaster - Fruit fly
 
@@ -1195,7 +1191,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1527009268863
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000213_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000213_validation.txt) 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -1211,7 +1207,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 2152038728
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000217_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000217_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1227,7 +1223,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1512863479850
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000218_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000218_validation.txt) 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -1243,7 +1239,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 73147035938
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000219_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000219_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1259,7 +1255,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1202846808
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000220_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000220_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1275,7 +1271,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 4422550232
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000221_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000221_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1305,7 +1301,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 13745152235
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000226_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000226_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1321,7 +1317,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 5816158527
 
-- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](validation_folder/000228_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION,BEST_PRACTICE_VIOLATION](000228_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1337,7 +1333,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 244968456
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000230_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000230_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1353,7 +1349,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1996516623953
 
-- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](validation_folder/000231_validation.txt) 
+- Validation results summary: [CRITICAL,BEST_PRACTICE_VIOLATION](000231_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1369,7 +1365,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 36639903614
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000232_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000232_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1385,7 +1381,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 12320920243380
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000233_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000233_validation.txt) 
 
 - Species: Rattus norvegicus - Norway rat
 
@@ -1401,7 +1397,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 11769901909
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000239_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000239_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1431,7 +1427,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 408910387
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000245_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000245_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1461,7 +1457,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 97968237237
 
-- Validation results summary: [CRITICAL](validation_folder/000249_validation.txt) 
+- Validation results summary: [CRITICAL](000249_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1477,7 +1473,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 2175642248
 
-- Validation results summary: [ERROR,BEST_PRACTICE_VIOLATION](validation_folder/000251_validation.txt) 
+- Validation results summary: [ERROR,BEST_PRACTICE_VIOLATION](000251_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1493,7 +1489,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 1049737334
 
-- Validation results summary: [PYNWB_VALIDATION](validation_folder/000288_validation.txt) 
+- Validation results summary: [PYNWB_VALIDATION](000288_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1509,7 +1505,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 13764872
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000292_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000292_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1525,7 +1521,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 234976142
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000293_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000293_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1555,7 +1551,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 476091831
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000295_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000295_validation.txt) 
 
 - Species: Mus musculus - House mouse
 
@@ -1571,7 +1567,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 231099211
 
-- Validation results summary: [PASSED_VALIDATION](validation_folder/000297_validation.txt) 
+- Validation results summary: [PASSED_VALIDATION](000297_validation.txt) 
 
 - Species: Homo sapiens - Human
 
@@ -1587,7 +1583,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 - Dandiset size (in bytes): 232448
 
-- Validation results summary: [BEST_PRACTICE_VIOLATION](validation_folder/000299_validation.txt) 
+- Validation results summary: [BEST_PRACTICE_VIOLATION](000299_validation.txt) 
 
 - Species: Rattus norvegicus - Norway rat
 
