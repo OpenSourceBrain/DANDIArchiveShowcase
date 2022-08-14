@@ -9,7 +9,7 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi.dandiapi import DandiAPIClient
 from datetime import date
-from nwb_table_readme import update_readme
+
 # def test_compatibility(nwb_id):
 
 def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=None):
@@ -17,14 +17,14 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
     # Getting Datetime from timestamp
     date_time = date.today()
     # check if dandiset_summary file exists, if not, run nwb_table_readme.py
-    if not os.path.exists('dandiset_summary.csv'):
+    if not os.path.exists('../dandiset_summary.csv'):
         os.system('python nwb_table_readme.py')
     # create save folder
     save_folder = '/tmp/validation_dandiset_reports'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
     # read dandiset summary csv file to get dandiset info
-    dds_table = pd.read_csv('dandiset_summary.csv',usecols=['identifier','version','data_type','num_files','nwb_version'])
+    dds_table = pd.read_csv('../dandiset_summary.csv', usecols=['identifier', 'version', 'data_type', 'num_files', 'nwb_version'])
     dds_table['validation_result'] = ''
     data_type = dds_table.data_type.dropna().unique()
     for i in data_type:
@@ -59,10 +59,10 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
         report_suffix = '.txt'
 
     # create text file to hold failed reading of nwb files
-    if not os.path.exists('failed_nwb_files.txt'):
-        f = open('failed_nwb_files.txt', 'w+')
+    if not os.path.exists('../failed_nwb_files.txt'):
+        f = open('../failed_nwb_files.txt', 'w+')
     else:
-        f = open('failed_nwb_files.txt', 'a')
+        f = open('../failed_nwb_files.txt', 'a')
         f.write('New session ' + str(date_time))
     f.close()
 
@@ -90,7 +90,7 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
                     report_message.extend(list(inspect_nwb(nwbfile_path=s3_url[exit_loop], driver='ros3',
                                                        importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
                 except:
-                    f = open('failed_nwb_files.txt', 'a')
+                    f = open('../failed_nwb_files.txt', 'a')
                     f.write(dds_id + ': ' + nwb_file_name[exit_loop] + '\n')
                     f.close()
                     continue
@@ -129,8 +129,8 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
         # update validation result column for the dandiset_summary csv files
         dds_id_full = dds_id_prefix+':'+dds_id
         dds_table.loc[dds_table['identifier']==dds_id_full,'validation_result'] = validation_summary
-    dds_table_all = pd.read_csv('dandiset_summary.csv')
-    dds_table_readme = pd.read_csv('dandiset_summary_readme.csv')
+    dds_table_all = pd.read_csv('../dandiset_summary.csv')
+    dds_table_readme = pd.read_csv('../dandiset_summary_readme.csv')
     dds_table_all['validation_result'] = dds_table.loc[:,'validation_result']
     dds_table_readme['validation_result'] = dds_table.loc[:,'validation_result']
     dds_table_all.to_csv('dandiset_summary.csv',index=False)
@@ -145,4 +145,3 @@ if __name__ == "__main__":
                         help='return detailed report messages')
     args = parser.parse_args()
     validate_nwb(args.test,args.update, args.succint)
-    # update_readme()
