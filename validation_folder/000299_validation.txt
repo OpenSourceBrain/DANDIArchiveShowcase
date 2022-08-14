@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-08-02 15:46:17.138363+07:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.5
+
+Found 2 issues over 1 files:
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-Rat203_ecephys.nwb: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+       Message: Subject species 'rat' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+0.1  /tmp/nwb_versions/sub-Rat203_ecephys.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/series1'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.5 and rate=0.6011011011011012 instead of timestamps.
+

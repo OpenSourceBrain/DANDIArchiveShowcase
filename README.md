@@ -34,4 +34,5 @@ Options:
   --no_sizelimit                No size limit will be capped for downloading files if so chosen
   --dandiset_limit              Only process first 10 dandisets if so chosen'
   --update_readme_option        Update readme file after summary file is created
+  --update_readme_only          Update readme file without creating summary file
 ```
