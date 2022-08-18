@@ -48,11 +48,13 @@ jobs:
       run: |
         echo Testing scripts...
         python nwb_table_readme.py --dandiset_limit
+        python nwb_table_readme.py --update_readme_only 
 #        python validate_and_test_nwb.py --test --succint
 
     - name: Final file info
       run: |
         ls -alt
+        ls -alt validation_folder
         df -h
         du -h
 
