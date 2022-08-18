@@ -11,6 +11,7 @@ from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi import download
+import ast
 
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
                             args_updatereadme=None,args_readmeonly=None):
@@ -225,7 +226,7 @@ def update_readme():
     nwb_pd.reset_index(inplace=True)
     dds_id_prefix = nwb_pd['identifier'].iloc[0].split(':')[0]
     nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
-    nwbe_compatible = sorted([i+',' for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
+    nwbe_compatible = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
     nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
@@ -240,11 +241,15 @@ def update_readme():
     readme += '- Median number of files in each NWB dandiset: ' + str(
         dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == nwb_type_id].median()) + '\n'
     readme += '\n'
-    readme += '- Median number of bytes in each NWB dandiset: ' + str(
-        dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median()) + '\n'
+    readme += '- Median number of bytes in each NWB dandiset: ' + "{:,}".format(int(
+        dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median())) + '\n'
     readme += '\n'
-    readme += '- NWB dandiset that are possibly NWBE compatible: ' + ' '.join(nwbe_compatible)[:-2] + '\n'
-    readme += '\n'
+    readme += '- NWB dandiset that are possibly NWBE compatible: '
+    compat = []
+    root_url = 'https://dandiarchive.org/dandiset/'
+    for ds in nwbe_compatible:
+        readme += '[%s](%s%s), '%(ds, root_url, ds)
+    readme = readme[:-2]+'\n\n'
     readme += '<details><summary> Summary information on the available NWB dandisets (more details in dandiset_summary.csv).\n</summary><p>'
     readme += '\n\n\n\n'
 
@@ -256,21 +261,38 @@ def update_readme():
                 row] + ')*' + ': **' + nwb_pd['name'].iloc[row] + '**\n\n'
         except:
             pass
+
+        readme += '- Data type: **' + nwb_pd['data_type'].iloc[row] + '**'
         if not pd.isna(nwb_pd['nwb_version'].iloc[row]):
-            readme += '- NWB version: ' + nwb_pd['nwb_version'].iloc[row] + '\n\n'
+            readme += ' (**version ' + nwb_pd['nwb_version'].iloc[row]+'**)'
+
         if not pd.isna(nwb_pd['num_bytes'].iloc[row]):
-            readme += '- Dandiset size (in bytes): ' + str(nwb_pd['num_bytes'].iloc[row]) + '\n\n'
-        if not nwb_pd['validation_summary'].iloc[row] in ['NULL_FILE_LIMIT', 'UNABLE', 'NOT_DOWNLOADED']:
-            readme += '- Validation results summary: [' + nwb_pd['validation_summary'].iloc[
-                row] + ']' + '(%s.txt) \n\n' % (validation_file)
-        else:
-            readme += '- Validation results summary: ' + nwb_pd['validation_summary'].iloc[row] + ' \n\n'
+            readme += ', file count: **'+str(nwb_pd['num_files'].iloc[row])+'**, total size (bytes): **' + "{:,}".format(int(nwb_pd['num_bytes'].iloc[row])) + '**\n\n'
+
         if not pd.isna(nwb_pd['species'].iloc[row]):
-            readme += '- Species: ' + nwb_pd['species'].iloc[row] + '\n\n'
+            readme += '- Species: **' + nwb_pd['species'].iloc[row] + '**\n\n'
+
+        if not pd.isna(nwb_pd['keywords'].iloc[row]):
+
+            kws = ast.literal_eval(nwb_pd['keywords'].iloc[row])
+            if len(kws)>0:
+                readme += '- Keywords: ' + ', '.join(['**%s**'%kw for kw in kws]) + '\n\n'
+
         if not pd.isna(nwb_pd['variableMeasured'].iloc[row]):
-            readme += '- Variables measured: ' + nwb_pd['variableMeasured'].iloc[row] + '\n\n'
+            vars = ast.literal_eval(nwb_pd['variableMeasured'].iloc[row])
+            readme += '- Variables measured: ' + ', '.join(['**%s**'%var for var in vars])  + '\n\n'
+
         if not pd.isna(nwb_pd['citation'].iloc[row]):
-            readme += '- Source paper: ' + nwb_pd['citation'].iloc[row].split('(Vers')[0] + '\n\n'
+            readme += '- Source paper: *' + nwb_pd['citation'].iloc[row].split('(Vers')[0].strip() + '*\n\n'
+
+        if not nwb_pd['validation_summary'].iloc[row] in ['NULL_FILE_LIMIT', 'UNABLE', 'NOT_DOWNLOADED']:
+            val_str = nwb_pd['validation_summary'].iloc[row].replace(',',', ')
+            status = '![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png)'
+            if 'PASSED_VALIDATION' in val_str:
+                status = '![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png)'
+            readme += '- '+status+' Validation results summary: [' + val_str + ']' + '(%s.txt) \n\n' % (validation_file)
+        else:
+            readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + nwb_pd['validation_summary'].iloc[row] + '\n\n'
 
         readme += '---'
         readme += '\n\n'
@@ -298,5 +320,3 @@ if __name__ == '__main__':
 
     if update_readme_option:
         update_readme()
-
-
