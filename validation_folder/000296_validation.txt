@@ -1,8 +1,8 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-18 12:15:30.055503+01:00
-Platform: Linux-5.4.0-122-generic-x86_64-with-glibc2.31
+Timestamp: 2022-08-20 19:40:31.112401+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
 Found 0 issues over 0 files:

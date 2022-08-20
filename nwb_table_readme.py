@@ -48,12 +48,12 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
                        'assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
-    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary','max_file_size','min_file_size']
+    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary','max_file_size','min_file_size','file_0','file_1']
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
 
-    for dandiset_name in dandiset_folder_name:
+    for dandiset_name in dandiset_folder_name[22:]:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -78,7 +78,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         largest_file_size = nanval
         smallest_size_lst = [nanval,nanval]
         validation_summary = nanval
-
+        file_1 = nanval
+        file_0 = nanval
         if data_type != nanval and 'NWB' in str(data_type):
             # get the json file that has individual files info
             with open(os.path.join(root_folder, dandiset_name, json_file)) as f:
@@ -115,6 +116,9 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 # in case the while loop loops through all the length of the dataframe
                 if counter == len(json_df)-1:
                     break
+            file_0 = url_lst[0]
+            if len(url_lst) >1:
+                file_1 = url_lst[1]
             largest_file_size = json_df['size'].iloc[-1]
             report_message = []
             # if user doesn't want to download files
@@ -142,13 +146,14 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         # uninstall file
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
-        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,largest_file_size,smallest_size_lst[0]]],
+        yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
+                                                     largest_file_size,smallest_size_lst[0],file_0,file_1]],
                                                    index=yaml_df.index,columns=tmp_col)],axis=1)
 
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
-        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
+        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp_tmp.csv'))
         f.close()
 
     # only get the relevant columns
@@ -160,7 +165,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
-    dl.remove(dataset=root_folder)
+    # dl.remove(dataset=root_folder)
     return args_updatereadme
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
@@ -293,6 +298,13 @@ def update_readme():
             readme += '- '+status+' Validation results summary: [' + val_str + ']' + '(%s.txt) \n\n' % (validation_file)
         else:
             readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + nwb_pd['validation_summary'].iloc[row] + '\n\n'
+
+        for i in range(2):
+            if not pd.isna(nwb_pd['file_'+str(i)].iloc[row]):
+                nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile='+nwb_pd['file_'+str(i)].iloc[row]
+                dandi_link = nwb_pd['file_'+str(i)].iloc[row].split('/download')[0]
+                readme += '- [View tested file #' + str(i+1) + ' on DANDI Web](%s) | \n' % (dandi_link)
+                readme += '[View tested file #' + str(i + 1) + ' on NWB Explorer](%s) \n' % (nwbe_link)
 
         readme += '---'
         readme += '\n\n'

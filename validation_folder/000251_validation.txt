@@ -1,64 +1,101 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 15:44:41.530613+07:00
+Timestamp: 2022-08-20 19:39:21.534170+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 5 issues over 1 files:
-       2 - ERROR
-       3 - BEST_PRACTICE_VIOLATION
+Found 1 issues over 1 files:
+       1 - ERROR
 **************************************************
 
 
 0  ERROR
 ========
 
-0.0  /tmp/nwb_versions/sub-112_ses-Ca-VS-VR-4.nwb: check_table_values_for_dict - 'None' object with name 'None'
+0.0  /tmp/nwb_versions/sub-112_ses-Ca-VS-VR-4.nwb: During io.read() - <class 'hdmf.build.errors.ConstructError'>: (root/general/fiber_photometry/commanded_voltages GroupBuilder {'attributes': {'namespace': 'ndx-photometry', 'neurodata_type': 'MultiCommandedVoltage', 'object_id': 'c4b46ddf-c04b-47d6-a6c9-4210341bbafc'}, 'groups': {}, 'datasets': {}, 'links': {}}, "Could not construct MultiCommandedVoltage object due to: MultiContainerInterface.__make_add.<locals>._func: None is not allowed for 'commanded_voltage_series' (expected 'list, tuple, dict or CommandedVoltageSeries', not None)") - 'None' object with name 'None'
        Message: Traceback (most recent call last):
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 496, in run_checks
-    output = check_function(nwbfile_object)
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 131, in auto_parse_some_output
-    for result in output:
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/nwbinspector/checks/tables.py", line 175, in check_table_values_for_dict
-    if not hasattr(column, "data") or isinstance(column, VectorIndex) or not isinstance(column.data[0], str):
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/h5py/_hl/dataset.py", line 710, in __getitem__
-    return self._fast_reader.read(args)
-  File "h5py/_selector.pyx", line 351, in h5py._selector.Reader.read
-  File "h5py/_selector.pyx", line 151, in h5py._selector.Selector.apply_args
-IndexError: Index (0) out of range for empty dimension
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1248, in construct
+    obj = self.__new_container__(cls, builder.source, parent, builder.attributes.get(self.__spec.id_key()),
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1261, in __new_container__
+    obj.__init__(**kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/classgenerator.py", line 403, in __init__
+    add_method(new_kwarg['value'])
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 638, in func_call
+    pargs = _check_args(args, kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 631, in _check_args
+    raise ExceptionType(msg)
+TypeError: MultiContainerInterface.__make_add.<locals>._func: None is not allowed for 'commanded_voltage_series' (expected 'list, tuple, dict or CommandedVoltageSeries', not None)
 
+The above exception was the direct cause of the following exception:
 
-0.1  /tmp/nwb_versions/sub-112_ses-Ca-VS-VR-4.nwb: check_table_values_for_dict - 'None' object with name 'None'
-       Message: Traceback (most recent call last):
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 496, in run_checks
-    output = check_function(nwbfile_object)
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 131, in auto_parse_some_output
-    for result in output:
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/nwbinspector/checks/tables.py", line 175, in check_table_values_for_dict
-    if not hasattr(column, "data") or isinstance(column, VectorIndex) or not isinstance(column.data[0], str):
-  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
-  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/h5py/_hl/dataset.py", line 783, in __getitem__
-    selection = sel.select(self.shape, args, dataset=self)
-  File "/home/anh/.conda/envs/nwb_explorer/lib/python3.9/site-packages/h5py/_hl/selections.py", line 82, in select
-    return selector.make_selection(args)
-  File "h5py/_selector.pyx", line 272, in h5py._selector.Selector.make_selection
-  File "h5py/_selector.pyx", line 151, in h5py._selector.Selector.apply_args
-IndexError: Index (0) out of range for empty dimension
+Traceback (most recent call last):
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 528, in inspect_nwb
+    nwbfile = robust_s3_read(command=io.read, max_retries=max_retries)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
+    raise exc
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/hdf5/h5tools.py", line 451, in read
+    return super().read(**kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/io.py", line 42, in read
+    container = self.__manager.construct(f_builder)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 280, in construct
+    result = self.__type_map.construct(builder, self, None)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
+    subspecs = self.__get_subspec_values(builder, self.spec, manager)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1198, in __get_sub_builders
+    ret.update(self.__get_subspec_values(sub_builder, subspec, manager))
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1190, in __get_sub_builders
+    sub_builder = self.__flatten(sub_builder, subspec, manager)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in __flatten
+    tmp = [manager.construct(b) for b in sub_builder]
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in <listcomp>
+    tmp = [manager.construct(b) for b in sub_builder]
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
+    result = self.__type_map.construct(builder, self, parent)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
+    subspecs = self.__get_subspec_values(builder, self.spec, manager)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1200, in __get_sub_builders
+    ret[subspec] = manager.construct(sub_builder)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
+    result = self.__type_map.construct(builder, self, parent)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+    return func(args[0], **pargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1252, in construct
+    raise ConstructError(builder, msg) from ex
+hdmf.build.errors.ConstructError: (root/general/fiber_photometry/commanded_voltages GroupBuilder {'attributes': {'namespace': 'ndx-photometry', 'neurodata_type': 'MultiCommandedVoltage', 'object_id': 'c4b46ddf-c04b-47d6-a6c9-4210341bbafc'}, 'groups': {}, 'datasets': {}, 'links': {}}, "Could not construct MultiCommandedVoltage object due to: MultiContainerInterface.__make_add.<locals>._func: None is not allowed for 'commanded_voltage_series' (expected 'list, tuple, dict or CommandedVoltageSeries', not None)")
 
-
-1  BEST_PRACTICE_VIOLATION
-==========================
-
-1.2  /tmp/nwb_versions/sub-112_ses-Ca-VS-VR-4.nwb: check_roi_response_series_link_to_plane_segmentation - 'RoiResponseSeries' object at location '/processing/ophys/fluorescence'
-       Message: rois field does not point to a PlaneSegmentation table.
-
-1.3  /tmp/nwb_versions/sub-112_ses-Ca-VS-VR-4.nwb: check_empty_table - 'PhotodetectorsTable' object with name 'photodetectors'
-       Message: This table has no data added to it.
-
-1.4  /tmp/nwb_versions/sub-112_ses-Ca-VS-VR-4.nwb: check_empty_table - 'ExcitationSourcesTable' object with name 'excitation_sources'
-       Message: This table has no data added to it.
 

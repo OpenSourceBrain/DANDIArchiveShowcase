@@ -1,33 +1,67 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:56:01.751328+07:00
+Timestamp: 2022-08-20 19:21:29.093566+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 12 issues over 2 files:
+Found 16 issues over 2 files:
+       4 - ERROR
       12 - PYNWB_VALIDATION
 **************************************************
 
 
-0  PYNWB_VALIDATION
+0  ERROR
+========
+
+0.0  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: check_order_of_images_unique - 'None' object with name 'None'
+       Message: Traceback (most recent call last):
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
+    output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
+    raise exc
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 128, in auto_parse_some_output
+    output = check_function(*args, **kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/checks/images.py", line 19, in check_order_of_images_unique
+    if images.order_of_images is None:
+AttributeError: 'Images' object has no attribute 'order_of_images'
+
+
+0.1  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: check_order_of_images_len - 'None' object with name 'None'
+       Message: Traceback (most recent call last):
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
+    output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
+    raise exc
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 128, in auto_parse_some_output
+    output = check_function(*args, **kwargs)
+  File "/home/anh/anaconda3/envs/condaubuntu/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/checks/images.py", line 26, in check_order_of_images_len
+    if images.order_of_images is None:
+AttributeError: 'Images' object has no attribute 'order_of_images'
+
+
+1  PYNWB_VALIDATION
 ===================
 
-0.0  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_locations_x_index'
+1.2  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_locations_x_index'
        Message: argument missing
 
-0.1  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_locations_y_index'
+1.3  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_locations_y_index'
        Message: argument missing
 
-0.2  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_orientations_index'
+1.4  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_orientations_index'
        Message: argument missing
 
-0.3  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_sizes_index'
+1.5  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/gabor_sizes_index'
        Message: argument missing
 
-0.4  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/square_locations_x_index'
+1.6  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/square_locations_x_index'
        Message: argument missing
 
-0.5  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/square_locations_y_index'
+1.7  /tmp/nwb_versions/sub-418779_ses-20181113T015148_behavior+ophys.nwb and 1 other file: VectorData/description - 'None' object at location 'intervals/trials/square_locations_y_index'
        Message: argument missing
 
