@@ -153,7 +153,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
-        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp_tmp.csv'))
+        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
 
     # only get the relevant columns
@@ -161,6 +161,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final = dandi_metadata[yaml_df_flatten].sort_values(by=['identifier'],ignore_index=True)
     dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                          'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
+    # filter column through
+    dandi_metadata_final.drop(dandi_metadata_final.filter(regex="Unnamed"), axis=1, inplace=True)
     # save table to csv
     dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
