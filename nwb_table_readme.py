@@ -53,7 +53,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
 
-    for dandiset_name in dandiset_folder_name[22:]:
+    for dandiset_name in dandiset_folder_name:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
