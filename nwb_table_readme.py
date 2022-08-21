@@ -1,4 +1,6 @@
 import os
+import signal
+import subprocess
 import pandas as pd
 import yaml
 import math
@@ -6,6 +8,7 @@ import datalad.api as dl
 import json
 import argparse
 from datetime import date
+from pynwb import NWBHDF5IO
 from dandi.pynwb_utils import get_nwb_version
 from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
@@ -43,12 +46,12 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[:10]
+        dandiset_folder_name = dandiset_folder_name[10:20]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
                        'assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
-    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary','max_file_size','min_file_size','file_0','file_1']
+    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary','max_file_size','min_file_size','file_0','file_1','nwbe_compatibility_0','nwbe_compatibility_1']
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
@@ -80,6 +83,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         validation_summary = nanval
         file_1 = nanval
         file_0 = nanval
+        nwbe_compatibility = ['NI','NI']
         if data_type != nanval and 'NWB' in str(data_type):
             # get the json file that has individual files info
             with open(os.path.join(root_folder, dandiset_name, json_file)) as f:
@@ -139,15 +143,18 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
 
-                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name,path_lst)
+                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
                         except ValueError:
                             validation_summary = 'UNABLE'
                             pass
+                        # test nwbe compatibility
+                        nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path)
+                        print(nwbe_compatibility[i])
                         # uninstall file
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
-                                                     largest_file_size,smallest_size_lst[0],file_0,file_1]],
+                                                     largest_file_size,smallest_size_lst[0],file_0,file_1,nwbe_compatibility[0],nwbe_compatibility[1]]],
                                                    index=yaml_df.index,columns=tmp_col)],axis=1)
 
         # concatenate every newly read dandiset metadata dataframe
@@ -164,11 +171,33 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # filter column through
     dandi_metadata_final.drop(dandi_metadata_final.filter(regex="Unnamed"), axis=1, inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary_tmp.csv'))
 
     # remove the cloned dandisets folder
     # dl.remove(dataset=root_folder)
     return args_updatereadme
+
+def test_nwbe_compatibility(nwb_path):
+    cmd = 'python compatibility_test.py ' + nwb_path  # the external command to run
+    timeout_s = 60  # how many seconds to wait
+    # NC-0: file cannot be opened
+    try:
+        io = NWBHDF5IO(nwb_path,mode='r',load_namespaces=True)
+        nwbfile = io.read()
+    except:
+        print('File cannot be opened - NC lvl 0')
+        nwbe_compatibility = 'NC-0'
+        return nwbe_compatibility
+    # NC-1: timeout while creating geppetto model
+    nwbe_compatibility = 'LIKELY'
+    try:
+        p = subprocess.Popen([cmd], start_new_session=True, shell=True)
+        p.wait(timeout=timeout_s)
+    except subprocess.TimeoutExpired:
+        print(f'Timeout for {cmd} ({timeout_s}s) expired')
+        os.killpg(os.getpgid(p.pid), signal.SIGTERM)
+        nwbe_compatibility = 'NC-1'
+    return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
     # the argument nwb_version is in case the function exits with error
@@ -186,7 +215,7 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
         download.download(dandi_url, output_dir=save_folder)
     return tmp_nwb_path
 
-def nwb_inspector_message_format(report_message,dds_id,path_lst):
+def nwb_inspector_message_format(report_message,dds_id):
     save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
@@ -214,6 +243,8 @@ def update_readme():
     save_folder = 'validation_folder'
     rd_file = os.path.join(save_folder,'README.md')
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
+    # rd_file = os.path.join('./scratch_files', 'README.md')
+    # summary_file = os.path.join(save_folder, 'dandiset_summary_tmp.csv')
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
@@ -237,10 +268,6 @@ def update_readme():
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
     nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
-    # readme = '# DANDI Archive Showcase\n'
-    # readme += '\n'
-    # readme += 'Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/), particularly from [OSBv2](https://docs.opensourcebrain.org/OSBv2/Overview.html).\n'
-    # readme += '\n'
     readme = '# Summary statistics for the available NWB dandisets (Updated on ' + str(date_time) + ')' '\n'
     readme += '\n'
     readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
@@ -251,12 +278,18 @@ def update_readme():
     readme += '- Median number of bytes in each NWB dandiset: ' + "{:,}".format(int(
         dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median())) + '\n'
     readme += '\n'
-    readme += '- NWB dandiset that are possibly NWBE compatible: '
+    readme += '- NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible: '
     compat = []
     root_url = 'https://dandiarchive.org/dandiset/'
     for ds in nwbe_compatible:
         readme += '[%s](%s%s), '%(ds, root_url, ds)
     readme = readme[:-2]+'\n\n'
+
+    readme += '- NWBE compatibility terminology: \n'
+    readme += '  - LIKELY: File can be opened and viewed on NWBE \n'
+    readme += '  - NC-0: Not compatible level 0 - file cannot be opened \n'
+    readme += '  - NC-1: Not compatible level 1 - geppetto model for file cannot be created \n'
+    readme += '  - NI: No information - file is not tested \n\n'
     readme += '<details><summary> Summary information on the available NWB dandisets (more details in dandiset_summary.csv).\n</summary><p>'
     readme += '\n\n\n\n'
 
@@ -298,19 +331,24 @@ def update_readme():
             if 'PASSED_VALIDATION' in val_str:
                 status = '![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png)'
             readme += '- '+status+' Validation results summary: [' + val_str + ']' + '(%s.txt) \n\n' % (validation_file)
+
+            for i in range(2):
+                if not pd.isna(nwb_pd['nwbe_compatibility_' + str(i)].iloc[row]):
+                    readme += '- NWBE compatibility - file '+str(i + 1) +': ' + nwb_pd['nwbe_compatibility_' + str(i)].iloc[row] + '  \n'
+                if not pd.isna(nwb_pd['file_' + str(i)].iloc[row]):
+                    nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile=' + nwb_pd['file_' + str(i)].iloc[
+                        row]
+                    dandi_link = nwb_pd['file_' + str(i)].iloc[row].split('/download')[0]
+                    readme += '[View tested file #' + str(i + 1) + ' on DANDI Web](%s) | \n' % (dandi_link)
+                    readme += '[View tested file #' + str(i + 1) + ' on NWB Explorer](%s) \n' % (nwbe_link)
+
         else:
             readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + nwb_pd['validation_summary'].iloc[row] + '\n\n'
-
-        for i in range(2):
-            if not pd.isna(nwb_pd['file_'+str(i)].iloc[row]):
-                nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile='+nwb_pd['file_'+str(i)].iloc[row]
-                dandi_link = nwb_pd['file_'+str(i)].iloc[row].split('/download')[0]
-                readme += '- [View tested file #' + str(i+1) + ' on DANDI Web](%s) | \n' % (dandi_link)
-                readme += '[View tested file #' + str(i + 1) + ' on NWB Explorer](%s) \n' % (nwbe_link)
 
         readme += '---'
         readme += '\n\n'
     readme += '</p></details>'
+    print(readme)
     rmd = open(rd_file, 'w')
     rmd.write(readme)
     rmd.close()
