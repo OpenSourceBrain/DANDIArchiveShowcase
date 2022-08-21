@@ -174,7 +174,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary_tmp.csv'))
 
     # remove the cloned dandisets folder
-    # dl.remove(dataset=root_folder)
+    dl.remove(dataset=root_folder)
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path):
@@ -243,8 +243,6 @@ def update_readme():
     save_folder = 'validation_folder'
     rd_file = os.path.join(save_folder,'README.md')
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
-    # rd_file = os.path.join('./scratch_files', 'README.md')
-    # summary_file = os.path.join(save_folder, 'dandiset_summary_tmp.csv')
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
@@ -339,8 +337,8 @@ def update_readme():
                     nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile=' + nwb_pd['file_' + str(i)].iloc[
                         row]
                     dandi_link = nwb_pd['file_' + str(i)].iloc[row].split('/download')[0]
-                    readme += '[View tested file #' + str(i + 1) + ' on DANDI Web](%s) | \n' % (dandi_link)
-                    readme += '[View tested file #' + str(i + 1) + ' on NWB Explorer](%s) \n' % (nwbe_link)
+                    readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
+                    readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
 
         else:
             readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + nwb_pd['validation_summary'].iloc[row] + '\n\n'
