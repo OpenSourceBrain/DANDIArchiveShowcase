@@ -1,4 +1,3 @@
-import os
 import sys
 from nwb_explorer.nwb_model_interpreter import NWBModelInterpreter, GeppettoModelAccess
 # TODOs: test sweeptable, processing and image series

@@ -7,15 +7,21 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 The scripts in this repo work best in an
 [Anaconda](https://www.anaconda.com/distribution/#download-section) environment, and [git](https://git-scm.com/downloads) is required for running one of the packages, 
 so please make sure they are installed and added to the system path.
+(Mac/Linux)
+(NWBE)
 
-In your git terminal, navigate to the directory in which you want to install the DandiArchiveSHOWCASE repo. Run the following commands:
+In your git terminal, navigate to the directory in which you want to clone the DandiArchiveSHOWCASE repo. Run the following commands:
 
 ```commandline
 conda create --name dandiarchiveshowcase python=3.9 --yes
 conda activate dandiarchiveshowcase
+conda install --channel conda-forge datalad h5py
 git clone https://github.com/OpenSourceBrain/DANDIArchiveShowcase
-conda install -c conda-forge datalad
-pip install --requirement requirements.txt
+git clone --branch development https://github.com/MetaCell/nwb-explorer
+pip install --requirement DANDIArchiveShowcase/requirements.txt
+pip install --editable nwb-explorer
+python nwb-explorer/utilities/install.py
+cd DANDIArchiveShowcase
 ```
 
 ## Scripts information
