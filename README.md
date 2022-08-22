@@ -6,9 +6,8 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 ## Installation instruction
 The scripts in this repo work best in an
 [Anaconda](https://www.anaconda.com/distribution/#download-section) environment, and [git](https://git-scm.com/downloads) is required for running one of the packages, 
-so please make sure they are installed and added to the system path.
-(Mac/Linux)
-(NWBE)
+so please make sure they are installed and added to the system path. 
+In addition, a local installation of [NWB Explorer](https://github.com/MetaCell/nwb-explorer) is advised for the purpose of testing files' compatibility with the app.
 
 In your git terminal, navigate to the directory in which you want to clone the DandiArchiveSHOWCASE repo. Run the following commands:
 
@@ -26,8 +25,8 @@ cd DANDIArchiveShowcase
 
 ## Scripts information
 The nwb_table_readme.py script allows one to parse through all the dandisets in DANDIArchive, extract metadata information
-and validate files in each dandiset against NWBInspector. Further development will enable the script to test files/dandisets' compatibility
-with NWB Explorer. Validation results and summary information are saved in a directory called validation_folder.
+and validate files in each dandiset against NWBInspector, as well as testing their compatibility with NWB Explorer. 
+Validation results and summary information are saved in a directory called validation_folder.
 ```
 nwb_table_readme.py
 Usage: python nwb_table_readme.py [OPTIONS]

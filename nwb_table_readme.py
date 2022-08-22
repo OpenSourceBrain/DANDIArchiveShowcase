@@ -171,7 +171,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # filter column through
     dandi_metadata_final.drop(dandi_metadata_final.filter(regex="Unnamed"), axis=1, inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary_tmp.csv'))
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
     dl.remove(dataset=root_folder)
