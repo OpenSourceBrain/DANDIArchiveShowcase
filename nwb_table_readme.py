@@ -188,8 +188,21 @@ def test_nwbe_compatibility(nwb_path):
         print('File cannot be opened - NC lvl 0')
         nwbe_compatibility = 'NC-0'
         return nwbe_compatibility
+
+    count = 0
+    for a, v in nwbfile.acquisition.items():
+        if count ==0:
+                pass
+        elif count ==1:
+            if nwbfile.acquisition[a].neurodata_type == 'TimeSeries':
+                nwbe_compatibility = 'LIKELY_VIEWABLE'
+            else:
+                nwbe_compatibility = 'LIKELY_PLOTTABLE'
+        else:
+            break
+        count += 1
     # NC-1: timeout while creating geppetto model
-    nwbe_compatibility = 'LIKELY'
+    # nwbe_compatibility = 'LIKELY'
     try:
         p = subprocess.Popen([cmd], start_new_session=True, shell=True)
         p.wait(timeout=timeout_s)
