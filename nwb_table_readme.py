@@ -9,6 +9,9 @@ import json
 import argparse
 from datetime import date
 from pynwb import NWBHDF5IO
+from pynwb.image import ImageSeries
+from pynwb.base import TimeSeries
+from pynwb.behavior import BehavioralTimeSeries
 from dandi.pynwb_utils import get_nwb_version
 from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
@@ -56,7 +59,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
 
-    for dandiset_name in dandiset_folder_name[150:]:
+    for dandiset_name in dandiset_folder_name:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -108,6 +111,13 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 if path_file.split('.')[-1] != 'nwb':
                     counter += 1
                     path_file = json_df['path'].iloc[counter]
+                    if counter == 1:
+                        path_org = path_file.split('/')[0]
+                    else:
+                        path_next = path_file.split('/')[0]
+                        if path_next == path_org:
+                            counter -= 1
+
                 # if it is, return the path
                 else:
                     valid_path_url += 1
@@ -180,6 +190,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 def test_nwbe_compatibility(nwb_path):
     cmd = 'python compatibility_test.py ' + nwb_path  # the external command to run
     timeout_s = 60  # how many seconds to wait
+    type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries])
     # NC-0: file cannot be opened
     try:
         io = NWBHDF5IO(nwb_path,mode='r',load_namespaces=True)
@@ -193,16 +204,24 @@ def test_nwbe_compatibility(nwb_path):
     plottable = 0
     for a, v in nwbfile.acquisition.items():
         print(nwbfile.acquisition[a].neurodata_type)
-        if 'TimeSeries' in nwbfile.acquisition[a].neurodata_type:
-            nwbe_compatibility = 'LL-P'
-            plottable = 1
-            break
+        if len(set(nwbfile.acquisition[a].type_hierarchy()).intersection(type_hierarchy)) >= 1:
+            if ImageSeries in nwbfile.acquisition[a].type_hierarchy():
+                pass
+            else:
+                nwbe_compatibility = 'LL-P'
+                plottable = 1
+                break
     # if no TimeSeries object in acquisition module, search in processing
     if plottable == 0:
         for a, v in nwbfile.processing.items():
             print(nwbfile.processing[a].neurodata_type)
-            if 'TimeSeries' in nwbfile.processing[a].neurodata_type:
-                nwbe_compatibility = 'LL-P'
+            if len(set(nwbfile.processing[a].type_hierarchy()).intersection(type_hierarchy)) >= 1:
+                if ImageSeries in nwbfile.processing[a].type_hierarchy():
+                    pass
+                else:
+                    nwbe_compatibility = 'LL-P'
+                    plottable = 1
+                    break
     # NC-1: timeout while creating geppetto model
     try:
         p = subprocess.Popen([cmd], start_new_session=True, shell=True)
