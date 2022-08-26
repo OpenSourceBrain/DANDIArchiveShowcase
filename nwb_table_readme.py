@@ -56,7 +56,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
 
-    for dandiset_name in dandiset_folder_name:
+    for dandiset_name in dandiset_folder_name[150:]:
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -160,7 +160,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
-        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
+        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp_tmp.csv'))
         f.close()
 
     # only get the relevant columns
@@ -171,10 +171,10 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # filter column through
     dandi_metadata_final.drop(dandi_metadata_final.filter(regex="Unnamed"), axis=1, inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv'))
 
     # remove the cloned dandisets folder
-    dl.remove(dataset=root_folder)
+    # dl.remove(dataset=root_folder)
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path):
@@ -188,21 +188,22 @@ def test_nwbe_compatibility(nwb_path):
         print('File cannot be opened - NC lvl 0')
         nwbe_compatibility = 'NC-0'
         return nwbe_compatibility
-
-    count = 0
+    # dummy var in case file passes NC-1 and is not a TimeSeries type
+    nwbe_compatibility = 'LL-V'
+    plottable = 0
     for a, v in nwbfile.acquisition.items():
-        if count ==0:
-                pass
-        elif count ==1:
-            if nwbfile.acquisition[a].neurodata_type == 'TimeSeries':
-                nwbe_compatibility = 'LIKELY_VIEWABLE'
-            else:
-                nwbe_compatibility = 'LIKELY_PLOTTABLE'
-        else:
+        print(nwbfile.acquisition[a].neurodata_type)
+        if 'TimeSeries' in nwbfile.acquisition[a].neurodata_type:
+            nwbe_compatibility = 'LL-P'
+            plottable = 1
             break
-        count += 1
+    # if no TimeSeries object in acquisition module, search in processing
+    if plottable == 0:
+        for a, v in nwbfile.processing.items():
+            print(nwbfile.processing[a].neurodata_type)
+            if 'TimeSeries' in nwbfile.processing[a].neurodata_type:
+                nwbe_compatibility = 'LL-P'
     # NC-1: timeout while creating geppetto model
-    # nwbe_compatibility = 'LIKELY'
     try:
         p = subprocess.Popen([cmd], start_new_session=True, shell=True)
         p.wait(timeout=timeout_s)
@@ -210,6 +211,7 @@ def test_nwbe_compatibility(nwb_path):
         print(f'Timeout for {cmd} ({timeout_s}s) expired')
         os.killpg(os.getpgid(p.pid), signal.SIGTERM)
         nwbe_compatibility = 'NC-1'
+    print('CATCH ME AGAIN')
     return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
@@ -254,8 +256,10 @@ def nwb_inspector_message_format(report_message,dds_id):
 
 def update_readme():
     save_folder = 'validation_folder'
-    rd_file = os.path.join(save_folder,'README.md')
-    summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
+    # rd_file = os.path.join(save_folder,'README.md')
+    # summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
+    rd_file = os.path.join('./scratch_files','README.md')
+    summary_file = os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv')
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
@@ -275,7 +279,7 @@ def update_readme():
     nwb_pd.reset_index(inplace=True)
     dds_id_prefix = nwb_pd['identifier'].iloc[0].split(':')[0]
     nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
-    nwbe_compatible = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
+    pass_mwninspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
     nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
@@ -290,14 +294,14 @@ def update_readme():
         dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median())) + '\n'
     readme += '\n'
     readme += '- NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible: '
-    compat = []
     root_url = 'https://dandiarchive.org/dandiset/'
-    for ds in nwbe_compatible:
+    for ds in pass_mwninspector:
         readme += '[%s](%s%s), '%(ds, root_url, ds)
     readme = readme[:-2]+'\n\n'
 
     readme += '- NWBE compatibility terminology: \n'
-    readme += '  - LIKELY: File can be opened and viewed on NWBE \n'
+    readme += '  - LL-P: Likely plottable - file whose datatypes extend TimeSeries that can be viewed and plotted \n'
+    readme += '  - LL-V: Likely viewable - file whose datatypes might not extend TimeSeries that can be viewed \n'
     readme += '  - NC-0: Not compatible level 0 - file cannot be opened \n'
     readme += '  - NC-1: Not compatible level 1 - geppetto model for file cannot be created \n'
     readme += '  - NI: No information - file is not tested \n\n'
