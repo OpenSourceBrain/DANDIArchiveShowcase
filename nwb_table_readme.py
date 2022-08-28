@@ -11,7 +11,7 @@ from datetime import date
 from pynwb import NWBHDF5IO
 from pynwb.image import ImageSeries
 from pynwb.base import TimeSeries
-from pynwb.behavior import BehavioralTimeSeries
+from pynwb.behavior import BehavioralTimeSeries, BehavioralEvents
 from dandi.pynwb_utils import get_nwb_version
 from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
@@ -28,7 +28,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     if args_nosizelimit:
         hard_limit = 100000000000
     else:
-        hard_limit = 1000000000
+        hard_limit = 1500000000
     json_file = '.dandi/assets.json'
     # directory for dandisets
     root_folder = '/tmp/dandisets'
@@ -54,7 +54,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
                        'assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
-    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary','max_file_size','min_file_size','file_0','file_1','nwbe_compatibility_0','nwbe_compatibility_1']
+    tmp_col = ['species','data_type','doi_link','nwb_version','validation_summary',
+               'file_size_0','file_size_1','file_0','file_1','nwbe_compatibility_0','nwbe_compatibility_1','parent_folder_0','parent_folder_1']
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
@@ -81,11 +82,10 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
         # get nwb version for NWB dandisets, dummy for datasets that are not NWB
         nwb_version = nanval
-        largest_file_size = nanval
         smallest_size_lst = [nanval,nanval]
         validation_summary = nanval
-        file_1 = nanval
-        file_0 = nanval
+        url_lst = [nanval, nanval]
+        file_parent_folder = [nanval,nanval]
         nwbe_compatibility = ['NI','NI']
         if data_type != nanval and 'NWB' in str(data_type):
             # get the json file that has individual files info
@@ -95,45 +95,25 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
             json_df = pd.json_normalize(data)
             # sort the dataframe by column size will prevent returning series of files that have the same size
             json_df.sort_values(by='size', inplace=True)
-            # get the file path with the smallest size first, and check if it is a valid nwb file in the while loop
-            path_file = json_df['path'].iloc[0]
-            path_lst = []
-            url_lst = []
-            smallest_size_lst = []
-            counter = 0
-            valid_path_url = 0
-            # a dataset might only have 1 file, and max_counter is the number of valid nwb files we want
-            max_counter = 2
-            if len(json_df) == 1:
-                max_counter = 1
-            while valid_path_url < max_counter:
-                # check if the file with smallest file size is nwb, if not, get the next row
-                if path_file.split('.')[-1] != 'nwb':
-                    counter += 1
-                    path_file = json_df['path'].iloc[counter]
-                    if counter == 1:
-                        path_org = path_file.split('/')[0]
-                    else:
-                        path_next = path_file.split('/')[0]
-                        if path_next == path_org:
-                            counter -= 1
-
-                # if it is, return the path
+            # get the parent folder to the file path, files to be tested should from different parent folders
+            json_df['parent_folder'] = [i.split('/')[-2] for i in json_df.loc[:, 'path']]
+            # there are dandisets that only have 1 file
+            if len(json_df) <= 2:
+                counter_i = [0, 0]
+            else:
+                # there are dandisets that only have 1 parent folder
+                if len(json_df['parent_folder'].unique()) == 1:
+                    counter_i = [1, 2]
                 else:
-                    valid_path_url += 1
-                    path_lst.append(path_file)
-                    dandi_url = json_df['metadata.contentUrl'].iloc[counter][0]
-                    url_lst.append(dandi_url)
-                    smallest_size_lst.append(json_df['size'].iloc[counter])
-                    # reinsatntiate path_file so it passes the first if
-                    path_file = 't.blah'
-                # in case the while loop loops through all the length of the dataframe
-                if counter == len(json_df)-1:
-                    break
-            file_0 = url_lst[0]
-            if len(url_lst) >1:
-                file_1 = url_lst[1]
-            largest_file_size = json_df['size'].iloc[-1]
+                    for i in range(len(json_df)):
+                        if json_df['parent_folder'].iloc[1] != json_df['parent_folder'].iloc[1 + i]:
+                            counter_i = [1, 1 + i]
+                            break
+            url_lst = [json_df['metadata.contentUrl'].iloc[counter_i[0]][0],json_df['metadata.contentUrl'].iloc[counter_i[1]][0]]
+            path_lst = [json_df['path'].iloc[counter_i[0]],json_df['path'].iloc[counter_i[1]]]
+            smallest_size_lst = [json_df['size'].iloc[counter_i[0]],json_df['size'].iloc[counter_i[1]]]
+            file_parent_folder = [json_df['parent_folder'].iloc[counter_i[0]],json_df['parent_folder'].iloc[counter_i[1]]]
+
             report_message = []
             # if user doesn't want to download files
             if args_nodownload:
@@ -164,7 +144,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
-                                                     largest_file_size,smallest_size_lst[0],file_0,file_1,nwbe_compatibility[0],nwbe_compatibility[1]]],
+                                                       smallest_size_lst[0],smallest_size_lst[1],url_lst[0],url_lst[1],nwbe_compatibility[0],nwbe_compatibility[1],
+                                                     file_parent_folder[0],file_parent_folder[1]]],
                                                    index=yaml_df.index,columns=tmp_col)],axis=1)
 
         # concatenate every newly read dandiset metadata dataframe
@@ -190,7 +171,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 def test_nwbe_compatibility(nwb_path):
     cmd = 'python compatibility_test.py ' + nwb_path  # the external command to run
     timeout_s = 60  # how many seconds to wait
-    type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries])
+    type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
     # NC-0: file cannot be opened
     try:
         io = NWBHDF5IO(nwb_path,mode='r',load_namespaces=True)
@@ -372,7 +353,9 @@ def update_readme():
                 if not pd.isna(nwb_pd['file_' + str(i)].iloc[row]):
                     nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile=' + nwb_pd['file_' + str(i)].iloc[
                         row]
-                    dandi_link = nwb_pd['file_' + str(i)].iloc[row].split('/download')[0]
+                    dandi_link = nwb_pd['url'].iloc[row] + '/files?location=' + nwb_pd['parent_folder_' + str(i)].iloc[row] +'%2F'
+                    info_link = nwb_pd['file_' + str(i)].iloc[row].split('/download')[0]
+                    readme += '[File info](%s) | \n' % (info_link)
                     readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
                     readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
 
