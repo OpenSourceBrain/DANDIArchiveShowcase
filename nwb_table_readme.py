@@ -105,7 +105,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 if len(json_df['parent_folder'].unique()) == 1:
                     counter_i = [1, 2]
                 else:
-                    for i in range(len(json_df)):
+                    for i in range(len(json_df))-1:
                         if json_df['parent_folder'].iloc[1] != json_df['parent_folder'].iloc[1 + i]:
                             counter_i = [1, 1 + i]
                             break
