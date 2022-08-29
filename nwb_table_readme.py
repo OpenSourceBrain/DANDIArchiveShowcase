@@ -18,6 +18,7 @@ from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi import download
 import ast
+from collections import Counter
 
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
                             args_updatereadme=None,args_readmeonly=None):
@@ -151,7 +152,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
-        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp_tmp.csv'))
+        dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
 
     # only get the relevant columns
@@ -162,7 +163,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # filter column through
     dandi_metadata_final.drop(dandi_metadata_final.filter(regex="Unnamed"), axis=1, inplace=True)
     # save table to csv
-    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv'))
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
     # dl.remove(dataset=root_folder)
@@ -257,9 +258,9 @@ def nwb_inspector_message_format(report_message,dds_id):
 def update_readme():
     save_folder = 'validation_folder'
     # rd_file = os.path.join(save_folder,'README.md')
-    # summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
+    summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
     rd_file = os.path.join('./scratch_files','README.md')
-    summary_file = os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv')
+    # summary_file = os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv')
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
@@ -274,16 +275,38 @@ def update_readme():
     for k, vals in data_type_dict.items():
         if 'NWB' in k:
             nwb_type_id = k
+        elif 'BIDS' in k:
+            bids_type_id = k
+        else:
+            other_type_id = k
 
     nwb_pd = dandi_metadata_readme.loc[dandi_metadata_readme['data_type'] == nwb_type_id].copy()
     nwb_pd.reset_index(inplace=True)
-    dds_id_prefix = nwb_pd['identifier'].iloc[0].split(':')[0]
+    # get the [num_keys] most common measured variable
+    num_keys = 6
+    var_measured = [ast.literal_eval(i) for i in nwb_pd.loc[:, 'variableMeasured']]
+    var_measured = sum(var_measured,[])
+    dict_var = Counter(var_measured)
+    most_common_dict = dict_var.most_common(num_keys)
+    most_common_keys = [key for key,val in most_common_dict]
+
     nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
     pass_mwninspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
-    nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
+    # nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
-    readme = '# Summary statistics for the available NWB dandisets (Updated on ' + str(date_time) + ')' '\n'
+    readme = '# Summary statistics for the available dandisets (Updated on ' + str(date_time) + ')' '\n'
+    readme += '\n'
+    readme += '## BIDS dandisets\n'
+    readme += '\n'
+    readme += '- Total number of BIDS dandisets: ' + str(data_type_dict[bids_type_id]) + '\n'
+    readme += '\n'
+    readme += '- Median number of files in each BIDS dandiset: ' + str(
+        dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == bids_type_id].median()) + '\n'
+    readme += '\n'
+    readme += '- Median number of bytes in each BIDS dandiset: ' + "{:,}".format(int(
+        dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == bids_type_id].median())) + '\n'
+    readme += '## NWB dandisets\n'
     readme += '\n'
     readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
     readme += '\n'
@@ -292,6 +315,8 @@ def update_readme():
     readme += '\n'
     readme += '- Median number of bytes in each NWB dandiset: ' + "{:,}".format(int(
         dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median())) + '\n'
+    readme += '\n'
+    readme += '- ' + str(num_keys) + ' most commonly measured variables: ' + ', '.join(['%s' % var for var in most_common_keys]) + '\n'
     readme += '\n'
     readme += '- NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible: '
     root_url = 'https://dandiarchive.org/dandiset/'
@@ -365,7 +390,6 @@ def update_readme():
         readme += '---'
         readme += '\n\n'
     readme += '</p></details>'
-    print(readme)
     rmd = open(rd_file, 'w')
     rmd.write(readme)
     rmd.close()
