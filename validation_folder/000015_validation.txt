@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-21 17:09:39.273193+01:00
+Timestamp: 2022-08-29 18:33:57.710708+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
@@ -13,7 +13,7 @@ Found 4 issues over 2 files:
 0  ERROR
 ========
 
-0.0  /tmp/nwb_versions/sub-an044_ses-20140923_obj-1o335up.nwb and 1 other file: check_order_of_images_unique - 'None' object with name 'None'
+0.0  /tmp/nwb_versions/sub-an043_ses-20140909_obj-1k5ijvj.nwb and 1 other file: check_order_of_images_unique - 'None' object with name 'None'
        Message: Traceback (most recent call last):
   File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
     output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
@@ -28,7 +28,7 @@ Found 4 issues over 2 files:
 AttributeError: 'Images' object has no attribute 'order_of_images'
 
 
-0.1  /tmp/nwb_versions/sub-an044_ses-20140923_obj-1o335up.nwb and 1 other file: check_order_of_images_len - 'None' object with name 'None'
+0.1  /tmp/nwb_versions/sub-an043_ses-20140909_obj-1k5ijvj.nwb and 1 other file: check_order_of_images_len - 'None' object with name 'None'
        Message: Traceback (most recent call last):
   File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
     output = robust_s3_read(command=check_function, command_args=[nwbfile_object])

@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-21 17:45:33.944845+01:00
+Timestamp: 2022-08-29 23:18:45.490700+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
@@ -13,15 +13,15 @@ Found 8 issues over 2 files:
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-21_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/Sucrose_Concentration'
+0.0  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-20_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/Sucrose_Concentration'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.25 and rate=0.5 instead of timestamps.
 
-0.1  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-21_behavior.nwb and 1 other file: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeries'
+0.1  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-20_behavior.nwb and 1 other file: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeries'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.25 and rate=0.5 instead of timestamps.
 
-0.2  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-21_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/Island'
+0.2  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-20_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/Island'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.25 and rate=0.5 instead of timestamps.
 
-0.3  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-21_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/Egg'
+0.3  /tmp/nwb_versions/sub-0-200-Dop1R2-mutant-2-fly#-20_behavior.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/processing/behavior/Egg'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.25 and rate=0.5 instead of timestamps.
 

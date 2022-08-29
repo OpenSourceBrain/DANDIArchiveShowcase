@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-21 17:18:21.173116+01:00
+Timestamp: 2022-08-29 18:44:15.528197+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
@@ -13,15 +13,15 @@ Found 4 issues over 2 files:
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-703279277_ses-719161530_probe-729445654_ecephys.nwb: check_regular_timestamps - 'TimeSeries' object at location '/processing/current_source_density/ecephys_csd/current_source_density'
-       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=-0.1 and rate=0.0004000010538325466 instead of timestamps.
-
-0.1  /tmp/nwb_versions/sub-703279277_ses-719161530_probe-729445654_ecephys.nwb: check_regular_timestamps - 'ElectricalSeries' object at location '/acquisition/probe_729445654_lfp/probe_729445654_lfp_data'
-       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.6255450943187597 and rate=0.000800002109470177 instead of timestamps.
-
-0.2  /tmp/nwb_versions/sub-703279277_ses-719161530_probe-729445656_ecephys.nwb: check_regular_timestamps - 'TimeSeries' object at location '/processing/current_source_density/ecephys_csd/current_source_density'
+0.0  /tmp/nwb_versions/sub-703279277_ses-719161530_probe-729445656_ecephys.nwb: check_regular_timestamps - 'TimeSeries' object at location '/processing/current_source_density/ecephys_csd/current_source_density'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=-0.1 and rate=0.0004000000066662901 instead of timestamps.
 
-0.3  /tmp/nwb_versions/sub-703279277_ses-719161530_probe-729445656_ecephys.nwb: check_regular_timestamps - 'ElectricalSeries' object at location '/acquisition/probe_729445656_lfp/probe_729445656_lfp_data'
+0.1  /tmp/nwb_versions/sub-703279277_ses-719161530_probe-729445656_ecephys.nwb: check_regular_timestamps - 'ElectricalSeries' object at location '/acquisition/probe_729445656_lfp/probe_729445656_lfp_data'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.6247691749819921 and rate=0.0008000000139330998 instead of timestamps.
+
+0.2  /tmp/nwb_versions/sub-719828686_ses-754312389_probe-756781563_ecephys.nwb: check_regular_timestamps - 'TimeSeries' object at location '/processing/current_source_density/ecephys_csd/current_source_density'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=-0.1 and rate=0.00039999946363435124 instead of timestamps.
+
+0.3  /tmp/nwb_versions/sub-719828686_ses-754312389_probe-756781563_ecephys.nwb: check_regular_timestamps - 'ElectricalSeries' object at location '/acquisition/probe_756781563_lfp/probe_756781563_lfp_data'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=3.6766694353014806 and rate=0.0007999989272686747 instead of timestamps.
 

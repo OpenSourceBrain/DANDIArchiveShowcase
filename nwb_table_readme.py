@@ -96,24 +96,53 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
             json_df = pd.json_normalize(data)
             # sort the dataframe by column size will prevent returning series of files that have the same size
             json_df.sort_values(by='size', inplace=True)
-            # get the parent folder to the file path, files to be tested should from different parent folders
-            json_df['parent_folder'] = [i.split('/')[-2] for i in json_df.loc[:, 'path']]
-            # there are dandisets that only have 1 file
-            if len(json_df) <= 2:
-                counter_i = [0, 0]
-            else:
-                # there are dandisets that only have 1 parent folder
-                if len(json_df['parent_folder'].unique()) == 1:
-                    counter_i = [1, 2]
+            try:
+                # get the parent folder to the file path, files to be tested should from different parent folders
+                json_df['parent_folder'] = [i.split('/')[-2] for i in json_df.loc[:, 'path']]
+            except IndexError:
+                # in instances where a dataset has multiple parent folders but also file without a parent folder, this will apply (dandiset 29)
+                json_df['parent_folder'] = nanval
+
+            # a dataset might only have 1 file, and max_counter is the number of valid nwb files we want
+            max_counter = 2
+            # get the file path with the smallest size first, and check if it is a valid nwb file in the while loop
+            counter = 1
+            if len(json_df) == 1:
+                max_counter = 1
+                counter = 0
+            valid_path_url = 0
+            path_file = json_df['path'].iloc[counter]
+            path_lst = []
+            url_lst = []
+            file_parent_folder = []
+            smallest_size_lst = []
+
+            while valid_path_url < max_counter:
+                # check if the file with smallest file size is nwb, if not, get the next row
+                if path_file.split('.')[-1] != 'nwb':
+                    counter += 1
+                    path_file = json_df['path'].iloc[counter]
+                # if it is, return the path
                 else:
-                    for i in range(len(json_df))-1:
-                        if json_df['parent_folder'].iloc[1] != json_df['parent_folder'].iloc[1 + i]:
-                            counter_i = [1, 1 + i]
-                            break
-            url_lst = [json_df['metadata.contentUrl'].iloc[counter_i[0]][0],json_df['metadata.contentUrl'].iloc[counter_i[1]][0]]
-            path_lst = [json_df['path'].iloc[counter_i[0]],json_df['path'].iloc[counter_i[1]]]
-            smallest_size_lst = [json_df['size'].iloc[counter_i[0]],json_df['size'].iloc[counter_i[1]]]
-            file_parent_folder = [json_df['parent_folder'].iloc[counter_i[0]],json_df['parent_folder'].iloc[counter_i[1]]]
+                    if len(path_lst) == 1 and len(json_df['parent_folder'].unique()) != 1:
+                        if file_parent_folder[0] == json_df['parent_folder'].iloc[counter]:
+                            path_file = 't.blah'
+                            continue
+                    valid_path_url += 1
+                    path_lst.append(path_file)
+                    url_lst.append(json_df['metadata.contentUrl'].iloc[counter][0])
+                    smallest_size_lst.append(json_df['size'].iloc[counter])
+                    file_parent_folder.append(json_df['parent_folder'].iloc[counter])
+                    # reinsatntiate path_file so it passes the first if
+                    path_file = 't.blah'
+                # in case the while loop loops through all the length of the dataframe
+                if counter == len(json_df) - 1:
+                    if len(url_lst) == 1:
+                        url_lst.append(nanval)
+                        smallest_size_lst.append(nanval)
+                        file_parent_folder.append(nanval)
+                        path_lst.append(nanval)
+                        break
 
             report_message = []
             # if user doesn't want to download files
@@ -166,7 +195,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
-    # dl.remove(dataset=root_folder)
+    dl.remove(dataset=root_folder)
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path):
@@ -212,7 +241,6 @@ def test_nwbe_compatibility(nwb_path):
         print(f'Timeout for {cmd} ({timeout_s}s) expired')
         os.killpg(os.getpgid(p.pid), signal.SIGTERM)
         nwbe_compatibility = 'NC-1'
-    print('CATCH ME AGAIN')
     return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
@@ -257,9 +285,9 @@ def nwb_inspector_message_format(report_message,dds_id):
 
 def update_readme():
     save_folder = 'validation_folder'
-    # rd_file = os.path.join(save_folder,'README.md')
+    rd_file = os.path.join(save_folder,'README.md')
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
-    rd_file = os.path.join('./scratch_files','README.md')
+    # rd_file = os.path.join('./scratch_files','README.md')
     # summary_file = os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv')
     if not os.path.exists(summary_file):
         exit()
@@ -378,7 +406,10 @@ def update_readme():
                 if not pd.isna(nwb_pd['file_' + str(i)].iloc[row]):
                     nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile=' + nwb_pd['file_' + str(i)].iloc[
                         row]
-                    dandi_link = nwb_pd['url'].iloc[row] + '/files?location=' + nwb_pd['parent_folder_' + str(i)].iloc[row] +'%2F'
+                    if not pd.isna(nwb_pd['parent_folder_' + str(i)].iloc[row]):
+                        dandi_link = nwb_pd['url'].iloc[row] + '/files?location=' + nwb_pd['parent_folder_' + str(i)].iloc[row] +'%2F'
+                    else:
+                        dandi_link = nwb_pd['url'].iloc[row] + '/files?location='
                     info_link = nwb_pd['file_' + str(i)].iloc[row].split('/download')[0]
                     readme += '[File info](%s) | \n' % (info_link)
                     readme += '[View on DANDI Web](%s) | \n' % (dandi_link)

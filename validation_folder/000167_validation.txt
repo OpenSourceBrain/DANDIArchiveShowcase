@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-21 17:40:12.503089+01:00
+Timestamp: 2022-08-29 23:13:24.057289+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
@@ -138,6 +138,6 @@ AttributeError: 'Images' object has no attribute 'order_of_images'
 2.30  /tmp/nwb_versions/sub-7_ses-20200213T113524_ophys.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
         Message: Subject species 'mouse' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 
-2.31  /tmp/nwb_versions/sub-8_ses-20200204T180138_ophys.nwb: check_image_series_external_file_relative - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
-        Message: The external file '/Volumes/Simon_2018/DATA/2P/RAW/20200204/Mouse#8/exp/PLANES/Plane_1/plane_Z0.ome.tiff' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
+2.31  /tmp/nwb_versions/sub-164_ses-20200124T161514_ophys.nwb: check_image_series_external_file_relative - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
+        Message: The external file '/Volumes/Simon_2018/DATA/2P/RAW/20200124/Mouse#164/exp/Plane_1/All_Z0.ome.tiff' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
 

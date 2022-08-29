@@ -1,13 +1,13 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-21 17:44:48.818921+01:00
+Timestamp: 2022-08-29 23:18:04.223208+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
-Found 185 issues over 2 files:
+Found 188 issues over 2 files:
      182 - CRITICAL
-       3 - BEST_PRACTICE_VIOLATION
+       6 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
@@ -290,12 +290,12 @@ Found 185 issues over 2 files:
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.91  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb: check_time_interval_time_columns - 'TimeIntervals' object with name 'recognition_table'
+1.91  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'recognition_table'
         Message: ['start_time', 'stop_time', 'fixcross_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
 
-1.92  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/experiment_ids'
+1.92  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/experiment_ids'
         Message: experiment_ids timestamps are not ascending.
 
-1.93  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/events'
+1.93  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/events'
         Message: events timestamps are not ascending.
 

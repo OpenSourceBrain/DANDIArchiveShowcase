@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-21 17:27:41.246409+01:00
+Timestamp: 2022-08-29 22:49:50.399562+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
@@ -14,12 +14,12 @@ Found 4 issues over 2 files:
 0  CRITICAL
 ===========
 
-0.0  /tmp/nwb_versions/sub-760940732_ses-794590232_behavior+ophys.nwb and 1 other file: check_data_orientation - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
+0.0  /tmp/nwb_versions/sub-759066288_ses-779940237_behavior+ophys.nwb and 1 other file: check_data_orientation - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
 
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.1  /tmp/nwb_versions/sub-760940732_ses-794590232_behavior+ophys.nwb and 1 other file: check_missing_unit - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
+1.1  /tmp/nwb_versions/sub-759066288_ses-779940237_behavior+ophys.nwb and 1 other file: check_missing_unit - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
        Message: Missing text for attribute 'unit'. Please specify the scientific unit of the 'data'.
 
