@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:07:44.730898+07:00
+Timestamp: 2022-08-29 18:31:08.862839+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
 Found 12 issues over 2 files:
        8 - PYNWB_VALIDATION
@@ -15,27 +15,27 @@ Found 12 issues over 2 files:
 0  PYNWB_VALIDATION
 ===================
 
-0.0  /tmp/nwb_versions/sub-P16HMH_ses-20071001_obj-12ambkj_ecephys+image.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
+0.0  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
        Message: argument missing
 
-0.1  /tmp/nwb_versions/sub-P16HMH_ses-20071001_obj-12ambkj_ecephys+image.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
+0.1  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
-0.2  /tmp/nwb_versions/sub-P16HMH_ses-20071001_obj-12ambkj_ecephys+image.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
+0.2  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
        Message: argument missing
 
-0.3  /tmp/nwb_versions/sub-P16HMH_ses-20071001_obj-12ambkj_ecephys+image.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
+0.3  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
 1  CRITICAL
 ===========
 
-1.4  /tmp/nwb_versions/sub-P16HMH_ses-20071001_obj-12ambkj_ecephys+image.nwb and 1 other file: check_data_orientation - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation'
+1.4  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: check_data_orientation - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation'
        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
 
 2  BEST_PRACTICE_VIOLATION
 ==========================
 
-2.5  /tmp/nwb_versions/sub-P16HMH_ses-20071001_obj-12ambkj_ecephys+image.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+2.5  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
        Message: Subject species 'Human' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 

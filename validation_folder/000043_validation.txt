@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:57:54.066324+07:00
+Timestamp: 2022-08-29 22:48:12.474060+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
 Found 1 issues over 1 files:
        1 - BEST_PRACTICE_VIOLATION
@@ -13,6 +13,6 @@ Found 1 issues over 1 files:
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-M19-01-001_ses-20190228T222559_icephys.nwb: check_subject_species_exists - 'Subject' object at location '/general/subject'
+0.0  /tmp/nwb_versions/sub-Q19-26-018_ses-20191113T173113_icephys.nwb: check_subject_species_exists - 'Subject' object at location '/general/subject'
        Message: Subject species is missing.
 

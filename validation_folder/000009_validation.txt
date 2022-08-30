@@ -1,46 +1,43 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:09:53.037048+07:00
+Timestamp: 2022-08-29 18:32:24.876228+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 16 issues over 2 files:
+Found 15 issues over 2 files:
       12 - PYNWB_VALIDATION
-       4 - BEST_PRACTICE_VIOLATION
+       3 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
 0  PYNWB_VALIDATION
 ===================
 
-0.0  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
+0.0  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
        Message: argument missing
 
-0.1  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
+0.1  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
-0.2  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
+0.2  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
        Message: argument missing
 
-0.3  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
+0.3  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
-0.4  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: Units/waveform_mean/unit - 'None' object at location 'units/waveform_mean'
+0.4  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: Units/waveform_mean/unit - 'None' object at location 'units/waveform_mean'
        Message: argument missing
 
-0.5  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: Units/waveform_sd/unit - 'None' object at location 'units/waveform_sd'
+0.5  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: Units/waveform_sd/unit - 'None' object at location 'units/waveform_sd'
        Message: argument missing
 
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.6  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'left-ALM'
-       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
-
-1.7  /tmp/nwb_versions/sub-anm00260490_ses-20170627T093718_ecephys+ogen.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+1.6  /tmp/nwb_versions/sub-anm00237800_ses-20170627T093540_ecephys.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
        Message: ['cue_end_time', 'cue_start_time', 'pole_in_time', 'pole_out_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
 
-1.8  /tmp/nwb_versions/sub-anm00264942_ses-20170627T094011_ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'left-Thalamus'
+1.7  /tmp/nwb_versions/sub-anm00264942_ses-20170627T094011_ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'left-Thalamus'
        Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 

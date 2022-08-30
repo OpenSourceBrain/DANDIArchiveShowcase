@@ -1,34 +1,18 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:28:49.205637+07:00
+Timestamp: 2022-08-29 18:40:42.467752+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 5 issues over 1 files:
-       4 - PYNWB_VALIDATION
+Found 1 issues over 1 files:
        1 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
-0  PYNWB_VALIDATION
-===================
-
-0.0  /tmp/nwb_versions/sub-EC9_ses-EC9-B15.nwb: VectorIndex/description - 'None' object at location 'intervals/invalid_times/tags_index'
-       Message: argument missing
-
-0.1  /tmp/nwb_versions/sub-EC9_ses-EC9-B15.nwb: VectorIndex - 'None' object at location 'intervals/invalid_times/tags_index'
-       Message: incorrect type - expected 'uint8', got 'int64'
-
-0.2  /tmp/nwb_versions/sub-EC9_ses-EC9-B15.nwb: VectorIndex/description - 'None' object at location 'intervals/invalid_times/timeseries_index'
-       Message: argument missing
-
-0.3  /tmp/nwb_versions/sub-EC9_ses-EC9-B15.nwb: VectorIndex - 'None' object at location 'intervals/invalid_times/timeseries_index'
-       Message: incorrect type - expected 'uint8', got 'int64'
-
-1  BEST_PRACTICE_VIOLATION
+0  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.4  /tmp/nwb_versions/sub-EC9_ses-EC9-B15.nwb: check_resolution - 'ElectricalSeries' object at location '/acquisition/ElectricalSeries'
+0.0  /tmp/nwb_versions/sub-GP31_ses-GP31-B65.nwb: check_resolution - 'ElectricalSeries' object at location '/acquisition/ElectricalSeries'
        Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
 

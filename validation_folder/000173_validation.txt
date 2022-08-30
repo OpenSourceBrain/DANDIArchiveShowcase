@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 14:38:55.302333+07:00
+Timestamp: 2022-08-29 23:16:32.744073+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
 Found 2 issues over 2 files:
        2 - BEST_PRACTICE_VIOLATION
@@ -13,6 +13,6 @@ Found 2 issues over 2 files:
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-BH279_ses-20211103.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+0.0  /tmp/nwb_versions/sub-BH269_ses-20211121_obj-17a5r9o.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
        Message: Subject species 'rattus norvegicus' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 

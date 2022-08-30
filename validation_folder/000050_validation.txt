@@ -1,12 +1,12 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 14:06:55.672685+07:00
+Timestamp: 2022-08-29 22:50:18.764813+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 6 issues over 2 files:
-       4 - CRITICAL
+Found 5 issues over 2 files:
+       3 - CRITICAL
        2 - BEST_PRACTICE_VIOLATION
 **************************************************
 
@@ -14,15 +14,15 @@ Found 6 issues over 2 files:
 0  CRITICAL
 ===========
 
-0.0  /tmp/nwb_versions/sub-661968859_ses-684856233_behavior+ophys.nwb and 1 other file: check_data_orientation - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
+0.0  /tmp/nwb_versions/sub-673580710_ses-693508136_behavior+ophys.nwb and 1 other file: check_data_orientation - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
 
-0.1  /tmp/nwb_versions/sub-661968859_ses-684856233_behavior+ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/brain_observatory_pipeline/MotionCorrection'
+0.1  /tmp/nwb_versions/sub-673580710_ses-693508136_behavior+ophys.nwb: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/brain_observatory_pipeline/MotionCorrection'
        Message: The length of the first dimension of data does not match the length of timestamps.
 
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.2  /tmp/nwb_versions/sub-661968859_ses-684856233_behavior+ophys.nwb and 1 other file: check_missing_unit - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
+1.2  /tmp/nwb_versions/sub-673580710_ses-693508136_behavior+ophys.nwb and 1 other file: check_missing_unit - 'TwoPhotonSeries' object at location '/processing/brain_observatory_pipeline/max_project'
        Message: Missing text for attribute 'unit'. Please specify the scientific unit of the 'data'.
 

@@ -1,11 +1,45 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:10:35.268033+07:00
+Timestamp: 2022-08-29 18:32:39.851199+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 0 issues over 0 files:
+Found 4 issues over 2 files:
+       4 - ERROR
 **************************************************
+
+
+0  ERROR
+========
+
+0.0  /tmp/nwb_versions/sub-217951_ses-20131014_obj-1jpvswn_behavior+ophys.nwb and 1 other file: check_order_of_images_unique - 'None' object with name 'None'
+       Message: Traceback (most recent call last):
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
+    output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
+    raise exc
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 128, in auto_parse_some_output
+    output = check_function(*args, **kwargs)
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/checks/images.py", line 19, in check_order_of_images_unique
+    if images.order_of_images is None:
+AttributeError: 'Images' object has no attribute 'order_of_images'
+
+
+0.1  /tmp/nwb_versions/sub-217951_ses-20131014_obj-1jpvswn_behavior+ophys.nwb and 1 other file: check_order_of_images_len - 'None' object with name 'None'
+       Message: Traceback (most recent call last):
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
+    output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
+    raise exc
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 128, in auto_parse_some_output
+    output = check_function(*args, **kwargs)
+  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/checks/images.py", line 26, in check_order_of_images_len
+    if images.order_of_images is None:
+AttributeError: 'Images' object has no attribute 'order_of_images'
 
 

@@ -1,18 +1,18 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:51:58.212603+07:00
+Timestamp: 2022-08-29 22:37:46.329163+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 2 issues over 2 files:
-       2 - BEST_PRACTICE_VIOLATION
+Found 1 issues over 1 files:
+       1 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-mouse412804_ses-20200824T155542.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+0.0  /tmp/nwb_versions/sub-mouse412804_ses-20200824T155543.nwb: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
        Message: Subject species 'mus musculus' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 

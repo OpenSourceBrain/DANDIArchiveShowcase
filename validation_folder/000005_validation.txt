@@ -1,21 +1,21 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:09:10.069608+07:00
+Timestamp: 2022-08-29 18:31:27.814679+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 3 issues over 2 files:
-       3 - BEST_PRACTICE_VIOLATION
+Found 4 issues over 2 files:
+       4 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-anm236462_ses-20140210_behavior+icephys.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+0.0  /tmp/nwb_versions/sub-anm266945_ses-20141221_obj-1vgsemf_behavior+icephys+ogen.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
        Message: ['first_lick_time', 'first_touch_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
 
-0.1  /tmp/nwb_versions/sub-anm266945_ses-20141221_obj-1vgsemf_behavior+icephys+ogen.nwb: check_resolution - 'OptogeneticSeries' object at location '/stimulus/presentation/photostimulation_site_ 1'
+0.1  /tmp/nwb_versions/sub-anm266945_ses-20141221_obj-1vgsemf_behavior+icephys+ogen.nwb and 1 other file: check_resolution - 'OptogeneticSeries' object at location '/stimulus/presentation/photostimulation_site_ 1'
        Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
 
