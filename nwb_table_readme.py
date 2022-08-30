@@ -300,11 +300,13 @@ def update_readme():
     # summary statistics here
     data_type_dict = dandi_metadata_readme['data_type'].value_counts().to_dict()
     # get data_type values
+    bids_exist = 0
     for k, vals in data_type_dict.items():
         if 'NWB' in k:
             nwb_type_id = k
         elif 'BIDS' in k:
             bids_type_id = k
+            bids_exist = 1
         else:
             other_type_id = k
 
@@ -325,15 +327,16 @@ def update_readme():
 
     readme = '# Summary statistics for the available dandisets (Updated on ' + str(date_time) + ')' '\n'
     readme += '\n'
-    readme += '## BIDS dandisets\n'
-    readme += '\n'
-    readme += '- Total number of BIDS dandisets: ' + str(data_type_dict[bids_type_id]) + '\n'
-    readme += '\n'
-    readme += '- Median number of files in each BIDS dandiset: ' + str(
-        dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == bids_type_id].median()) + '\n'
-    readme += '\n'
-    readme += '- Median number of bytes in each BIDS dandiset: ' + "{:,}".format(int(
-        dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == bids_type_id].median())) + '\n'
+    if bids_exist == 1:
+        readme += '## BIDS dandisets\n'
+        readme += '\n'
+        readme += '- Total number of BIDS dandisets: ' + str(data_type_dict[bids_type_id]) + '\n'
+        readme += '\n'
+        readme += '- Median number of files in each BIDS dandiset: ' + str(
+            dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == bids_type_id].median()) + '\n'
+        readme += '\n'
+        readme += '- Median number of bytes in each BIDS dandiset: ' + "{:,}".format(int(
+            dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == bids_type_id].median())) + '\n'
     readme += '## NWB dandisets\n'
     readme += '\n'
     readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
