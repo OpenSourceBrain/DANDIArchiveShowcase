@@ -310,6 +310,7 @@ def update_readme():
         else:
             other_type_id = k
 
+    dandi_metadata_readme.loc[:, 'identifier'] = [i.split(':')[1] for i in dandi_metadata_readme.loc[:, 'identifier']]
     nwb_pd = dandi_metadata_readme.loc[dandi_metadata_readme['data_type'] == nwb_type_id].copy()
     nwb_pd.reset_index(inplace=True)
     # get the [num_keys] most common measured variable
@@ -320,7 +321,7 @@ def update_readme():
     most_common_dict = dict_var.most_common(num_keys)
     most_common_keys = [key for key,val in most_common_dict]
 
-    nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
+    # nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
     pass_mwninspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
     # nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
@@ -328,6 +329,8 @@ def update_readme():
     readme = '# Summary statistics for the available dandisets (Updated on ' + str(date_time) + ')' '\n'
     readme += '\n'
     if bids_exist == 1:
+        bids_pd = dandi_metadata_readme.loc[dandi_metadata_readme['data_type'] == bids_type_id].copy()
+        bids_pd.reset_index(inplace=True)
         readme += '## BIDS dandisets\n'
         readme += '\n'
         readme += '- Total number of BIDS dandisets: ' + str(data_type_dict[bids_type_id]) + '\n'
@@ -337,6 +340,43 @@ def update_readme():
         readme += '\n'
         readme += '- Median number of bytes in each BIDS dandiset: ' + "{:,}".format(int(
             dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == bids_type_id].median())) + '\n'
+        readme += '<details><summary> Summary information on the available NWB dandisets (more details in dandiset_summary.csv).\n</summary><p>'
+        readme += '\n\n\n\n'
+
+        for row in bids_pd.index:
+            ref = bids_pd['identifier'].iloc[row]
+            validation_file = ref + '_validation'
+            try:
+                readme += '*[DANDI:' + bids_pd['identifier'].iloc[row] + ']' + '(' + bids_pd['url'].iloc[
+                    row] + ')*' + ': **' + bids_pd['name'].iloc[row] + '**\n\n'
+            except:
+                pass
+
+            readme += '- Data type: **' + bids_pd['data_type'].iloc[row] + '**'
+            if not pd.isna(bids_pd['nwb_version'].iloc[row]):
+                readme += ' (**version ' + bids_pd['nwb_version'].iloc[row] + '**)'
+
+            if not pd.isna(bids_pd['num_bytes'].iloc[row]):
+                readme += ', file count: **' + str(
+                    bids_pd['num_files'].iloc[row]) + '**, total size (bytes): **' + "{:,}".format(
+                    int(bids_pd['num_bytes'].iloc[row])) + '**\n\n'
+
+            if not pd.isna(bids_pd['species'].iloc[row]):
+                readme += '- Species: **' + bids_pd['species'].iloc[row] + '**\n\n'
+
+            if not pd.isna(bids_pd['keywords'].iloc[row]):
+
+                kws = ast.literal_eval(bids_pd['keywords'].iloc[row])
+                if len(kws) > 0:
+                    readme += '- Keywords: ' + ', '.join(['**%s**' % kw for kw in kws]) + '\n\n'
+
+            if not pd.isna(bids_pd['citation'].iloc[row]):
+                readme += '- Source paper: *' + bids_pd['citation'].iloc[row].split('(Vers')[0].strip() + '*\n\n'
+
+            readme += '---'
+            readme += '\n\n'
+        readme += '</p></details>'
+    readme += '\n\n'
     readme += '## NWB dandisets\n'
     readme += '\n'
     readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
@@ -414,6 +454,7 @@ def update_readme():
                     else:
                         dandi_link = nwb_pd['url'].iloc[row] + '/files?location='
                     info_link = nwb_pd['file_' + str(i)].iloc[row].split('/download')[0]
+                    readme += 'Size: %s bytes | \n' % (nwb_pd['file_size_' + str(i)].iloc[row])
                     readme += '[File info](%s) | \n' % (info_link)
                     readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
                     readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
