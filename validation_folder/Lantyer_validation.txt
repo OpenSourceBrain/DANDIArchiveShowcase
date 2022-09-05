@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-09-05 20:09:22.509591+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.12
+
+Found 12 issues over 6 files:
+      12 - PYNWB_VALIDATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/github/Lantyer/LantyerEtAl2018_170315_AL_216_VC.nwb and 5 other files: VectorIndex/description - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: argument missing
+
+0.1  /tmp/github/Lantyer/LantyerEtAl2018_170315_AL_216_VC.nwb and 5 other files: VectorIndex - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: incorrect type - expected 'uint8', got 'int64'
+

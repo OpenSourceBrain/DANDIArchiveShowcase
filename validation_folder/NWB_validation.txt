@@ -1,0 +1,295 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-09-05 20:09:23.050513+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.12
+
+Found 179 issues over 3 files:
+     166 - CRITICAL
+      13 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T0.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T1.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.2  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T2.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.3  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T3.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.4  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T4.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.5  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T5.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.6  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T6.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.7  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T7.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.8  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T8.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.9  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+       Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T9.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.10  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T10.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.11  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T11.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.12  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T12.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.13  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T13.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.14  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T14.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.15  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T15.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.16  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T16.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.17  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T17.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.18  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T18.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.19  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T19.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.20  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T20.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.21  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T21.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.22  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T22.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.23  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T23.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.24  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T24.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.25  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T25.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.26  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T26.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.27  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T27.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.28  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T28.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.29  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T29.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.30  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T30.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.31  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T31.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.32  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T32.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.33  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T33.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.34  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T34.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.35  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T35.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.36  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T36.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.37  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T37.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.38  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T38.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.39  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T39.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.40  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T40.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.41  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T41.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.42  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T42.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.43  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T43.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.44  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T44.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.45  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T45.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.46  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T46.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.47  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T47.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.48  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T48.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.49  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T49.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.50  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T50.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.51  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T51.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.52  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T52.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.53  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T53.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.54  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T54.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.55  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T55.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.56  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T56.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.57  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T57.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.58  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T58.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.59  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T59.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.60  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T60.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.61  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T61.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.62  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T62.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.63  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T63.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.64  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T64.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.65  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T65.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.66  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T66.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.67  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T67.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.68  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T68.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.69  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T69.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.70  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T70.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.71  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T71.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.72  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T72.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.73  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T73.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.74  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T74.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.75  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T75.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.76  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T76.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.77  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T77.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.78  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T78.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.79  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T79.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.80  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T80.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.81  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The external file 'https://raw.githubusercontent.com/OpenSourceBrain/NWBShowcase/master/NWB/images/MyNetwork_T81.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.82  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_timestamps_match_first_dimension - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: The length of the first dimension of data does not match the length of timestamps.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.83  /tmp/github/NWB/datatypes.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/test_volt_s_sine'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=1.0 and rate=0.0009999999999998899 instead of timestamps.
+
+1.84  /tmp/github/NWB/datatypes.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/test_mvolt_s_sine'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=1.0 and rate=0.0009999999999998899 instead of timestamps.
+
+1.85  /tmp/github/NWB/datatypes.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/test_mvolt_s_conversion_sine'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=1.0 and rate=0.0009999999999998899 instead of timestamps.
+
+1.86  /tmp/github/NWB/datatypes.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/acquisition/spatial_series_1D'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+1.87  /tmp/github/NWB/datatypes.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/acquisition/Tracked 2D position/spatial_series_2D'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+1.88  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+        Message: Subject species 'Homo Sapiens.' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+1.89  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/test_sine_2'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+1.90  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/test_sine_1'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+1.91  /tmp/github/NWB/time_series_data.nwb and 1 other file: check_regular_timestamps - 'ImageSeries' object at location '/acquisition/test_image_series'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=1563907835.857213 and rate=1.0 instead of timestamps.
+

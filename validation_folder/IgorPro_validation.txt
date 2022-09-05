@@ -1,0 +1,1501 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-09-05 20:08:54.576955+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.12
+
+Found 494 issues over 1 files:
+       2 - PYNWB_VALIDATION
+     492 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/github/IgorPro/141210c3.nwb: root/general/experimenter - 'None' object at location 'general/experimenter'
+       Message: incorrect shape - expected an array of shape '[None]', got non-array data 'Frederic Lanore'
+
+0.1  /tmp/github/IgorPro/141210c3.nwb: root/general/related_publications - 'None' object at location 'general/related_publications'
+       Message: incorrect shape - expected an array of shape '[None]', got non-array data 'Lanore et al. 2019, Norepinephrine controls the gain of the inhibitory circuit in the cerebellar input layer, https://www.biorxiv.org/content/10.1101/567172v1'
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.2  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_9'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.3  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_8'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.4  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_7'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.5  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_6'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.6  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_5'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.7  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_40'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.8  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_4'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.9  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_39'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.10  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_38'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.11  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_37'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.12  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_36'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.13  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_35'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.14  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_34'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.15  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_33'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.16  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_32'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.17  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_31'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.18  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_30'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.19  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_3'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.20  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_29'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.21  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_28'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.22  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_27'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.23  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_26'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.24  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_25'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.25  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_24'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.26  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_23'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.27  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_22'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.28  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_21'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.29  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_20'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.30  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_2'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.31  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_19'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.32  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_18'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.33  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_17'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.34  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_16'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.35  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_15'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.36  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_14'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.37  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_13'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.38  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_12'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.39  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_11'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.40  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_10'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.41  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_1'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.42  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_0'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.43  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_9'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.44  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_8'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.45  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_7'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.46  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_6'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.47  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_5'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.48  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_40'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.49  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_4'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.50  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_39'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.51  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_38'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.52  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_37'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.53  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_36'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.54  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_35'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.55  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_34'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.56  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_33'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.57  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_32'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.58  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_31'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.59  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_30'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.60  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_3'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.61  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_29'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.62  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_28'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.63  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_27'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.64  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_26'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.65  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_25'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.66  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_24'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.67  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_23'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.68  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_22'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.69  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_21'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.70  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_20'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.71  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_2'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.72  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_19'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.73  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_18'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.74  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_17'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.75  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_16'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.76  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_15'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.77  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_14'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.78  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_13'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.79  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_12'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.80  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_11'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.81  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_10'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.82  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_1'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.83  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_0'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.84  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_9'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.85  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_8'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.86  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_7'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.87  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_6'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.88  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_5'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.89  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_40'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.90  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_4'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.91  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_39'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.92  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_38'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.93  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_37'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.94  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_36'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.95  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_35'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.96  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_34'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.97  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_33'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.98  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_32'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.99  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_31'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.100  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_30'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.101  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_3'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.102  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_29'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.103  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_28'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.104  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_27'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.105  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_26'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.106  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_25'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.107  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_24'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.108  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_23'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.109  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_22'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.110  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_21'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.111  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_20'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.112  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_2'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.113  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_19'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.114  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_18'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.115  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_17'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.116  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_16'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.117  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_15'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.118  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_14'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.119  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_13'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.120  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_12'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.121  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_11'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.122  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_10'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.123  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_1'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.124  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_0'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.125  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA9'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.126  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA8'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.127  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA7'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.128  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA6'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.129  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA5'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.130  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA40'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.131  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA4'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.132  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA39'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.133  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA38'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.134  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA37'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.135  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA36'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.136  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA35'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.137  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA34'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.138  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA33'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.139  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA32'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.140  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA31'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.141  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA30'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.142  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA3'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.143  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA29'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.144  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA28'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.145  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA27'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.146  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA26'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.147  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA25'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.148  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA24'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.149  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA23'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.150  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA22'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.151  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA21'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.152  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA20'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.153  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA2'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.154  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA19'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.155  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA18'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.156  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA17'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.157  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA16'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.158  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA15'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.159  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA14'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.160  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA13'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.161  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA12'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.162  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA11'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.163  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA10'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.164  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA1'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.165  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Washout_RecordA0'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.166  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA9'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.167  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA8'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.168  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA7'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.169  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA6'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.170  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA5'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.171  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA40'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.172  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA4'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.173  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA39'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.174  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA38'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.175  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA37'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.176  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA36'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.177  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA35'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.178  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA34'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.179  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA33'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.180  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA32'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.181  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA31'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.182  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA30'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.183  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA3'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.184  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA29'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.185  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA28'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.186  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA27'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.187  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA26'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.188  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA25'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.189  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA24'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.190  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA23'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.191  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA22'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.192  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA21'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.193  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA20'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.194  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA2'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.195  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA19'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.196  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA18'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.197  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA17'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.198  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA16'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.199  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA15'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.200  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA14'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.201  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA13'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.202  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA12'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.203  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA11'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.204  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA10'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.205  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA1'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.206  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA0'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.207  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA9'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.208  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA8'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.209  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA7'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.210  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA6'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.211  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA5'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.212  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA40'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.213  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA4'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.214  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA39'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.215  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA38'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.216  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA37'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.217  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA36'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.218  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA35'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.219  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA34'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.220  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA33'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.221  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA32'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.222  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA31'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.223  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA30'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.224  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA3'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.225  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA29'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.226  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA28'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.227  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA27'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.228  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA26'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.229  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA25'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.230  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA24'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.231  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA23'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.232  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA22'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.233  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA21'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.234  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA20'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.235  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA2'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.236  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA19'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.237  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA18'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.238  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA17'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.239  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA16'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.240  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA15'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.241  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA14'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.242  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA13'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.243  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA12'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.244  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA11'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.245  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA10'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.246  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA1'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.247  /tmp/github/IgorPro/141210c3.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Control_RecordA0'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0001 instead of timestamps.
+
+1.248  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_9'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.249  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_8'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.250  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_7'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.251  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_6'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.252  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_5'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.253  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_40'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.254  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_4'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.255  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_39'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.256  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_38'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.257  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_37'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.258  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_36'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.259  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_35'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.260  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_34'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.261  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_33'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.262  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_32'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.263  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_31'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.264  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_30'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.265  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_3'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.266  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_29'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.267  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_28'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.268  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_27'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.269  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_26'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.270  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_25'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.271  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_24'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.272  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_23'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.273  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_22'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.274  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_21'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.275  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_20'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.276  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_2'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.277  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_19'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.278  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_18'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.279  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_17'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.280  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_16'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.281  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_15'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.282  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_14'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.283  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_13'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.284  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_12'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.285  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_11'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.286  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_10'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.287  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_1'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.288  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Washout_uDAC_0_0'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.289  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_9'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.290  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_8'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.291  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_7'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.292  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_6'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.293  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_5'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.294  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_40'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.295  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_4'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.296  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_39'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.297  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_38'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.298  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_37'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.299  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_36'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.300  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_35'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.301  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_34'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.302  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_33'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.303  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_32'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.304  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_31'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.305  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_30'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.306  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_3'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.307  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_29'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.308  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_28'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.309  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_27'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.310  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_26'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.311  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_25'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.312  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_24'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.313  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_23'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.314  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_22'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.315  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_21'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.316  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_20'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.317  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_2'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.318  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_19'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.319  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_18'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.320  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_17'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.321  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_16'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.322  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_15'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.323  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_14'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.324  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_13'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.325  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_12'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.326  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_11'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.327  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_10'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.328  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_1'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.329  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Norepinephrine_uDAC_0_0'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.330  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_9'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.331  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_8'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.332  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_7'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.333  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_6'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.334  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_5'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.335  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_40'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.336  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_4'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.337  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_39'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.338  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_38'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.339  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_37'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.340  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_36'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.341  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_35'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.342  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_34'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.343  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_33'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.344  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_32'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.345  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_31'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.346  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_30'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.347  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_3'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.348  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_29'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.349  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_28'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.350  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_27'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.351  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_26'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.352  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_25'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.353  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_24'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.354  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_23'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.355  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_22'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.356  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_21'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.357  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_20'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.358  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_2'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.359  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_19'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.360  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_18'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.361  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_17'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.362  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_16'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.363  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_15'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.364  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_14'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.365  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_13'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.366  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_12'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.367  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_11'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.368  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_10'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.369  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_1'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.370  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/stimulus/presentation/Control_uDAC_0_0'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.371  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA9'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.372  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA8'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.373  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA7'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.374  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA6'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.375  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA5'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.376  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA40'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.377  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA4'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.378  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA39'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.379  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA38'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.380  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA37'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.381  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA36'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.382  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA35'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.383  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA34'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.384  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA33'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.385  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA32'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.386  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA31'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.387  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA30'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.388  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA3'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.389  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA29'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.390  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA28'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.391  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA27'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.392  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA26'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.393  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA25'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.394  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA24'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.395  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA23'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.396  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA22'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.397  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA21'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.398  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA20'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.399  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA2'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.400  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA19'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.401  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA18'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.402  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA17'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.403  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA16'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.404  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA15'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.405  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA14'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.406  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA13'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.407  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA12'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.408  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA11'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.409  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA10'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.410  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA1'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.411  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Washout_RecordA0'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.412  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA9'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.413  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA8'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.414  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA7'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.415  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA6'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.416  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA5'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.417  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA40'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.418  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA4'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.419  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA39'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.420  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA38'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.421  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA37'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.422  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA36'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.423  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA35'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.424  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA34'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.425  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA33'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.426  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA32'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.427  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA31'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.428  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA30'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.429  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA3'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.430  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA29'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.431  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA28'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.432  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA27'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.433  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA26'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.434  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA25'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.435  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA24'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.436  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA23'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.437  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA22'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.438  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA21'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.439  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA20'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.440  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA2'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.441  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA19'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.442  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA18'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.443  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA17'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.444  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA16'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.445  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA15'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.446  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA14'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.447  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA13'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.448  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA12'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.449  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA11'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.450  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA10'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.451  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA1'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.452  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Norepinephrine_RecordA0'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.453  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA9'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.454  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA8'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.455  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA7'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.456  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA6'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.457  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA5'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.458  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA40'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.459  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA4'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.460  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA39'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.461  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA38'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.462  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA37'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.463  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA36'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.464  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA35'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.465  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA34'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.466  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA33'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.467  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA32'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.468  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA31'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.469  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA30'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.470  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA3'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.471  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA29'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.472  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA28'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.473  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA27'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.474  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA26'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.475  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA25'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.476  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA24'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.477  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA23'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.478  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA22'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.479  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA21'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.480  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA20'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.481  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA2'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.482  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA19'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.483  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA18'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.484  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA17'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.485  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA16'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.486  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA15'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.487  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA14'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.488  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA13'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.489  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA12'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.490  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA11'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.491  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA10'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.492  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA1'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
+1.493  /tmp/github/IgorPro/141210c3.nwb: check_resolution - 'TimeSeries' object at location '/acquisition/Control_RecordA0'
+         Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+
