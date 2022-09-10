@@ -28,6 +28,7 @@ cd DANDIArchiveShowcase
 - The nwb_table_readme.py script allows users to parse through all the dandisets in DANDIArchive, extract metadata information
 and validate files in each dandiset against NWBInspector, as well as testing their compatibility with NWB Explorer. 
 Validation reports and summary information are saved in a directory called validation_folder.
+- The compatibility_test.py script works as a companion script to nwb_table_readme.py for the purpose of inspecting a file's compatibility with NWBE.
 ```
 nwb_table_readme.py
 Usage: python nwb_table_readme.py [OPTIONS]
