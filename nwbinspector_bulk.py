@@ -8,6 +8,8 @@ from pathlib import Path
 from nwb_table_readme import nwb_inspector_message_format
 
 def inspect_nwb_bulk(arge_folder_path=None):
+    # where the reports will be saved to
+    report_save_folder = 'validation_folder/nwbinspector_bulk'
     # if not a github repo, input is list of local nwb file path
     if arge_folder_path:
         target_folder = input('Please specify the directory that has the NWB files you want to inspect: ')
@@ -30,7 +32,7 @@ def inspect_nwb_bulk(arge_folder_path=None):
         for i in range(len(nwbfile_path)):
             report_message.extend(list(inspect_nwb(nwbfile_path=nwbfile_path[i],
                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
-        nwb_inspector_message_format(report_message, parent_folder)
+        nwb_inspector_message_format(report_message, parent_folder, report_save_folder)
 
 if __name__ == "__main__":
     # option for testing github link or folder path

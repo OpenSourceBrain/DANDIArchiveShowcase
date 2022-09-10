@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-09-05 20:09:28.585124+01:00
+Timestamp: 2022-09-06 23:18:38.046818+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
 NWBInspector version: 0.4.12
 
@@ -16,90 +16,90 @@ Found 2 issues over 2 files:
 
 0.0  /tmp/github/ScholzEtAl2018/ScholzEtAl2018_AML175_moving_BrainScanner20180223_141721.nwb: During io.read() - <class 'hdmf.build.errors.ConstructError'>: (root/processing/neural_activity/DeconvActivity_01 GroupBuilder {'attributes': {'comments': 'WARNING: No description of data is provided in documentation. Extracted from: AML175_moving.hdf5, Datasets are provided in hdf5 format. Each dataset has two files, containing the raw data and a results file containing analysis and models.', 'description': 'Neuron 1', 'namespace': 'leiferlab', 'neurodata_type': 'ResponseSeries', 'neuron_id': 1, 'object_id': '05607eba-aab1-41a1-908f-77880b7ac7bc'}, 'groups': {}, 'datasets': {'data': root/processing/neural_activity/DeconvActivity_01/data DatasetBuilder {'attributes': {'conversion': 1.0, 'resolution': -1.0, 'unit': 'lumens'}, 'data': <HDF5 dataset "data": shape (2244,), type "<f8">}, 'timestamps': root/processing/neural_activity/DeconvActivity_01/timestamps DatasetBuilder {'attributes': {'interval': 1, 'unit': 'seconds'}, 'data': <HDF5 dataset "timestamps": shape (2244,), type "<f8">}}, 'links': {}}, "Could not construct ResponseSeries object due to: MultiContainerInterface.__make_add.<locals>._func: None is not allowed for 'optical_channel' (expected 'list, tuple, dict or OpticalChannel', not None)") - 'None' object with name 'None'
        Message: Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1248, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1248, in construct
     obj = self.__new_container__(cls, builder.source, parent, builder.attributes.get(self.__spec.id_key()),
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1261, in __new_container__
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1261, in __new_container__
     obj.__init__(**kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/classgenerator.py", line 403, in __init__
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/classgenerator.py", line 403, in __init__
     add_method(new_kwarg['value'])
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 638, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 644, in func_call
     pargs = _check_args(args, kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 631, in _check_args
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 637, in _check_args
     raise ExceptionType(msg)
 TypeError: MultiContainerInterface.__make_add.<locals>._func: None is not allowed for 'optical_channel' (expected 'list, tuple, dict or OpticalChannel', not None)
 
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 528, in inspect_nwb
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 528, in inspect_nwb
     nwbfile = robust_s3_read(command=io.read, max_retries=max_retries)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
     raise exc
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
     return command(*command_args, **command_kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/hdf5/h5tools.py", line 451, in read
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/backends/hdf5/h5tools.py", line 451, in read
     return super().read(**kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/io.py", line 42, in read
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/backends/io.py", line 42, in read
     container = self.__manager.construct(f_builder)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 280, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/manager.py", line 280, in construct
     result = self.__type_map.construct(builder, self, None)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
     return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
     subspecs = self.__get_subspec_values(builder, self.spec, manager)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
     self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1198, in __get_sub_builders
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1198, in __get_sub_builders
     ret.update(self.__get_subspec_values(sub_builder, subspec, manager))
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
     self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1190, in __get_sub_builders
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1190, in __get_sub_builders
     sub_builder = self.__flatten(sub_builder, subspec, manager)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in __flatten
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in __flatten
     tmp = [manager.construct(b) for b in sub_builder]
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in <listcomp>
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in <listcomp>
     tmp = [manager.construct(b) for b in sub_builder]
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
     result = self.__type_map.construct(builder, self, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
     return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
     subspecs = self.__get_subspec_values(builder, self.spec, manager)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
     self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1190, in __get_sub_builders
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1190, in __get_sub_builders
     sub_builder = self.__flatten(sub_builder, subspec, manager)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in __flatten
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in __flatten
     tmp = [manager.construct(b) for b in sub_builder]
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in <listcomp>
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1203, in <listcomp>
     tmp = [manager.construct(b) for b in sub_builder]
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
     result = self.__type_map.construct(builder, self, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
     return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/utils.py", line 645, in func_call
     return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1252, in construct
+  File "/home/anh/anaconda3/envs/test_nwbe_final/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1252, in construct
     raise ConstructError(builder, msg) from ex
 hdmf.build.errors.ConstructError: (root/processing/neural_activity/DeconvActivity_01 GroupBuilder {'attributes': {'comments': 'WARNING: No description of data is provided in documentation. Extracted from: AML175_moving.hdf5, Datasets are provided in hdf5 format. Each dataset has two files, containing the raw data and a results file containing analysis and models.', 'description': 'Neuron 1', 'namespace': 'leiferlab', 'neurodata_type': 'ResponseSeries', 'neuron_id': 1, 'object_id': '05607eba-aab1-41a1-908f-77880b7ac7bc'}, 'groups': {}, 'datasets': {'data': root/processing/neural_activity/DeconvActivity_01/data DatasetBuilder {'attributes': {'conversion': 1.0, 'resolution': -1.0, 'unit': 'lumens'}, 'data': <HDF5 dataset "data": shape (2244,), type "<f8">}, 'timestamps': root/processing/neural_activity/DeconvActivity_01/timestamps DatasetBuilder {'attributes': {'interval': 1, 'unit': 'seconds'}, 'data': <HDF5 dataset "timestamps": shape (2244,), type "<f8">}}, 'links': {}}, "Could not construct ResponseSeries object due to: MultiContainerInterface.__make_add.<locals>._func: None is not allowed for 'optical_channel' (expected 'list, tuple, dict or OpticalChannel', not None)")
 

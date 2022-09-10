@@ -163,13 +163,12 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
 
-                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name)
+                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)
                         except ValueError:
                             validation_summary = 'UNABLE'
                             pass
                         # test nwbe compatibility
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path)
-                        print(nwbe_compatibility[i])
                         # uninstall file
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
@@ -244,7 +243,6 @@ def test_nwbe_compatibility(nwb_path):
     return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
-    # the argument nwb_version is in case the function exits with error
     # create save folder
     save_folder = '/tmp/nwb_versions'
     if not os.path.exists(save_folder):
@@ -259,12 +257,11 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
         download.download(dandi_url, output_dir=save_folder)
     return tmp_nwb_path
 
-def nwb_inspector_message_format(report_message,dds_id,detailed_report=None):
-    save_folder = 'validation_folder'
+def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_report=None):
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
     validation_file = os.path.join(save_folder, dds_id+'_validation.txt')
-    print('Testing is finished for dandiset'+dds_id +'. report is saved as txt file.')
+    print('Testing is finished for dandiset '+dds_id +'. report is saved as txt file.')
     # if a detailed report is wanted, report will specify names of files that fail tests
     if detailed_report:
         message_levels = ['importance', 'location']
@@ -292,8 +289,6 @@ def update_readme():
     save_folder = 'validation_folder'
     rd_file = os.path.join(save_folder,'README.md')
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
-    # rd_file = os.path.join('./scratch_files','README.md')
-    # summary_file = os.path.join(save_folder, 'dandiset_summary_tmp_tmp.csv')
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
@@ -326,10 +321,8 @@ def update_readme():
     most_common_dict = dict_var.most_common(num_keys)
     most_common_keys = [key for key,val in most_common_dict]
 
-    # nwb_pd.loc[:, 'identifier'] = [i.split(':')[1] for i in nwb_pd.loc[:, 'identifier']]
     pass_nwbinspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
-    # nwb_pd['validation_summary'].fillna('NULL_FILE_LIMIT', inplace=True)
 
     readme = '# Summary statistics for the available dandisets (Updated on ' + str(date_time) + ')' '\n'
     readme += '\n'
