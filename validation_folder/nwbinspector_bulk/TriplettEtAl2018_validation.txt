@@ -1,0 +1,357 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-09-06 23:18:38.543192+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.12
+
+Found 114 issues over 1 files:
+     114 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_99'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.1  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_98'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.2  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_97'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.3  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_96'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.4  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_95'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.5  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_94'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.6  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_93'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.7  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_92'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.8  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_91'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.9  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_90'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.10  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_9'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.11  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_89'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.12  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_88'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.13  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_87'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.14  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_86'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.15  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_85'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.16  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_84'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.17  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_83'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.18  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_82'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.19  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_81'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.20  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_80'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.21  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_8'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.22  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_79'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.23  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_78'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.24  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_77'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.25  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_76'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.26  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_75'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.27  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_74'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.28  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_73'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.29  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_72'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.30  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_71'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.31  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_70'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.32  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_7'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.33  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_69'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.34  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_68'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.35  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_67'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.36  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_66'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.37  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_65'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.38  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_64'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.39  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_63'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.40  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_62'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.41  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_61'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.42  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_60'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.43  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_6'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.44  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_59'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.45  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_58'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.46  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_57'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.47  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_56'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.48  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_55'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.49  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_54'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.50  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_53'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.51  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_52'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.52  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_51'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.53  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_50'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.54  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_5'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.55  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_49'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.56  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_48'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.57  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_47'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.58  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_46'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.59  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_45'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.60  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_44'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.61  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_43'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.62  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_42'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.63  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_41'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.64  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_40'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.65  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_4'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.66  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_39'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.67  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_38'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.68  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_37'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.69  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_36'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.70  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_35'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.71  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_34'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.72  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_33'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.73  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_32'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.74  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_31'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.75  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_30'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.76  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_3'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.77  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_29'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.78  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_28'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.79  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_27'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.80  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_26'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.81  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_25'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.82  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_24'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.83  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_23'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.84  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_22'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.85  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_21'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.86  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_20'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.87  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_2'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.88  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_19'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.89  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_18'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.90  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_17'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.91  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_16'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.92  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_15'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.93  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_14'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.94  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_13'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.95  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_12'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.96  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_114'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.97  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_113'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.98  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_112'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.99  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_111'
+        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.100  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_110'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.101  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_11'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.102  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_109'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.103  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_108'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.104  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_107'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.105  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_106'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.106  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_105'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.107  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_104'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.108  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_103'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.109  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_102'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.110  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_101'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.111  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_100'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.112  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_10'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
+0.113  /tmp/github/TriplettEtAl2018/TriplettEtAl2018.nwb: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/Sweep_1'
+         Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=1.0 instead of timestamps.
+
