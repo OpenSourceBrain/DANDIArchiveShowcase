@@ -10,8 +10,6 @@ from nwbinspector import inspect_nwb, inspect_all
 from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import format_messages, save_report
 
-# TODO: add test_compatibility.py
-
 def get_nwb(dandiset_id):
     dataset_path = input('Target directory (if dandiset not already exists, this has to be an empty folder) ')
     github_link_format = 'https://github.com/dandisets/'

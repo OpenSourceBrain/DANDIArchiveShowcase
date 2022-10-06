@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 15:26:00.194685+07:00
+Timestamp: 2022-08-29 23:29:18.081862+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
 Found 6 issues over 2 files:
        4 - PYNWB_VALIDATION

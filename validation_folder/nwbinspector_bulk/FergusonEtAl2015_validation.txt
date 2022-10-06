@@ -1,0 +1,18 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2022-09-06 23:18:03.134768+01:00
+Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
+NWBInspector version: 0.4.12
+
+Found 5 issues over 5 files:
+       5 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/github/FergusonEtAl2015/FergusonEtAl2015.nwb and 4 other files: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+       Message: Subject species 'transgenic mouse' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+

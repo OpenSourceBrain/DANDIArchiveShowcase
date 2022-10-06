@@ -1,30 +1,33 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 15:24:12.998388+07:00
+Timestamp: 2022-08-29 23:28:24.283302+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 9 issues over 2 files:
-       9 - BEST_PRACTICE_VIOLATION
+Found 11 issues over 2 files:
+      11 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-HI198_ses-HI198-060619_ecephys+ogen.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+0.0  /tmp/nwb_versions/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
        Message: Subject species 'mouse' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 
-0.1  /tmp/nwb_versions/sub-HI198_ses-HI198-060619_ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'photostim'
+0.1  /tmp/nwb_versions/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'photostim'
        Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
-0.2  /tmp/nwb_versions/sub-HI198_ses-HI198-060619_ecephys+ogen.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+0.2  /tmp/nwb_versions/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
        Message: ['start_time', 'stop_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
 
-0.3  /tmp/nwb_versions/sub-HI198_ses-HI198-060619_ecephys+ogen.nwb and 1 other file: check_regular_timestamps - 'SpikeEventSeries' object at location '/analysis/unit1'
+0.3  /tmp/nwb_versions/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb and 1 other file: check_regular_timestamps - 'SpikeEventSeries' object at location '/analysis/unit2'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=4e-05 and rate=4e-05 instead of timestamps.
 
-0.4  /tmp/nwb_versions/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb: check_regular_timestamps - 'SpikeEventSeries' object at location '/analysis/unit2'
+0.4  /tmp/nwb_versions/sub-HI204_ses-HI204-062519_ecephys+ogen.nwb and 1 other file: check_regular_timestamps - 'SpikeEventSeries' object at location '/analysis/unit1'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=4e-05 and rate=4e-05 instead of timestamps.
+
+0.5  /tmp/nwb_versions/sub-SC020_ses-SC020-040319_ecephys+ogen.nwb: check_regular_timestamps - 'SpikeEventSeries' object at location '/analysis/unit3'
        Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=4e-05 and rate=4e-05 instead of timestamps.
 

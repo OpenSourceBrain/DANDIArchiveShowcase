@@ -1,11 +1,18 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 14:24:22.199815+07:00
+Timestamp: 2022-08-29 23:04:54.109234+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 0 issues over 0 files:
+Found 1 issues over 1 files:
+       1 - BEST_PRACTICE_VIOLATION
 **************************************************
 
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-Haydn_desc-train_ecephys.nwb: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
+       Message: ['target_on_time', 'ready_time', 'set_time', 'go_time', 'target_acq_time', 'reward_time', 'bad_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
 

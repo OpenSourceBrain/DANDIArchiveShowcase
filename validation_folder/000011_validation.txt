@@ -1,58 +1,58 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-02 13:12:21.845188+07:00
+Timestamp: 2022-08-29 18:33:07.987313+01:00
 Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.5
+NWBInspector version: 0.4.12
 
-Found 44 issues over 1 files:
-       8 - PYNWB_VALIDATION
-      36 - BEST_PRACTICE_VIOLATION
+Found 88 issues over 2 files:
+      16 - PYNWB_VALIDATION
+      72 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
 0  PYNWB_VALIDATION
 ===================
 
-0.0  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: VectorIndex/description - 'None' object at location 'units/spike_times_index'
+0.0  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/spike_times_index'
        Message: argument missing
 
-0.1  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: VectorIndex - 'None' object at location 'units/spike_times_index'
+0.1  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: VectorIndex - 'None' object at location 'units/spike_times_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
-0.2  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: VectorIndex/description - 'None' object at location 'units/obs_intervals_index'
+0.2  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/obs_intervals_index'
        Message: argument missing
 
-0.3  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: VectorIndex - 'None' object at location 'units/obs_intervals_index'
+0.3  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: VectorIndex - 'None' object at location 'units/obs_intervals_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
-0.4  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: VectorIndex/description - 'None' object at location 'units/electrodes_index'
+0.4  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: VectorIndex/description - 'None' object at location 'units/electrodes_index'
        Message: argument missing
 
-0.5  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: VectorIndex - 'None' object at location 'units/electrodes_index'
+0.5  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: VectorIndex - 'None' object at location 'units/electrodes_index'
        Message: incorrect type - expected 'uint8', got 'int32'
 
-0.6  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: Units/waveform_mean/unit - 'None' object at location 'units/waveform_mean'
+0.6  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: Units/waveform_mean/unit - 'None' object at location 'units/waveform_mean'
        Message: argument missing
 
-0.7  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: Units/waveform_sd/unit - 'None' object at location 'units/waveform_sd'
+0.7  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: Units/waveform_sd/unit - 'None' object at location 'units/waveform_sd'
        Message: argument missing
 
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.8  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: check_spike_times_not_in_unobserved_interval - 'Units' object with name 'units'
+1.8  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: check_spike_times_not_in_unobserved_interval - 'Units' object with name 'units'
        Message: This Units table contains spike times that occur during periods of time not labeled as being observed intervals.
 
-1.9  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'right ALM'
+1.9  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'right ALM'
        Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
-1.10  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'left ALM'
+1.10  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'left ALM'
         Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
-1.11  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'bilateral ALM'
+1.11  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'bilateral ALM'
         Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
-1.12  /tmp/nwb_versions/sub-291064_ses-20150907_behavior+ecephys+ogen.nwb and 31 other files: check_table_values_for_dict - 'DynamicTable' object with name 'electrodes'
+1.12  /tmp/nwb_versions/sub-291063_ses-20150906_behavior+ecephys+ogen.nwb and 63 other files: check_table_values_for_dict - 'DynamicTable' object with name 'electrodes'
         Message: The column 'location' contains a string value that contains a dictionary! Please unpack dictionaries as additional rows or columns of the table. This string is also JSON loadable, so call `json.loads(...)` on the string to unpack.
 
