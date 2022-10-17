@@ -35,12 +35,12 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     root_folder = '/tmp/dandisets'
     if os.path.exists(root_folder):
         if len(os.listdir((root_folder))) != 0:
-            dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
+            dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=False)
         else:
             os.mkdir(root_folder)
-            dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
+            dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=False)
     else:
-        dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
+        dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=False)
     # directory for storing validation files and readme file
     save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
