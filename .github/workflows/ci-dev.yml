@@ -42,7 +42,9 @@ jobs:
         pip install wheel
         pip install --requirement requirements.txt --quiet
         pip install datalad
+        
         pip list
+        env
 
 
     - name: Configure Git
