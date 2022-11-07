@@ -43,6 +43,11 @@ jobs:
         pip install --requirement requirements.txt --quiet
         pip install --editable nwb-explorer
         df -h
+        
+        
+    - name: Version info
+      run: |
+        pip list
 
     - name: Install NWBE locally
       run: python nwb-explorer/utilities/install.py
