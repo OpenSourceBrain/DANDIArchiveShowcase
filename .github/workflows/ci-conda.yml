@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "1 1 1 */1 *"
   push:
-    branches: [ main, dev, pg* ]
+    branches: [ main, dev ]
   pull_request:
     branches: [ main, dev, pg* ]
 
@@ -43,8 +43,8 @@ jobs:
         pip install --requirement requirements.txt --quiet
         pip install --editable nwb-explorer
         df -h
-        
-        
+
+
     - name: Version info
       run: |
         pip list
@@ -56,7 +56,7 @@ jobs:
       run: |
         echo Testing scripts...
         python nwb_table_readme.py --dandiset_limit
-        python nwb_table_readme.py --update_readme_only 
+        python nwb_table_readme.py --update_readme_only
         python nwbinspector_bulk.py
 
     - name: Final file info
