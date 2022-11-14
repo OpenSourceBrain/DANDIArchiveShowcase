@@ -55,7 +55,7 @@ jobs:
     - name: Tests
       run: |
         echo Testing scripts...
-        python nwb_table_readme.py
+        python nwb_table_readme.py --update_readme_only
 
     - name: Final file info
       run: |
