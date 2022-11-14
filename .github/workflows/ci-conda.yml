@@ -56,7 +56,7 @@ jobs:
       run: |
         echo Testing scripts...
         #python nwb_table_readme.py --dandiset_limit
-        python nwb_table_readme.py --update_readme_only
+        #python nwb_table_readme.py --update_readme_only
         #python nwbinspector_bulk.py
 
     - name: Final file info
