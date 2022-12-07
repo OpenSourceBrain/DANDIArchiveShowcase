@@ -54,8 +54,14 @@ jobs:
 
     - name: Tests
       run: |
-        echo Testing scripts...
+      
+        echo Testing generation of readme...
         python nwb_table_readme.py --update_readme_only
+        ls -alt validation_folder
+        
+        echo Testing again with full generation...
+        python nwb_table_readme.py
+        ls -alt validation_folder
 
     - name: Final file info
       run: |
