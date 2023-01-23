@@ -62,3 +62,4 @@ Usage: python nwbinspector_bulk.py [OPTIONS]
 Options:
   --folder_path                 Files from a provided local directory will be validated with NWBInspector
 ```
+
