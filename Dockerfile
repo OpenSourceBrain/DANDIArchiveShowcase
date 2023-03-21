@@ -29,6 +29,9 @@ RUN pip install datalad
 
 RUN pip list
 
+RUN git config --global user.email "github_ci@test.test"
+RUN git config --global user.name "github ci"
+
 # Some aliases
 
 RUN echo '\n\nalias cd..="cd .."\nalias h=history\nalias ll="ls -alt"\nalias python=python3\nalias ipython=ipython3\nalias pip=pip3' >> ~/.bashrc

@@ -1,1 +1,1 @@
-docker build -t dandi_docker .
+docker build  --platform linux/amd64 -t dandi_docker .
