@@ -4,7 +4,7 @@ Scripts for interacting with the [DANDI Archive](https://www.dandiarchive.org/),
 
 **Summary statistics about numbers and validity of NWB files across all dandisets can be found [here](validation_folder/README.md), along with an indication about compatibility with NWB Explorer.**
 
-## Installation instruction
+## Installation Instructions 
 The scripts in this repo work best in an
 [Anaconda](https://www.anaconda.com/distribution/#download-section) environment, and [git](https://git-scm.com/downloads) is required for running one of the packages, 
 so please make sure they are installed and added to the system path. 
@@ -63,3 +63,5 @@ Usage: python nwbinspector_bulk.py [OPTIONS]
 Options:
   --folder_path                 Files from a provided local directory will be validated with NWBInspector
 ```
+
+
