@@ -49,14 +49,21 @@ jobs:
       run: |
         pip list
 
+    - name: Test just generate readme
+      run: |
+        echo Testing readme generation...
+        #python nwb_table_readme.py --dandiset_limit
+        python nwb_table_readme.py --update_readme_only
+        #python nwbinspector_bulk.py
+
     - name: Install NWBE locally
       run: python nwb-explorer/utilities/install.py
 
-    - name: Tests
+    - name: Test on limited set of dandisets
       run: |
         echo Testing scripts...
-        #python nwb_table_readme.py --dandiset_limit
-        python nwb_table_readme.py --update_readme_only
+        python nwb_table_readme.py --dandiset_limit
+        #python nwb_table_readme.py --update_readme_only
         #python nwbinspector_bulk.py
 
     - name: Final file info

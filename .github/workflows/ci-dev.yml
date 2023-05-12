@@ -52,15 +52,17 @@ jobs:
         git config --global user.email "github_ci@test.test"
         git config --global user.name "github ci"
 
-    - name: Tests
+    - name: Test just generate readme
       run: |
       
         echo Testing generation of readme...
         python nwb_table_readme.py --update_readme_only
         ls -alt validation_folder
         
-        echo Testing again with full generation...
-        python nwb_table_readme.py
+    - name: Test on limited set of dandisets
+      run: |
+        echo Testing again 
+        python nwb_table_readme.py --dandiset_limit
         ls -alt validation_folder
 
     - name: Final file info
