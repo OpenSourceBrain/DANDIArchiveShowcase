@@ -29,7 +29,9 @@ jobs:
         git config --global user.name "github ci"
 
     - name: Install datalad & h5py with ROS3 driver
-      run: conda install -c conda-forge datalad h5py
+      run: |
+         conda install -c conda-forge datalad h5py
+         df -h
 
     - name: Cloning NWBE repo
       run: |
@@ -40,16 +42,29 @@ jobs:
         pip install wheel
         pip install --requirement requirements.txt --quiet
         pip install --editable nwb-explorer
+        df -h
+
+
+    - name: Version info
+      run: |
+        pip list
+
+    - name: Test just generate readme
+      run: |
+        echo Testing readme generation...
+        #python nwb_table_readme.py --dandiset_limit
+        python nwb_table_readme.py --update_readme_only
+        #python nwbinspector_bulk.py
 
     - name: Install NWBE locally
       run: python nwb-explorer/utilities/install.py
 
-    - name: Tests
+    - name: Test on limited set of dandisets
       run: |
         echo Testing scripts...
         python nwb_table_readme.py --dandiset_limit
-        python nwb_table_readme.py --update_readme_only 
-        python nwbinspector_bulk.py
+        #python nwb_table_readme.py --update_readme_only
+        #python nwbinspector_bulk.py
 
     - name: Final file info
       run: |

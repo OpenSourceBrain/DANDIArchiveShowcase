@@ -38,9 +38,13 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
             dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
         else:
             os.mkdir(root_folder)
-            dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
+            dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
     else:
-        dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True)
+
+        print("Fresh install of dandisets...")
+        dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
+
+    print("Completed install of dandisets...")
     # directory for storing validation files and readme file
     save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
@@ -62,6 +66,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     nanval = math.nan
 
     for dandiset_name in dandiset_folder_name:
+        print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
