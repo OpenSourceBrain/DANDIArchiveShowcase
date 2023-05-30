@@ -35,7 +35,7 @@ jobs:
       run: |
       
         echo Testing generation of readme...
-        docker run -v $PWD:/home/jovyan/nwb-explorer/local:rw  dandi_docker /bin/bash -c 'python3 nwb_table_readme.py --update_readme_only'
+        docker run -v $PWD:/root/local:rw  -w /root/local  dandi_docker  /bin/bash  -c 'python3 nwb_table_readme.py --update_readme_only'
         ls -alt validation_folder
 
     
@@ -49,7 +49,7 @@ jobs:
     - name: Test on limited set of dandisets
       run: |
         echo Testing again 
-        docker run -v $PWD:/home/jovyan/nwb-explorer/local:rw   dandi_docker /bin/bash -c 'python3 nwb_table_readme.py --dandiset_limit'
+        docker run -v $PWD:/root/local:rw  -w /root/local  dandi_docker  /bin/bash -c 'python3 nwb_table_readme.py --dandiset_limit'
         ls -alt validation_folder
       
 
