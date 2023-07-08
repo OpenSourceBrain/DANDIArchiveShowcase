@@ -5,7 +5,11 @@ MAINTAINER p.gleeson@gmail.com
 USER root
 
 RUN apk update
-RUN apk add git htop wget gnupg
+RUN apk add git htop wget gnupg sudo
+
+ARG DOCKER_GID=0
+RUN sudo groupadd -g $DOCKER_GID host-docker && sudo usermod -aG host-docker runner
+
 RUN mkdir -p /etc/apk/sources.list.d/
 RUN mkdir $HOME/testing/
 
