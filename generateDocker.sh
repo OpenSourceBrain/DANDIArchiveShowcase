@@ -1,4 +1,4 @@
-docker build --build-arg DOCKER_GID=$(awk -F: '$1=="docker" {print $3}' /etc/group) -t dandi_docker .
+docker build -t dandi_docker .
 docker run --privileged -v "$(pwd)":/testing --network=host -dit --name=da dandi_docker 
 docker start da
 echo step1
