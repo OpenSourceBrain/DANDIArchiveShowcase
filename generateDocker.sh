@@ -7,5 +7,4 @@ docker exec da  docker container ps
 echo step2
 docker exec da  docker build -t nwbe OSBv2/applications/nwb-explorer/.
 echo step3
-docker run da
-docker exec da docker run -dit --name=nwbe -v "$(pwd)"testing:/home/jovyan/nwb-explorer/testing nwbe
+docker exec da docker run -d -t --name=nwbe -v "$(pwd)"testing:/home/jovyan/nwb-explorer/testing nwbe
