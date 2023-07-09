@@ -1,15 +1,8 @@
 docker build -t dandi_docker .
-docker run --privileged -v "$(pwd)":/testing --network=host -dit --name=da dandi_docker 
-docker start da
+docker run --privileged -v "$(pwd)":/testing -d --name=da dandi_docker 
 echo step1
-docker exec da /bin/sh -c 'sudo usermod -aG docker $USER'
+docker exec da  docker container ps
 echo step2
-docker exec da /bin/sh -c 'sudo systemctl status docker'
+docker exec da  docker build -t nwbe OSBv2/applications/nwb-explorer/.
 echo step3
-docker exec da /bin/sh -c 'sudo systemctl start docker'
-echo step4
-docker exec da /bin/sh -c 'sudo docker container ps'
-echo step5
-docker exec da /bin/sh -c 'sudo docker build -t nwbe OSBv2/applications/nwb-explorer/.'
-echo on6
-docker exec da /bin/sh -c 'sudo docker run -dit --name=nwbe -v "$(pwd)"testing:/home/jovyan/nwb-explorer/testing nwbe'
+docker exec da docker run -dit --name=nwbe -v "$(pwd)"testing:/home/jovyan/nwb-explorer/testing nwbe
