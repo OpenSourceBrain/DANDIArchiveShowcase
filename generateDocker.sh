@@ -1,6 +1,5 @@
 docker build --network=host -t dandi_docker .
-docker run -v /var/run/docker.sock:/var/run/docker.sock -d --name=da dandi_docker tail -f /dev/null
-
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $PWD:/testing -d --name=da dandi_docker tail -f /dev/null
 docker exec da docker --version
 echo step1
 docker exec da  docker container ps
