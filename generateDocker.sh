@@ -1,5 +1,5 @@
 docker build -t dandi_docker .
-docker run --privileged -v "$(pwd)":/testing -d --name=da dandi_docker 
+docker run --privileged -v /var/run/docker.sock:/var/run/docker.sock -d --name=da dandi_docker 
 echo step1
 docker exec da  docker container ps
 echo step2
