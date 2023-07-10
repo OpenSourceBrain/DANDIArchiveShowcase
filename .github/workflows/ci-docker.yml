@@ -47,7 +47,7 @@ jobs:
       run: |
       
         echo Testing running nwbe container
-        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --update_readme_only'
+        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit'
         docker exec -i da /bin/sh -c 'ls -alt testing'
       
     - name: Final version info
