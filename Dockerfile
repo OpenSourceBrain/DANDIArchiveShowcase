@@ -11,6 +11,7 @@ RUN apk add git htop wget gnupg sudo
 
 RUN mkdir -p /etc/apk/sources.list.d/
 RUN mkdir $HOME/testing/
+RUN mkdir $HOME/tmp/
 
 # Install Neurodebian repos
 RUN wget -O- http://neuro.debian.net/lists/focal.de-fzj.libre | tee /etc/apk/sources.list.d/neurodebian.sources.list
@@ -49,6 +50,6 @@ RUN echo '\n\nalias cd..="cd .."\nalias h=history\nalias ll="ls -alt"\nalias pyt
 RUN pip install --upgrade numpy
 
 RUN git clone https://github.com/OpenSourceBrain/OSBv2.git
-RUN sed -i '27d' OSBv2/applications/nwb-explorer/Dockerfile
+RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/nwb-explorer/Dockerfile
 
 RUN echo "Built the Docker image!"
