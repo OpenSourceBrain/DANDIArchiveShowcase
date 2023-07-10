@@ -203,7 +203,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path):
-    cmd = 'docker exec -i nwbe /bin/sh -c \'python testing\compatibility_test.py ' + nwb_path + '\''
+    cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
     timeout_s = 60  # how many seconds to wait
     type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
     # NC-0: file cannot be opened
