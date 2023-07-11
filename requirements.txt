@@ -1,3 +1,5 @@
+--extra-index-url https://alpine-wheels.github.io/index
+wheel
 pandas
 pyyaml
 pynwb==2.1.0
