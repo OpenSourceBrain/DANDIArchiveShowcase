@@ -46,8 +46,8 @@ jobs:
     - name: Testing on limited number of dandisets
       run: |
       
-	docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit'
-	docker exec -i da /bin/sh -c 'ls -alt testing'
+        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit'
+        docker exec -i da /bin/sh -c 'ls -alt testing'
         
         
     - name: Testing on limited number of dandisets with Docker
