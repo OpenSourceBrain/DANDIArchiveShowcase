@@ -37,6 +37,8 @@ COPY ./requirements.txt $HOME/requirements.txt
 RUN pip install --requirement requirements.txt
 RUN pip install datalad
 
+RUN pip install --editable nwb-explorer --npm-skip
+
 RUN pip list
 
 RUN git config --global user.email "github_ci@test.test"

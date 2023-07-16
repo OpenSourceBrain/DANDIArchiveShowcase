@@ -203,7 +203,10 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path):
-    cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
+    if(test_docker):		
+    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
+    else:
+    	cmd = 'python testing/compatibility_test.py ' + nwb_path
     timeout_s = 60  # how many seconds to wait
     type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
     # NC-0: file cannot be opened
@@ -454,6 +457,8 @@ if __name__ == '__main__':
                         help='update readme file after summary file is created')
     parser.add_argument('--update_readme_only', default=False, action='store_true',
                         help='update readme file without creating summary file')
+    parser.add_argument('--test_docker', default=False, action='store_true',
+                        help='test using the NWBE docker container')
     args = parser.parse_args()
     update_readme_option=create_dandiset_summary(args.no_download,args.no_sizelimit,args.dandiset_limit,
                                                  args.update_readme_option,args.update_readme_only)
