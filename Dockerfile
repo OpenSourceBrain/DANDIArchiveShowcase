@@ -37,7 +37,7 @@ COPY ./requirements.txt $HOME/requirements.txt
 RUN pip install --requirement requirements.txt
 RUN pip install datalad
 
-RUN pip install --editable nwb-explorer --npm-skip
+RUN pip install --editable nwb-explorer
 
 RUN pip list
 
