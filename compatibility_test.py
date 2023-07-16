@@ -2,8 +2,6 @@
 This function is meant to be called from nwb_table_readme.py script to test NWBE compatibility
 '''
 import sys
-sys.path.insert(0, '/home/jovyan/nwb-explorer/nwb_explorer')
-from nwb_model_interpreter import NWBModelInterpreter, GeppettoModelAccess
 
 
 def test_nwbe_compatibility(nwbfile_path,docker_arg):
@@ -25,3 +23,4 @@ def test_nwbe_compatibility(nwbfile_path,docker_arg):
 
 if __name__ == '__main__':
     test_nwbe_compatibility(sys.argv[1])
+    test_nwbe_compatibility(sys.argv[2])

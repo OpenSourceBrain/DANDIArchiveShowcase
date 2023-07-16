@@ -203,8 +203,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path):
-    if(test_docker):		
-    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
+    if(args.test_docker):		
+    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\'' + args.test_docker
     else:
     	cmd = 'python testing/compatibility_test.py ' + nwb_path
     timeout_s = 60  # how many seconds to wait
