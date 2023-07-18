@@ -43,18 +43,17 @@ jobs:
         echo Testing running nwbe container
         docker exec -di da /bin/sh -c 'docker run -i --name=nwbe -v "$(pwd)"testing:/home/jovyan/nwb-explorer/testing -v /tmp:/home/jovyan/nwb-explorer/tmp nwbe'
 
-    - name: Testing on limited number of dandisets
-      run: |
-      
-        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit'
-        docker exec -i da /bin/sh -c 'ls -alt testing'
-        
-        
     - name: Testing on limited number of dandisets with Docker
       run: |
       
         echo Testing running nwbe container
-        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit --docker_test'
+        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit --test_docker'
+        docker exec -i da /bin/sh -c 'ls -alt testing'
+
+    - name: Testing on limited number of dandisets
+      run: |
+      
+        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit'
         docker exec -i da /bin/sh -c 'ls -alt testing'
       
     - name: Final version info
