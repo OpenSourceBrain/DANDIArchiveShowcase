@@ -41,7 +41,7 @@ jobs:
       run: |
       
         echo Testing running nwbe container
-        docker run -i --name=nwbe -v "$(pwd)":/home/jovyan/nwb-explorer/testing nwbe
+        docker run -di --name=nwbe -v "$(pwd)":/home/jovyan/nwb-explorer/testing nwbe
 
     - name: Testing on limited number of dandisets with Docker
       run: |
