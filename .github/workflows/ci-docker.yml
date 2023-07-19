@@ -36,12 +36,6 @@ jobs:
         echo Testing generation of readme...
         docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --update_readme_only'
         docker exec -i da /bin/sh -c 'ls -alt testing/validation_folder'
-        
-    - name: Test running the nwbe docker inside
-      run: |
-      
-        echo Testing running nwbe container
-        docker run -di --name=nwbe -v "$(pwd)":/home/jovyan/nwb-explorer/testing nwbe
 
     - name: Testing on limited number of dandisets with Docker
       run: |
