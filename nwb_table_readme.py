@@ -289,6 +289,11 @@ def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_repo
     if os.path.exists(validation_file) and validation_summary == '':
         validation_summary = 'PASSED_VALIDATION'
     return validation_summary
+def create_summary():
+    
+def update_summary_metadata():
+    
+def update_summary_data():
 
 def update_readme():
     save_folder = 'validation_folder'
@@ -429,7 +434,7 @@ def update_readme():
                         readme += 'Size: %s MB | \n' % (str(round(int(file_size)/1000000,2)))
                         readme += '[File info](%s) | \n' % (info_link)
                         readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
-                        readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
+                        readme += '[View on NWB Explorer](%s) \n' % (nwbe_link) 
 
             else:
                 readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + dandi_metadata_readme['validation_summary'].iloc[row] + '\n\n'
