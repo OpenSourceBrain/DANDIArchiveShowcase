@@ -1,5 +1,8 @@
 FROM docker:dind
 
+ENV NODE_OPTIONS="--openssl-legacy-provider"
+
+
 MAINTAINER p.gleeson@gmail.com
 
 USER root
@@ -28,14 +31,22 @@ RUN apk add git-annex
 
 # Install additional Python dependencies
 RUN apk add python3 py3-pip
+
 RUN pip install --upgrade pip setuptools wheel
 RUN apk update && apk add --no-cache hdf5-dev
 RUN pip install h5py
 
+
 COPY ./requirements.txt $HOME/requirements.txt
+
+# RUN git clone --branch development https://github.com/MetaCell/nwb-explorer
+# RUN pip install --editable nwb-explorer
+# RUN python nwb-explorer/utilities/install.py --npm-skip
+
 #RUN pip install --extra-index-url https://alpine-wheels.github.io/index numpy
 RUN pip install --requirement requirements.txt
 RUN pip install datalad
+
 
 RUN pip list
 

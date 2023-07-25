@@ -21,7 +21,7 @@ import ast
 from collections import Counter
 
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
-                            args_updatereadme=None,args_readmeonly=None):
+                            args_updatereadme=None,args_readmeonly=None,args_testdocker=None):
     # if users want to update readme only
     if args_readmeonly:
         return args_readmeonly
@@ -173,7 +173,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             validation_summary = 'UNABLE'
                             pass
                         # test nwbe compatibility
-                        nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path)
+                        nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
                         # uninstall file
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
@@ -202,8 +202,11 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dl.remove(dataset=root_folder)
     return args_updatereadme
 
-def test_nwbe_compatibility(nwb_path):
-    cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
+def test_nwbe_compatibility(nwb_path,testdocker):
+    if(testdocker):		
+    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + ' --test_docker\''
+    else:
+    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
     timeout_s = 60  # how many seconds to wait
     type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
     # NC-0: file cannot be opened
@@ -454,9 +457,11 @@ if __name__ == '__main__':
                         help='update readme file after summary file is created')
     parser.add_argument('--update_readme_only', default=False, action='store_true',
                         help='update readme file without creating summary file')
+    parser.add_argument('--test_docker', default=False, action='store_true',
+                        help='test using the NWBE docker container')
     args = parser.parse_args()
     update_readme_option=create_dandiset_summary(args.no_download,args.no_sizelimit,args.dandiset_limit,
-                                                 args.update_readme_option,args.update_readme_only)
+                                                 args.update_readme_option,args.update_readme_only,args.test_docker)
 
     if update_readme_option:
         update_readme()
