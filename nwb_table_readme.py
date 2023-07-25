@@ -7,6 +7,10 @@ import math
 import datalad.api as dl
 import json
 import argparse
+
+import tempfile
+import datetime
+
 from datetime import date
 from pynwb import NWBHDF5IO
 from pynwb.image import ImageSeries
@@ -34,13 +38,16 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # directory for dandisets
     root_folder = '/tmp/dandisets'
     if os.path.exists(root_folder):
+        print("Enter if 1")
         if len(os.listdir((root_folder))) != 0:
+            print("Enter if 2")
             dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
         else:
+            print("Enter if 3")
             os.mkdir(root_folder)
             dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
     else:
-
+        print("Enter else 1")
         print("Fresh install of dandisets...")
         dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
 
@@ -64,8 +71,12 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
-
+    current_time = datetime.datetime.now()     
+    print("Starting with dandiset compilation loop ->", current_time)
+     
     for dandiset_name in dandiset_folder_name:
+        current_time = datetime.datetime.now()
+        print("Entered dandiset %s" % dandiset_name, current_time)
         print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
@@ -82,7 +93,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
             doi_link = my_dict['relatedResource'][0]['url']
         except:
             doi_link = nanval
-
+        current_time = datetime.datetime.now()
+        print("			Normal value addition", current_time)
         # flatten the yaml file and read in into dataframe
         yaml_df = pd.json_normalize(my_dict)
 
@@ -93,6 +105,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         url_lst = [nanval, nanval]
         file_parent_folder = [nanval,nanval]
         nwbe_compatibility = ['NI','NI']
+        
         if data_type != nanval and 'NWB' in str(data_type):
             # get the json file that has individual files info
             with open(os.path.join(root_folder, dandiset_name, json_file)) as f:
@@ -148,7 +161,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         file_parent_folder.append(nanval)
                         path_lst.append(nanval)
                         break
-
+            current_time = datetime.datetime.now()
+            print("			Report message edit", current_time)
             report_message = []
             # if user doesn't want to download files
             if args_nodownload:
@@ -158,33 +172,55 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 # in case files larger than the hard_limit and not downloaded
                 validation_summary = 'NULL_FILE_LIMIT'
                 for i in range(len(path_lst)):
+                    current_time = datetime.datetime.now()
+                    print("			At file %s" % str(i), current_time)
                     if smallest_size_lst[i] < hard_limit:
                         # download files
+                        current_time = datetime.datetime.now()
+                        print("			Downloading file %s" % str(i), current_time)
                         nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                        current_time = datetime.datetime.now()
+                        print("			Getting file version%s" % str(i), current_time)
                         # get nwb_version
                         nwb_version = get_nwb_version(nwb_path)
                         # validate file here first
+                        current_time = datetime.datetime.now()
+                        print("			Entering file try %s" % str(i), current_time)
                         try:
+                            current_time = datetime.datetime.now()
+                            print("			Entered file try %s" % str(i), current_time)
                             report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
-
+                            current_time = datetime.datetime.now()
+                            print("			Entering file valid summary %s" % str(i), current_time)
                             validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)
+                            current_time = datetime.datetime.now()
+                            print("			Exiting file valid summary %s" % str(i), current_time)
                         except ValueError:
                             validation_summary = 'UNABLE'
                             pass
                         # test nwbe compatibility
+                        current_time = datetime.datetime.now()
+                        print("			Entering file comp %s" % str(i), current_time)
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
+                        current_time = datetime.datetime.now()
+                        print("			Exiting file comp %s" % str(i), current_time)
                         # uninstall file
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
+        current_time = datetime.datetime.now()
+        print("Making dandi yaml changes 1", current_time)
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
                                                        smallest_size_lst[0],smallest_size_lst[1],url_lst[0],url_lst[1],nwbe_compatibility[0],nwbe_compatibility[1],
                                                      file_parent_folder[0],file_parent_folder[1]]],
                                                    index=yaml_df.index,columns=tmp_col)],axis=1)
-
+        current_time = datetime.datetime.now()
+        print("Making dandi yaml changes 2", current_time)
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
+        current_time = datetime.datetime.now()
+        print("Making dandi yaml changes 3", current_time)
         dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
 
@@ -241,13 +277,20 @@ def test_nwbe_compatibility(nwb_path,testdocker):
                     plottable = 1
                     break
     # NC-1: timeout while creating geppetto model
-    try:
-        p = subprocess.Popen([cmd], start_new_session=True, shell=True)
-        p.wait(timeout=timeout_s)
-    except subprocess.TimeoutExpired:
-        print(f'Timeout for {cmd} ({timeout_s}s) expired')
-        os.killpg(os.getpgid(p.pid), signal.SIGTERM)
+    current_time = datetime.datetime.now()
+    print("Entered comp tempf", current_time)
+    with tempfile.TemporaryFile() as tempf:
+            p = subprocess.Popen([cmd], start_new_session=True, shell=True, stdout=tempf)
+            p.wait()
+            tempf.seek(0)
+            text = tempf.read()
+            string_data = text.decode('utf-8')
+            lower_text = string_data.lower()
+    current_time = datetime.datetime.now()
+    print("Done with tempf : "+lower_text, current_time)
+    if "forever" in lower_text:
         nwbe_compatibility = 'NC-1'
+    print(nwbe_compatibility)
     return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
