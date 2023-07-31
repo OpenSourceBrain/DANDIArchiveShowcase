@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 18:35:40.083238+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-31 01:05:27.154610+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
 Found 1439 issues over 2 files:
     1431 - CRITICAL
@@ -2289,7 +2289,7 @@ Found 1439 issues over 2 files:
          Message: Subject species is missing.
 
 1.757  /tmp/nwb_versions/sub-mouse1-fni16_ses-170808190057.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
-         Message: ['start_time', 'stop_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+         Message: ['start_time'] are time columns but the values are not in ascending order. All times should be in seconds with respect to the session start time.
 
 1.758  /tmp/nwb_versions/sub-mouse1-fni16_ses-170808190057.nwb: check_regular_timestamps - 'TimeSeries' object at location '/processing/Behavior/Epoched_behavioral_series/firstSideTryAl_wheelRev'
          Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=-1.185 and rate=0.010000000000000009 instead of timestamps.

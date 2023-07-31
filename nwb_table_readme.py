@@ -7,9 +7,8 @@ import math
 import datalad.api as dl
 import json
 import argparse
-
 import tempfile
-import datetime
+
 
 from datetime import date
 from pynwb import NWBHDF5IO
@@ -17,7 +16,7 @@ from pynwb.image import ImageSeries
 from pynwb.base import TimeSeries
 from pynwb.behavior import BehavioralTimeSeries, BehavioralEvents
 from dandi.pynwb_utils import get_nwb_version
-from nwbinspector import inspect_nwb
+from nwbinspector import inspect_nwbfile
 from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
 from dandi import download
@@ -38,22 +37,19 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # directory for dandisets
     root_folder = '/tmp/dandisets'
     if os.path.exists(root_folder):
-        print("Enter if 1")
         if len(os.listdir((root_folder))) != 0:
-            print("Enter if 2")
             dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
         else:
-            print("Enter if 3")
             os.mkdir(root_folder)
             dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
     else:
-        print("Enter else 1")
-        print("Fresh install of dandisets...")
         dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
 
-    print("Completed install of dandisets...")
     # directory for storing validation files and readme file
-    save_folder = 'validation_folder'
+    if(args_testdocker):
+        save_folder = 'testing/validation_folder'
+    else:
+        save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
 
@@ -61,7 +57,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[10:20]
+        dandiset_folder_name = dandiset_folder_name[20:25]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
@@ -71,12 +67,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
-    current_time = datetime.datetime.now()     
-    print("Starting with dandiset compilation loop ->", current_time)
      
     for dandiset_name in dandiset_folder_name:
-        current_time = datetime.datetime.now()
-        print("Entered dandiset %s" % dandiset_name, current_time)
         print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
@@ -93,8 +85,6 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
             doi_link = my_dict['relatedResource'][0]['url']
         except:
             doi_link = nanval
-        current_time = datetime.datetime.now()
-        print("			Normal value addition", current_time)
         # flatten the yaml file and read in into dataframe
         yaml_df = pd.json_normalize(my_dict)
 
@@ -161,8 +151,6 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         file_parent_folder.append(nanval)
                         path_lst.append(nanval)
                         break
-            current_time = datetime.datetime.now()
-            print("			Report message edit", current_time)
             report_message = []
             # if user doesn't want to download files
             if args_nodownload:
@@ -172,63 +160,41 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 # in case files larger than the hard_limit and not downloaded
                 validation_summary = 'NULL_FILE_LIMIT'
                 for i in range(len(path_lst)):
-                    current_time = datetime.datetime.now()
-                    print("			At file %s" % str(i), current_time)
                     if smallest_size_lst[i] < hard_limit:
                         # download files
-                        current_time = datetime.datetime.now()
-                        print("			Downloading file %s" % str(i), current_time)
                         nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
-                        current_time = datetime.datetime.now()
-                        print("			Getting file version%s" % str(i), current_time)
                         # get nwb_version
                         nwb_version = get_nwb_version(nwb_path)
                         # validate file here first
-                        current_time = datetime.datetime.now()
-                        print("			Entering file try %s" % str(i), current_time)
                         try:
-                            current_time = datetime.datetime.now()
-                            print("			Entered file try %s" % str(i), current_time)
-                            report_message.extend(list(inspect_nwb(nwbfile_path=nwb_path,
+                            report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
-                            current_time = datetime.datetime.now()
-                            print("			Entering file valid summary %s" % str(i), current_time)
                             validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)
-                            current_time = datetime.datetime.now()
-                            print("			Exiting file valid summary %s" % str(i), current_time)
                         except ValueError:
                             validation_summary = 'UNABLE'
                             pass
                         # test nwbe compatibility
-                        current_time = datetime.datetime.now()
-                        print("			Entering file comp %s" % str(i), current_time)
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
-                        current_time = datetime.datetime.now()
-                        print("			Exiting file comp %s" % str(i), current_time)
                         # uninstall file
                         os.unlink(nwb_path)
         # concatenate the additional variables to the flattened pdf
-        current_time = datetime.datetime.now()
-        print("Making dandi yaml changes 1", current_time)
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
                                                        smallest_size_lst[0],smallest_size_lst[1],url_lst[0],url_lst[1],nwbe_compatibility[0],nwbe_compatibility[1],
                                                      file_parent_folder[0],file_parent_folder[1]]],
                                                    index=yaml_df.index,columns=tmp_col)],axis=1)
-        current_time = datetime.datetime.now()
-        print("Making dandi yaml changes 2", current_time)
         # concatenate every newly read dandiset metadata dataframe
         dandi_metadata = pd.concat([dandi_metadata,yaml_df],axis=0,ignore_index=True)
         # in case script crashes
-        current_time = datetime.datetime.now()
-        print("Making dandi yaml changes 3", current_time)
         dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
 
     # only get the relevant columns
     yaml_df_flatten.extend(tmp_col)
     dandi_metadata_final = dandi_metadata[yaml_df_flatten].sort_values(by=['identifier'],ignore_index=True)
+    dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv')) 
     dandi_metadata_final.rename(columns={'assetsSummary.numberOfBytes':'num_bytes','assetsSummary.numberOfFiles':'num_files','assetsSummary.numberOfSubjects':'numb_subjects',
                                          'assetsSummary.variableMeasured':'variableMeasured', 'schemaVersion':'dandiset_schemaver'},inplace=True)
+    
     # filter column through
     dandi_metadata_final.drop(dandi_metadata_final.filter(regex="Unnamed"), axis=1, inplace=True)
     # save table to csv
@@ -277,20 +243,24 @@ def test_nwbe_compatibility(nwb_path,testdocker):
                     plottable = 1
                     break
     # NC-1: timeout while creating geppetto model
-    current_time = datetime.datetime.now()
-    print("Entered comp tempf", current_time)
-    with tempfile.TemporaryFile() as tempf:
-            p = subprocess.Popen([cmd], start_new_session=True, shell=True, stdout=tempf)
-            p.wait()
-            tempf.seek(0)
-            text = tempf.read()
-            string_data = text.decode('utf-8')
-            lower_text = string_data.lower()
-    current_time = datetime.datetime.now()
-    print("Done with tempf : "+lower_text, current_time)
-    if "forever" in lower_text:
-        nwbe_compatibility = 'NC-1'
-    print(nwbe_compatibility)
+    if(testdocker):
+        with tempfile.TemporaryFile() as tempf:
+                p = subprocess.Popen([cmd], start_new_session=True, shell=True, stdout=tempf)
+                p.wait()
+                tempf.seek(0)
+                text = tempf.read()
+                string_data = text.decode('utf-8')
+                lower_text = string_data.lower()
+        if "forever" in lower_text:
+            nwbe_compatibility = 'NC-1'
+    else:
+        try:
+            p = subprocess.Popen([cmd],start_new_session=True, shell=True)
+            p.wait(timeout=timeout_s)
+        except subprocess.TimeoutExpired:
+            print(f'Timeout for {cmd} ({timeout_s}s) expired')
+            os.killpg(os.getpgid(p.pid),signal.SIGTERM)
+            nwbe_compatibility = 'NC-1'
     return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
@@ -336,8 +306,11 @@ def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_repo
         validation_summary = 'PASSED_VALIDATION'
     return validation_summary
 
-def update_readme():
-    save_folder = 'validation_folder'
+def update_readme(testdocker=None):
+    if(testdocker):
+        save_folder = 'testing/validation_folder'
+    else:
+        save_folder = 'validation_folder'
     rd_file = os.path.join(save_folder,'README.md')
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
     if not os.path.exists(summary_file):
@@ -507,4 +480,4 @@ if __name__ == '__main__':
                                                  args.update_readme_option,args.update_readme_only,args.test_docker)
 
     if update_readme_option:
-        update_readme()
+        update_readme(args.test_docker)

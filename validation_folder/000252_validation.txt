@@ -1,0 +1,18 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-30 12:55:45.415063+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 2 issues over 2 files:
+       2 - PYNWB_VALIDATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-N1_ses-2019-12-20_ecephys.nwb and 1 other file: root/general/session_id - 'None' object at location 'general/session_id'
+       Message: incorrect type - expected 'text', got 'isodatetime'
+

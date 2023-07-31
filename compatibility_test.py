@@ -11,12 +11,8 @@ def handler(signum, frame):
     raise Exception("end of time")
 
 def test_nwbe_compatibility(nwbfile_path, docker_arg):
-    current_time = datetime.datetime.now()
-    print("Entered testnwbecomp", current_time)
     signal.signal(signal.SIGALRM, handler)
     signal.alarm(90)
-    current_time = datetime.datetime.now()
-    print("Reaching try", current_time)
     try:	
 	    if docker_arg:
 	        try:
@@ -27,8 +23,6 @@ def test_nwbe_compatibility(nwbfile_path, docker_arg):
 	    else:
 	        from nwb_explorer.nwb_model_interpreter import NWBModelInterpreter, \
 		    GeppettoModelAccess
-	    current_time = datetime.datetime.now()
-	    print("Finishing import", current_time)
 	    nwb_interpreter = NWBModelInterpreter(nwbfile_path)
 	    geppetto_model = nwb_interpreter.create_model()
 	    geppetto_model_access = GeppettoModelAccess(geppetto_model)
@@ -36,21 +30,13 @@ def test_nwbe_compatibility(nwbfile_path, docker_arg):
 	    imported_type = nwb_interpreter.importType('DUMMY', 'nwbfile',
 		    variable_type.eContainer(), geppetto_model_access)
 	    geppetto_model_access.swap_type(variable_type, imported_type)
-	    current_time = datetime.datetime.now()
-	    print("Finishing final statement", current_time)
     except Exception as exc:
 	    print(exc)	
 
 if __name__ == '__main__':
-    current_time = datetime.datetime.now()
-    print("Entered Main", current_time)	
     parser = argparse.ArgumentParser(description='cap limit on downloaded file size')
     parser.add_argument('--test_docker', default=False, action='store_true',
                         help='test using the NWBE docker container')
     parser.add_argument('text', action='store', type=str, help='The text to parse.')
     args = parser.parse_args()
-    current_time = datetime.datetime.now()
-    print("Entering testnwbecomp", current_time)
     test_nwbe_compatibility(args.text,args.test_docker)
-    current_time = datetime.datetime.now()
-    print("Finished main", current_time)

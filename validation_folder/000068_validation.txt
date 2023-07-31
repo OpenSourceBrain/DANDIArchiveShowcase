@@ -1,12 +1,12 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 22:58:09.327868+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-29 14:21:01.840727+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 1 issues over 1 files:
-       1 - BEST_PRACTICE_VIOLATION
+Found 2 issues over 1 files:
+       2 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
@@ -15,4 +15,7 @@ Found 1 issues over 1 files:
 
 0.0  /tmp/nwb_versions/sub-abcd_icephys.nwb: check_subject_species_exists - 'Subject' object at location '/general/subject'
        Message: Subject species is missing.
+
+0.1  /tmp/nwb_versions/sub-abcd_icephys.nwb: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'elec0'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
 

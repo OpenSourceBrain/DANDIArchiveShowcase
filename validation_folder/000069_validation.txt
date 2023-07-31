@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 22:58:45.503563+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-29 14:38:25.734347+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
 Found 2 issues over 1 files:
        2 - BEST_PRACTICE_VIOLATION
@@ -13,9 +13,9 @@ Found 2 issues over 1 files:
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-anm106211_behavior+icephys.nwb: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+0.0  /tmp/nwb_versions/sub-anm106211_behavior+icephys.nwb: check_subject_species_form - 'Subject' object at location '/general/subject'
        Message: Subject species 'mus musculus' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 
-0.1  /tmp/nwb_versions/sub-anm106211_behavior+icephys.nwb: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
-       Message: ['first_lick_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
+0.1  /tmp/nwb_versions/sub-anm106211_behavior+icephys.nwb: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'AH0062_AAAA'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
 
