@@ -41,7 +41,7 @@ jobs:
       run: |
         pip install wheel
         pip install --requirement requirements.txt --quiet
-        pip install --editable nwb-explorer --npm-skip
+        pip install --editable nwb-explorer
         df -h
 
 

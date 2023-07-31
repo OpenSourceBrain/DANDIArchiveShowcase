@@ -8,8 +8,6 @@ import datalad.api as dl
 import json
 import argparse
 import tempfile
-
-
 from datetime import date
 from pynwb import NWBHDF5IO
 from pynwb.image import ImageSeries
@@ -52,12 +50,11 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         save_folder = 'validation_folder'
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
-
     dandiset_folder_name = sorted([item for item in os.listdir(root_folder) if item.startswith('0')])
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[20:25]
+        dandiset_folder_name = dandiset_folder_name[250:]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',

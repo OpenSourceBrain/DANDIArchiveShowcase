@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-31 13:34:58.597109+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 2 issues over 2 files:
+       2 - CRITICAL
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-SLR090_ses-20180726_obj-fcyjy5_behavior+image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/ImageSeries'
+       Message: The external file 'sub-SLR090_ses-20180726_obj-fcyjy5_behavior+image/434db7c3-39f4-4ec8-8588-874c3d17b60f_external_file_0.avi' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-SLR110_ses-20200207_obj-j1ym22_behavior+image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/ImageSeries'
+       Message: The external file 'sub-SLR110_ses-20200207_obj-j1ym22_behavior+image/5ff297f9-38c0-4eb2-a585-66c5c3654d17_external_file_0.avi' does not exist. Please confirm the relative location to the NWBFile.
+

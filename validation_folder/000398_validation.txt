@@ -1,0 +1,27 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-31 12:38:23.276352+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 8 issues over 2 files:
+       8 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-San2_ses-20190904T115958_ecephys.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/TimeSeries_supply_voltage'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.003 instead of timestamps.
+
+0.1  /tmp/nwb_versions/sub-San2_ses-20190904T115958_ecephys.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/TimeSeries_aux_input'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0002 instead of timestamps.
+
+0.2  /tmp/nwb_versions/sub-San2_ses-20190904T115958_ecephys.nwb and 1 other file: check_regular_timestamps - 'TimeSeries' object at location '/acquisition/TimeSeries_analog_input'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=5e-05 instead of timestamps.
+
+0.3  /tmp/nwb_versions/sub-San2_ses-20190904T115958_ecephys.nwb and 1 other file: check_regular_timestamps - 'ElectricalSeries' object at location '/acquisition/ElectricalSeries'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=5e-05 instead of timestamps.
+

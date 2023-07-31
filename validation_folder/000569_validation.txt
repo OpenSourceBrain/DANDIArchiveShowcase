@@ -1,0 +1,40 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-31 14:09:20.481065+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 14 issues over 2 files:
+      12 - PYNWB_VALIDATION
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: argument missing
+
+0.1  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: VectorIndex - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+0.2  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'intervals/epochs/tags_index'
+       Message: argument missing
+
+0.3  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: VectorIndex - 'None' object at location 'intervals/epochs/tags_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+0.4  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'intervals/epochs/timeseries_index'
+       Message: argument missing
+
+0.5  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: VectorIndex - 'None' object at location 'intervals/epochs/timeseries_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.6  /tmp/nwb_versions/sub-1223010848_ses-1223230447_icephys.nwb and 1 other file: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'electrode_0'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
+

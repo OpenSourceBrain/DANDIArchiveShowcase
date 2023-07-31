@@ -1,0 +1,18 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-31 13:32:55.157219+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 2 issues over 2 files:
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-172658cell5q6a-900-700filter_ses-20220602T172658_image.nwb and 1 other file: check_regular_timestamps - 'ImageSeries' object at location '/acquisition/camera_1'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.01992 and rate=0.010270000000000001 instead of timestamps.
+
