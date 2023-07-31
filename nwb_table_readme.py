@@ -54,7 +54,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[250:]
+        dandiset_folder_name = dandiset_folder_name[20:30]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
