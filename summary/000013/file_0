@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandiset Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            
+        }
+		summary {
+            font-size: 24px;
+            color: #FFFFFF;
+            margin:10px
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 28px;
+            color: #FFFFFF;
+            background-color: #575454;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .metadata {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 5px;
+            background-color: #575454;
+            border-radius: 5px;
+        }
+
+        .left-column {
+            flex: 1;
+            background-color: #EC9316;
+            padding: 1px;
+            border-radius: 5px;
+            color: #333;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .left1 {
+            flex: 1;
+            flex: 0 1 30%;
+            background-color: #EC9316;
+            padding: 10px;
+            border-radius: 5px;
+            color: #333;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .right-column {
+            flex: 2;
+            padding: 10px;
+            color:#FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="page-title">Dandiset Summary</div>
+        <details class="metadata">
+        <summary>Metadata</summary>
+        <div class="metadata"><div class="left1">Data Type</div><div class="right-column">Neurodata Without Borders (NWB)</div></div><div class="metadata"><div class="left1">NWB Version</div><div class="right-column">2.2.2</div></div><div class="metadata"><div class="left1">Total Size</div><div class="right-column">11408.74</div></div><div class="metadata"><div class="left1">Number of files</div><div class="right-column">52</div></div><div class="metadata"><div class="left1">Species</div><div class="right-column">House mouse</div></div>
+        </details>
+        <details class="metadata">
+        <summary>Plots</summary>
+        {plots}
+        </details>
+        <div class="additional-info">
+            <!-- Content for Additional Information section goes here -->
+        </div>
+    </div>
+</body>
+</html>
+
