@@ -34,7 +34,7 @@ jobs:
       run: |
       
         echo Testing generation of readme...
-        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --update_readme_only'
+        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --update_readme_only --test_docker'
         docker exec -i da /bin/sh -c 'ls -alt testing/validation_folder'
 
     - name: Testing on limited number of dandisets with Docker
@@ -42,13 +42,8 @@ jobs:
       
         echo Testing running nwbe container
         docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit --test_docker'
-        docker exec -i da /bin/sh -c 'ls -alt testing'
+        docker exec -i da /bin/sh -c 'ls -alt testing/validation_folder'
 
-    - name: Testing on limited number of dandisets
-      run: |
-      
-        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit'
-        docker exec -i da /bin/sh -c 'ls -alt testing'
       
     - name: Final version info
       run: |

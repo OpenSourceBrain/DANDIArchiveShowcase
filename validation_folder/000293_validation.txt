@@ -1,11 +1,21 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:37:01.954872+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-30 12:59:30.204296+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 0 issues over 0 files:
+Found 4 issues over 2 files:
+       4 - BEST_PRACTICE_VIOLATION
 **************************************************
 
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-1911-19o10045_icephys.nwb and 1 other file: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'Electrode 1'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
+
+0.1  /tmp/nwb_versions/sub-1911-19o10045_icephys.nwb and 1 other file: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'Electrode 0'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
 

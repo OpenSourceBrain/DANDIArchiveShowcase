@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-31 14:15:55.522499+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 2 issues over 2 files:
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-10697_ses-24020402_behavior+ecephys.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeriesLED1'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.01999999999998181 instead of timestamps.
+
+0.1  /tmp/nwb_versions/sub-10884_ses-16070401_behavior+ecephys.nwb: check_regular_timestamps - 'SpatialSeries' object at location '/processing/behavior/Position/SpatialSeriesLED1'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.020000000000436557 instead of timestamps.
+

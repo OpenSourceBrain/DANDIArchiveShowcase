@@ -1,0 +1,82 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-31 02:38:29.382331+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 40 issues over 2 files:
+      10 - CRITICAL
+      30 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_roi_response_series_dims - 'RoiResponseSeries' object at location '/processing/ophys/DfOverF/imaging_plane_1'
+       Message: The second dimension of data does not match the length of rois, but instead the first does. Data is oriented incorrectly and should be transposed.
+
+0.1  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_data_orientation - 'RoiResponseSeries' object at location '/processing/ophys/DfOverF/imaging_plane_1'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.2  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_data_orientation - 'ImageSeries' object at location '/stimulus/templates/spontaneous'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.3  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/DfOverF/imaging_plane_1'
+       Message: The length of the first dimension of data (14) does not match the length of timestamps (127179).
+
+0.4  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/behavior/BehavioralTimeSeries/running_velocity'
+       Message: The length of the first dimension of data (252239) does not match the length of timestamps (252238).
+
+0.5  /tmp/nwb_versions/sub-406876_ses-20180914T220948_behavior+image+ophys.nwb: check_timestamps_match_first_dimension - 'RoiResponseSeries' object at location '/processing/ophys/DfOverF/imaging_plane_1'
+       Message: The length of the first dimension of data (11) does not match the length of timestamps (127140).
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.6  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/spontaneous'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.7  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/snake'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.8  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/noise'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.9  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/mousecam_spatial_phase_scramble'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.10  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/mousecam'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.11  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/mouse_montage_2'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.12  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/mouse_montage_1_temporal_phase_scramble'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.13  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/mouse_montage_1_spatial_phase_scramble'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.14  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/mouse_montage_1'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.15  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/man_writing'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.16  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/human_montage'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.17  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/dots'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.18  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/crickets'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.19  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/conspecifics'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.20  /tmp/nwb_versions/sub-389014_ses-20180716T154015_behavior+image+ophys.nwb and 1 other file: check_subject_species_exists - 'Subject' object at location '/general/subject'
+        Message: Subject species is missing.
+

@@ -1,147 +1,18 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 22:48:33.349169+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-31 03:17:54.624763+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
 Found 2 issues over 2 files:
-       2 - ERROR
+       2 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
-0  ERROR
-========
+0  BEST_PRACTICE_VIOLATION
+==========================
 
-0.0  /tmp/nwb_versions/sub-354e6122-de4a-4945-bafd-d46df65768f6_ses-15fa297b-4828-496d-b48c-2894e3a9bf0c.nwb: During io.read() - <class 'hdmf.build.errors.ConstructError'>: (root/general/subject GroupBuilder {'attributes': {'alive': False, 'namespace': 'ndx-ibl-metadata', 'neurodata_type': 'IblSubject', 'object_id': '46b89137-5463-4681-9f70-be3f04ca85d9'}, 'groups': {}, 'datasets': {'age': root/general/subject/age DatasetBuilder {'attributes': {}, 'data': 'P32W'}, 'date_of_birth': root/general/subject/date_of_birth DatasetBuilder {'attributes': {}, 'data': '2019-04-30T00:00:00+00:00'}, 'death_date': root/general/subject/death_date DatasetBuilder {'attributes': {}, 'data': '2019-12-10'}, 'description': root/general/subject/description DatasetBuilder {'attributes': {}, 'data': ''}, 'expected_water': root/general/subject/expected_water DatasetBuilder {'attributes': {}, 'data': 0.9760000000000001}, 'genotype': root/general/subject/genotype DatasetBuilder {'attributes': {}, 'data': ''}, 'lab': root/general/subject/lab DatasetBuilder {'attributes': {}, 'data': 'cortexlab'}, 'line': root/general/subject/line DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'litter': root/general/subject/litter DatasetBuilder {'attributes': {}, 'data': 'C57_L_024'}, 'nickname': root/general/subject/nickname DatasetBuilder {'attributes': {}, 'data': 'KS016'}, 'projects': root/general/subject/projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "projects": shape (2,), type "|O">}, 'remaining_water': root/general/subject/remaining_water DatasetBuilder {'attributes': {}, 'data': 0.9760000000000001}, 'responsible_user': root/general/subject/responsible_user DatasetBuilder {'attributes': {}, 'data': 'Karolina_Socha'}, 'session_projects': root/general/subject/session_projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "session_projects": shape (1,), type "|O">}, 'sex': root/general/subject/sex DatasetBuilder {'attributes': {}, 'data': 'M'}, 'strain': root/general/subject/strain DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'subject_id': root/general/subject/subject_id DatasetBuilder {'attributes': {}, 'data': '354e6122-de4a-4945-bafd-d46df65768f6'}, 'url': root/general/subject/url DatasetBuilder {'attributes': {}, 'data': 'https://alyx.internationalbrainlab.org/subjects/KS016'}, 'water_administrations': root/general/subject/water_administrations DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "water_administrations": shape (132,), type "|O">}, 'weighings': root/general/subject/weighings DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "weighings": shape (76,), type "|O">}, 'weight': root/general/subject/weight DatasetBuilder {'attributes': {}, 'data': '31.0'}}, 'links': {}}, "Could not construct IblSubject object due to: Subject.__init__: Expected at most 9 arguments ['age', 'description', 'genotype', 'sex', 'species', 'subject_id', 'weight', 'date_of_birth', 'strain'], got 10: 0 positional and 10 keyword ['age', 'date_of_birth', 'description', 'genotype', 'name', 'sex', 'species', 'strain', 'subject_id', 'weight']") - 'None' object with name 'None'
-       Message: Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1248, in construct
-    obj = self.__new_container__(cls, builder.source, parent, builder.attributes.get(self.__spec.id_key()),
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1261, in __new_container__
-    obj.__init__(**kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/classgenerator.py", line 306, in __init__
-    base.__init__(self, **kwargs)  # special case: need to pass self to __init__
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 638, in func_call
-    pargs = _check_args(args, kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 631, in _check_args
-    raise ExceptionType(msg)
-TypeError: Subject.__init__: Expected at most 9 arguments ['age', 'description', 'genotype', 'sex', 'species', 'subject_id', 'weight', 'date_of_birth', 'strain'], got 10: 0 positional and 10 keyword ['age', 'date_of_birth', 'description', 'genotype', 'name', 'sex', 'species', 'strain', 'subject_id', 'weight']
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 528, in inspect_nwb
-    nwbfile = robust_s3_read(command=io.read, max_retries=max_retries)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
-    raise exc
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
-    return command(*command_args, **command_kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/hdf5/h5tools.py", line 451, in read
-    return super().read(**kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/io.py", line 42, in read
-    container = self.__manager.construct(f_builder)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 280, in construct
-    result = self.__type_map.construct(builder, self, None)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
-    return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
-    subspecs = self.__get_subspec_values(builder, self.spec, manager)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
-    self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1198, in __get_sub_builders
-    ret.update(self.__get_subspec_values(sub_builder, subspec, manager))
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
-    self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1200, in __get_sub_builders
-    ret[subspec] = manager.construct(sub_builder)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
-    result = self.__type_map.construct(builder, self, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
-    return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1252, in construct
-    raise ConstructError(builder, msg) from ex
-hdmf.build.errors.ConstructError: (root/general/subject GroupBuilder {'attributes': {'alive': False, 'namespace': 'ndx-ibl-metadata', 'neurodata_type': 'IblSubject', 'object_id': '46b89137-5463-4681-9f70-be3f04ca85d9'}, 'groups': {}, 'datasets': {'age': root/general/subject/age DatasetBuilder {'attributes': {}, 'data': 'P32W'}, 'date_of_birth': root/general/subject/date_of_birth DatasetBuilder {'attributes': {}, 'data': '2019-04-30T00:00:00+00:00'}, 'death_date': root/general/subject/death_date DatasetBuilder {'attributes': {}, 'data': '2019-12-10'}, 'description': root/general/subject/description DatasetBuilder {'attributes': {}, 'data': ''}, 'expected_water': root/general/subject/expected_water DatasetBuilder {'attributes': {}, 'data': 0.9760000000000001}, 'genotype': root/general/subject/genotype DatasetBuilder {'attributes': {}, 'data': ''}, 'lab': root/general/subject/lab DatasetBuilder {'attributes': {}, 'data': 'cortexlab'}, 'line': root/general/subject/line DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'litter': root/general/subject/litter DatasetBuilder {'attributes': {}, 'data': 'C57_L_024'}, 'nickname': root/general/subject/nickname DatasetBuilder {'attributes': {}, 'data': 'KS016'}, 'projects': root/general/subject/projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "projects": shape (2,), type "|O">}, 'remaining_water': root/general/subject/remaining_water DatasetBuilder {'attributes': {}, 'data': 0.9760000000000001}, 'responsible_user': root/general/subject/responsible_user DatasetBuilder {'attributes': {}, 'data': 'Karolina_Socha'}, 'session_projects': root/general/subject/session_projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "session_projects": shape (1,), type "|O">}, 'sex': root/general/subject/sex DatasetBuilder {'attributes': {}, 'data': 'M'}, 'strain': root/general/subject/strain DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'subject_id': root/general/subject/subject_id DatasetBuilder {'attributes': {}, 'data': '354e6122-de4a-4945-bafd-d46df65768f6'}, 'url': root/general/subject/url DatasetBuilder {'attributes': {}, 'data': 'https://alyx.internationalbrainlab.org/subjects/KS016'}, 'water_administrations': root/general/subject/water_administrations DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "water_administrations": shape (132,), type "|O">}, 'weighings': root/general/subject/weighings DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "weighings": shape (76,), type "|O">}, 'weight': root/general/subject/weight DatasetBuilder {'attributes': {}, 'data': '31.0'}}, 'links': {}}, "Could not construct IblSubject object due to: Subject.__init__: Expected at most 9 arguments ['age', 'description', 'genotype', 'sex', 'species', 'subject_id', 'weight', 'date_of_birth', 'strain'], got 10: 0 positional and 10 keyword ['age', 'date_of_birth', 'description', 'genotype', 'name', 'sex', 'species', 'strain', 'subject_id', 'weight']")
-
-
-0.1  /tmp/nwb_versions/sub-00778394-c956-408d-8a6c-ca3b05a611d5_ses-c9e7f434-285d-4ee1-8488-0d08912725c9.nwb: During io.read() - <class 'hdmf.build.errors.ConstructError'>: (root/general/subject GroupBuilder {'attributes': {'alive': False, 'namespace': 'ndx-ibl-metadata', 'neurodata_type': 'IblSubject', 'object_id': '8ba68b7a-31f3-445b-b1d4-be599fd7264c'}, 'groups': {}, 'datasets': {'age': root/general/subject/age DatasetBuilder {'attributes': {}, 'data': 'P44W'}, 'date_of_birth': root/general/subject/date_of_birth DatasetBuilder {'attributes': {}, 'data': '2019-04-30T00:00:00+00:00'}, 'death_date': root/general/subject/death_date DatasetBuilder {'attributes': {}, 'data': '2020-03-09'}, 'description': root/general/subject/description DatasetBuilder {'attributes': {}, 'data': ''}, 'expected_water': root/general/subject/expected_water DatasetBuilder {'attributes': {}, 'data': 0.8960000000000001}, 'genotype': root/general/subject/genotype DatasetBuilder {'attributes': {}, 'data': ''}, 'lab': root/general/subject/lab DatasetBuilder {'attributes': {}, 'data': 'cortexlab'}, 'line': root/general/subject/line DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'litter': root/general/subject/litter DatasetBuilder {'attributes': {}, 'data': 'C57_L_024'}, 'nickname': root/general/subject/nickname DatasetBuilder {'attributes': {}, 'data': 'KS019'}, 'projects': root/general/subject/projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "projects": shape (2,), type "|O">}, 'remaining_water': root/general/subject/remaining_water DatasetBuilder {'attributes': {}, 'data': 0.8960000000000001}, 'responsible_user': root/general/subject/responsible_user DatasetBuilder {'attributes': {}, 'data': 'Karolina_Socha'}, 'session_projects': root/general/subject/session_projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "session_projects": shape (2,), type "|O">}, 'sex': root/general/subject/sex DatasetBuilder {'attributes': {}, 'data': 'F'}, 'strain': root/general/subject/strain DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'subject_id': root/general/subject/subject_id DatasetBuilder {'attributes': {}, 'data': '00778394-c956-408d-8a6c-ca3b05a611d5'}, 'url': root/general/subject/url DatasetBuilder {'attributes': {}, 'data': 'https://alyx.internationalbrainlab.org/subjects/KS019'}, 'water_administrations': root/general/subject/water_administrations DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "water_administrations": shape (228,), type "|O">}, 'weighings': root/general/subject/weighings DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "weighings": shape (134,), type "|O">}, 'weight': root/general/subject/weight DatasetBuilder {'attributes': {}, 'data': '25.8'}}, 'links': {}}, "Could not construct IblSubject object due to: Subject.__init__: Expected at most 9 arguments ['age', 'description', 'genotype', 'sex', 'species', 'subject_id', 'weight', 'date_of_birth', 'strain'], got 10: 0 positional and 10 keyword ['age', 'date_of_birth', 'description', 'genotype', 'name', 'sex', 'species', 'strain', 'subject_id', 'weight']") - 'None' object with name 'None'
-       Message: Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1248, in construct
-    obj = self.__new_container__(cls, builder.source, parent, builder.attributes.get(self.__spec.id_key()),
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1261, in __new_container__
-    obj.__init__(**kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/classgenerator.py", line 306, in __init__
-    base.__init__(self, **kwargs)  # special case: need to pass self to __init__
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 638, in func_call
-    pargs = _check_args(args, kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 631, in _check_args
-    raise ExceptionType(msg)
-TypeError: Subject.__init__: Expected at most 9 arguments ['age', 'description', 'genotype', 'sex', 'species', 'subject_id', 'weight', 'date_of_birth', 'strain'], got 10: 0 positional and 10 keyword ['age', 'date_of_birth', 'description', 'genotype', 'name', 'sex', 'species', 'strain', 'subject_id', 'weight']
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 528, in inspect_nwb
-    nwbfile = robust_s3_read(command=io.read, max_retries=max_retries)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
-    raise exc
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
-    return command(*command_args, **command_kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/hdf5/h5tools.py", line 451, in read
-    return super().read(**kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/backends/io.py", line 42, in read
-    container = self.__manager.construct(f_builder)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 280, in construct
-    result = self.__type_map.construct(builder, self, None)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
-    return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1218, in construct
-    subspecs = self.__get_subspec_values(builder, self.spec, manager)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
-    self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1198, in __get_sub_builders
-    ret.update(self.__get_subspec_values(sub_builder, subspec, manager))
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1147, in __get_subspec_values
-    self.__get_sub_builders(groups, spec.groups, manager, ret)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1200, in __get_sub_builders
-    ret[subspec] = manager.construct(sub_builder)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 276, in construct
-    result = self.__type_map.construct(builder, self, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/manager.py", line 789, in construct
-    return obj_mapper.construct(builder, build_manager, parent)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/utils.py", line 639, in func_call
-    return func(args[0], **pargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/hdmf/build/objectmapper.py", line 1252, in construct
-    raise ConstructError(builder, msg) from ex
-hdmf.build.errors.ConstructError: (root/general/subject GroupBuilder {'attributes': {'alive': False, 'namespace': 'ndx-ibl-metadata', 'neurodata_type': 'IblSubject', 'object_id': '8ba68b7a-31f3-445b-b1d4-be599fd7264c'}, 'groups': {}, 'datasets': {'age': root/general/subject/age DatasetBuilder {'attributes': {}, 'data': 'P44W'}, 'date_of_birth': root/general/subject/date_of_birth DatasetBuilder {'attributes': {}, 'data': '2019-04-30T00:00:00+00:00'}, 'death_date': root/general/subject/death_date DatasetBuilder {'attributes': {}, 'data': '2020-03-09'}, 'description': root/general/subject/description DatasetBuilder {'attributes': {}, 'data': ''}, 'expected_water': root/general/subject/expected_water DatasetBuilder {'attributes': {}, 'data': 0.8960000000000001}, 'genotype': root/general/subject/genotype DatasetBuilder {'attributes': {}, 'data': ''}, 'lab': root/general/subject/lab DatasetBuilder {'attributes': {}, 'data': 'cortexlab'}, 'line': root/general/subject/line DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'litter': root/general/subject/litter DatasetBuilder {'attributes': {}, 'data': 'C57_L_024'}, 'nickname': root/general/subject/nickname DatasetBuilder {'attributes': {}, 'data': 'KS019'}, 'projects': root/general/subject/projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "projects": shape (2,), type "|O">}, 'remaining_water': root/general/subject/remaining_water DatasetBuilder {'attributes': {}, 'data': 0.8960000000000001}, 'responsible_user': root/general/subject/responsible_user DatasetBuilder {'attributes': {}, 'data': 'Karolina_Socha'}, 'session_projects': root/general/subject/session_projects DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "session_projects": shape (2,), type "|O">}, 'sex': root/general/subject/sex DatasetBuilder {'attributes': {}, 'data': 'F'}, 'strain': root/general/subject/strain DatasetBuilder {'attributes': {}, 'data': 'C57BL/6J'}, 'subject_id': root/general/subject/subject_id DatasetBuilder {'attributes': {}, 'data': '00778394-c956-408d-8a6c-ca3b05a611d5'}, 'url': root/general/subject/url DatasetBuilder {'attributes': {}, 'data': 'https://alyx.internationalbrainlab.org/subjects/KS019'}, 'water_administrations': root/general/subject/water_administrations DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "water_administrations": shape (228,), type "|O">}, 'weighings': root/general/subject/weighings DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "weighings": shape (134,), type "|O">}, 'weight': root/general/subject/weight DatasetBuilder {'attributes': {}, 'data': '25.8'}}, 'links': {}}, "Could not construct IblSubject object due to: Subject.__init__: Expected at most 9 arguments ['age', 'description', 'genotype', 'sex', 'species', 'subject_id', 'weight', 'date_of_birth', 'strain'], got 10: 0 positional and 10 keyword ['age', 'date_of_birth', 'description', 'genotype', 'name', 'sex', 'species', 'strain', 'subject_id', 'weight']")
-
+0.0  /tmp/nwb_versions/sub-354e6122-de4a-4945-bafd-d46df65768f6_ses-15fa297b-4828-496d-b48c-2894e3a9bf0c.nwb and 1 other file: check_subject_species_exists - 'IblSubject' object at location '/general/subject'
+       Message: Subject species is missing.
 

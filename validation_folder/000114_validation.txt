@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-07-29 14:44:38.176757+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 4 issues over 2 files:
+       4 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-ROV43_ses-Day 1-obs_ophys.nwb and 1 other file: check_roi_response_series_link_to_plane_segmentation - 'RoiResponseSeries' object at location '/acquisition/RoiResponseSeries'
+       Message: rois field does not point to a PlaneSegmentation table.
+
+0.1  /tmp/nwb_versions/sub-ROV43_ses-Day 1-obs_ophys.nwb and 1 other file: check_regular_timestamps - 'RoiResponseSeries' object at location '/acquisition/RoiResponseSeries'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=0.0 and rate=0.0009830399803391991 instead of timestamps.
+

@@ -1,18 +1,25 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:09:35.081514+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-30 00:09:05.982515+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 2 issues over 2 files:
+Found 3 issues over 2 files:
+       1 - PYNWB_VALIDATION
        2 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
-0  BEST_PRACTICE_VIOLATION
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-P1_ses-2018-10-15_ecephys.nwb: root/general/session_id - 'None' object at location 'general/session_id'
+       Message: incorrect type - expected 'text', got 'isodatetime'
+
+1  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-P1_ses-2018-09-17a_ecephys.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+1.1  /tmp/nwb_versions/sub-P1_ses-2018-09-17a_ecephys.nwb and 1 other file: check_subject_species_form - 'Subject' object at location '/general/subject'
        Message: Subject species 'Human' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 

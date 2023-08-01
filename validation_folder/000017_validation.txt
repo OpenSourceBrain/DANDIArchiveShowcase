@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 18:38:25.087275+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-31 01:35:36.532190+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
 Found 20 issues over 2 files:
       14 - PYNWB_VALIDATION
@@ -40,17 +40,20 @@ Found 20 issues over 2 files:
 ===========
 
 1.7  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/behavior/PupilTracking/eye_xy_positions'
-       Message: The length of the first dimension of data does not match the length of timestamps.
+       Message: The length of the first dimension of data (291768) does not match the length of timestamps (2).
 
 1.8  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/behavior/PupilTracking/eye_area'
-       Message: The length of the first dimension of data does not match the length of timestamps.
+       Message: The length of the first dimension of data (291768) does not match the length of timestamps (2).
 
-1.9  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: check_timestamps_match_first_dimension - 'IntervalSeries' object at location '/processing/behavior/BehavioralEpochs/wheel_moves'
-       Message: The length of the first dimension of data does not match the length of timestamps.
+1.9  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb: check_timestamps_match_first_dimension - 'IntervalSeries' object at location '/processing/behavior/BehavioralEpochs/wheel_moves'
+       Message: The length of the first dimension of data (722) does not match the length of timestamps (1444).
+
+1.10  /tmp/nwb_versions/sub-Richards_ses-20171101T120000.nwb: check_timestamps_match_first_dimension - 'IntervalSeries' object at location '/processing/behavior/BehavioralEpochs/wheel_moves'
+        Message: The length of the first dimension of data (399) does not match the length of timestamps (798).
 
 2  BEST_PRACTICE_VIOLATION
 ==========================
 
-2.10  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/stimulus/presentation/receptive_field_mapping_sparse_noise'
+2.11  /tmp/nwb_versions/sub-Lederberg_ses-20171210T120000.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/stimulus/presentation/receptive_field_mapping_sparse_noise'
         Message: receptive_field_mapping_sparse_noise timestamps are not ascending.
 

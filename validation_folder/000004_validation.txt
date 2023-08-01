@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 18:31:08.862839+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-07-30 15:13:16.844516+00:00
+Platform: Linux-5.19.0-50-generic-x86_64-with
+NWBInspector version: 0.4.29
 
 Found 12 issues over 2 files:
        8 - PYNWB_VALIDATION
@@ -36,6 +36,6 @@ Found 12 issues over 2 files:
 2  BEST_PRACTICE_VIOLATION
 ==========================
 
-2.5  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+2.5  /tmp/nwb_versions/sub-P15HMH_ses-20070901_obj-bdd49u_ecephys+image.nwb and 1 other file: check_subject_species_form - 'Subject' object at location '/general/subject'
        Message: Subject species 'Human' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
 
