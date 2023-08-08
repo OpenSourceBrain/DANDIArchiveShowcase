@@ -20,6 +20,21 @@ from nwbinspector.inspector_tools import save_report, format_messages, MessageFo
 from dandi import download
 import ast
 from collections import Counter
+import signal
+from contextlib import contextmanager
+
+class TimeoutException(Exception): pass
+
+@contextmanager
+def time_limit(seconds):
+    def signal_handler(signum, frame):
+        raise TimeoutException("Timed out!")
+    signal.signal(signal.SIGALRM, signal_handler)
+    signal.alarm(seconds)
+    try:
+        yield
+    finally:
+        signal.alarm(0)
 
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
                             args_updatereadme=None,args_readmeonly=None,args_testdocker=None):
@@ -159,14 +174,24 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 for i in range(len(path_lst)):
                     if smallest_size_lst[i] < hard_limit:
                         # download files
-                        nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
-                        # get nwb_version
-                        nwb_version = get_nwb_version(nwb_path)
+                        try:
+                            with time_limit(300):
+                                nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                                # get nwb_version
+                                nwb_version = get_nwb_version(nwb_path)
+                        except TimeoutException as e:
+    	                    print("Timed out!")
+    	                    continue      
                         # validate file here first
                         try:
-                            report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
+                            try:
+                                with time_limit(300):
+                                    report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
-                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)
+                                    validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)
+                            except TimeoutException as e:
+    	                        print("Timed out!")
+    	                        continue        
                         except ValueError:
                             validation_summary = 'UNABLE'
                             pass
