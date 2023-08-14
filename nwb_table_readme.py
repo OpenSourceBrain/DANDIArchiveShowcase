@@ -56,6 +56,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     if args_dandisetlimit:
         dandiset_folder_name = dandiset_folder_name[10:20]
     yaml_file = 'dandiset.yaml'
+    
+    blacklisted_dandisets = set(['000015'])
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
                        'assetsSummary.numberOfSubjects','assetsSummary.variableMeasured','keywords','schemaKey','schemaVersion','url','version']
@@ -150,9 +152,14 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         break
 
             report_message = []
+                
             # if user doesn't want to download files
             if args_nodownload:
                 validation_summary = 'NOT_DOWNLOADED'
+                
+            else if dandiset_name in blacklisted_dandisets:
+                validation_summary = 'MEMORY_ERROR'
+                
             # only download files whose sizes are lower than the hard limit
             else:
                 # in case files larger than the hard_limit and not downloaded
