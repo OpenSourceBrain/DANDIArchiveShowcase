@@ -81,7 +81,11 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     nanval = math.nan
      
     for dandiset_name in dandiset_folder_name:
+        if dandiset_name in ['000010','000015','000037','000045','000167','000168']:
+            print("\n     =================  Dandiset %s is blacklisted ." % dandiset_name)
+            continue
         print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
+       
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -366,6 +370,8 @@ def update_readme(testdocker=None):
     dict_var = Counter(var_measured)
     most_common_dict = dict_var.most_common(num_keys)
     most_common_keys = [key for key,val in most_common_dict]
+    
+    blacklisted_dandisets = ['000010','000015','000037','000045','000167','000168']
 
     pass_nwbinspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
@@ -399,7 +405,12 @@ def update_readme(testdocker=None):
     readme += '\n'
     readme += '- NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible: '
     root_url = 'https://dandiarchive.org/dandiset/'
+    readme = readme[:-2]+'\n\n'
     for ds in pass_nwbinspector:
+        readme += '[%s](%s%s), '%(ds, root_url, ds)
+    readme = readme[:-2]+'\n\n'
+    readme += '- NWB dandisets that are blacklisted and are not analysed: '
+    for ds in blacklisted_dandisets:
         readme += '[%s](%s%s), '%(ds, root_url, ds)
     readme = readme[:-2]+'\n\n'
 
