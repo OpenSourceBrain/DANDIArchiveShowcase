@@ -8,6 +8,7 @@ import datalad.api as dl
 import json
 import argparse
 import tempfile
+import gc
 from datetime import date
 from pynwb import NWBHDF5IO
 from pynwb.image import ImageSeries
@@ -85,7 +86,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
      
     for dandiset_name in dandiset_folder_name:
         print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
-       
+        gc.collect()
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -169,6 +170,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         break
             report_message = []
             # if user doesn't want to download files
+            gc.collect()
             if args_nodownload:
                 validation_summary = 'NOT_DOWNLOADED'
             # only download files whose sizes are lower than the hard limit
@@ -221,6 +223,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # in case script crashes
         dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
+        gc.collect()
 
     # only get the relevant columns
     yaml_df_flatten.extend(tmp_col)

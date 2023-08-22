@@ -34,7 +34,7 @@ RUN apk add python3 py3-pip
 
 RUN pip install --upgrade pip setuptools wheel
 RUN apk update && apk add --no-cache hdf5-dev
-RUN pip install h5py memory_profiler
+RUN pip install h5py
 
 
 COPY ./requirements.txt $HOME/requirements.txt
@@ -63,7 +63,8 @@ RUN pip install --upgrade numpy
 RUN git clone https://github.com/OpenSourceBrain/OSBv2.git
 RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/nwb-explorer/Dockerfile
 
-RUN cd /tmp
-RUN  datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
+WORKDIR /tmp
+RUN datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
+WORKDIR / 
 
 RUN echo "Built the Docker image!"

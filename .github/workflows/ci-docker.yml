@@ -41,7 +41,7 @@ jobs:
       run: |
       
         echo Testing running nwbe container
-        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --dandiset_limit --test_docker'
+        docker exec -i da /bin/sh -c 'python -u testing/nwb_table_readme.py --dandiset_limit --test_docker'
         docker exec -i da /bin/sh -c 'ls -alt testing/validation_folder'
 
       
