@@ -8,6 +8,7 @@ import datalad.api as dl
 import json
 import argparse
 import tempfile
+import gc
 from datetime import date
 from pynwb import NWBHDF5IO
 from pynwb.image import ImageSeries
@@ -37,7 +38,7 @@ def time_limit(seconds):
         signal.alarm(0)
 
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
-                            args_updatereadme=None,args_readmeonly=None,args_testdocker=None):
+                            args_updatereadme=None,args_readmeonly=None,args_testdocker=False):
     # if users want to update readme only
     if args_readmeonly:
         return args_readmeonly
@@ -49,14 +50,16 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     json_file = '.dandi/assets.json'
     # directory for dandisets
     root_folder = '/tmp/dandisets'
-    if os.path.exists(root_folder):
-        if len(os.listdir((root_folder))) != 0:
-            dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
+    if args_testdocker is False:
+        print("Enter")
+        if os.path.exists(root_folder):
+            if len(os.listdir((root_folder))) != 0:
+                dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
+            else:
+                os.mkdir(root_folder)
+                dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
         else:
-            os.mkdir(root_folder)
             dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
-    else:
-        dl.install(source='https://github.com/dandi/dandisets.git', path=root_folder, recursive=True, recursion_limit=1, jobs=4)
 
     # directory for storing validation files and readme file
     if(args_testdocker):
@@ -69,7 +72,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[20:30]
+        dandiset_folder_name = dandiset_folder_name[5:20]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
@@ -80,12 +83,10 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
      
+     
     for dandiset_name in dandiset_folder_name:
-        if dandiset_name in ['000010','000015','000037','000045','000167','000168']:
-            print("\n     =================  Dandiset %s is blacklisted ." % dandiset_name)
-            continue
         print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
-       
+        gc.collect()
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -169,6 +170,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         break
             report_message = []
             # if user doesn't want to download files
+            gc.collect()
             if args_nodownload:
                 validation_summary = 'NOT_DOWNLOADED'
             # only download files whose sizes are lower than the hard limit
@@ -178,14 +180,22 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 for i in range(len(path_lst)):
                     if smallest_size_lst[i] < hard_limit:
                         # download files
+
+                        nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                        #nwb_path = download_dl(dandiset_name,file_parent_folder[i],path_lst[i])
+                        # get nwb_version
+                        
                         try:
-                            with time_limit(300):
-                                nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
-                                # get nwb_version
-                                nwb_version = get_nwb_version(nwb_path)
-                        except TimeoutException as e:
-    	                    print("Timed out!")
-    	                    continue      
+                            try:
+                                with time_limit(300):
+                                    nwb_version = get_nwb_version(nwb_path)
+                            except TimeoutException as e:
+    	                        print("Timed out!")
+    	                        continue        
+                        except:
+                            validation_summary = 'TRUNCATION_ERROR'
+                            pass
+                             
                         # validate file here first
                         try:
                             try:
@@ -213,6 +223,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # in case script crashes
         dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
+        gc.collect()
 
     # only get the relevant columns
     yaml_df_flatten.extend(tmp_col)
@@ -227,7 +238,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata_final.to_csv(os.path.join(save_folder, 'dandiset_summary.csv'))
 
     # remove the cloned dandisets folder
-    dl.remove(dataset=root_folder)
+    #dl.remove(dataset=root_folder)
     return args_updatereadme
 
 def test_nwbe_compatibility(nwb_path,testdocker):
@@ -303,6 +314,26 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
         # download 1 file here
         download.download(dandi_url, output_dir=save_folder)
     return tmp_nwb_path
+    
+def download_dl(dandi_ident,parent_folder,nwb_file_name):
+    if(isinstance(parent_folder, float)):
+        folder_path = str(dandi_ident)
+    else:
+        folder_path = os.path.join(str(dandi_ident),str(parent_folder));
+    
+    if '/' in nwb_file_name:
+        tmp_nwb_path = nwb_file_name.split('/')[-1]
+    else:
+        tmp_nwb_path = nwb_file_name
+        
+    dandi_path = os.path.join(folder_path,tmp_nwb_path)
+    
+    temp = os.path.join('/tmp/dandisets',dandi_path)
+
+    if not os.path.exists(temp):
+        # download 1 file here
+        dl.get(temp,dataset='/tmp/dandisets',recursive=True, recursion_limit=1, jobs=4)
+    return temp
 
 def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_report=None):
     if not os.path.exists(save_folder):

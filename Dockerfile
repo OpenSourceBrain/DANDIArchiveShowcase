@@ -63,4 +63,8 @@ RUN pip install --upgrade numpy
 RUN git clone https://github.com/OpenSourceBrain/OSBv2.git
 RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/nwb-explorer/Dockerfile
 
+WORKDIR /tmp
+RUN datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
+WORKDIR / 
+
 RUN echo "Built the Docker image!"
