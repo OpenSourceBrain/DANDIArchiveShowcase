@@ -39,7 +39,7 @@ import datalad.api as dl
 import json
 import argparse
 from datetime import date
-from pynwb import NWBHDF5IO
+
 from pynwb.image import ImageSeries
 from pynwb.base import TimeSeries
 from pynwb.behavior import BehavioralTimeSeries, BehavioralEvents
@@ -51,17 +51,52 @@ from dandi import download
 import ast
 from collections import Counter
 
-#https://pypi.org/project/pyabf/
-import pyabf
+from pynwb.ophys import TwoPhotonSeries,OnePhotonSeries
+from pynwb.base import TimeSeries
 
-import pynwb
+def plot_and_save_timeseries(timeseries):
 
+    ts = timeseries
+    if isinstance(ts, TimeSeries):
+        plt.figure()
+        selected_trace = ts.data[:] 
+        
+        
+        print(type(ts.timestamps))
+        if ts.timestamps is not None:
+            num_timestamps = min(len(ts.timestamps), len(selected_trace))
+        
+            plt.plot(ts.timestamps[:num_timestamps], selected_trace[:num_timestamps]) 
+            plt.xlabel('Time')
+            plt.ylabel('Value')
+            plt.title(f"Timeseries: {ts.name}")
+            plt.savefig(f'image_1.png', bbox_inches='tight')
+            plt.close()
 
+def save_images_as_png(images,path_to_save):
+    for idx, image in enumerate(images):
+        plt.imshow(image, cmap='gray')  # Assuming grayscale images
+        plt.axis('off')
+        plt.savefig(os.path.join(path_to_save,f'image_{idx}.png'), bbox_inches='tight')
+        plt.close()
+        
+        
+def processing_module(nwbfile):
+
+    for processing_module_name in nwbfile.processing:
+        for p2 in nwbfile.processing[processing_module_name].data_interfaces:
+
+            if isinstance(nwbfile.processing[processing_module_name].data_interfaces[p2], TwoPhotonSeries):
+                images_to_save = nwbfile.processing[processing_module_name].data_interfaces[p2].data[:5]  # Store first 5 images
+                #output_dir = 'saved_images'
+                save_images_as_png(images_to_save)
+                print(f"Found images and saved them as PNG.")
+                
 def create_summary(nwb_path,dandi_ident):
     
     # Step 0: Base variables
     save_folder = 'validation_folder' #if not path
-    html_folder = 'summary'#if not path
+    html_folder = 'Summaries'#if not path
     
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
     
@@ -84,10 +119,10 @@ def create_summary(nwb_path,dandi_ident):
     
     if value_to_check == None:
         dandi_metadata_readme['html_0'][index] = 'file_0'
-        html_path = os.path.join(dandi_path,'file_0')
+        html_path = os.path.join(dandi_path,'file_0.html')
     else:
         dandi_metadata_readme['html_1'][index] = 'file_1'
-        html_path = os.path.join(dandi_path,'file_1')        
+        html_path = os.path.join(dandi_path,'file_1.html')        
     
     
     # Step 1: Open the html file template and store it in base variable
@@ -176,7 +211,28 @@ def create_summary(nwb_path,dandi_ident):
             fig.add_trace(go.Scatter(y=nwbfile.stimulus[k1].data[:], name=k1))
         ans = fig.to_html(full_html=False, include_plotlyjs='cdn')
         message+=plot_tmpl.format(title="Stimulus : ",plot=ans)
-        html_content = html_content.replace("{Plots}", message)
+        
+    
+    image_tmpl = """<div id="plotBox"><div class="plotTitle">{title}</div><img src="{path}" alt="Image"></div>"""
+    
+    for processing_module_name in nwbfile.processing:
+        for p2 in nwbfile.processing[processing_module_name].data_interfaces:
+            if isinstance(nwbfile.processing[processing_module_name].data_interfaces[p2], TwoPhotonSeries) or isinstance(nwbfile.processing[processing_module_name].data_interfaces[p2], OnePhotonSeries):
+                images_to_save = nwbfile.processing[processing_module_name].data_interfaces[p2].data[:5]  
+               
+                save_images_as_png(images_to_save,dandi_path)
+                message+=image_tmpl.format(title="Images : ",path="image_0.png")
+                print(f"Found images and saved them as PNG.")
+            
+           
+            if isinstance(nwbfile.processing[processing_module_name].data_interfaces[p2], TimeSeries):
+                plot_and_save_timeseries(nwbfile.processing[processing_module_name].data_interfaces[p2])
+                message+=image_tmpl.format(title="Images : ",path="image_1.png")
+                print(f"Found plot images and saved them as PNG.")
+                     
+                
+    html_content = html_content.replace("{Plots}", message)
+        
         
     print(nwbe_compatibility)
     
