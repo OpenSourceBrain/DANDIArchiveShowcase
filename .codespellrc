@@ -1,4 +1,3 @@
 [codespell]
 skip = .git,*.pdf,*.svg,dandiset_summary.csv
-#
-# ignore-words-list =
+ignore-words-list = ans,succint
