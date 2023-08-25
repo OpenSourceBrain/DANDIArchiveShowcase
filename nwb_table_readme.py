@@ -72,7 +72,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[5:20]
+        dandiset_folder_name = dandiset_folder_name[10:20]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
@@ -83,10 +83,8 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     dandi_metadata = pd.DataFrame()
     nanval = math.nan
      
-     
     for dandiset_name in dandiset_folder_name:
         print("\n     =================  Dealing with DANDISET ID: %s" % dandiset_name)
-        gc.collect()
         with open(os.path.join(root_folder,dandiset_name,yaml_file)) as f:
             my_dict = yaml.safe_load(f)
         # in case these variables are not available in the yaml files
@@ -170,7 +168,6 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         break
             report_message = []
             # if user doesn't want to download files
-            gc.collect()
             if args_nodownload:
                 validation_summary = 'NOT_DOWNLOADED'
             # only download files whose sizes are lower than the hard limit
@@ -180,39 +177,36 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 for i in range(len(path_lst)):
                     if smallest_size_lst[i] < hard_limit:
                         # download files
-
-                        nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                        try:
+                            with time_limit(6000):
+                                nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
+                        except TimeoutException as e:
+                            print("Download is Blocked -- ONLY FOR DEBUGGING!")
+                            continue 
+                            
                         #nwb_path = download_dl(dandiset_name,file_parent_folder[i],path_lst[i])
                         # get nwb_version
                         
                         try:
-                            try:
-                                with time_limit(300):
-                                    nwb_version = get_nwb_version(nwb_path)
-                            except TimeoutException as e:
-    	                        print("Timed out!")
-    	                        continue        
+                            nwb_version = get_nwb_version(nwb_path)      
                         except:
                             validation_summary = 'TRUNCATION_ERROR'
                             pass
                              
                         # validate file here first
                         try:
-                            try:
-                                with time_limit(300):
-                                    report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
+                            report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
-                                    validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)
-                            except TimeoutException as e:
-    	                        print("Timed out!")
-    	                        continue        
+                            validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)      
                         except ValueError:
                             validation_summary = 'UNABLE'
-                            pass
+                            continue
                         # test nwbe compatibility
+                        print(nwb_path)
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
                         # uninstall file
                         os.unlink(nwb_path)
+                        
         # concatenate the additional variables to the flattened pdf
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
                                                        smallest_size_lst[0],smallest_size_lst[1],url_lst[0],url_lst[1],nwbe_compatibility[0],nwbe_compatibility[1],
@@ -223,7 +217,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
         # in case script crashes
         dandi_metadata.to_csv(os.path.join(save_folder,'dandiset_summary_tmp.csv'))
         f.close()
-        gc.collect()
+
 
     # only get the relevant columns
     yaml_df_flatten.extend(tmp_col)
@@ -243,10 +237,10 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
 def test_nwbe_compatibility(nwb_path,testdocker):
     if(testdocker):		
-    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + ' --test_docker\''
+    	cmd = 'docker exec -i nwbe /bin/sh -c \'python -u testing/compatibility_test.py ' + nwb_path + ' --test_docker\''
     else:
-    	cmd = 'docker exec -i nwbe /bin/sh -c \'python testing/compatibility_test.py ' + nwb_path + '\''
-    timeout_s = 60  # how many seconds to wait
+    	cmd = 'docker exec -i nwbe /bin/sh -c \'python -u testing/compatibility_test.py ' + nwb_path + '\''
+    timeout_s = 150  # how many seconds to wait
     type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
     # NC-0: file cannot be opened
     try:
@@ -280,6 +274,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
                     plottable = 1
                     break
     # NC-1: timeout while creating geppetto model
+
     if(testdocker):
         with tempfile.TemporaryFile() as tempf:
                 p = subprocess.Popen([cmd], start_new_session=True, shell=True, stdout=tempf)
@@ -288,6 +283,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
                 text = tempf.read()
                 string_data = text.decode('utf-8')
                 lower_text = string_data.lower()
+                print(lower_text)
         if "forever" in lower_text:
             nwbe_compatibility = 'NC-1'
     else:
@@ -298,6 +294,8 @@ def test_nwbe_compatibility(nwb_path,testdocker):
             print(f'Timeout for {cmd} ({timeout_s}s) expired')
             os.killpg(os.getpgid(p.pid),signal.SIGTERM)
             nwbe_compatibility = 'NC-1'
+            
+    print(nwbe_compatibility)
     return nwbe_compatibility
 
 def download_nwb_with_path(dandi_url,nwb_file_name):
