@@ -46,7 +46,7 @@ if __name__ == '__main__':
                         help='test using the NWBE docker container')
     parser.add_argument('text', action='store', type=str, help='The text to parse.')
     args = parser.parse_args()
-    counter = run_with_limited_time(test_nwbe_compatibility, (args.text,args.test_docker, ), {}, 100)
+    counter = limit_time(test_nwbe_compatibility, (args.text,args.test_docker, ), {}, 100)
     if counter:
         print("created successfully!")
     else:
