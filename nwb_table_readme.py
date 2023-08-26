@@ -23,6 +23,10 @@ import ast
 from collections import Counter
 import signal
 from contextlib import contextmanager
+from create_summary import create_summary
+from multiprocessing import Process
+
+
 
 class TimeoutException(Exception): pass
 
@@ -36,6 +40,16 @@ def time_limit(seconds):
         yield
     finally:
         signal.alarm(0)
+
+def limit_time(func, args, kwargs, time):
+    p = Process(target=func, args=args, kwargs=kwargs)
+    p.start()
+    p.join(time)
+    if p.is_alive():
+        p.terminate()
+        return 0
+
+    return 1
 
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
                             args_updatereadme=None,args_readmeonly=None,args_testdocker=False):
@@ -105,6 +119,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
         # get nwb version for NWB dandisets, dummy for datasets that are not NWB
         nwb_version = nanval
+        html_info = [nanval,nanval]
         smallest_size_lst = [nanval,nanval]
         validation_summary = nanval
         url_lst = [nanval, nanval]
@@ -178,7 +193,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                     if smallest_size_lst[i] < hard_limit:
                         # download files
                         try:
-                            with time_limit(6000):
+                            with time_limit(600):
                                 nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
                         except TimeoutException as e:
                             print("Download is Blocked -- ONLY FOR DEBUGGING!")
@@ -198,14 +213,22 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
                             validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)      
-                        except ValueError:
+                        except:
                             validation_summary = 'UNABLE'
                             continue
                         # test nwbe compatibility
                         print(nwb_path)
+                        #try:
+                         #   with time_limit(60):
+                        print("Creating Summary!")
+                        create_summary(nwb_path,dandiset_name,str(i))
+                        print("Created Summary!")
+                        #except:
+                         #   print("Failed")
+                          #  pass
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
                         # uninstall file
-                        os.unlink(nwb_path)
+                        #os.unlink(nwb_path)
                         
         # concatenate the additional variables to the flattened pdf
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
@@ -240,8 +263,10 @@ def test_nwbe_compatibility(nwb_path,testdocker):
     	cmd = 'docker exec -i nwbe /bin/sh -c \'python -u testing/compatibility_test.py ' + nwb_path + ' --test_docker\''
     else:
     	cmd = 'docker exec -i nwbe /bin/sh -c \'python -u testing/compatibility_test.py ' + nwb_path + '\''
+    	
     timeout_s = 150  # how many seconds to wait
     type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
+    
     # NC-0: file cannot be opened
     try:
         io = NWBHDF5IO(nwb_path,mode='r',load_namespaces=True)
@@ -250,6 +275,9 @@ def test_nwbe_compatibility(nwb_path,testdocker):
         print('File cannot be opened - NC lvl 0')
         nwbe_compatibility = 'NC-0'
         return nwbe_compatibility
+        
+        
+    
     # dummy var in case file passes NC-1 and is not a TimeSeries type
     nwbe_compatibility = 'LL-V'
     plottable = 0

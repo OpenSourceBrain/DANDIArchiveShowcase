@@ -1,15 +1,10 @@
 '''
 This function is meant to be called from nwb_table_readme.py script to test NWBE compatibility
 '''
-import signal
-from contextlib import contextmanager
 import sys
 import argparse
 import datetime
 from multiprocessing import Process
-from time import sleep
-
-class TimeoutException(Exception): pass
         
 def limit_time(func, args, kwargs, time):
     p = Process(target=func, args=args, kwargs=kwargs)
@@ -52,3 +47,4 @@ if __name__ == '__main__':
     else:
         print("forever")
     #test_nwbe_compatibility(args.text,args.test_docker)
+    #sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb
