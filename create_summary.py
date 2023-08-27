@@ -137,6 +137,8 @@ def scan_processing(obj,plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,
             plot_counter=plot_counter+1
             heapq.heappush(plot_pairs, temp)  
             
+    return(plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag)
+            
 def scan_acquisiton(obj,plot_pairs,plot_counter,plot_tag,dandi_path):
     if plot_counter == 5:
         comp = heapq.heappop(plot_pairs)
@@ -146,7 +148,12 @@ def scan_acquisiton(obj,plot_pairs,plot_counter,plot_tag,dandi_path):
         temp = plot_and_save_timeseries(obj,dandi_path,plot_tag,0)
         plot_tag=plot_tag+1
         plot_counter=plot_counter+1
-        heapq.heappush(plot_pairs, temp)            
+        heapq.heappush(plot_pairs, temp)    
+    
+    return(plot_pairs,plot_counter,plot_tag)       
+    
+    
+    return(plot_pairs,plot_counter,plot_tag)  
 
                 
 def create_summary(nwb_path,dandi_ident,html_tag):
@@ -161,7 +168,7 @@ def create_summary(nwb_path,dandi_ident,html_tag):
     
     html_temp = 'testing/summary_template.html' #add docker args
     
-    html_path = os.path.join(dandi_path,'file_'+str(html_tag)+'.html')
+    html_path = os.path.join(dandi_path,'README.md')
     
     if not os.path.exists(dandi_path):
         os.makedirs(dandi_path)
@@ -185,28 +192,13 @@ def create_summary(nwb_path,dandi_ident,html_tag):
     myfile = open(html_path, 'w')
     title = "Dandiset Summary"
     html_content = html_content.replace("{ident}", dandi_ident)
-    #if not pd.isna(dandi_metadata_readme['name'].iloc[index]).tolist()[0]:
-    #   html_content = html_content.replace("{dandi_desc}", dandi_metadata_readme['name'].iloc[index].tolist()[0])
+
     
     # Step 3: Add Metadata to HTML
     metadatatmpl = """<div><div>{title}</div><div>{info}</div></div>"""
     
     message = ""
     
-    #print(dandi_metadata_readme['data_type'].iloc[index])
-    
-    #if not pd.isna(dandi_metadata_readme['data_type'].iloc[index]).tolist()[0]:
-     #  message+=metadatatmpl.format(title="Data Type",info=dandi_metadata_readme['data_type'].iloc[index].tolist()[0])
-
-    #if not pd.isna(dandi_metadata_readme['nwb_version'].iloc[index]).tolist()[0]:
-    #   message+=metadatatmpl.format(title="NWB Version",info=dandi_metadata_readme['nwb_version'].iloc[index].tolist()[0])
-       
-    #if not pd.isna(dandi_metadata_readme['num_bytes'].iloc[index]).tolist()[0]:
-     #  message+=metadatatmpl.format(title="Total Size",info=str(round(int(dandi_metadata_readme['num_bytes'].iloc[index].tolist()[0])/1000000,2)))
-     #  message+=metadatatmpl.format(title="Number of files",info=str(dandi_metadata_readme['num_files'].iloc[index].tolist()[0]))
-       
-    #if not pd.isna(dandi_metadata_readme['species'].iloc[index]).tolist()[0]:
-     #  message+=metadatatmpl.format(title="Species",info=dandi_metadata_readme['species'].iloc[index].tolist()[0])
     
     
     html_content = html_content.replace("{metadata}", message)
@@ -262,127 +254,34 @@ def create_summary(nwb_path,dandi_ident,html_tag):
             try:
                 for field in nwbfile.processing[processing_module_name].data_interfaces[p2].time_series:
                     print(field)
-                    #scan_processing(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-                    if isinstance(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field], ImageSeries):
-                        images_to_save = nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field].data[:5]  
-                        if im_counter == 5:
-                            comp = heapq.heappop(image_pairs)
-                            temp = save_images_as_png(images_to_save,dandi_path,comp[1],comp[0])
-                            print(temp[1])
-                            heapq.heappush(image_pairs, temp)
-                        else:
-                            temp = save_images_as_png(images_to_save,dandi_path,image_tag,0)
-                            image_tag=image_tag+1
-                            im_counter=im_counter+1
-                            heapq.heappush(image_pairs, temp)
-            #print(f"Found images and saved them as PNG.")
-            
-           
-                    elif isinstance(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field], TimeSeries):
-                        if plot_counter == 5:
-                            comp = heapq.heappop(plot_pairs)
-                            temp = plot_and_save_timeseries(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field],dandi_path,comp[1],comp[0])
-                            print(temp[1])
-                            heapq.heappush(plot_pairs, temp)
-                        else:
-                            temp = plot_and_save_timeseries(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field],dandi_path,plot_tag,0)
-                            plot_tag=plot_tag+1
-                            plot_counter=plot_counter+1
-                            heapq.heappush(plot_pairs, temp)  
+                    plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag = scan_processing(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
                 print(plot_counter)
             except:
                 print("failed")
-                #scan_processing(nwbfile.processing[processing_module_name].data_interfaces,plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-                if isinstance(nwbfile.processing[processing_module_name].data_interfaces, ImageSeries):
-                    images_to_save = nwbfile.processing[processing_module_name].data_interfaces.data[:5]  
-                    if im_counter == 5:
-                        comp = heapq.heappop(image_pairs)
-                        temp = save_images_as_png(images_to_save,dandi_path,comp[1],comp[0])
-                        print(temp[1])
-                        heapq.heappush(image_pairs, temp)
-                    else:
-                        temp = save_images_as_png(images_to_save,dandi_path,image_tag,0)
-                        image_tag=image_tag+1
-                        im_counter=im_counter+1
-                        heapq.heappush(image_pairs, temp)
-            #print(f"Found images and saved them as PNG.")
-            
-           
-                elif isinstance(nwbfile.processing[processing_module_name].data_interfaces, TimeSeries):
-                    if plot_counter == 5:
-                        comp = heapq.heappop(plot_pairs)
-                        temp = plot_and_save_timeseries(nwbfile.processing[processing_module_name].data_interfaces,dandi_path,comp[1],comp[0])
-                        print(temp[1])
-                        heapq.heappush(plot_pairs, temp)
-                    else:
-                        temp = plot_and_save_timeseries(nwbfile.processing[processing_module_name].data_interfaces,dandi_path,plot_tag,0)
-                        plot_tag=plot_tag+1
-                        plot_counter=plot_counter+1
-                        heapq.heappush(plot_pairs, temp)  
-                        
+                plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag = scan_processing(nwbfile.processing[processing_module_name].data_interfaces,plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
                 print(plot_counter)
             
     for processing_module_name in nwbfile.acquisition:
         try:
               for field in nwbfile.acquisition[processing_module_name].time_series:
                   print(field)
-                  #scan_processing(nwbfile.acquisition[processing_module_name].time_series[field],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-                  if plot_counter == 5:
-                      comp = heapq.heappop(plot_pairs)
-                      temp = plot_and_save_timeseries(nwbfile.acquisition[processing_module_name].time_series[field],dandi_path,comp[1],comp[0])
-                      print(temp[1])
-                      heapq.heappush(plot_pairs, temp)
-                  else:
-                      temp = plot_and_save_timeseries(nwbfile.acquisition[processing_module_name].time_series[field],dandi_path,plot_tag,0)
-                      plot_tag=plot_tag+1
-                      plot_counter=plot_counter+1
-                      heapq.heappush(plot_pairs, temp) 
+                  plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.acquisition[processing_module_name].time_series[field],plot_pairs,plot_counter,plot_tag,dandi_path)
                   print(plot_counter)
         except:
             print("failed")
-            #scan_processing(nwbfile.acquisition[processing_module_name],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-            if plot_counter == 5:
-                comp = heapq.heappop(plot_pairs)
-                temp = plot_and_save_timeseries(nwbfile.acquisition[processing_module_name],dandi_path,comp[1],comp[0])
-                print(temp[1])
-                heapq.heappush(plot_pairs, temp)
-            else:
-                temp = plot_and_save_timeseries(nwbfile.acquisition[processing_module_name],dandi_path,plot_tag,0)
-                plot_tag=plot_tag+1
-                plot_counter=plot_counter+1
-                heapq.heappush(plot_pairs, temp) 
-                print(plot_counter)
+            plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.acquisition[processing_module_name],plot_pairs,plot_counter,plot_tag,dandi_path)
+            print(plot_counter)
                 
     for processing_module_name in nwbfile.stimulus:
         try:
               for field in nwbfile.stimulus[processing_module_name].time_series:
                   print(field)
-                  #scan_processing(nwbfile.acquisition[processing_module_name].time_series[field],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-                  if plot_counter == 5:
-                      comp = heapq.heappop(plot_pairs)
-                      temp = plot_and_save_timeseries(nwbfile.stimulus[processing_module_name].time_series[field],dandi_path,comp[1],comp[0])
-                      print(temp[1])
-                      heapq.heappush(plot_pairs, temp)
-                  else:
-                      temp = plot_and_save_timeseries(nwbfile.stimulus[processing_module_name].time_series[field],dandi_path,plot_tag,0)
-                      plot_tag=plot_tag+1
-                      plot_counter=plot_counter+1
-                      heapq.heappush(plot_pairs, temp) 
+                  plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.stimulus[processing_module_name].time_series[field],plot_pairs,plot_counter,plot_tag,dandi_path)
                   print(plot_counter)
         except:
             print("failed")
-            #scan_processing(nwbfile.acquisition[processing_module_name],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-            if plot_counter == 5:
-                comp = heapq.heappop(plot_pairs)
-                temp = plot_and_save_timeseries(nwbfile.stimulus[processing_module_name],dandi_path,comp[1],comp[0])
-                print(temp[1])
-                heapq.heappush(plot_pairs, temp)
-            else:
-                temp = plot_and_save_timeseries(nwbfile.stimulus[processing_module_name],dandi_path,plot_tag,0)
-                plot_tag=plot_tag+1
-                plot_counter=plot_counter+1
-                heapq.heappush(plot_pairs, temp) 
-                print(plot_counter)
+            plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.stimulus[processing_module_name],plot_pairs,plot_counter,plot_tag,dandi_path)
+            print(plot_counter)
         
     if(os.path.exists("temp.png")):
         os.remove("temp.png")
@@ -403,15 +302,6 @@ def create_summary(nwb_path,dandi_ident,html_tag):
            
     
     # --------------------------------------------------------------------------
-    
-    #value_to_check = dandi_metadata_readme['html_0'][index].tolist()[0]
-    
-    #if value_to_check == None:
-     #   dandi_metadata_readme['html_0'][index] = 'file_0'
-      #  html_path = os.path.join(dandi_path,'file_0.html')
-    #else:
-     #   dandi_metadata_readme['html_1'][index] = 'file_1'
-      #  html_path = os.path.join(dandi_path,'file_1.html') 
     
     myfile.write(html_content)
     myfile.close()

@@ -86,7 +86,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[10:20]
+        dandiset_folder_name = dandiset_folder_name[17:50]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
@@ -218,14 +218,14 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             continue
                         # test nwbe compatibility
                         print(nwb_path)
-                        #try:
-                         #   with time_limit(60):
-                        print("Creating Summary!")
-                        create_summary(nwb_path,dandiset_name,str(i))
-                        print("Created Summary!")
-                        #except:
-                         #   print("Failed")
-                          #  pass
+                        try:
+                            with time_limit(30):
+                                print("Creating Summary!")
+                                create_summary(nwb_path,dandiset_name,str(i))
+                                print("Created Summary!")
+                        except:
+                            print("Summary Timeout")
+                            pass
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
                         # uninstall file
                         #os.unlink(nwb_path)
@@ -533,6 +533,7 @@ def update_readme(testdocker=None):
                             dandi_link = dandi_metadata_readme['url'].iloc[row] + '/files?location=' + dandi_metadata_readme['parent_folder_' + str(i)].iloc[row] +'%2F'
                         else:
                             dandi_link = dandi_metadata_readme['url'].iloc[row] + '/files?location='
+                        #if os.path.exists(
                         info_link = dandi_metadata_readme['file_' + str(i)].iloc[row].split('/download')[0]
                         file_size = dandi_metadata_readme['file_size_' + str(i)].iloc[row]
                         readme += 'Size: %s MB | \n' % (str(round(int(file_size)/1000000,2)))
