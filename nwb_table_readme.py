@@ -506,9 +506,11 @@ def update_readme(testdocker=None):
                         readme += 'Size: %s MB | \n' % (str(round(int(file_size)/1000000,2)))
                         readme += '[File info](%s) | \n' % (info_link)
                         readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
-                        readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
+                        readme += '[View on NWB Explorer](%s) ' % (nwbe_link)
                         if os.path.exists(os.path.join(os.path.join(summary_folder,ref),'file_'+str(i)+'/README.md')):
-                            readme += '[File Summary](%s) \n' % (os.path.join(os.path.join('Summaries',ref),'file_'+str(i)+'/README.md'))
+                            readme += '| \n[File Summary](%s) \n' % (os.path.join(os.path.join('Summaries',ref),'file_'+str(i)+'/README.md'))
+                        else:
+                            readme +='\n'
 
             else:
                 readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + dandi_metadata_readme['validation_summary'].iloc[row] + '\n\n'

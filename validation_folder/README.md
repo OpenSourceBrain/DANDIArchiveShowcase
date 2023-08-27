@@ -44,13 +44,13 @@
 Size: 47.98 MB | 
 [File info](https://api.dandiarchive.org/api/assets/061d6422-018a-4fe0-b914-119b9297be7d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000013/draft/files?location=sub-anm244024%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/061d6422-018a-4fe0-b914-119b9297be7d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/061d6422-018a-4fe0-b914-119b9297be7d/download/) | 
 [File Summary](Summaries/000013/file_0/README.md) 
 - NWBE compatibility - file 2: LL-P  
 Size: 59.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b8b1b393-e001-452f-b48f-a7b78b09a582) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000013/draft/files?location=sub-anm266945%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/b8b1b393-e001-452f-b48f-a7b78b09a582/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/b8b1b393-e001-452f-b48f-a7b78b09a582/download/) | 
 [File Summary](Summaries/000013/file_1/README.md) 
 ---
 
@@ -70,13 +70,13 @@ Size: 59.92 MB |
 Size: 16.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/70c2d486-4f4b-4821-9f37-540cb1e28de2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000015/draft/files?location=sub-an044%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/70c2d486-4f4b-4821-9f37-540cb1e28de2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/70c2d486-4f4b-4821-9f37-540cb1e28de2/download/) | 
 [File Summary](Summaries/000015/file_0/README.md) 
 - NWBE compatibility - file 2: LL-V  
 Size: 30.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/72138f7e-5f52-43f8-be08-8cd608764166) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000015/draft/files?location=sub-an043%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/72138f7e-5f52-43f8-be08-8cd608764166/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/72138f7e-5f52-43f8-be08-8cd608764166/download/) | 
 [File Summary](Summaries/000015/file_1/README.md) 
 ---
 
@@ -94,13 +94,13 @@ Size: 30.22 MB |
 Size: 199.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/913646f8-4d02-45f5-b830-85dfc69ae74a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000016/draft/files?location=sub-mouse2-fni17%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/913646f8-4d02-45f5-b830-85dfc69ae74a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/913646f8-4d02-45f5-b830-85dfc69ae74a/download/) | 
 [File Summary](Summaries/000016/file_0/README.md) 
 - NWBE compatibility - file 2: NC-1  
 Size: 214.5 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b24bfa76-2a06-440f-9b3a-8e06de9ce493) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000016/draft/files?location=sub-mouse1-fni16%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/b24bfa76-2a06-440f-9b3a-8e06de9ce493/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/b24bfa76-2a06-440f-9b3a-8e06de9ce493/download/) | 
 [File Summary](Summaries/000016/file_1/README.md) 
 ---
 
@@ -122,13 +122,13 @@ Size: 214.5 MB |
 Size: 216.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Lederberg%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b/download/) | 
 [File Summary](Summaries/000017/file_0/README.md) 
 - NWBE compatibility - file 2: NC-1  
 Size: 272.08 MB | 
 [File info](https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Richards%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f/download/) | 
 [File Summary](Summaries/000017/file_1/README.md) 
 ---
 
@@ -184,13 +184,13 @@ Size: 1551.06 MB |
 Size: 11.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/17f31e2b-26b4-4c3e-8e98-423769cc3912) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000020/draft/files?location=sub-639391596%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/17f31e2b-26b4-4c3e-8e98-423769cc3912/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/17f31e2b-26b4-4c3e-8e98-423769cc3912/download/) | 
 [File Summary](Summaries/000020/file_0/README.md) 
 - NWBE compatibility - file 2: LL-P  
 Size: 12.05 MB | 
 [File info](https://api.dandiarchive.org/api/assets/df0ed794-e7b5-45a0-9f7f-5aa75e70348d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000020/draft/files?location=sub-643830482%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/df0ed794-e7b5-45a0-9f7f-5aa75e70348d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/df0ed794-e7b5-45a0-9f7f-5aa75e70348d/download/) | 
 [File Summary](Summaries/000020/file_1/README.md) 
 ---
 
@@ -254,13 +254,13 @@ Size: 898.78 MB |
 Size: 13.5 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7687363f-dd32-4325-9f40-705227fd470c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000023/draft/files?location=sub-695464588%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/7687363f-dd32-4325-9f40-705227fd470c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/7687363f-dd32-4325-9f40-705227fd470c/download/) | 
 [File Summary](Summaries/000023/file_0/README.md) 
 - NWBE compatibility - file 2: LL-P  
 Size: 14.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/20991256-4a71-48bb-ae0a-e4ccaf29a192) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000023/draft/files?location=sub-731978186%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/20991256-4a71-48bb-ae0a-e4ccaf29a192/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/20991256-4a71-48bb-ae0a-e4ccaf29a192/download/) | 
 [File Summary](Summaries/000023/file_1/README.md) 
 ---
 
