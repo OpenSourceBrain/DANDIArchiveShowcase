@@ -10,11 +10,11 @@
 
 <div>
 
-<h1>Dandiset 000023 Summary</h1>
+<h1>Dandiset 000020 Summary</h1>
 
 <div>
 <h4>File Name</h4>
-<p>sub-731978186_ses-732101760_icephys.nwb<p>
+<p>sub-639391596_ses-640317026_icephys.nwb<p>
 </div>
 
 <div>

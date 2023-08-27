@@ -8,7 +8,7 @@ import datalad.api as dl
 import json
 import argparse
 import tempfile
-import gc
+
 from datetime import date
 from pynwb import NWBHDF5IO
 from pynwb.image import ImageSeries
@@ -21,10 +21,8 @@ from nwbinspector.inspector_tools import save_report, format_messages, MessageFo
 from dandi import download
 import ast
 from collections import Counter
-import signal
 from contextlib import contextmanager
 from create_summary import create_summary
-from multiprocessing import Process
 
 
 
@@ -41,18 +39,8 @@ def time_limit(seconds):
     finally:
         signal.alarm(0)
 
-def limit_time(func, args, kwargs, time):
-    p = Process(target=func, args=args, kwargs=kwargs)
-    p.start()
-    p.join(time)
-    if p.is_alive():
-        p.terminate()
-        return 0
-
-    return 1
-
 def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dandisetlimit=None,
-                            args_updatereadme=None,args_readmeonly=None,args_testdocker=False):
+                            args_updatereadme=None,args_readmeonly=None,args_testdocker=False,args_createsummary=None):
     # if users want to update readme only
     if args_readmeonly:
         return args_readmeonly
@@ -65,7 +53,6 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # directory for dandisets
     root_folder = '/tmp/dandisets'
     if args_testdocker is False:
-        print("Enter")
         if os.path.exists(root_folder):
             if len(os.listdir((root_folder))) != 0:
                 dl.update(how='merge', how_subds='reset', follow='parentds-lazy', recursive=True)
@@ -78,15 +65,19 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # directory for storing validation files and readme file
     if(args_testdocker):
         save_folder = 'testing/validation_folder'
+        summary_folder = 'testing/Summaries'
     else:
         save_folder = 'validation_folder'
+        summary_folder = 'Summaries'
+        
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
+        
     dandiset_folder_name = sorted([item for item in os.listdir(root_folder) if item.startswith('0')])
 
     # if user only wants to run the script for 10 dandisets
     if args_dandisetlimit:
-        dandiset_folder_name = dandiset_folder_name[17:50]
+        dandiset_folder_name = dandiset_folder_name[10:20]
     yaml_file = 'dandiset.yaml'
 
     yaml_df_flatten = ['identifier','citation','name','assetsSummary.numberOfBytes','assetsSummary.numberOfFiles',
@@ -193,21 +184,14 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                     if smallest_size_lst[i] < hard_limit:
                         # download files
                         try:
-                            with time_limit(600):
+                            with time_limit(600): # Debugging only
                                 nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
                         except TimeoutException as e:
                             print("Download is Blocked -- ONLY FOR DEBUGGING!")
                             continue 
-                            
-                        #nwb_path = download_dl(dandiset_name,file_parent_folder[i],path_lst[i])
-                        # get nwb_version
                         
-                        try:
-                            nwb_version = get_nwb_version(nwb_path)      
-                        except:
-                            validation_summary = 'TRUNCATION_ERROR'
-                            pass
-                             
+                        # get nwb_version
+                        nwb_version = get_nwb_version(nwb_path)                                 
                         # validate file here first
                         try:
                             report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
@@ -217,15 +201,17 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             validation_summary = 'UNABLE'
                             continue
                         # test nwbe compatibility
-                        print(nwb_path)
-                        try:
-                            with time_limit(30):
-                                print("Creating Summary!")
-                                create_summary(nwb_path,dandiset_name,str(i))
-                                print("Created Summary!")
-                        except:
-                            print("Summary Timeout")
-                            pass
+                        if args_createsummary and not os.path.exists(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md')):
+                            try:
+                                with time_limit(30):
+                                    print("Creating Summary !")
+                                    create_summary(nwb_path,dandiset_name,str(i))
+                                    print("Created Summary !")
+                            except:
+                                print("Summary Timeout !")
+                                if os.path.exists(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md')):
+                                    os.remove(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md'))
+                                pass
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
                         # uninstall file
                         #os.unlink(nwb_path)
@@ -264,7 +250,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
     else:
     	cmd = 'docker exec -i nwbe /bin/sh -c \'python -u testing/compatibility_test.py ' + nwb_path + '\''
     	
-    timeout_s = 150  # how many seconds to wait
+    timeout_s = 60  # how many seconds to wait
     type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
     
     # NC-0: file cannot be opened
@@ -311,8 +297,8 @@ def test_nwbe_compatibility(nwb_path,testdocker):
                 text = tempf.read()
                 string_data = text.decode('utf-8')
                 lower_text = string_data.lower()
-                print(lower_text)
-        if "forever" in lower_text:
+                print(lower_text) #removefinal
+        if "failed" in lower_text:
             nwbe_compatibility = 'NC-1'
     else:
         try:
@@ -329,6 +315,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
 def download_nwb_with_path(dandi_url,nwb_file_name):
     # create save folder
     save_folder = '/tmp/nwb_versions'
+    
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
     if '/' in nwb_file_name:
@@ -340,26 +327,6 @@ def download_nwb_with_path(dandi_url,nwb_file_name):
         # download 1 file here
         download.download(dandi_url, output_dir=save_folder)
     return tmp_nwb_path
-    
-def download_dl(dandi_ident,parent_folder,nwb_file_name):
-    if(isinstance(parent_folder, float)):
-        folder_path = str(dandi_ident)
-    else:
-        folder_path = os.path.join(str(dandi_ident),str(parent_folder));
-    
-    if '/' in nwb_file_name:
-        tmp_nwb_path = nwb_file_name.split('/')[-1]
-    else:
-        tmp_nwb_path = nwb_file_name
-        
-    dandi_path = os.path.join(folder_path,tmp_nwb_path)
-    
-    temp = os.path.join('/tmp/dandisets',dandi_path)
-
-    if not os.path.exists(temp):
-        # download 1 file here
-        dl.get(temp,dataset='/tmp/dandisets',recursive=True, recursion_limit=1, jobs=4)
-    return temp
 
 def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_report=None):
     if not os.path.exists(save_folder):
@@ -390,20 +357,26 @@ def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_repo
     return validation_summary
 
 def update_readme(testdocker=None):
-    if(testdocker):
+    if(testdocker): 
         save_folder = 'testing/validation_folder'
+        summary_folder = 'testing/Summaries'
     else:
         save_folder = 'validation_folder'
+        summary_folder = 'Summaries'
+        
     rd_file = os.path.join(save_folder,'README.md')
     summary_file = os.path.join(save_folder, 'dandiset_summary.csv')
+    
+    print(summary_file)
+    
     if not os.path.exists(summary_file):
         exit()
     # Getting Datetime from timestamp
+    
     date_time = date.today()
     dandi_metadata_readme = pd.read_csv(summary_file)
     dandi_metadata_readme.drop(dandi_metadata_readme.filter(regex="Unnamed"), axis=1, inplace=True)
     dandi_metadata_readme.to_csv(summary_file, index=False)
-    print(dandi_metadata_readme)
     # summary statistics here
     data_type_dict = dandi_metadata_readme['data_type'].value_counts().to_dict()
     # get data_type values
@@ -427,8 +400,6 @@ def update_readme(testdocker=None):
     dict_var = Counter(var_measured)
     most_common_dict = dict_var.most_common(num_keys)
     most_common_keys = [key for key,val in most_common_dict]
-    
-    blacklisted_dandisets = ['000010','000015','000037','000045','000167','000168']
 
     pass_nwbinspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
@@ -464,10 +435,6 @@ def update_readme(testdocker=None):
     root_url = 'https://dandiarchive.org/dandiset/'
     readme = readme[:-2]+'\n\n'
     for ds in pass_nwbinspector:
-        readme += '[%s](%s%s), '%(ds, root_url, ds)
-    readme = readme[:-2]+'\n\n'
-    readme += '- NWB dandisets that are blacklisted and are not analysed: '
-    for ds in blacklisted_dandisets:
         readme += '[%s](%s%s), '%(ds, root_url, ds)
     readme = readme[:-2]+'\n\n'
 
@@ -533,13 +500,15 @@ def update_readme(testdocker=None):
                             dandi_link = dandi_metadata_readme['url'].iloc[row] + '/files?location=' + dandi_metadata_readme['parent_folder_' + str(i)].iloc[row] +'%2F'
                         else:
                             dandi_link = dandi_metadata_readme['url'].iloc[row] + '/files?location='
-                        #if os.path.exists(
+                        
                         info_link = dandi_metadata_readme['file_' + str(i)].iloc[row].split('/download')[0]
                         file_size = dandi_metadata_readme['file_size_' + str(i)].iloc[row]
                         readme += 'Size: %s MB | \n' % (str(round(int(file_size)/1000000,2)))
                         readme += '[File info](%s) | \n' % (info_link)
                         readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
                         readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
+                        if os.path.exists(os.path.join(os.path.join(summary_folder,ref),'file_'+str(i)+'/README.md')):
+                            readme += '[File Summary][%s] \n' % (os.path.join(os.path.join('../Summaries',ref),'file_'+str(i)+'/README.md'))
 
             else:
                 readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + dandi_metadata_readme['validation_summary'].iloc[row] + '\n\n'
@@ -566,9 +535,11 @@ if __name__ == '__main__':
                         help='update readme file without creating summary file')
     parser.add_argument('--test_docker', default=False, action='store_true',
                         help='test using the NWBE docker container')
+    parser.add_argument('--create_summary', default=False, action='store_true',
+                        help='Create summaries for files which do not contain a summary README.md')
     args = parser.parse_args()
     update_readme_option=create_dandiset_summary(args.no_download,args.no_sizelimit,args.dandiset_limit,
-                                                 args.update_readme_option,args.update_readme_only,args.test_docker)
+                                                 args.update_readme_option,args.update_readme_only,args.test_docker,args.create_summary)
 
     if update_readme_option:
         update_readme(args.test_docker)

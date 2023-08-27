@@ -43,8 +43,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     counter = limit_time(test_nwbe_compatibility, (args.text,args.test_docker, ), {}, 100)
     if counter:
-        print("created successfully!")
+        print("created successfully !")
     else:
-        print("forever")
-    #test_nwbe_compatibility(args.text,args.test_docker)
-    #sub-anm244024_ses-20141112_obj-jyoa6b_behavior+icephys+ogen.nwb
+        print("failed")

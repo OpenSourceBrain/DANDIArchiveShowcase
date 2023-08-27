@@ -10,17 +10,17 @@
 
 <div>
 
-<h1>Dandiset 000023 Summary</h1>
+<h1>Dandiset 000016 Summary</h1>
 
 <div>
 <h4>File Name</h4>
-<p>sub-731978186_ses-732101760_icephys.nwb<p>
+<p>sub-mouse2-fni17_ses-170822014200.nwb<p>
 </div>
 
 <div>
 <h2>Plots</h2>
 <div>
-<img src="plot_1.png" alt="Image"><img src="plot_2.png" alt="Image"><img src="plot_3.png" alt="Image"><img src="plot_4.png" alt="Image"><img src="plot_5.png" alt="Image">
+<img src="plot_1.png" alt="Image"><img src="plot_2.png" alt="Image">
 </div>
 
 <h2>Images</h2>

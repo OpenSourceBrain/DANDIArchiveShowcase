@@ -10,11 +10,11 @@
 
 <div>
 
-<h1>Dandiset 000023 Summary</h1>
+<h1>Dandiset 000035 Summary</h1>
 
 <div>
 <h4>File Name</h4>
-<p>sub-731978186_ses-732101760_icephys.nwb<p>
+<p>sub-mouse-MITSU_ses-20200410-sample-29_slice-20200410-slice-3_cell-20200410-sample-29_icephys.nwb<p>
 </div>
 
 <div>

@@ -10,24 +10,24 @@
 
 <div>
 
-<h1>Dandiset 000029 Summary</h1>
+<h1>Dandiset 000016 Summary</h1>
 
 <div>
-<h2>Description</h2>
-<p>{dandi_desc}<p>
-</div>
-    
-
-<div>
-<h2>Metadata</h2>
-<p></p>
+<h4>File Name</h4>
+<p>sub-mouse1-fni16_ses-170808190057.nwb<p>
 </div>
 
 <div>
-<h2>Plots/Images</h2>
+<h2>Plots</h2>
 <div>
-<h5>plot_1.png</h5><img src="plot_1.png" alt="Image"><h5>plot_2.png</h5><img src="plot_2.png" alt="Image">
+<img src="plot_1.png" alt="Image"><img src="plot_2.png" alt="Image">
 </div>
+
+<h2>Images</h2>
+<div>
+No Images Were Found !
+</div>
+
 </div>
 
 </div>

@@ -10,24 +10,24 @@
 
 <div>
 
-<h1>Dandiset 000016 Summary</h1>
+<h1>Dandiset 000015 Summary</h1>
 
 <div>
-<h2>Description</h2>
-<p>{dandi_desc}<p>
-</div>
-    
-
-<div>
-<h2>Metadata</h2>
-<p></p>
+<h4>File Name</h4>
+<p>sub-an044_ses-20140923_obj-1o335up.nwb<p>
 </div>
 
 <div>
-<h2>Plots/Images</h2>
+<h2>Plots</h2>
 <div>
-<h5>plot_1.png</h5><img src="plot_1.png" alt="Image"><h5>plot_2.png</h5><img src="plot_2.png" alt="Image">
+<img src="plot_1.png" alt="Image"><img src="plot_2.png" alt="Image"><img src="plot_3.png" alt="Image">
 </div>
+
+<h2>Images</h2>
+<div>
+No Images Were Found !
+</div>
+
 </div>
 
 </div>

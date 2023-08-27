@@ -9,34 +9,11 @@ import heapq
 import numpy as np
 import matplotlib.pyplot as plt #add to docker
 
-# import modules
-from datetime import datetime, tzinfo, timedelta
-#import hdmf._version
-from dateutil.tz import tzlocal
-import platform
 import math
-import numpy as np
-import uuid
-import os
-from os import environ
-import scipy.io as sio
 from hdmf.backends.hdf5.h5_utils import H5DataIO
 import pandas as pd
 import pynwb
-
 from pynwb import NWBHDF5IO
-
-#https://pypi.org/project/pyabf/
-#import pyabf
-import signal
-import subprocess
-import pandas as pd
-import yaml
-import math
-import datalad.api as dl
-import json
-import argparse
-from datetime import date
 
 from pynwb.image import ImageSeries
 from pynwb.base import TimeSeries
@@ -45,13 +22,10 @@ from dandi.pynwb_utils import get_nwb_version
 from nwbinspector import inspect_nwb
 from nwbinspector.register_checks import Importance
 from nwbinspector.inspector_tools import save_report, format_messages, MessageFormatter
-from dandi import download
 import ast
 from collections import Counter
 
 def plot_and_save_timeseries(timeseries,path_to_save,image_tag,file_size):
-
-
     ts = timeseries
     file_path = os.path.join(path_to_save,f'plot_'+str(image_tag)+'.png')
     
@@ -71,10 +45,8 @@ def plot_and_save_timeseries(timeseries,path_to_save,image_tag,file_size):
             if curr_file_size > file_size:
                 file_size = curr_file_size
                 plt.savefig(file_path, bbox_inches='tight')
-            #os.remove("temp.png")
-                
-            plt.close()
-            
+               
+            plt.close()            
             return((file_size,image_tag))
         else:
             plt.plot(selected_trace) 
@@ -85,7 +57,6 @@ def plot_and_save_timeseries(timeseries,path_to_save,image_tag,file_size):
             if curr_file_size > file_size:
                 file_size = curr_file_size
                 plt.savefig(file_path, bbox_inches='tight')
-            #os.remove("temp.png")
             plt.close()
             return((file_size,image_tag))
                 
@@ -94,8 +65,7 @@ def plot_and_save_timeseries(timeseries,path_to_save,image_tag,file_size):
     return((file_size,image_tag))
 
 
-def save_images_as_png(images,path_to_save,image_tag,file_size):
-    
+def save_images_as_png(images,path_to_save,image_tag,file_size):  
     file_path = os.path.join(path_to_save,f'image_'+str(image_tag)+'.png')
     
     for idx, image in enumerate(images):
@@ -123,7 +93,6 @@ def scan_processing(obj,plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,
             image_tag=image_tag+1
             im_counter=im_counter+1
             heapq.heappush(image_pairs, temp)
-            #print(f"Found images and saved them as PNG.")
             
            
     elif isinstance(obj, TimeSeries):
@@ -150,16 +119,13 @@ def scan_acquisiton(obj,plot_pairs,plot_counter,plot_tag,dandi_path):
         plot_counter=plot_counter+1
         heapq.heappush(plot_pairs, temp)    
     
-    return(plot_pairs,plot_counter,plot_tag)       
-    
-    
-    return(plot_pairs,plot_counter,plot_tag)  
+    return(plot_pairs,plot_counter,plot_tag)         
 
                 
 def create_summary(nwb_path,dandi_ident,html_tag):
     # Step 0: Base variables
-    save_folder = 'validation_folder' #if not path
-    html_folder = 'Summaries'#if not path
+    save_folder = 'validation_folder'
+    html_folder = 'Summaries'
     file_folder = 'file_'+str(html_tag)
     
     
@@ -197,45 +163,22 @@ def create_summary(nwb_path,dandi_ident,html_tag):
     # Step 3: Add Metadata to HTML
     metadatatmpl = """<div><div>{title}</div><div>{info}</div></div>"""
     
-    message = ""
+
     
     
     
-    html_content = html_content.replace("{metadata}", message)
+    html_content = html_content.replace("{file_name}",nwb_path.split('/')[-1])
     
     
     # Adding plots for timeseries -----------------------------------------
     
     io = NWBHDF5IO(nwb_path,mode='r',load_namespaces=True) # Add try except block
     nwbfile = io.read()
-    nwbe_compatibility = 'p-0'
-    type_hierarchy = set([ImageSeries,TimeSeries,BehavioralTimeSeries,BehavioralEvents])
-    plottable = 0
-    message = ""
     
-    for a, v in nwbfile.acquisition.items():
-        print(nwbfile.acquisition[a].neurodata_type)
-        if len(set(nwbfile.acquisition[a].type_hierarchy()).intersection(type_hierarchy)) >= 1:
-            if ImageSeries in nwbfile.acquisition[a].type_hierarchy():
-                pass
-            else:
-                nwbe_compatibility = 'p-1'
-                plottable = 1
-                break
-    if plottable == 0:
-        for a, v in nwbfile.processing.items():
-            print(nwbfile.processing[a].neurodata_type)
-            if len(set(nwbfile.processing[a].type_hierarchy()).intersection(type_hierarchy)) >= 1:
-                if ImageSeries in nwbfile.processing[a].type_hierarchy():
-                    pass
-                else:
-                    nwbe_compatibility = 'p-2'
-                    plottable = 1
-                    break
+    image_html = ""
+    plots_html = ""
     
-        
-    
-    image_tmpl = """<h5>{title}</h5><img src="{path}" alt="Image">"""
+    image_tmpl = """<img src="{path}" alt="Image">"""
     
     plot_pairs = []
     image_pairs = []
@@ -253,35 +196,25 @@ def create_summary(nwb_path,dandi_ident,html_tag):
         for p2 in nwbfile.processing[processing_module_name].data_interfaces:
             try:
                 for field in nwbfile.processing[processing_module_name].data_interfaces[p2].time_series:
-                    print(field)
                     plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag = scan_processing(nwbfile.processing[processing_module_name].data_interfaces[p2].time_series[field],plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-                print(plot_counter)
+
             except:
-                print("failed")
                 plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag = scan_processing(nwbfile.processing[processing_module_name].data_interfaces,plot_pairs,image_pairs,plot_counter,im_counter,plot_tag,image_tag,dandi_path)
-                print(plot_counter)
             
     for processing_module_name in nwbfile.acquisition:
         try:
               for field in nwbfile.acquisition[processing_module_name].time_series:
-                  print(field)
                   plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.acquisition[processing_module_name].time_series[field],plot_pairs,plot_counter,plot_tag,dandi_path)
-                  print(plot_counter)
         except:
-            print("failed")
             plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.acquisition[processing_module_name],plot_pairs,plot_counter,plot_tag,dandi_path)
-            print(plot_counter)
                 
     for processing_module_name in nwbfile.stimulus:
         try:
               for field in nwbfile.stimulus[processing_module_name].time_series:
-                  print(field)
                   plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.stimulus[processing_module_name].time_series[field],plot_pairs,plot_counter,plot_tag,dandi_path)
-                  print(plot_counter)
+
         except:
-            print("failed")
             plot_pairs,plot_counter,plot_tag = scan_acquisiton(nwbfile.stimulus[processing_module_name],plot_pairs,plot_counter,plot_tag,dandi_path)
-            print(plot_counter)
         
     if(os.path.exists("temp.png")):
         os.remove("temp.png")
@@ -290,23 +223,27 @@ def create_summary(nwb_path,dandi_ident,html_tag):
     if len(os.listdir(dandi_path))>1 :
         for file_name in sorted(os.listdir(dandi_path)):
             if file_name.startswith("image"):
-                message+=image_tmpl.format(title=file_name,path=file_name)
+                image_html+=image_tmpl.format(path=file_name)
             elif file_name.startswith("plot"):
-                message+=image_tmpl.format(title=file_name,path=file_name)
+                plots_html+=image_tmpl.format(path=file_name)
     else:
-        #os.remove(os.path.join(dandi_path,'html_'+str(html_tag)+'.html'))
         raise Exception("Data couldn't be accessed .") 
-    print(message)                 
                 
-    html_content = html_content.replace("{Plots}", message)
+    if plots_html != "":
+        html_content = html_content.replace("{Plots}", plots_html)
+    else:
+        html_content = html_content.replace("{Plots}", "No Plots Were Found !")
+         
+    if image_html != "":
+        html_content = html_content.replace("{Images}", image_html)
+    else:
+        html_content = html_content.replace("{Images}", "No Images Were Found !")
            
     
     # --------------------------------------------------------------------------
     
     myfile.write(html_content)
     myfile.close()
-    
-    print(nwbe_compatibility)
     
 if __name__ == '__main__':
     create_summary(sys.argv[1],sys.argv[2],sys.argv[3])
