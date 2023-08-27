@@ -124,8 +124,8 @@ def scan_acquisiton(obj,plot_pairs,plot_counter,plot_tag,dandi_path):
                 
 def create_summary(nwb_path,dandi_ident,html_tag):
     # Step 0: Base variables
-    save_folder = 'validation_folder'
-    html_folder = 'Summaries'
+    save_folder = 'testing/validation_folder'
+    html_folder = os.path.join(save_folder,'Summaries')
     file_folder = 'file_'+str(html_tag)
     
     

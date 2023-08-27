@@ -65,7 +65,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
     # directory for storing validation files and readme file
     if(args_testdocker):
         save_folder = 'testing/validation_folder'
-        summary_folder = 'testing/Summaries'
+        summary_folder = os.path.join(save_folder,'Summaries')
     else:
         save_folder = 'validation_folder'
         summary_folder = 'Summaries'
@@ -359,7 +359,7 @@ def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_repo
 def update_readme(testdocker=None):
     if(testdocker): 
         save_folder = 'testing/validation_folder'
-        summary_folder = 'testing/Summaries'
+        summary_folder = os.path.join(save_folder,'Summaries')
     else:
         save_folder = 'validation_folder'
         summary_folder = 'Summaries'
@@ -508,7 +508,7 @@ def update_readme(testdocker=None):
                         readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
                         readme += '[View on NWB Explorer](%s) \n' % (nwbe_link)
                         if os.path.exists(os.path.join(os.path.join(summary_folder,ref),'file_'+str(i)+'/README.md')):
-                            readme += '[File Summary][%s] \n' % (os.path.join(os.path.join('../Summaries',ref),'file_'+str(i)+'/README.md'))
+                            readme += '[File Summary][%s] \n' % (os.path.join(os.path.join('Summaries',ref),'file_'+str(i)+'/README.md'))
 
             else:
                 readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + dandi_metadata_readme['validation_summary'].iloc[row] + '\n\n'
