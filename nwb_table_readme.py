@@ -182,13 +182,9 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                 validation_summary = 'NULL_FILE_LIMIT'
                 for i in range(len(path_lst)):
                     if smallest_size_lst[i] < hard_limit:
+                    
                         # download files
-                        try:
-                            with time_limit(600): # Debugging only
-                                nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
-                        except TimeoutException as e:
-                            print("Download is Blocked -- ONLY FOR DEBUGGING!")
-                            continue 
+                        nwb_path = download_nwb_with_path(url_lst[i],path_lst[i])
                         
                         # get nwb_version
                         nwb_version = get_nwb_version(nwb_path)                                 
@@ -197,7 +193,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                             report_message.extend(list(inspect_nwbfile(nwbfile_path=nwb_path,
                                                                    importance_threshold=Importance.BEST_PRACTICE_VIOLATION)))
                             validation_summary = nwb_inspector_message_format(report_message, dandiset_name, save_folder)      
-                        except:
+                        except ValueError:
                             validation_summary = 'UNABLE'
                             continue
                         # test nwbe compatibility
@@ -206,7 +202,6 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                                 with time_limit(30):
                                     print("Creating Summary !")
                                     create_summary(nwb_path,dandiset_name,str(i))
-                                    print("Created Summary !")
                             except:
                                 print("Summary Timeout !")
                                 if os.path.exists(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md')):
@@ -214,7 +209,7 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                                 pass
                         nwbe_compatibility[i] = test_nwbe_compatibility(nwb_path,args_testdocker)
                         # uninstall file
-                        #os.unlink(nwb_path)
+                        os.unlink(nwb_path)
                         
         # concatenate the additional variables to the flattened pdf
         yaml_df = pd.concat([yaml_df, pd.DataFrame([[species_name,data_type,doi_link,nwb_version,validation_summary,
