@@ -43,6 +43,8 @@ Options:
   --dandiset_limit              Only process first 10 dandisets if so chosen'
   --update_readme_option        Update readme file after summary file is created
   --update_readme_only          Update readme file without creating summary file
+  --test_docker                 (Test Dandisets / Update Readme) using the NWBE container
+  --create_summary              Create summaries for files which do not contain one
 ```
 - The get_nwb.py script is an interactive shell script that allows users to install dandisets or files from dandisets via [Datalad](https://github.com/datalad/datalad), 
 and validate the files with [NWBInspector](https://github.com/NeurodataWithoutBorders/nwbinspector) as they wish.

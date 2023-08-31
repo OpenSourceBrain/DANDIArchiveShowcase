@@ -1,13 +1,12 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:30:57.846123+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 12:26:50.859827+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 3 issues over 2 files:
+Found 2 issues over 2 files:
        2 - CRITICAL
-       1 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
@@ -19,10 +18,4 @@ Found 3 issues over 2 files:
 
 0.1  /tmp/nwb_versions/sub-KF119_ses-20180110T161350_behavior+image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/behavioral video'
        Message: The external file 'sub-KF119_ses-20180110T161350_behavior+image/ce5a402d-a753-44e6-8a81-c9b23f191580_external_file_0.mkv' does not exist. Please confirm the relative location to the NWBFile.
-
-1  BEST_PRACTICE_VIOLATION
-==========================
-
-1.2  /tmp/nwb_versions/sub-KF119_ses-20180110T161350_behavior+image.nwb: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
-       Message: ['choice_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
 

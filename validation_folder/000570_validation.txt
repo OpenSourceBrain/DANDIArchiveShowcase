@@ -1,0 +1,28 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-08-31 14:44:28.219967+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 6 issues over 2 files:
+       4 - PYNWB_VALIDATION
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  PYNWB_VALIDATION
+===================
+
+0.0  /tmp/nwb_versions/sub-665691251_ses-665718232_icephys.nwb and 1 other file: VectorIndex/description - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: argument missing
+
+0.1  /tmp/nwb_versions/sub-665691251_ses-665718232_icephys.nwb and 1 other file: VectorIndex - 'None' object at location 'general/intracellular_ephys/sweep_table/series_index'
+       Message: incorrect type - expected 'uint8', got 'int32'
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.2  /tmp/nwb_versions/sub-665691251_ses-665718232_icephys.nwb and 1 other file: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'electrode_0'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
+

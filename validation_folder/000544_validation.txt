@@ -1,0 +1,33 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-08-31 14:05:49.524295+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
+
+Found 205 issues over 1 files:
+     205 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-484677_behavior+ecephys+ogen.nwb: check_negative_spike_times - 'Units' object with name 'units'
+       Message: This Units table contains negative spike times. Time should generally be aligned to the earliest time reference in the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-484677_behavior+ecephys+ogen.nwb: check_spike_times_not_in_unobserved_interval - 'Units' object with name 'units'
+       Message: This Units table contains spike times that occur during periods of time not labeled as being observed intervals.
+
+0.2  /tmp/nwb_versions/sub-484677_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_6'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+
+0.3  /tmp/nwb_versions/sub-484677_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_5'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+
+0.4  /tmp/nwb_versions/sub-484677_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_4'
+       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
+
+0.5  /tmp/nwb_versions/sub-484677_behavior+ecephys+ogen.nwb and 199 other files: check_table_values_for_dict - 'DynamicTable' object with name 'electrodes'
+       Message: The column 'location' contains a string value that contains a dictionary! Please unpack dictionaries as additional rows or columns of the table. This string is also JSON loadable, so call `json.loads(...)` on the string to unpack.
+
