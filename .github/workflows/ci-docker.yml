@@ -1,0 +1,51 @@
+name: Build Docker
+
+on:
+  schedule:
+    - cron: "1 1 1 */1 *"
+  push:
+    branches: [ main, dev, fix*, pg*, final* ]
+  pull_request:
+    branches: [ main, dev, fix*, pg*, final* ]
+
+jobs:
+  build:
+
+    runs-on: [ubuntu-latest]
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.10" ]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python  ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version:  ${{ matrix.python-version }}
+
+    - name: Build Docker image
+      run: |
+        ./generateDocker.sh
+        docker exec -i da /bin/sh -c 'python -V'
+        
+    - name: Test just generate readme
+      run: |
+      
+        echo Testing generation of readme...
+        docker exec -i da /bin/sh -c 'python testing/nwb_table_readme.py --update_readme_only --test_docker'
+        docker exec -i da /bin/sh -c 'ls -alt testing/validation_folder'
+
+    - name: Testing on limited number of dandisets with Docker
+      run: |
+      
+        echo Testing running nwbe container
+        docker exec -i da /bin/sh -c 'python -u testing/nwb_table_readme.py --dandiset_limit --test_docker'
+        docker exec -i da /bin/sh -c 'ls -alt testing/validation_folder'
+
+      
+    - name: Final version info
+      run: |
+        docker images
+        docker system df 

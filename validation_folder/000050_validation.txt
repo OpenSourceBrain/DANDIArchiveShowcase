@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 22:50:18.764813+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 11:23:56.618367+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
 Found 5 issues over 2 files:
        3 - CRITICAL
@@ -18,7 +18,7 @@ Found 5 issues over 2 files:
        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
 
 0.1  /tmp/nwb_versions/sub-673580710_ses-693508136_behavior+ophys.nwb: check_timestamps_match_first_dimension - 'TimeSeries' object at location '/processing/brain_observatory_pipeline/MotionCorrection'
-       Message: The length of the first dimension of data does not match the length of timestamps.
+       Message: The length of the first dimension of data (109929) does not match the length of timestamps (109930).
 
 1  BEST_PRACTICE_VIOLATION
 ==========================

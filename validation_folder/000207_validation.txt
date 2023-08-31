@@ -1,301 +1,49 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:18:04.223208+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 12:02:51.259319+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 188 issues over 2 files:
-     182 - CRITICAL
-       6 - BEST_PRACTICE_VIOLATION
+Found 20 issues over 2 files:
+      18 - PYNWB_VALIDATION
+       2 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
-0  CRITICAL
-===========
+0  PYNWB_VALIDATION
+===================
 
-0.0  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'HB_28.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.0  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: ElementIdentifiers - 'None' object at location 'general/extracellular_ephys/electrodes/id'
+       Message: incorrect type - expected 'int', got 'int8'
 
-0.1  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'NB_15.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.1  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: DynamicTable/id - 'None' object at location 'general/extracellular_ephys/electrodes/id'
+       Message: incorrect type - expected 'int', got 'int8'
 
-0.2  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'NB_25.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.2  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: ElementIdentifiers - 'None' object at location 'intervals/encoding_table/id'
+       Message: incorrect type - expected 'int', got 'int8'
 
-0.3  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'NB_18.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.3  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: TimeIntervals/id - 'None' object at location 'intervals/encoding_table/id'
+       Message: incorrect type - expected 'int', got 'int8'
 
-0.4  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'HB_16.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.4  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: ElementIdentifiers - 'None' object at location 'intervals/recognition_table/id'
+       Message: incorrect type - expected 'int', got 'int16'
 
-0.5  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'NB_24.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.5  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: TimeIntervals/id - 'None' object at location 'intervals/recognition_table/id'
+       Message: incorrect type - expected 'int', got 'int16'
 
-0.6  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'NB_4.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.6  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: ElementIdentifiers - 'None' object at location 'intervals/timediscrimination_table/id'
+       Message: incorrect type - expected 'int', got 'int16'
 
-0.7  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'HB_19.mp4' does not exist. Please confirm the relative location to the NWBFile.
+0.7  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: TimeIntervals/id - 'None' object at location 'intervals/timediscrimination_table/id'
+       Message: incorrect type - expected 'int', got 'int16'
 
-0.8  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'SB_24.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.9  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-       Message: The external file 'SB_7.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.10  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_10.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.11  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_3.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.12  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_9.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.13  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_1.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.14  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_12.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.15  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_25.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.16  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_17.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.17  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_26.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.18  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_13.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.19  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_1.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.20  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_24.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.21  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_12.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.22  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_17.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.23  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_7.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.24  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_11.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.25  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_29.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.26  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_20.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.27  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_6.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.28  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_21.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.29  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_2.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.30  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_27.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.31  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_27.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.32  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_22.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.33  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_5.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.34  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_8.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.35  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_23.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.36  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_3.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.37  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_1.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.38  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_9.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.39  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_29.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.40  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_15.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.41  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_28.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.42  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_28.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.43  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_30.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.44  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_8.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.45  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_14.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.46  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_6.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.47  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_11.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.48  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_10.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.49  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_9.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.50  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_18.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.51  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_25.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.52  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_20.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.53  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_29.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.54  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_26.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.55  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_3.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.56  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_2.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.57  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_20.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.58  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_30.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.59  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_21.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.60  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_16.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.61  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_21.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.62  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_10.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.63  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_11.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.64  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_23.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.65  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_17.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.66  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_18.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.67  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_14.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.68  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_16.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.69  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_26.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.70  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_22.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.71  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_5.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.72  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_23.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.73  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_4.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.74  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_22.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.75  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_7.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.76  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_6.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.77  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_19.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.78  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_4.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.79  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_13.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.80  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_30.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.81  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_15.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.82  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_14.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.83  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_5.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.84  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_27.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.85  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_2.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.86  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'NB_8.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.87  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_19.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.88  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'HB_12.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.89  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The external file 'SB_13.mp4' does not exist. Please confirm the relative location to the NWBFile.
-
-0.90  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_timestamps_match_first_dimension - 'OpticalSeries' object at location '/stimulus/presentation/StimulusPresentation_encoding'
-        Message: The length of the first dimension of data does not match the length of timestamps.
+0.8  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: DynamicTableRegion - 'None' object at location 'units/electrodes'
+       Message: incorrect type - expected 'int', got 'int8'
 
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.91  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'recognition_table'
-        Message: ['start_time', 'stop_time', 'fixcross_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
-
-1.92  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/experiment_ids'
-        Message: experiment_ids timestamps are not ascending.
-
-1.93  /tmp/nwb_versions/sub-6_ses-6_ecephys+image.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/events'
-        Message: events timestamps are not ascending.
+1.9  /tmp/nwb_versions/sub-6_ses-6_ecephys.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'recognition_table'
+       Message: ['start_time'] are time columns but the values are not in ascending order. All times should be in seconds with respect to the session start time.
 

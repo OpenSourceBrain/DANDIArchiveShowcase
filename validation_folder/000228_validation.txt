@@ -1,13 +1,13 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:29:18.081862+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 12:23:07.648273+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 6 issues over 2 files:
+Found 9 issues over 2 files:
        4 - PYNWB_VALIDATION
-       2 - BEST_PRACTICE_VIOLATION
+       5 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
@@ -23,6 +23,12 @@ Found 6 issues over 2 files:
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.2  /tmp/nwb_versions/sub-H18-28-022_obj-dkqjza_icephys.nwb and 1 other file: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+1.2  /tmp/nwb_versions/sub-H18-28-022_obj-dkqjza_icephys.nwb and 1 other file: check_subject_species_form - 'Subject' object at location '/general/subject'
        Message: Subject species 'Homo Sapiens' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+1.3  /tmp/nwb_versions/sub-H18-28-022_obj-dkqjza_icephys.nwb and 1 other file: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'Electrode 0'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
+
+1.4  /tmp/nwb_versions/sub-H20-28-022_obj-vc7ewc_icephys.nwb: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'Electrode 1'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
 

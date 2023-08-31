@@ -1,12 +1,13 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:27:46.452114+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 12:20:52.954303+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 4 issues over 2 files:
+Found 8 issues over 2 files:
        4 - CRITICAL
+       4 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
@@ -24,4 +25,19 @@ Found 4 issues over 2 files:
 
 0.3  /tmp/nwb_versions/sub-210226-210308-1_ses-210308-a000_behavior+image+ophys.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/behavior_cam_22983298'
        Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210308_1\210308_a000\behavior_210226_2103008_1_210308_a000\behavior_p10_210226_210308_1_cam_22983298_cam1_a000_fps_20.avi' does not exist. Please confirm the relative location to the NWBFile.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.4  /tmp/nwb_versions/sub-210226-210307-1_ses-210307-a000_behavior+image+ophys.nwb: check_image_series_external_file_relative - 'ImageSeries' object at location '/acquisition/behavior_cam_23109588'
+       Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210307_1\210307_a000\behavior_210226_210307_1_210307_a000\behavior_p9_210226_210307_1_cam_23109588_cam2_a000_fps_20.avi' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
+
+1.5  /tmp/nwb_versions/sub-210226-210307-1_ses-210307-a000_behavior+image+ophys.nwb: check_image_series_external_file_relative - 'ImageSeries' object at location '/acquisition/behavior_cam_22983298'
+       Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210307_1\210307_a000\behavior_210226_210307_1_210307_a000\behavior_p9_210226_210307_1_cam_22983298_cam1_a000_fps_20.avi' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
+
+1.6  /tmp/nwb_versions/sub-210226-210308-1_ses-210308-a000_behavior+image+ophys.nwb: check_image_series_external_file_relative - 'ImageSeries' object at location '/acquisition/behavior_cam_23109588'
+       Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210308_1\210308_a000\behavior_210226_2103008_1_210308_a000\behavior_p10_210226_210308_1_cam_23109588_cam2_a000_fps_20.avi' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
+
+1.7  /tmp/nwb_versions/sub-210226-210308-1_ses-210308-a000_behavior+image+ophys.nwb: check_image_series_external_file_relative - 'ImageSeries' object at location '/acquisition/behavior_cam_22983298'
+       Message: The external file 'D:/Robin/data_hne/NWB_to_create/FOLDERS\210226_210308_1\210308_a000\behavior_210226_2103008_1_210308_a000\behavior_p10_210226_210308_1_cam_22983298_cam1_a000_fps_20.avi' is not a relative path. Please adjust the absolute path to be relative to the location of the NWBFile.
 

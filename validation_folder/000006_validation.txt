@@ -1,13 +1,13 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 18:31:38.165491+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 10:35:51.876462+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 22 issues over 2 files:
+Found 20 issues over 2 files:
       12 - PYNWB_VALIDATION
-      10 - BEST_PRACTICE_VIOLATION
+       8 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
@@ -35,18 +35,15 @@ Found 22 issues over 2 files:
 1  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.6  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_time_interval_time_columns - 'TimeIntervals' object with name 'trials'
-       Message: ['stop_time', 'cue_start_time', 'pole_in_time', 'pole_out_time'] are time columns but the values are not in ascending order.All times should be in seconds with respect to the session start time.
-
-1.7  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/lick_times/lick_right_times'
+1.6  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/lick_times/lick_right_times'
        Message: lick_right_times timestamps are not ascending.
 
-1.8  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/lick_times/lick_left_times'
+1.7  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_timestamps_ascending - 'TimeSeries' object at location '/acquisition/lick_times/lick_left_times'
        Message: lick_left_times timestamps are not ascending.
 
-1.9  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_resolution - 'TimeSeries' object at location '/acquisition/lick_times/lick_right_times'
+1.8  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_resolution - 'TimeSeries' object at location '/acquisition/lick_times/lick_right_times'
        Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
 
-1.10  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_resolution - 'TimeSeries' object at location '/acquisition/lick_times/lick_left_times'
-        Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
+1.9  /tmp/nwb_versions/sub-anm369963_ses-20170228.nwb and 1 other file: check_resolution - 'TimeSeries' object at location '/acquisition/lick_times/lick_left_times'
+       Message: 'resolution' should use -1.0 or NaN for unknown instead of 0.0.
 

@@ -1,52 +1,21 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2022-08-29 23:16:23.813905+01:00
-Platform: Linux-5.17.5-76051705-generic-x86_64-with-glibc2.35
-NWBInspector version: 0.4.12
+Timestamp: 2023-08-31 12:00:55.818228+00:00
+Platform: Linux-5.15.0-79-generic-x86_64-with
+NWBInspector version: 0.4.29
 
-Found 3 issues over 1 files:
-       2 - ERROR
-       1 - BEST_PRACTICE_VIOLATION
+Found 2 issues over 1 files:
+       2 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
-0  ERROR
-========
-
-0.0  /tmp/nwb_versions/XCaMPgf_ANM478343_cell04.nwb: check_order_of_images_unique - 'None' object with name 'None'
-       Message: Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
-    output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
-    raise exc
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
-    return command(*command_args, **command_kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 128, in auto_parse_some_output
-    output = check_function(*args, **kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/checks/images.py", line 19, in check_order_of_images_unique
-    if images.order_of_images is None:
-AttributeError: 'Images' object has no attribute 'order_of_images'
-
-
-0.1  /tmp/nwb_versions/XCaMPgf_ANM478343_cell04.nwb: check_order_of_images_len - 'None' object with name 'None'
-       Message: Traceback (most recent call last):
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/nwbinspector.py", line 554, in run_checks
-    output = robust_s3_read(command=check_function, command_args=[nwbfile_object])
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 166, in robust_s3_read
-    raise exc
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/utils.py", line 161, in robust_s3_read
-    return command(*command_args, **command_kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/register_checks.py", line 128, in auto_parse_some_output
-    output = check_function(*args, **kwargs)
-  File "/home/anh/anaconda3/envs/test_envDANDI/lib/python3.9/site-packages/nwbinspector/checks/images.py", line 26, in check_order_of_images_len
-    if images.order_of_images is None:
-AttributeError: 'Images' object has no attribute 'order_of_images'
-
-
-1  BEST_PRACTICE_VIOLATION
+0  BEST_PRACTICE_VIOLATION
 ==========================
 
-1.2  /tmp/nwb_versions/XCaMPgf_ANM478343_cell04.nwb: check_subject_species_latin_binomial - 'Subject' object at location '/general/subject'
+0.0  /tmp/nwb_versions/XCaMPgf_ANM478343_cell04.nwb: check_subject_species_form - 'Subject' object at location '/general/subject'
        Message: Subject species 'mus musculus' should be in latin binomial form, e.g. 'Mus musculus' and 'Homo sapiens'
+
+0.1  /tmp/nwb_versions/XCaMPgf_ANM478343_cell04.nwb: check_intracellular_electrode_cell_id_exists - 'IntracellularElectrode' object with name 'Micropipette'
+       Message: Please include a unique cell_id associated with this IntracellularElectrode.
 
