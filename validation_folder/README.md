@@ -1,4 +1,4 @@
-# Summary statistics for the available dandisets (Updated on 2023-08-27)
+# Summary statistics for the available dandisets (Updated on 2023-08-31)
 
 
 
@@ -118,7 +118,7 @@ Size: 214.5 MB |
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [PYNWB_VALIDATION, CRITICAL, BEST_PRACTICE_VIOLATION](000017_validation.txt) 
 
-- NWBE compatibility - file 1: LL-P  
+- NWBE compatibility - file 1: NC-1  
 Size: 216.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Lederberg%2F) | 
