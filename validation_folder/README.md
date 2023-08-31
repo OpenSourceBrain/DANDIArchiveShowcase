@@ -1,27 +1,27 @@
-# Summary statistics for the available dandisets (Updated on 2023-08-15)
+# Summary statistics for the available dandisets (Updated on 2023-08-31)
 
 ## BIDS dandisets
 
-- Total number of BIDS dandisets: 8
+- Total number of BIDS dandisets: 7
 
-- Median number of files in each BIDS dandiset: 33.5
+- Median number of files in each BIDS dandiset: 17.0
 
-- Median number of bytes in each BIDS dandiset: 1,718,372,028
+- Median number of bytes in each BIDS dandiset: 381,654,798
 
 
 ## NWB dandisets
 
-- Total number of NWB dandisets: 174
+- Total number of NWB dandisets: 179
 
 - Median number of files in each NWB dandiset: 36.0
 
-- Median number of bytes in each NWB dandiset: 13,406,193,386
+- Median number of bytes in each NWB dandiset: 14,212,577,893
 
 - 6 most commonly measured variables: ProcessingModule, Units, ElectrodeGroup, ElectricalSeries, BehavioralTimeSeries, PlaneSegmentation
 
 - NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible
 
-[000005](https://dandiarchive.org/dandiset/000005), [000008](https://dandiarchive.org/dandiset/000008), [000010](https://dandiarchive.org/dandiset/000010), [000012](https://dandiarchive.org/dandiset/000012), [000013](https://dandiarchive.org/dandiset/000013), [000015](https://dandiarchive.org/dandiset/000015), [000019](https://dandiarchive.org/dandiset/000019), [000021](https://dandiarchive.org/dandiset/000021), [000027](https://dandiarchive.org/dandiset/000027), [000034](https://dandiarchive.org/dandiset/000034), [000035](https://dandiarchive.org/dandiset/000035), [000037](https://dandiarchive.org/dandiset/000037), [000043](https://dandiarchive.org/dandiset/000043), [000045](https://dandiarchive.org/dandiset/000045), [000048](https://dandiarchive.org/dandiset/000048), [000053](https://dandiarchive.org/dandiset/000053), [000056](https://dandiarchive.org/dandiset/000056), [000064](https://dandiarchive.org/dandiset/000064), [000067](https://dandiarchive.org/dandiset/000067), [000068](https://dandiarchive.org/dandiset/000068), [000069](https://dandiarchive.org/dandiset/000069), [000107](https://dandiarchive.org/dandiset/000107), [000114](https://dandiarchive.org/dandiset/000114), [000117](https://dandiarchive.org/dandiset/000117), [000122](https://dandiarchive.org/dandiset/000122), [000126](https://dandiarchive.org/dandiset/000126), [000128](https://dandiarchive.org/dandiset/000128), [000129](https://dandiarchive.org/dandiset/000129), [000130](https://dandiarchive.org/dandiset/000130), [000138](https://dandiarchive.org/dandiset/000138), [000139](https://dandiarchive.org/dandiset/000139), [000140](https://dandiarchive.org/dandiset/000140), [000144](https://dandiarchive.org/dandiset/000144), [000148](https://dandiarchive.org/dandiset/000148), [000165](https://dandiarchive.org/dandiset/000165), [000168](https://dandiarchive.org/dandiset/000168), [000173](https://dandiarchive.org/dandiset/000173), [000212](https://dandiarchive.org/dandiset/000212), [000213](https://dandiarchive.org/dandiset/000213), [000217](https://dandiarchive.org/dandiset/000217), [000218](https://dandiarchive.org/dandiset/000218), [000220](https://dandiarchive.org/dandiset/000220), [000221](https://dandiarchive.org/dandiset/000221), [000226](https://dandiarchive.org/dandiset/000226), [000230](https://dandiarchive.org/dandiset/000230), [000232](https://dandiarchive.org/dandiset/000232), [000233](https://dandiarchive.org/dandiset/000233), [000239](https://dandiarchive.org/dandiset/000239), [000245](https://dandiarchive.org/dandiset/000245), [000247](https://dandiarchive.org/dandiset/000247), [000249](https://dandiarchive.org/dandiset/000249), [000250](https://dandiarchive.org/dandiset/000250), [000251](https://dandiarchive.org/dandiset/000251), [000292](https://dandiarchive.org/dandiset/000292), [000293](https://dandiarchive.org/dandiset/000293), [000295](https://dandiarchive.org/dandiset/000295), [000296](https://dandiarchive.org/dandiset/000296), [000297](https://dandiarchive.org/dandiset/000297), [000299](https://dandiarchive.org/dandiset/000299), [000301](https://dandiarchive.org/dandiset/000301), [000302](https://dandiarchive.org/dandiset/000302), [000338](https://dandiarchive.org/dandiset/000338), [000339](https://dandiarchive.org/dandiset/000339), [000341](https://dandiarchive.org/dandiset/000341), [000351](https://dandiarchive.org/dandiset/000351), [000363](https://dandiarchive.org/dandiset/000363), [000398](https://dandiarchive.org/dandiset/000398), [000399](https://dandiarchive.org/dandiset/000399), [000404](https://dandiarchive.org/dandiset/000404), [000405](https://dandiarchive.org/dandiset/000405), [000409](https://dandiarchive.org/dandiset/000409), [000411](https://dandiarchive.org/dandiset/000411), [000454](https://dandiarchive.org/dandiset/000454), [000458](https://dandiarchive.org/dandiset/000458), [000462](https://dandiarchive.org/dandiset/000462), [000463](https://dandiarchive.org/dandiset/000463), [000469](https://dandiarchive.org/dandiset/000469), [000470](https://dandiarchive.org/dandiset/000470), [000472](https://dandiarchive.org/dandiset/000472), [000481](https://dandiarchive.org/dandiset/000481), [000482](https://dandiarchive.org/dandiset/000482), [000488](https://dandiarchive.org/dandiset/000488), [000489](https://dandiarchive.org/dandiset/000489), [000529](https://dandiarchive.org/dandiset/000529), [000535](https://dandiarchive.org/dandiset/000535), [000537](https://dandiarchive.org/dandiset/000537), [000538](https://dandiarchive.org/dandiset/000538), [000541](https://dandiarchive.org/dandiset/000541), [000544](https://dandiarchive.org/dandiset/000544), [000545](https://dandiarchive.org/dandiset/000545), [000548](https://dandiarchive.org/dandiset/000548), [000549](https://dandiarchive.org/dandiset/000549), [000550](https://dandiarchive.org/dandiset/000550), [000552](https://dandiarchive.org/dandiset/000552), [000559](https://dandiarchive.org/dandiset/000559), [000565](https://dandiarchive.org/dandiset/000565), [000566](https://dandiarchive.org/dandiset/000566), [000574](https://dandiarchive.org/dandiset/000574), [000575](https://dandiarchive.org/dandiset/000575), [000579](https://dandiarchive.org/dandiset/000579), [000582](https://dandiarchive.org/dandiset/000582)
+[000005](https://dandiarchive.org/dandiset/000005), [000008](https://dandiarchive.org/dandiset/000008), [000010](https://dandiarchive.org/dandiset/000010), [000012](https://dandiarchive.org/dandiset/000012), [000013](https://dandiarchive.org/dandiset/000013), [000015](https://dandiarchive.org/dandiset/000015), [000019](https://dandiarchive.org/dandiset/000019), [000021](https://dandiarchive.org/dandiset/000021), [000027](https://dandiarchive.org/dandiset/000027), [000034](https://dandiarchive.org/dandiset/000034), [000035](https://dandiarchive.org/dandiset/000035), [000037](https://dandiarchive.org/dandiset/000037), [000043](https://dandiarchive.org/dandiset/000043), [000045](https://dandiarchive.org/dandiset/000045), [000048](https://dandiarchive.org/dandiset/000048), [000053](https://dandiarchive.org/dandiset/000053), [000056](https://dandiarchive.org/dandiset/000056), [000064](https://dandiarchive.org/dandiset/000064), [000067](https://dandiarchive.org/dandiset/000067), [000068](https://dandiarchive.org/dandiset/000068), [000069](https://dandiarchive.org/dandiset/000069), [000107](https://dandiarchive.org/dandiset/000107), [000114](https://dandiarchive.org/dandiset/000114), [000117](https://dandiarchive.org/dandiset/000117), [000122](https://dandiarchive.org/dandiset/000122), [000126](https://dandiarchive.org/dandiset/000126), [000128](https://dandiarchive.org/dandiset/000128), [000129](https://dandiarchive.org/dandiset/000129), [000130](https://dandiarchive.org/dandiset/000130), [000138](https://dandiarchive.org/dandiset/000138), [000139](https://dandiarchive.org/dandiset/000139), [000140](https://dandiarchive.org/dandiset/000140), [000144](https://dandiarchive.org/dandiset/000144), [000148](https://dandiarchive.org/dandiset/000148), [000165](https://dandiarchive.org/dandiset/000165), [000168](https://dandiarchive.org/dandiset/000168), [000173](https://dandiarchive.org/dandiset/000173), [000212](https://dandiarchive.org/dandiset/000212), [000213](https://dandiarchive.org/dandiset/000213), [000217](https://dandiarchive.org/dandiset/000217), [000218](https://dandiarchive.org/dandiset/000218), [000220](https://dandiarchive.org/dandiset/000220), [000221](https://dandiarchive.org/dandiset/000221), [000226](https://dandiarchive.org/dandiset/000226), [000230](https://dandiarchive.org/dandiset/000230), [000232](https://dandiarchive.org/dandiset/000232), [000233](https://dandiarchive.org/dandiset/000233), [000239](https://dandiarchive.org/dandiset/000239), [000245](https://dandiarchive.org/dandiset/000245), [000247](https://dandiarchive.org/dandiset/000247), [000249](https://dandiarchive.org/dandiset/000249), [000250](https://dandiarchive.org/dandiset/000250), [000251](https://dandiarchive.org/dandiset/000251), [000292](https://dandiarchive.org/dandiset/000292), [000293](https://dandiarchive.org/dandiset/000293), [000295](https://dandiarchive.org/dandiset/000295), [000296](https://dandiarchive.org/dandiset/000296), [000297](https://dandiarchive.org/dandiset/000297), [000299](https://dandiarchive.org/dandiset/000299), [000301](https://dandiarchive.org/dandiset/000301), [000302](https://dandiarchive.org/dandiset/000302), [000338](https://dandiarchive.org/dandiset/000338), [000339](https://dandiarchive.org/dandiset/000339), [000341](https://dandiarchive.org/dandiset/000341), [000351](https://dandiarchive.org/dandiset/000351), [000363](https://dandiarchive.org/dandiset/000363), [000398](https://dandiarchive.org/dandiset/000398), [000399](https://dandiarchive.org/dandiset/000399), [000404](https://dandiarchive.org/dandiset/000404), [000405](https://dandiarchive.org/dandiset/000405), [000409](https://dandiarchive.org/dandiset/000409), [000411](https://dandiarchive.org/dandiset/000411), [000454](https://dandiarchive.org/dandiset/000454), [000458](https://dandiarchive.org/dandiset/000458), [000462](https://dandiarchive.org/dandiset/000462), [000463](https://dandiarchive.org/dandiset/000463), [000469](https://dandiarchive.org/dandiset/000469), [000470](https://dandiarchive.org/dandiset/000470), [000472](https://dandiarchive.org/dandiset/000472), [000481](https://dandiarchive.org/dandiset/000481), [000482](https://dandiarchive.org/dandiset/000482), [000488](https://dandiarchive.org/dandiset/000488), [000489](https://dandiarchive.org/dandiset/000489), [000529](https://dandiarchive.org/dandiset/000529), [000535](https://dandiarchive.org/dandiset/000535), [000537](https://dandiarchive.org/dandiset/000537), [000538](https://dandiarchive.org/dandiset/000538), [000541](https://dandiarchive.org/dandiset/000541), [000544](https://dandiarchive.org/dandiset/000544), [000545](https://dandiarchive.org/dandiset/000545), [000547](https://dandiarchive.org/dandiset/000547), [000548](https://dandiarchive.org/dandiset/000548), [000549](https://dandiarchive.org/dandiset/000549), [000550](https://dandiarchive.org/dandiset/000550), [000552](https://dandiarchive.org/dandiset/000552), [000559](https://dandiarchive.org/dandiset/000559), [000565](https://dandiarchive.org/dandiset/000565), [000566](https://dandiarchive.org/dandiset/000566), [000572](https://dandiarchive.org/dandiset/000572), [000574](https://dandiarchive.org/dandiset/000574), [000575](https://dandiarchive.org/dandiset/000575), [000576](https://dandiarchive.org/dandiset/000576), [000579](https://dandiarchive.org/dandiset/000579), [000582](https://dandiarchive.org/dandiset/000582), [000618](https://dandiarchive.org/dandiset/000618)
 
 - NWB dandisets that are blacklisted and are not analysed: [000010](https://dandiarchive.org/dandiset/000010), [000015](https://dandiarchive.org/dandiset/000015), [000037](https://dandiarchive.org/dandiset/000037), [000045](https://dandiarchive.org/dandiset/000045), [000167](https://dandiarchive.org/dandiset/000167), [000168](https://dandiarchive.org/dandiset/000168)
 
@@ -357,12 +357,12 @@ Size: 214.5 MB |
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [PYNWB_VALIDATION, CRITICAL, BEST_PRACTICE_VIOLATION](000017_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-P  
 Size: 216.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Lederberg%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: LL-P  
 Size: 272.08 MB | 
 [File info](https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Richards%2F) | 
@@ -523,11 +523,9 @@ Size: 14.36 MB |
 
 *[DANDI:000026](https://dandiarchive.org/dandiset/000026/draft)*: **Human brain cell census for BA 44/45**
 
-- Data type: **Brain Imaging Data Structure (BIDS)**, file count: **56965**, total size (MB): **18,468,339.58**
+, file count: **1**, total size (MB): **0.0**
 
 - Keywords: **multi-modal imaging**, **MRI**, **OCT**, **SPIM**, **human cortex**, **Broca's area**, **Motor cortex**, **Stereology**
-
-- Variables measured: 
 
 - Source paper: *Mazzamuto, Giacomo; Costantini, Irene; Gavryusev, Vladislav; Castelli, Filippo Maria; Pesce, Luca; Scardigli, Marina; Pavone, Francesco Saverio; Roffilli, Matteo; Silvestri, Ludovico; Brady, Niamh; Ramazzotti, Josephine; Hof, Patrick R.; Boas, David A.; Fischl, Bruce; Morgan, Leah; Yang, Jiarui; Chang, Shuaibin; Laffey, Jessie; Magnain, Caroline; Varadarajan, Divya; Wang, Hui; Frost, Robert; Kouwe, Andre van der; Player, Allison Stevens; Atzeni, Alessia; Gonzalez, Juan Eugenio Iglesias; Balbastre, Yael; Vera, Matthew; Cordero, Devani; Nestor, Kimberly; Ammon, William; Nolan, Jackson; Mora, Jocelyn; Pallares, Erendira Garcia; Augustinack, Jean; Diamond, Bram; Fogarty, Morgan; Boyd, Emma; Varghese, Merina; Dalca, Adrian V.; Edlow, Brian; Frosche, Matthew; Wicinski, Bridget; Chen, I-Chun Anderson (2023) Human brain cell census for BA 44/45*
 
@@ -691,12 +689,12 @@ Size: 5.69 MB |
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [CRITICAL, BEST_PRACTICE_VIOLATION](000036_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-V  
 Size: 1306.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3ff75d8e-318f-47d1-805a-1b409b1600e2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000036/draft/files?location=sub-406876%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/3ff75d8e-318f-47d1-805a-1b409b1600e2/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: LL-V  
 Size: 1310.77 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3988673a-e876-4a0e-83c3-12dc35229a7f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000036/draft/files?location=sub-389014%2F) | 
@@ -1045,7 +1043,7 @@ Size: 2.48 MB |
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000056_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-P  
 Size: 1306.16 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ada02790-6eb6-48ee-902d-9ba017303586) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000056/draft/files?location=sub-Mouse24%2F) | 
@@ -1077,13 +1075,13 @@ Size: 1892.07 MB |
 
 *[DANDI:000059](https://dandiarchive.org/dandiset/000059/draft)*: **Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies**
 
-- Data type: **Neurodata Without Borders (NWB)**, file count: **54**, total size (MB): **3,261,512.04**
+- Data type: **Neurodata Without Borders (NWB)**, file count: **50**, total size (MB): **2,945,469.52**
 
 - Species: **Brown rat**
 
-- Variables measured: **SpatialSeries**, **Position**, **LFP**, **Units**, **ProcessingModule**
+- Variables measured: **SpatialSeries**, **Position**, **LFP**, **Units**
 
-- Source paper: *Petersen, Peter; Buzsáki, György (2022) Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies*
+- Source paper: *Petersen, Peter; Buzsáki, György (2023) Cooling of Medial Septum Reveals Theta Phase Lag Coordination of Hippocampal Cell Assemblies*
 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
 
@@ -1147,7 +1145,7 @@ Size: 1.98 MB |
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [BEST_PRACTICE_VIOLATION](000064_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-P  
 Size: 218.37 MB | 
 [File info](https://api.dandiarchive.org/api/assets/bb61e86d-e28f-4da7-b07a-44dfa377cf32) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000064/draft/files?location=sub-001%2F) | 
@@ -1403,7 +1401,7 @@ Size: 13.63 MB |
 
 - Data type: **Neurodata Without Borders (NWB)**, file count: **57**, total size (MB): **9,103,698.76**
 
-- Species: **Rat, norway rat, rats,  brown rat**
+- Species: **Rat; norway rat; rats; brown rat**
 
 - Variables measured: **ElectricalSeries**, **Position**, **SpatialSeries**, **BehavioralEvents**, **ProcessingModule**
 
@@ -1575,7 +1573,7 @@ Size: 36.86 MB |
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000128_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-V  
 Size: 690.61 MB | 
 [File info](https://api.dandiarchive.org/api/assets/26e85f09-39b7-480f-b337-278a8f034007) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000128/draft/files?location=sub-Jenkins%2F) | 
@@ -2481,7 +2479,7 @@ Size: 0.88 MB |
 
 - Species: **Rattus norvegicus - Norway rat**
 
-- Keywords: **calcium imaging, extracellular recordings, HD-MEA. spike sorting, dendritic spines**
+- Keywords: **calcium imaging; extracellular recordings; HD-MEA; spike sorting; dendritic spines**
 
 - Variables measured: **PlaneSegmentation**, **ElectrodeGroup**, **ProcessingModule**, **ElectricalSeries**, **TwoPhotonSeries**, **Units**
 
@@ -3257,7 +3255,7 @@ Size: 29.8 MB |
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000338_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-V  
 Size: 418.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/721133ab-a29b-4533-9fc8-823e290e7d84) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000338/draft/files?location=sub-001%2F) | 
@@ -3435,26 +3433,26 @@ Size: 0.22 MB |
 
 *[DANDI:000363](https://dandiarchive.org/dandiset/000363/draft)*: **Mesoscale Activity Map Dataset**
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.5.0**), file count: **174**, total size (MB): **67,359.67**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **174**, total size (MB): **53,585.63**
 
 - Species: **Mus musculus - House mouse**
 
-- Variables measured: **Units**, **BehavioralTimeSeries**, **ElectrodeGroup**, **BehavioralEvents**
+- Variables measured: **BehavioralTimeSeries**, **BehavioralEvents**, **ElectrodeGroup**, **Units**
 
 - Source paper: *Chen, Susu; Nguyen, Thinh; Li, Nuo; Svoboda, Karel (2023) Mesoscale Activity Map Dataset*
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [BEST_PRACTICE_VIOLATION](000363_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
-Size: 161.23 MB | 
-[File info](https://api.dandiarchive.org/api/assets/16721af5-aa82-426d-a5c6-abb75b39e840) | 
+- NWBE compatibility - file 1: LL-P  
+Size: 139.65 MB | 
+[File info](https://api.dandiarchive.org/api/assets/44612094-77df-4b1f-a10f-74f45e312c76) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000363/draft/files?location=sub-440959%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/16721af5-aa82-426d-a5c6-abb75b39e840/download/) 
-- NWBE compatibility - file 2: NC-1  
-Size: 168.86 MB | 
-[File info](https://api.dandiarchive.org/api/assets/3f48602e-8f30-4336-9d1e-70a9866a1fc8) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/44612094-77df-4b1f-a10f-74f45e312c76/download/) 
+- NWBE compatibility - file 2: LL-P  
+Size: 150.28 MB | 
+[File info](https://api.dandiarchive.org/api/assets/73376b0b-6604-4b55-8afa-b3626cf8802a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000363/draft/files?location=sub-456772%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/3f48602e-8f30-4336-9d1e-70a9866a1fc8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/73376b0b-6604-4b55-8afa-b3626cf8802a/download/) 
 ---
 
 *[DANDI:000364](https://dandiarchive.org/dandiset/000364/draft)*: **M1_waterGrab**
@@ -3496,7 +3494,7 @@ Size: 106.35 MB |
 [File info](https://api.dandiarchive.org/api/assets/591a4423-cc24-40c6-966e-20d782d68a53) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000398/draft/files?location=sub-San2%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/591a4423-cc24-40c6-966e-20d782d68a53/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: LL-P  
 Size: 113.04 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5b5adae9-82e0-44aa-9faa-c827351d117a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000398/draft/files?location=sub-San4%2F) | 
@@ -3619,7 +3617,7 @@ Size: 1.64 MB |
 
 *[DANDI:000409](https://dandiarchive.org/dandiset/000409/draft)*: **IBL - Brain Wide Map**
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1570**, total size (MB): **33,823,521.71**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1576**, total size (MB): **34,138,050.21**
 
 - Species: **Mus musculus - House mouse**
 
@@ -3631,12 +3629,12 @@ Size: 1.64 MB |
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000409_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-V  
 Size: 124.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/37a85ccc-1bc2-4c5e-aa87-2b2ecaacf71f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000409/draft/files?location=sub-ibl-witten-19%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/37a85ccc-1bc2-4c5e-aa87-2b2ecaacf71f/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: LL-V  
 Size: 131.91 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8098c7a7-9a4e-4ff4-94a0-5a46d499fb75) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000409/draft/files?location=sub-ibl-witten-17%2F) | 
@@ -3871,7 +3869,7 @@ Size: 1.33 MB |
 
 - Species: **Mus musculus - House mouse**
 
-- Keywords: **hippocampus, dopamine, mice, reward, calcium imaging, VR based navigation, DREADD**
+- Keywords: **hippocampus; dopamine; mice; reward; calcium imaging; VR based navigation; DREADD**
 
 - Variables measured: **ProcessingModule**, **OpticalChannel**, **ImagingPlane**
 
@@ -3882,12 +3880,12 @@ Size: 1.33 MB |
 - NWBE compatibility - file 1: LL-P  
 Size: 193.96 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f7d5fa97-49ab-4f68-b2c0-326e57c22dd4) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000462/draft/files?location=Sub-NR6%2F) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000462/draft/files?location=sub-NR6%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/f7d5fa97-49ab-4f68-b2c0-326e57c22dd4/download/) 
 - NWBE compatibility - file 2: LL-P  
 Size: 221.95 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8fe4507e-2257-4604-abab-a2c2c8519192) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000462/draft/files?location=Sub-NR32%2F) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000462/draft/files?location=sub-NR32%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/8fe4507e-2257-4604-abab-a2c2c8519192/download/) 
 ---
 
@@ -3945,7 +3943,7 @@ Size: 1839.54 MB |
 
 - Species: **Ooceraea biroi - Clonal raider ant**
 
-- Keywords: **antennal lobe, calcium imaging, chemosensation, clonal raider ant, clonal raider ant, GcaMP, odor coding, olfaction, Ooceraea biroi, pheromone**
+- Keywords: **antennal lobe; calcium imaging; chemosensation; clonal raider ant; communication; GCaMP; odor coding; olfaction; Ooceraea biroi; pheromone**
 
 - Variables measured: **OpticalChannel**, **ImagingPlane**, **TwoPhotonSeries**
 
@@ -4193,12 +4191,12 @@ Size: 79.94 MB |
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000488_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-V  
 Size: 1219.9 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3f523944-d0de-4f30-ba91-79656ca3ad26) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000488/draft/files?location=sub-437812%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/3f523944-d0de-4f30-ba91-79656ca3ad26/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: LL-V  
 Size: 1236.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/63bf5bd6-9765-45ae-b5da-91eba0665bb9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000488/draft/files?location=sub-439885%2F) | 
@@ -4485,7 +4483,7 @@ Size: 771.64 MB |
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [BEST_PRACTICE_VIOLATION](000544_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: LL-P  
 Size: 485.78 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a87aab18-75dd-4c4c-b4f4-942ccfccb594) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000544/draft/files?location=sub-484677%2F) | 
@@ -4529,10 +4527,26 @@ Size: 0.19 MB |
 
 *[DANDI:000547](https://dandiarchive.org/dandiset/000547/draft)*: **Perivascular Pumping of Cerebrospinal Fluid in the Brain with a Valve Mechanism**
 
-, file count: **0**, total size (MB): **0.0**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **70**, total size (MB): **17,585.56**
 
-- Source paper: *Zhao, Yue (2023) Perivascular Pumping of Cerebrospinal Fluid in the Brain with a Valve Mechanism*
+- Species: **Mus musculus - House mouse**
 
+- Variables measured: **OpticalChannel**, **ImagingPlane**, **ProcessingModule**, **TwoPhotonSeries**
+
+- Source paper: *Zhao, Yue; Gan, Yiming; Kelley, Douglas; Holstein-Rønsbo, Stephanie; Boster, Kimberly; Thomas, John; Nedergaard, Maiken (2023) Perivascular Pumping of Cerebrospinal Fluid in the Brain with a Valve Mechanism*
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000547_validation.txt) 
+
+- NWBE compatibility - file 1: LL-V  
+Size: 176.98 MB | 
+[File info](https://api.dandiarchive.org/api/assets/06c72ea1-a3de-4c52-895c-b21f6bc9da78) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000547/draft/files?location=sub-310%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/06c72ea1-a3de-4c52-895c-b21f6bc9da78/download/) 
+- NWBE compatibility - file 2: LL-V  
+Size: 177.73 MB | 
+[File info](https://api.dandiarchive.org/api/assets/aef47a7d-979a-4491-bb62-f08bd0e16aa5) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000547/draft/files?location=sub-309%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/aef47a7d-979a-4491-bb62-f08bd0e16aa5/download/) 
 ---
 
 *[DANDI:000548](https://dandiarchive.org/dandiset/000548/draft)*: **Effect of the number of pulses on electroporation by unipolar and 50 % bipolar pulses**
@@ -4689,7 +4703,7 @@ Size: 22.45 MB |
 
 *[DANDI:000559](https://dandiarchive.org/dandiset/000559/draft)*: **Spontaneous behaviour is structured by reinforcement without explicit reward**
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **589**, total size (MB): **1,885.3**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **597**, total size (MB): **51,698.38**
 
 - Species: **Mus musculus - House mouse**
 
@@ -4739,11 +4753,11 @@ Size: 1.84 MB |
 
 *[DANDI:000565](https://dandiarchive.org/dandiset/000565/draft)*: **Whole-brain NeuroPAL images for understanding whole-brain neural dynamics with single cell opto-stimulation**
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **20**, total size (MB): **10,995.37**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **20**, total size (MB): **11,659.93**
 
 - Species: **Caenorhabditis elegans**
 
-- Variables measured: **ProcessingModule**
+- Variables measured: **ProcessingModule**, **PlaneSegmentation**
 
 - Source paper: *Sprague, Daniel (2023) Whole-brain NeuroPAL images for understanding whole-brain neural dynamics with single cell opto-stimulation*
 
@@ -4751,14 +4765,14 @@ Size: 1.84 MB |
 
 - NWBE compatibility - file 1: LL-V  
 Size: 230.66 MB | 
-[File info](https://api.dandiarchive.org/api/assets/f4f08186-9a63-41aa-93b4-26ea182a3bb8) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221106-21-23-19%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/f4f08186-9a63-41aa-93b4-26ea182a3bb8/download/) 
-- NWBE compatibility - file 2: LL-V  
-Size: 230.66 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b2df81c1-d0a5-4595-8df1-c365c7d72519) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221106-21-00-09%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/b2df81c1-d0a5-4595-8df1-c365c7d72519/download/) 
+- NWBE compatibility - file 2: LL-V  
+Size: 230.66 MB | 
+[File info](https://api.dandiarchive.org/api/assets/e1ce41fd-9142-4f34-85fe-a0302c3bce1e) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221106-21-47-31%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/e1ce41fd-9142-4f34-85fe-a0302c3bce1e/download/) 
 ---
 
 *[DANDI:000566](https://dandiarchive.org/dandiset/000566/draft)*: **ASAP4 data**
@@ -4875,6 +4889,30 @@ Size: 14.21 MB |
 
 ---
 
+*[DANDI:000572](https://dandiarchive.org/dandiset/000572/draft)*: **Activity map of a cortico-cerebellar loop underlying motor planning**
+
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **289**, total size (MB): **311,812.04**
+
+- Species: **Mus musculus - House mouse**
+
+- Variables measured: **OptogeneticSeries**, **SpikeEventSeries**, **ElectrodeGroup**, **Units**
+
+- Source paper: *Activity map of a cortico-cerebellar loop underlying motor planning (2023).*
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000572_validation.txt) 
+
+- NWBE compatibility - file 1: LL-V  
+Size: 400.21 MB | 
+[File info](https://api.dandiarchive.org/api/assets/34b041ef-876d-4f6e-87d5-2a74ab8ad83a) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000572/draft/files?location=sub-BAYLORZJP01%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/34b041ef-876d-4f6e-87d5-2a74ab8ad83a/download/) 
+- NWBE compatibility - file 2: LL-V  
+Size: 424.89 MB | 
+[File info](https://api.dandiarchive.org/api/assets/a65ef979-276e-495f-ae84-a9fe0d1df203) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000572/draft/files?location=sub-BAYLORNL28%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/a65ef979-276e-495f-ae84-a9fe0d1df203/download/) 
+---
+
 *[DANDI:000574](https://dandiarchive.org/dandiset/000574/draft)*: **Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task**
 
 - Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **37**, total size (MB): **13,067.23**
@@ -4885,7 +4923,7 @@ Size: 14.21 MB |
 
 - Variables measured: **Units**, **ElectrodeGroup**, **BehavioralEvents**, **ElectricalSeries**, **LFP**, **ProcessingModule**
 
-- Source paper: *Boran, Ece; Fedele, Tommaso; Klaver, Peter; Hilfiker, Peter; Stieglitz, Lennart; Grunwald, Thomas; Hohenheim, Jan; Sarnthein, Johannes (2023) Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task*
+- Source paper: *Boran, Ece; Fedele, Tommaso; Hilfiker, Peter; Stieglitz, Lennart; Grunwald, Thomas; Hohenheim, Jan; Sarnthein, Johannes (2023) Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task*
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000574_validation.txt) 
 
@@ -4909,7 +4947,7 @@ Size: 242.25 MB |
 
 - Variables measured: **Units**, **ProcessingModule**, **ElectrodeGroup**, **BehavioralEvents**
 
-- Source paper: *Boran, Ece; Hilfiker, Peter; Stieglitz, Lennart ; Hohenheim, Jan; Sarnthein, Johannes ; Klaver, Peter (2023) Dataset of human medial temporal lobe neurons during a visual working memory task*
+- Source paper: *Boran, Ece; Hilfiker, Peter; Stieglitz, Lennart ; Hohenheim, Jan; Klaver, Peter; Sarnthein, Johannes  (2023) Dataset of human medial temporal lobe neurons during a visual working memory task*
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000575_validation.txt) 
 
@@ -4927,10 +4965,26 @@ Size: 0.82 MB |
 
 *[DANDI:000576](https://dandiarchive.org/dandiset/000576/draft)*: **Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation**
 
-, file count: **1**, total size (MB): **0.0**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **9**, total size (MB): **161.08**
 
-- Source paper: *Fedele, Tommaso; Tzovara, Athina ; Steiger, Bettina ; Hilfiker, Peter ; Grunwald, Thomas ; Stieglitz, Lennart ; Jokeit, Hennric; Hohenheim, Jan; Sarnthein, Johannes  (2023) Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation*
+- Species: **Homo sapiens - Human**
 
+- Variables measured: **ProcessingModule**, **LFP**, **Units**, **ElectricalSeries**, **ElectrodeGroup**
+
+- Source paper: *Fedele, Tommaso; Hilfiker, Peter ; Grunwald, Thomas ; Stieglitz, Lennart ; Jokeit, Hennric; Hohenheim, Jan; Sarnthein, Johannes  (2023) Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation*
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000576_validation.txt) 
+
+- NWBE compatibility - file 1: LL-V  
+Size: 14.06 MB | 
+[File info](https://api.dandiarchive.org/api/assets/20f45cda-1732-4692-a18f-51f3ea3e1d1e) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000576/draft/files?location=sub-05%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/20f45cda-1732-4692-a18f-51f3ea3e1d1e/download/) 
+- NWBE compatibility - file 2: LL-V  
+Size: 14.11 MB | 
+[File info](https://api.dandiarchive.org/api/assets/20257c14-af6a-4f3a-86c4-0b9bfc120714) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000576/draft/files?location=sub-03%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/20257c14-af6a-4f3a-86c4-0b9bfc120714/download/) 
 ---
 
 *[DANDI:000577](https://dandiarchive.org/dandiset/000577/draft)*: **Emergence of Agency in Human Infants**
@@ -4995,9 +5049,47 @@ Size: 10.92 MB |
 
 *[DANDI:000615](https://dandiarchive.org/dandiset/000615/draft)*: **A Novel Neuropathic Pain Treatment: Achieving Neuronal Inhibition with a Splti Ring Resonator**
 
-, file count: **0**, total size (MB): **0.0**
+- Data type: **Neurodata Without Borders (NWB)**, file count: **1**, total size (MB): **1,805.45**
+
+- Species: **Procambarus clarkii - Red swamp crayfish**
+
+- Variables measured: 
 
 - Source paper: *Cherepashensky, Mark (2023) A Novel Neuropathic Pain Treatment: Achieving Neuronal Inhibition with a Splti Ring Resonator*
+
+- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
+
+---
+
+*[DANDI:000618](https://dandiarchive.org/dandiset/000618/draft)*: **SpikeForest ground truth datasets**
+
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **124**, total size (MB): **145,521.72**
+
+- Species: **Mus musculus - House mouse**
+
+- Variables measured: **Units**, **ElectricalSeries**, **ElectrodeGroup**, **ProcessingModule**
+
+- Source paper: *Magland, Jeremy; Jun, James J; Lovero, Elizabeth; Morley, Alexander J; Hurwitz, Cole Lincoln; Buccino, Alessio Paolo; Garcia, Samuel; Barnett, Alex H; English, Daniel (2023) SpikeForest ground truth datasets*
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000618_validation.txt) 
+
+- NWBE compatibility - file 1: LL-V  
+Size: 0.92 MB | 
+[File info](https://api.dandiarchive.org/api/assets/99fcc628-1cf2-46f2-bfdc-0fe8985b42c7) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000618/draft/files?location=) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/99fcc628-1cf2-46f2-bfdc-0fe8985b42c7/download/) 
+- NWBE compatibility - file 2: LL-P  
+Size: 25.41 MB | 
+[File info](https://api.dandiarchive.org/api/assets/fa7562ee-e978-425e-a07a-02165a698612) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000618/draft/files?location=) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/fa7562ee-e978-425e-a07a-02165a698612/download/) 
+---
+
+*[DANDI:000619](https://dandiarchive.org/dandiset/000619/draft)*: **Benisty_Higley_2023**
+
+, file count: **0**, total size (MB): **0.0**
+
+- Source paper: *Higley, Michael (2023) Benisty_Higley_2023*
 
 ---
 
