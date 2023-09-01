@@ -1,5 +1,6 @@
 /scratch_files/
-/Misc/
+/Misc/*
+!./Misc/validate_and_test_nwb.py
 /rundocker.sh
 /__pycache__
 /nwb-explorer/
