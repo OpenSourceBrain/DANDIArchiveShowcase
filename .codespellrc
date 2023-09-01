@@ -1,0 +1,3 @@
+[codespell]
+skip = .git,*.pdf,*.svg,dandiset_summary.csv,nwb-explorer,./validation_folder/000250_validation.txt
+ignore-words-list = ans,succint,cleary

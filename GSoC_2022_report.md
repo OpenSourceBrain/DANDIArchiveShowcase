@@ -7,8 +7,8 @@
 
 ## Original proposal summary
 The ever-growing body of data in Neuroscience, which has been enabled by the advancement of state-of-the-art techniques, calls forth collaborative attempts to make data FAIR (findable, accessible, interoperable and reusable). 
-Consequentially, Neurodata Without Borders (NWB), an open-source software that defines components of a language for neurophysiology data, was born out of such need. NWB has thus exemplified as a sustainable biological data ecosystem,
-but there lies the need of converting readily available datasets into NWB format to allow for further sharibility and producibility. With that said, this project aims to (i) convert a publically available dataset into NWB format,
+Consequently, Neurodata Without Borders (NWB), an open-source software that defines components of a language for neurophysiology data, was born out of such need. NWB has thus exemplified as a sustainable biological data ecosystem,
+but there lies the need of converting readily available datasets into NWB format to allow for further sharibility and producibility. With that said, this project aims to (i) convert a publicly available dataset into NWB format,
 (ii) ensure NWB datasets' compatibility with NWB explorer (NWBE), (iii) and facilitate generality of the conversion process by investigating the sources of NWBE-NWB incompatibilities and ensuring essential metadata being added. This is a medium size project (175h).
 
 ## Overview

@@ -122,7 +122,7 @@ def validate_nwb(arge_parse_bulk=None,arge_parse_update=None,arge_parse_message=
         for k, v in nwb_file_info.items():
             report_file.write(k + ': ' + v + '\n\n')
         # save summary of validation types at the end of the report file for future retrieval
-        report_file.write('\n\nSummary of vaildation types: \n\n')
+        report_file.write('\n\nSummary of validation types: \n\n')
         report_file.write(validation_summary)
         report_file.close()
 

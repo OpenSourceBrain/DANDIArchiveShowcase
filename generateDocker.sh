@@ -6,6 +6,8 @@ docker stop nwbe || echo Docker container nwbe not running
 docker rm nwbe || echo Docker container nwbe not running
 docker stop da || echo Docker container da not running
 docker rm da || echo Docker container da not running
+docker volume prune -f
+
 
 docker build --network=host -t dandi_docker .
 docker volume create --name tmpf
