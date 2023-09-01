@@ -31,7 +31,7 @@ class TimeoutException(Exception): pass
 @contextmanager
 def time_limit(seconds):
     def signal_handler(signum, frame):
-        raise TimeoutException("Timed out!")
+        raise TimeoutException("    ---  Timed out after %s seconds!"%seconds)
     signal.signal(signal.SIGALRM, signal_handler)
     signal.alarm(seconds)
     try:
@@ -199,11 +199,12 @@ def create_dandiset_summary(args_nodownload=None,args_nosizelimit=None,args_dand
                         # test nwbe compatibility
                         if args_createsummary and not os.path.exists(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md')):
                             try:
-                                with time_limit(30):
-                                    print("Creating Summary !")
+                                with time_limit(300):
+                                    print("   -- Creating the Summary !")
                                     create_summary(nwb_path,dandiset_name,str(i))
-                            except:
-                                print("Summary Timeout !")
+                            except Exception as e:
+                                print("   -- Summary creation has had exception: %s"%e)
+
                                 if os.path.exists(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md')):
                                     os.remove(os.path.join(os.path.join(summary_folder,dandiset_name),'file_'+str(i)+'/README.md'))
                                 pass
@@ -253,7 +254,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
         io = NWBHDF5IO(nwb_path,mode='r',load_namespaces=True)
         nwbfile = io.read()
     except:
-        print('File cannot be opened - NC lvl 0')
+        print('   -- File cannot be opened - NC lvl 0')
         nwbe_compatibility = 'NC-0'
         return nwbe_compatibility
         
@@ -263,7 +264,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
     nwbe_compatibility = 'LL-V'
     plottable = 0
     for a, v in nwbfile.acquisition.items():
-        print(nwbfile.acquisition[a].neurodata_type)
+        print("   -- Type is: %s"%nwbfile.acquisition[a].neurodata_type)
         if len(set(nwbfile.acquisition[a].type_hierarchy()).intersection(type_hierarchy)) >= 1:
             if ImageSeries in nwbfile.acquisition[a].type_hierarchy():
                 pass
@@ -274,7 +275,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
     # if no TimeSeries object in acquisition module, search in processing
     if plottable == 0:
         for a, v in nwbfile.processing.items():
-            print(nwbfile.processing[a].neurodata_type)
+            print("   -- Type is: %s"%nwbfile.processing[a].neurodata_type)
             if len(set(nwbfile.processing[a].type_hierarchy()).intersection(type_hierarchy)) >= 1:
                 if ImageSeries in nwbfile.processing[a].type_hierarchy():
                     pass
@@ -300,7 +301,7 @@ def test_nwbe_compatibility(nwb_path,testdocker):
             p = subprocess.Popen([cmd],start_new_session=True, shell=True)
             p.wait(timeout=timeout_s)
         except subprocess.TimeoutExpired:
-            print(f'Timeout for {cmd} ({timeout_s}s) expired')
+            print(f'   -- Timeout for {cmd} ({timeout_s}s) expired')
             os.killpg(os.getpgid(p.pid),signal.SIGTERM)
             nwbe_compatibility = 'NC-1'
             
@@ -327,7 +328,7 @@ def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_repo
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
     validation_file = os.path.join(save_folder, dds_id+'_validation.txt')
-    print('Testing is finished for dandiset '+dds_id +'. report is saved as txt file.')
+    print('   -- Testing is finished for dandiset '+dds_id +'. Report is saved as txt file.')
     # if a detailed report is wanted, report will specify names of files that fail tests
     if detailed_report:
         message_levels = ['importance', 'location']

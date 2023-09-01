@@ -43,6 +43,6 @@ if __name__ == '__main__':
     args = parser.parse_args()
     counter = limit_time(test_nwbe_compatibility, (args.text,args.test_docker, ), {}, 100)
     if counter:
-        print("created successfully !")
+        print("   -- NWBE compatibility passed!")
     else:
-        print("failed")
+        print("   -- NWBE compatibility failed!")
