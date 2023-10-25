@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-10-24 23:01:54.976683+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
+NWBInspector version: 0.4.30
+
+Found 2 issues over 2 files:
+       2 - CRITICAL
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-Rat332_ses-20220922T000000_obj-v56xyv_image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/IxmageSeries'
+       Message: The external file 'sub-Rat332_ses-20220922T000000_obj-v56xyv_image/7d6ca5c5-dad6-488d-bd4f-2ebe58ff5960_external_file_0.avi' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-Rat335_ses-20220922T000000_obj-8w20wz_image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/IxmageSeries'
+       Message: The external file 'sub-Rat335_ses-20220922T000000_obj-8w20wz_image/9d865e08-8098-4b05-8344-03f6d962cc8a_external_file_0.avi' does not exist. Please confirm the relative location to the NWBFile.
+

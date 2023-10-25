@@ -1,11 +1,18 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-09-27 12:00:23.825410+00:00
-Platform: Linux-5.15.0-83-generic-x86_64-with
+Timestamp: 2023-10-24 22:52:53.835283+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
 NWBInspector version: 0.4.30
 
-Found 0 issues over 0 files:
+Found 1 issues over 1 files:
+       1 - CRITICAL
 **************************************************
 
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-08_ses-20161217T120200_ecephys+image.nwb: check_image_series_external_file_valid - 'ImageSeries' object at location '/acquisition/ImageSeries'
+       Message: The external file 'sub-08_ses-20161217T120200_ecephys+image\089d7e42-af9a-4c22-9279-2d310e8b8097_external_file_0.avi' does not exist. Please confirm the relative location to the NWBFile.
 

@@ -1,27 +1,24 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-09-27 09:54:38.517680+00:00
-Platform: Linux-5.15.0-83-generic-x86_64-with
+Timestamp: 2023-10-24 20:54:18.049681+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
 NWBInspector version: 0.4.30
 
-Found 405 issues over 2 files:
-     405 - BEST_PRACTICE_VIOLATION
+Found 404 issues over 2 files:
+     404 - BEST_PRACTICE_VIOLATION
 **************************************************
 
 
 0  BEST_PRACTICE_VIOLATION
 ==========================
 
-0.0  /tmp/nwb_versions/sub-440959_ses-20190219T121506_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_6'
+0.0  /tmp/nwb_versions/sub-440958_ses-20190216T162508_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_6'
        Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
-0.1  /tmp/nwb_versions/sub-440959_ses-20190219T121506_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_4'
+0.1  /tmp/nwb_versions/sub-440958_ses-20190216T162508_behavior+ecephys+ogen.nwb and 1 other file: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_4'
        Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
-0.2  /tmp/nwb_versions/sub-440959_ses-20190219T121506_behavior+ecephys+ogen.nwb and 399 other files: check_table_values_for_dict - 'DynamicTable' object with name 'electrodes'
+0.2  /tmp/nwb_versions/sub-440958_ses-20190216T162508_behavior+ecephys+ogen.nwb and 399 other files: check_table_values_for_dict - 'DynamicTable' object with name 'electrodes'
        Message: The column 'location' contains a string value that contains a dictionary! Please unpack dictionaries as additional rows or columns of the table. This string is also JSON loadable, so call `json.loads(...)` on the string to unpack.
-
-0.3  /tmp/nwb_versions/sub-456772_ses-20191123T135013_behavior+ecephys+ogen.nwb: check_optogenetic_stimulus_site_has_optogenetic_series - 'OptogeneticStimulusSite' object with name 'OBIS470_5'
-       Message: OptogeneticStimulusSite is not referenced by any OptogeneticStimulusSite.
 
