@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-08-31 12:10:00.561465+00:00
-Platform: Linux-5.15.0-79-generic-x86_64-with
-NWBInspector version: 0.4.29
+Timestamp: 2023-10-24 18:09:36.636925+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
+NWBInspector version: 0.4.30
 
 Found 3 issues over 1 files:
        3 - BEST_PRACTICE_VIOLATION

@@ -1,0 +1,217 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-10-24 23:02:05.472897+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
+NWBInspector version: 0.4.30
+
+Found 67 issues over 2 files:
+      65 - CRITICAL
+       2 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/a1c5a2586e56beb305b3e290f30c2893.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.1  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/07474846108091de401c2f7e8380a1b7.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.2  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/f85e16efd9dd8ddfd78921dba872f4b9.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.3  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/2ba12e79b38c21edbbb7bfd2c233a5a0.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.4  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/f4bd984ddc4a94ea93936745abc1d99a.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.5  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/2999a55c4f1e5280408eadf692e43524.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.6  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/d26fd226a9f2c4b514c765f101d73675.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.7  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/ac5ab8cc4e6f84eaa87e0f5754a06403.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.8  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/41f8def4b706103e9e1db9b24fcf2f6c.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.9  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+       Message: The external file 'Stimuli/ad6acb17a185d7d8b4b92206e2498026.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.10  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/653c7754d12e29754ab7e5757ba35a0c.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.11  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/d9ed482a0544d95725b0adb8803986c8.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.12  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/56a768d56003bc5d35f8b1f3fc75d59b.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.13  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/526c9825b72591c9a4b60dc895109363.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.14  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/1ae2eabcf16850983166c36636db33ef.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.15  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/ff14b97d7fc7e8f46d46892c9c4bc7e6.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.16  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/4c2ea2acc0028f79ea9e9efb5af08db4.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.17  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/f55ab89cc4a2a3bd33c659f0d519c0e6.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.18  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/fd878625584eacd63db22d0084abaed3.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.19  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/439420b225f6efa3fe5eefbd8f63ed94.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.20  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/3fcad66e0e04cd54d950fada15ab01d5.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.21  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/820542ba69ed2725fc7059a5337645de.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.22  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/3ff0a8e994ae4820a3cdf4ecbdb4269f.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.23  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/2e24d7e55d50b0a964b1f38f35e5eb3d.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.24  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/b0dbbf121345429abfe1b508d46bfb1a.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.25  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/9026c53430205d034c19e5dd9b7c4313.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.26  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/640fe943eae3863dd0dbad3a83477af4.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.27  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/27e1794f70ed2def95141313eb0a97ca.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.28  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/dc00f16b0f517a501b2ec9d331e6275c.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.29  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/830cf82ca18cee2fcc669cd3626bc8df.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.30  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/6cd859eadadc333871d15b231d0592f8.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.31  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/1d17d41b7de432aae6ec59c0458e2b30.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.32  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/6e2d785972ca0e169ca0edfb04bfb8a4.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.33  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/7cef56cc8ea582e20a39e38575aa6780.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.34  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/dd4d5cdca99e5a491d2bb7c539559700.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.35  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/0674d20028bfc3ebc6727250c3fe1aa8.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.36  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/dd28c01f60fabf15886dcf7fa9502335.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.37  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/538fa945bf05c7a77c074b9d74b6a4f1.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.38  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/5746ad8a94e24366bea3f8623b1ade93.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.39  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/c4de4fe899117e9e3410d54196aa0eab.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.40  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/e857e3fd8f6e40cee4e6399a8e4b2756.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.41  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/73089b8f5ef0bf05405ce0fe04ce524a.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.42  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/58753e70a39cc5d9374ea4efe47cfcf8.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.43  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/03d6a4d9b6279375cd72258ba657e5cd.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.44  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/568bae18a26c8dd6de8172ac96db9992.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.45  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/270ec14c502c79c3910e03f8b45f9ba6.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.46  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/dc0ad3630f67bbe59a7aed62412a7a49.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.47  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/07bf92929c7242a79490c866778b7c78.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.48  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/8187ef51b49e1135e046c6f5e04c7b94.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.49  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/7bbe4bd7b8fb83d220470e0f09894614.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.50  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/c694aacc81098dd20d99d831afdb1c3c.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.51  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/7039c5d2db93469c9b77a81e50112b41.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.52  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/0ad84337cd6b2121d5f3be7545e62504.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.53  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/042e17a199f9ae2aa74f8d40d33453cc.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.54  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/20c2482e0cc77c897ada6de027ad92f8.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.55  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/523909917e6b8ad091bdfd24bb16dece.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.56  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/d4dfe3426f1ac598dca83a1afd245572.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.57  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/af37265bcdd401b3eb75a8148ddf7fd9.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.58  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/b32ded3ade3ed4db5fcc983e86d3ec23.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.59  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/0432349e79444a300a3d64b1cae8763a.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.60  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/d03d086082dd8ef2eb4d3fcdec0d337d.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.61  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/91e6a5d304c7be45a93c7fe3d785d852.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.62  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/9a8c952cae86cc63838b5dbaf09d0bb4.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.63  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/fb4ce28fb0ed7227d1fc7f1ed10b90df.png' does not exist. Please confirm the relative location to the NWBFile.
+
+0.64  /tmp/nwb_versions/sub-Ve_ses-20211208T173255_image.nwb: check_image_series_external_file_valid - 'OpticalSeries' object at location '/stimulus/templates/stimuli'
+        Message: The external file 'Stimuli/cebaf60d3045b72bffecf5892bb1305d.png' does not exist. Please confirm the relative location to the NWBFile.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.65  /tmp/nwb_versions/sub-Bf_ses-20211029T140948_image.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/presentations'
+        Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
