@@ -1,12 +1,12 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-10-24 21:12:37.921783+00:00
+Timestamp: 2023-11-03 00:48:51.552440+00:00
 Platform: Linux-5.15.0-86-generic-x86_64-with
-NWBInspector version: 0.4.30
+NWBInspector version: 0.4.31
 
-Found 2 issues over 2 files:
-       2 - CRITICAL
+Found 4 issues over 2 files:
+       4 - CRITICAL
 **************************************************
 
 
@@ -15,4 +15,7 @@ Found 2 issues over 2 files:
 
 0.0  /tmp/nwb_versions/sub-003_ses-20230311T120000_ophys.nwb and 1 other file: check_data_orientation - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.1  /tmp/nwb_versions/sub-003_ses-20230311T120000_ophys.nwb and 1 other file: check_rate_is_not_zero - 'TwoPhotonSeries' object at location '/acquisition/TwoPhotonSeries'
+       Message: TwoPhotonSeries has a sampling rate value of 0.0Hz but the series has more than one frame.
 

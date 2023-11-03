@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-10-24 18:22:39.893293+00:00
+Timestamp: 2023-11-02 21:59:00.004624+00:00
 Platform: Linux-5.15.0-86-generic-x86_64-with
-NWBInspector version: 0.4.30
+NWBInspector version: 0.4.31
 
 Found 9 issues over 2 files:
        4 - PYNWB_VALIDATION

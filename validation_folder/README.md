@@ -1,4 +1,4 @@
-# Summary statistics for the available dandisets (Updated on 2023-10-25)
+# Summary statistics for the available dandisets (Updated on 2023-11-03)
 
 ## BIDS dandisets
 
@@ -11,17 +11,17 @@
 
 ## NWB dandisets
 
-- Total number of NWB dandisets: 193
+- Total number of NWB dandisets: 194
 
-- Median number of files in each NWB dandiset: 39.0
+- Median number of files in each NWB dandiset: 39.5
 
-- Median number of bytes in each NWB dandiset: 17,585,558,608
+- Median number of bytes in each NWB dandiset: 17,879,586,575
 
 - 6 most commonly measured variables: ProcessingModule, Units, ElectrodeGroup, ElectricalSeries, BehavioralTimeSeries, PlaneSegmentation
 
 - NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible
 
-[000005](https://dandiarchive.org/dandiset/000005), [000008](https://dandiarchive.org/dandiset/000008), [000010](https://dandiarchive.org/dandiset/000010), [000012](https://dandiarchive.org/dandiset/000012), [000013](https://dandiarchive.org/dandiset/000013), [000015](https://dandiarchive.org/dandiset/000015), [000019](https://dandiarchive.org/dandiset/000019), [000021](https://dandiarchive.org/dandiset/000021), [000027](https://dandiarchive.org/dandiset/000027), [000034](https://dandiarchive.org/dandiset/000034), [000035](https://dandiarchive.org/dandiset/000035), [000037](https://dandiarchive.org/dandiset/000037), [000043](https://dandiarchive.org/dandiset/000043), [000045](https://dandiarchive.org/dandiset/000045), [000048](https://dandiarchive.org/dandiset/000048), [000053](https://dandiarchive.org/dandiset/000053), [000056](https://dandiarchive.org/dandiset/000056), [000059](https://dandiarchive.org/dandiset/000059), [000064](https://dandiarchive.org/dandiset/000064), [000067](https://dandiarchive.org/dandiset/000067), [000068](https://dandiarchive.org/dandiset/000068), [000069](https://dandiarchive.org/dandiset/000069), [000107](https://dandiarchive.org/dandiset/000107), [000114](https://dandiarchive.org/dandiset/000114), [000117](https://dandiarchive.org/dandiset/000117), [000122](https://dandiarchive.org/dandiset/000122), [000126](https://dandiarchive.org/dandiset/000126), [000128](https://dandiarchive.org/dandiset/000128), [000129](https://dandiarchive.org/dandiset/000129), [000130](https://dandiarchive.org/dandiset/000130), [000138](https://dandiarchive.org/dandiset/000138), [000139](https://dandiarchive.org/dandiset/000139), [000140](https://dandiarchive.org/dandiset/000140), [000144](https://dandiarchive.org/dandiset/000144), [000148](https://dandiarchive.org/dandiset/000148), [000165](https://dandiarchive.org/dandiset/000165), [000168](https://dandiarchive.org/dandiset/000168), [000173](https://dandiarchive.org/dandiset/000173), [000212](https://dandiarchive.org/dandiset/000212), [000213](https://dandiarchive.org/dandiset/000213), [000217](https://dandiarchive.org/dandiset/000217), [000218](https://dandiarchive.org/dandiset/000218), [000220](https://dandiarchive.org/dandiset/000220), [000221](https://dandiarchive.org/dandiset/000221), [000226](https://dandiarchive.org/dandiset/000226), [000230](https://dandiarchive.org/dandiset/000230), [000232](https://dandiarchive.org/dandiset/000232), [000233](https://dandiarchive.org/dandiset/000233), [000239](https://dandiarchive.org/dandiset/000239), [000245](https://dandiarchive.org/dandiset/000245), [000247](https://dandiarchive.org/dandiset/000247), [000249](https://dandiarchive.org/dandiset/000249), [000250](https://dandiarchive.org/dandiset/000250), [000251](https://dandiarchive.org/dandiset/000251), [000292](https://dandiarchive.org/dandiset/000292), [000293](https://dandiarchive.org/dandiset/000293), [000295](https://dandiarchive.org/dandiset/000295), [000296](https://dandiarchive.org/dandiset/000296), [000297](https://dandiarchive.org/dandiset/000297), [000299](https://dandiarchive.org/dandiset/000299), [000301](https://dandiarchive.org/dandiset/000301), [000302](https://dandiarchive.org/dandiset/000302), [000338](https://dandiarchive.org/dandiset/000338), [000339](https://dandiarchive.org/dandiset/000339), [000341](https://dandiarchive.org/dandiset/000341), [000351](https://dandiarchive.org/dandiset/000351), [000363](https://dandiarchive.org/dandiset/000363), [000398](https://dandiarchive.org/dandiset/000398), [000399](https://dandiarchive.org/dandiset/000399), [000404](https://dandiarchive.org/dandiset/000404), [000405](https://dandiarchive.org/dandiset/000405), [000409](https://dandiarchive.org/dandiset/000409), [000411](https://dandiarchive.org/dandiset/000411), [000454](https://dandiarchive.org/dandiset/000454), [000458](https://dandiarchive.org/dandiset/000458), [000462](https://dandiarchive.org/dandiset/000462), [000463](https://dandiarchive.org/dandiset/000463), [000469](https://dandiarchive.org/dandiset/000469), [000470](https://dandiarchive.org/dandiset/000470), [000472](https://dandiarchive.org/dandiset/000472), [000481](https://dandiarchive.org/dandiset/000481), [000482](https://dandiarchive.org/dandiset/000482), [000488](https://dandiarchive.org/dandiset/000488), [000489](https://dandiarchive.org/dandiset/000489), [000529](https://dandiarchive.org/dandiset/000529), [000535](https://dandiarchive.org/dandiset/000535), [000537](https://dandiarchive.org/dandiset/000537), [000538](https://dandiarchive.org/dandiset/000538), [000541](https://dandiarchive.org/dandiset/000541), [000544](https://dandiarchive.org/dandiset/000544), [000545](https://dandiarchive.org/dandiset/000545), [000547](https://dandiarchive.org/dandiset/000547), [000548](https://dandiarchive.org/dandiset/000548), [000549](https://dandiarchive.org/dandiset/000549), [000550](https://dandiarchive.org/dandiset/000550), [000552](https://dandiarchive.org/dandiset/000552), [000559](https://dandiarchive.org/dandiset/000559), [000561](https://dandiarchive.org/dandiset/000561), [000566](https://dandiarchive.org/dandiset/000566), [000572](https://dandiarchive.org/dandiset/000572), [000574](https://dandiarchive.org/dandiset/000574), [000575](https://dandiarchive.org/dandiset/000575), [000579](https://dandiarchive.org/dandiset/000579), [000582](https://dandiarchive.org/dandiset/000582), [000618](https://dandiarchive.org/dandiset/000618), [000623](https://dandiarchive.org/dandiset/000623), [000631](https://dandiarchive.org/dandiset/000631), [000633](https://dandiarchive.org/dandiset/000633), [000637](https://dandiarchive.org/dandiset/000637), [000678](https://dandiarchive.org/dandiset/000678)
+[000005](https://dandiarchive.org/dandiset/000005), [000008](https://dandiarchive.org/dandiset/000008), [000010](https://dandiarchive.org/dandiset/000010), [000012](https://dandiarchive.org/dandiset/000012), [000013](https://dandiarchive.org/dandiset/000013), [000015](https://dandiarchive.org/dandiset/000015), [000019](https://dandiarchive.org/dandiset/000019), [000021](https://dandiarchive.org/dandiset/000021), [000027](https://dandiarchive.org/dandiset/000027), [000034](https://dandiarchive.org/dandiset/000034), [000035](https://dandiarchive.org/dandiset/000035), [000037](https://dandiarchive.org/dandiset/000037), [000043](https://dandiarchive.org/dandiset/000043), [000045](https://dandiarchive.org/dandiset/000045), [000048](https://dandiarchive.org/dandiset/000048), [000053](https://dandiarchive.org/dandiset/000053), [000056](https://dandiarchive.org/dandiset/000056), [000059](https://dandiarchive.org/dandiset/000059), [000064](https://dandiarchive.org/dandiset/000064), [000067](https://dandiarchive.org/dandiset/000067), [000068](https://dandiarchive.org/dandiset/000068), [000069](https://dandiarchive.org/dandiset/000069), [000107](https://dandiarchive.org/dandiset/000107), [000114](https://dandiarchive.org/dandiset/000114), [000117](https://dandiarchive.org/dandiset/000117), [000122](https://dandiarchive.org/dandiset/000122), [000126](https://dandiarchive.org/dandiset/000126), [000128](https://dandiarchive.org/dandiset/000128), [000129](https://dandiarchive.org/dandiset/000129), [000130](https://dandiarchive.org/dandiset/000130), [000138](https://dandiarchive.org/dandiset/000138), [000139](https://dandiarchive.org/dandiset/000139), [000140](https://dandiarchive.org/dandiset/000140), [000144](https://dandiarchive.org/dandiset/000144), [000148](https://dandiarchive.org/dandiset/000148), [000165](https://dandiarchive.org/dandiset/000165), [000168](https://dandiarchive.org/dandiset/000168), [000173](https://dandiarchive.org/dandiset/000173), [000212](https://dandiarchive.org/dandiset/000212), [000213](https://dandiarchive.org/dandiset/000213), [000217](https://dandiarchive.org/dandiset/000217), [000218](https://dandiarchive.org/dandiset/000218), [000220](https://dandiarchive.org/dandiset/000220), [000221](https://dandiarchive.org/dandiset/000221), [000226](https://dandiarchive.org/dandiset/000226), [000230](https://dandiarchive.org/dandiset/000230), [000232](https://dandiarchive.org/dandiset/000232), [000233](https://dandiarchive.org/dandiset/000233), [000239](https://dandiarchive.org/dandiset/000239), [000245](https://dandiarchive.org/dandiset/000245), [000247](https://dandiarchive.org/dandiset/000247), [000249](https://dandiarchive.org/dandiset/000249), [000250](https://dandiarchive.org/dandiset/000250), [000251](https://dandiarchive.org/dandiset/000251), [000292](https://dandiarchive.org/dandiset/000292), [000293](https://dandiarchive.org/dandiset/000293), [000295](https://dandiarchive.org/dandiset/000295), [000296](https://dandiarchive.org/dandiset/000296), [000297](https://dandiarchive.org/dandiset/000297), [000299](https://dandiarchive.org/dandiset/000299), [000301](https://dandiarchive.org/dandiset/000301), [000302](https://dandiarchive.org/dandiset/000302), [000338](https://dandiarchive.org/dandiset/000338), [000339](https://dandiarchive.org/dandiset/000339), [000341](https://dandiarchive.org/dandiset/000341), [000351](https://dandiarchive.org/dandiset/000351), [000363](https://dandiarchive.org/dandiset/000363), [000398](https://dandiarchive.org/dandiset/000398), [000399](https://dandiarchive.org/dandiset/000399), [000404](https://dandiarchive.org/dandiset/000404), [000405](https://dandiarchive.org/dandiset/000405), [000409](https://dandiarchive.org/dandiset/000409), [000411](https://dandiarchive.org/dandiset/000411), [000454](https://dandiarchive.org/dandiset/000454), [000458](https://dandiarchive.org/dandiset/000458), [000462](https://dandiarchive.org/dandiset/000462), [000463](https://dandiarchive.org/dandiset/000463), [000469](https://dandiarchive.org/dandiset/000469), [000470](https://dandiarchive.org/dandiset/000470), [000481](https://dandiarchive.org/dandiset/000481), [000482](https://dandiarchive.org/dandiset/000482), [000488](https://dandiarchive.org/dandiset/000488), [000489](https://dandiarchive.org/dandiset/000489), [000529](https://dandiarchive.org/dandiset/000529), [000535](https://dandiarchive.org/dandiset/000535), [000537](https://dandiarchive.org/dandiset/000537), [000538](https://dandiarchive.org/dandiset/000538), [000544](https://dandiarchive.org/dandiset/000544), [000545](https://dandiarchive.org/dandiset/000545), [000547](https://dandiarchive.org/dandiset/000547), [000548](https://dandiarchive.org/dandiset/000548), [000549](https://dandiarchive.org/dandiset/000549), [000550](https://dandiarchive.org/dandiset/000550), [000552](https://dandiarchive.org/dandiset/000552), [000559](https://dandiarchive.org/dandiset/000559), [000561](https://dandiarchive.org/dandiset/000561), [000566](https://dandiarchive.org/dandiset/000566), [000572](https://dandiarchive.org/dandiset/000572), [000574](https://dandiarchive.org/dandiset/000574), [000575](https://dandiarchive.org/dandiset/000575), [000579](https://dandiarchive.org/dandiset/000579), [000582](https://dandiarchive.org/dandiset/000582), [000618](https://dandiarchive.org/dandiset/000618), [000623](https://dandiarchive.org/dandiset/000623), [000631](https://dandiarchive.org/dandiset/000631), [000633](https://dandiarchive.org/dandiset/000633), [000637](https://dandiarchive.org/dandiset/000637), [000640](https://dandiarchive.org/dandiset/000640), [000678](https://dandiarchive.org/dandiset/000678)
 
 - NWBE compatibility terminology: 
   - LL-P: Likely plottable - file whose datatypes extend TimeSeries that can be viewed and plotted 
@@ -533,7 +533,7 @@ Size: 14.36 MB |
 
 *[DANDI:000026](https://dandiarchive.org/dandiset/000026/draft)*: **Human brain cell census for BA 44/45**
 
-- Data type: **Brain Imaging Data Structure (BIDS)**, file count: **57162**, total size (MB): **20,482,859.65**
+- Data type: **Brain Imaging Data Structure (BIDS)**, file count: **57170**, total size (MB): **20,609,153.8**
 
 - Keywords: **multi-modal imaging**, **MRI**, **OCT**, **SPIM**, **human cortex**, **Broca's area**, **Motor cortex**, **Stereology**
 
@@ -4049,14 +4049,14 @@ Size: 128.2 MB |
 
 - Source paper: *Sprague, Daniel (2023) NeuroPAL volumetric images*
 
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000472_validation.txt) 
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [ERROR](000472_validation.txt) 
 
-- NWBE compatibility - file 1: LL-V  
+- NWBE compatibility - file 1: NC-0  
 Size: 197.07 MB | 
 [File info](https://api.dandiarchive.org/api/assets/48ef06ed-071d-4ec4-a9d5-6f894215b454) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000472/draft/files?location=sub-2021-12-03-w00-NP1%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/48ef06ed-071d-4ec4-a9d5-6f894215b454/download/) 
-- NWBE compatibility - file 2: LL-V  
+- NWBE compatibility - file 2: NC-0  
 Size: 216.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7f0dcae5-73d7-4949-9145-dd66823bb60d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000472/draft/files?location=sub-2022-04-01-w00-NP1%2F) | 
@@ -4463,14 +4463,14 @@ Size: 104.7 MB |
 
 - Source paper: *Sprague, Daniel (2023) NeuroPAL Microfluidic Chip Images and GCaMP activity*
 
-- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [BEST_PRACTICE_VIOLATION](000541_validation.txt) 
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [ERROR](000541_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: NC-0  
 Size: 1453.37 MB | 
 [File info](https://api.dandiarchive.org/api/assets/6002bdf4-3c20-47eb-b9a4-6922565e04a9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000541/draft/files?location=sub-20190928-07%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/6002bdf4-3c20-47eb-b9a4-6922565e04a9/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: NC-0  
 Size: 1454.63 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e8e87e9b-2aa6-4fc3-ac93-dee307a0369a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000541/draft/files?location=sub-20190925-04%2F) | 
@@ -4799,14 +4799,14 @@ Size: 0.21 MB |
 
 - Source paper: *Sprague, Daniel (2023) Whole-brain NeuroPAL images for understanding whole-brain neural dynamics with single cell opto-stimulation*
 
-- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [CRITICAL, BEST_PRACTICE_VIOLATION](000565_validation.txt) 
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [ERROR](000565_validation.txt) 
 
-- NWBE compatibility - file 1: NC-1  
+- NWBE compatibility - file 1: NC-0  
 Size: 894.55 MB | 
 [File info](https://api.dandiarchive.org/api/assets/688abdea-1df7-4424-aead-265c25af1d7d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221215-20-02-49%2F) | 
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/688abdea-1df7-4424-aead-265c25af1d7d/download/) 
-- NWBE compatibility - file 2: NC-1  
+- NWBE compatibility - file 2: NC-0  
 Size: 895.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/602427f9-28fa-4a8d-8a98-996611705e39) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221028-18-48-00%2F) | 
@@ -5431,10 +5431,26 @@ Size: 1.01 MB |
 
 *[DANDI:000640](https://dandiarchive.org/dandiset/000640/draft)*: **32-CH Local Field Potential Data During Probabilistic Reversal Learning Task**
 
-, file count: **0**, total size (MB): **0.0**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **247**, total size (MB): **18,708.67**
+
+- Species: **Rattus norvegicus - Norway rat**
+
+- Variables measured: 
 
 - Source paper: *Koloski, Miranda  (2023) 32-CH Local Field Potential Data During Probabilistic Reversal Learning Task*
 
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000640_validation.txt) 
+
+- NWBE compatibility - file 1: LL-V  
+Size: 0.21 MB | 
+[File info](https://api.dandiarchive.org/api/assets/eb4e47c2-8d84-47c9-8505-cebd1955d3a3) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-185%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/eb4e47c2-8d84-47c9-8505-cebd1955d3a3/download/) 
+- NWBE compatibility - file 2: LL-V  
+Size: 0.21 MB | 
+[File info](https://api.dandiarchive.org/api/assets/344f3952-9bc8-4787-bd88-57004adf1e72) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-178%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/hub/nwbfile=https://api.dandiarchive.org/api/assets/344f3952-9bc8-4787-bd88-57004adf1e72/download/) 
 ---
 
 *[DANDI:000674](https://dandiarchive.org/dandiset/000674/draft)*: **Volumetric multiplex imaging of whole human and non-human primate brains**
