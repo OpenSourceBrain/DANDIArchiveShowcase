@@ -1,9 +1,9 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-10-24 21:06:25.718053+00:00
+Timestamp: 2023-11-03 00:28:22.555316+00:00
 Platform: Linux-5.15.0-86-generic-x86_64-with
-NWBInspector version: 0.4.30
+NWBInspector version: 0.4.31
 
 Found 2 issues over 2 files:
        2 - CRITICAL
