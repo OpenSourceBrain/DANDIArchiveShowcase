@@ -28,6 +28,10 @@ from create_summary import create_summary
 
 class TimeoutException(Exception): pass
 
+STATUS_GREEN = '![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png)'
+STATUS_AMBER = '![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png)'
+STATUS_RED =   '![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png)'
+
 @contextmanager
 def time_limit(seconds):
     def signal_handler(signum, frame):
@@ -328,7 +332,7 @@ def nwb_inspector_message_format(report_message,dds_id,save_folder,detailed_repo
     if not os.path.exists(save_folder):
         os.mkdir(save_folder)
     validation_file = os.path.join(save_folder, dds_id+'_validation.txt')
-    print('   -- Testing is finished for dandiset '+dds_id +'. Report is saved as txt file.')
+    print('   -- Testing is finished for Dandiset '+dds_id +'. Report is saved as txt file.')
     # if a detailed report is wanted, report will specify names of files that fail tests
     if detailed_report:
         message_levels = ['importance', 'location']
@@ -400,57 +404,58 @@ def update_readme(testdocker=None):
     pass_nwbinspector = sorted([i for i in nwb_pd['identifier'].loc[(nwb_pd['validation_summary']=='BEST_PRACTICE_VIOLATION')
                                                                | (nwb_pd['validation_summary']=='PASSED_VALIDATION')]])
 
-    readme = '# Summary statistics for the available dandisets (Updated on ' + str(date_time) + ')' '\n'
+    readme = '# Summary statistics for available Dandisets\nLast updated: ' + str(date_time) + '\n'
     readme += '\n'
     if bids_exist == 1:
         bids_pd = dandi_metadata_readme.loc[dandi_metadata_readme['data_type'] == bids_type_id].copy()
         bids_pd.reset_index(inplace=True)
-        readme += '## BIDS dandisets\n'
+        readme += '## BIDS Dandisets\n'
         readme += '\n'
-        readme += '- Total number of BIDS dandisets: ' + str(data_type_dict[bids_type_id]) + '\n'
+        readme += '- Total number of BIDS Dandisets: ' + str(data_type_dict[bids_type_id]) + '\n'
         readme += '\n'
-        readme += '- Median number of files in each BIDS dandiset: ' + str(
+        readme += '- Median number of files in each BIDS Dandiset: ' + str(
             dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == bids_type_id].median()) + '\n'
         readme += '\n'
-        readme += '- Median number of bytes in each BIDS dandiset: ' + "{:,}".format(int(
+        readme += '- Median number of bytes in each BIDS Dandiset: ' + "{:,}".format(int(
             dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == bids_type_id].median())) + '\n'
     readme += '\n\n'
-    readme += '## NWB dandisets\n'
+    readme += '## NWB Dandisets\n'
     readme += '\n'
-    readme += '- Total number of NWB dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
+    readme += '- Total number of NWB Dandisets: ' + str(data_type_dict[nwb_type_id]) + '\n'
     readme += '\n'
-    readme += '- Median number of files in each NWB dandiset: ' + str(
+    readme += '- Median number of files in each NWB Dandiset: ' + str(
         dandi_metadata_readme['num_files'].loc[dandi_metadata_readme.data_type == nwb_type_id].median()) + '\n'
     readme += '\n'
-    readme += '- Median number of bytes in each NWB dandiset: ' + "{:,}".format(int(
+    readme += '- Median number of bytes in each NWB Dandiset: ' + "{:,}".format(int(
         dandi_metadata_readme['num_bytes'].loc[dandi_metadata_readme.data_type == nwb_type_id].median())) + '\n'
     readme += '\n'
     readme += '- ' + str(num_keys) + ' most commonly measured variables: ' + ', '.join(['%s' % var for var in most_common_keys]) + '\n'
     readme += '\n'
-    readme += '- NWB dandisets that pass NWBInspector and thus are possibly NWBE compatible: '
-    root_url = 'https://dandiarchive.org/dandiset/'
+    readme += '- NWB Dandisets that pass NWBInspector and thus are possibly NWBE compatible: '
+    root_url = 'https://dandiarchive.org/Dandiset/'
     readme = readme[:-2]+'\n\n'
     for ds in pass_nwbinspector:
-        readme += '[%s](%s%s), '%(ds, root_url, ds)
+        readme += '[%s](#%s), '%(ds, ds)
     readme = readme[:-2]+'\n\n'
 
     readme += '- NWBE compatibility terminology: \n'
-    readme += '  - LL-P: Likely plottable - file whose datatypes extend TimeSeries that can be viewed and plotted \n'
-    readme += '  - LL-V: Likely viewable - file whose datatypes might not extend TimeSeries that can be viewed \n'
-    readme += '  - NC-0: Not compatible level 0 - file cannot be opened \n'
-    readme += '  - NC-1: Not compatible level 1 - geppetto model for file cannot be created \n'
-    readme += '  - NI: No information - file is not tested \n\n'
-    readme += '<details><summary> Summary information on the available dandisets (more details in dandiset_summary.csv).\n</summary><p>'
+    readme += '  - **LL-P**: Likely plottable - file whose datatypes extend TimeSeries that can be viewed and plotted \n'
+    readme += '  - **LL-V**: Likely viewable - file whose datatypes might not extend TimeSeries that can be viewed \n'
+    readme += '  - **NC-0**: Not compatible level 0 - file cannot be opened \n'
+    readme += '  - **NC-1**: Not compatible level 1 - geppetto model for file cannot be created \n'
+    readme += '  - **NI**: No information - file is not tested \n\n'
+    readme += '<details open><summary> Summary information on the available Dandisets (full details in <a href="dandiset_summary.csv">dandiset_summary.csv</a>).\n</summary><p>'
     readme += '\n\n\n\n'
+    readme += '---\n'
 
     for row in dandi_metadata_readme.index:
         ref = dandi_metadata_readme['identifier'].iloc[row]
         validation_file = ref + '_validation'
-        try:
-            readme += '*[DANDI:' + dandi_metadata_readme['identifier'].iloc[row] + ']' + '(' + dandi_metadata_readme['url'].iloc[
-                row] + ')*' + ': **' + dandi_metadata_readme['name'].iloc[row] + '**\n\n'
-        except:
-            pass
+
+        idn = dandi_metadata_readme['identifier'].iloc[row]
+        readme += '<a id="'+idn+'">' + '*[DANDI:' + idn + ']' + '(' + dandi_metadata_readme['url'].iloc[
+            row] + ')*' + ': **' + dandi_metadata_readme['name'].iloc[row] + '**</a>\n\n'
+
 
         if not pd.isna(dandi_metadata_readme['data_type'].iloc[row]):
             readme += '- Data type: **' + dandi_metadata_readme['data_type'].iloc[row] + '**'
@@ -481,16 +486,22 @@ def update_readme(testdocker=None):
         else:
             if dandi_metadata_readme['validation_summary'].iloc[row] not in ['NULL_FILE_LIMIT', 'UNABLE', 'NOT_DOWNLOADED']:
                 val_str = dandi_metadata_readme['validation_summary'].iloc[row].replace(',',', ')
-                status = '![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png)'
+                status = STATUS_AMBER
                 if 'PASSED_VALIDATION' in val_str:
-                    status = '![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png)'
+                    status = STATUS_GREEN
                 readme += '- '+status+' Validation results summary: [' + val_str + ']' + '(%s.txt) \n\n' % (validation_file)
 
                 for i in range(2):
-                    if not pd.isna(dandi_metadata_readme['nwbe_compatibility_' + str(i)].iloc[row]):
-                        readme += '- NWBE compatibility - file '+str(i + 1) +': ' + dandi_metadata_readme['nwbe_compatibility_' + str(i)].iloc[row] + '  \n'
+                    compat = dandi_metadata_readme['nwbe_compatibility_' + str(i)].iloc[row]
+                    if not pd.isna(compat):
+                            
+                        readme += '- '
+                        if 'LL-P' in compat: readme += STATUS_GREEN
+                        elif 'LL-V' in compat: readme += STATUS_AMBER
+                        else: readme += STATUS_RED
+                        readme += ' NWBE compatibility - example file '+str(i + 1) +': **' + compat + '**  \n'
                     if not pd.isna(dandi_metadata_readme['file_' + str(i)].iloc[row]):
-                        nwbe_link = 'http://nwbexplorer.opensourcebrain.org/hub/nwbfile=' + dandi_metadata_readme['file_' + str(i)].iloc[
+                        nwbe_link = 'http://nwbexplorer.opensourcebrain.org?nwbfile=' + dandi_metadata_readme['file_' + str(i)].iloc[
                             row]
                         if not pd.isna(dandi_metadata_readme['parent_folder_' + str(i)].iloc[row]):
                             dandi_link = dandi_metadata_readme['url'].iloc[row] + '/files?location=' + dandi_metadata_readme['parent_folder_' + str(i)].iloc[row] +'%2F'
@@ -499,7 +510,7 @@ def update_readme(testdocker=None):
                         
                         info_link = dandi_metadata_readme['file_' + str(i)].iloc[row].split('/download')[0]
                         file_size = dandi_metadata_readme['file_size_' + str(i)].iloc[row]
-                        readme += 'Size: %s MB | \n' % (str(round(int(file_size)/1000000,2)))
+                        readme += '   Size: %s MB | \n' % (str(round(int(file_size)/1000000,2)))
                         readme += '[File info](%s) | \n' % (info_link)
                         readme += '[View on DANDI Web](%s) | \n' % (dandi_link)
                         readme += '[View on NWB Explorer](%s) ' % (nwbe_link)
@@ -509,7 +520,7 @@ def update_readme(testdocker=None):
                             readme +='\n'
 
             else:
-                readme += '- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: ' + dandi_metadata_readme['validation_summary'].iloc[row] + '\n\n'
+                readme += '- '+STATUS_RED+' Validation results summary: ' + dandi_metadata_readme['validation_summary'].iloc[row] + '\n\n'
 
         readme += '---'
         readme += '\n\n'
@@ -526,7 +537,7 @@ if __name__ == '__main__':
     parser.add_argument('--no_sizelimit', default=False, action='store_true',
                         help='no size limit will be capped for downloading files if so chosen')
     parser.add_argument('--dandiset_limit', default=False, action='store_true',
-                        help='only process first 10 dandisets if so chosen')
+                        help='only process first 10 Dandisets if so chosen')
     parser.add_argument('--update_readme_option', default=False, action='store_true',
                         help='update readme file after summary file is created')
     parser.add_argument('--update_readme_only', default=False, action='store_true',
