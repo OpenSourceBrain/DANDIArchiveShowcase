@@ -1,11 +1,243 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-10-24 21:21:40.520874+00:00
+Timestamp: 2023-11-17 22:35:46.814526+00:00
 Platform: Linux-5.15.0-86-generic-x86_64-with
-NWBInspector version: 0.4.30
+NWBInspector version: 0.4.31
 
-Found 0 issues over 0 files:
+Found 2 issues over 2 files:
+       2 - ERROR
 **************************************************
+
+
+0  ERROR
+========
+
+0.0  /tmp/nwb_versions/sub-2021-12-03-w00-NP1_ses-20211203.nwb: During io.read() - <class 'hdmf.build.errors.ConstructError'>: (root/processing/NeuroPAL/ImagingVolume GroupBuilder {'attributes': {'grid_spacing_unit': 'micrometers', 'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'ImagingVolume', 'object_id': 'd721b19c-ed96-4df9-8e39-b38f1e7b6570', 'origin_coords_unit': 'micrometers'}, 'groups': {'CyOFP1': root/processing/NeuroPAL/ImagingVolume/CyOFP1 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '1d68040e-bda6-495e-95f1-1d8e740180d2'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/CyOFP1/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'GFP-GCaMP': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '496f2c63-b35e-4e3d-a8ee-83a2da359b49'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 525/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_lambda DatasetBuilder {'attributes': {}, 'data': 525.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'Tag RFP-T': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'f587e6bd-a449-4368-9594-13138cba5fb9'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '90996bdb-ae92-4227-96c8-a9d2f4ca5f29'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5-far red': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '30399d3d-ed6b-419a-9edc-a2326a8cf084'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 639.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mTagBFP2': root/processing/NeuroPAL/ImagingVolume/mTagBFP2 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'c29f8019-29e5-4ba1-bbc5-d62f026a785e'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 460/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_lambda DatasetBuilder {'attributes': {}, 'data': 460.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 405.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/description DatasetBuilder {'attributes': {}, 'data': 'NeuroPAL image of C elegan brain'}, 'grid_spacing': root/processing/NeuroPAL/ImagingVolume/grid_spacing DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "grid_spacing": shape (3,), type "<f8">}, 'location': root/processing/NeuroPAL/ImagingVolume/location DatasetBuilder {'attributes': {}, 'data': 'head'}, 'origin_coords': root/processing/NeuroPAL/ImagingVolume/origin_coords DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "origin_coords": shape (3,), type "<f8">}, 'reference_frame': root/processing/NeuroPAL/ImagingVolume/reference_frame DatasetBuilder {'attributes': {}, 'data': 'origin = anterior, dorsal, left'}}, 'links': {'Order_optical_channels': root/processing/NeuroPAL/ImagingVolume/Order_optical_channels LinkBuilder {'builder': root/processing/NeuroPAL/OpticalChannelRefs GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelReferences', 'object_id': '10306469-af49-45f1-979e-0ee68b22ea9c'}, 'groups': {}, 'datasets': {'channels': root/processing/NeuroPAL/OpticalChannelRefs/channels DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "channels": shape (6,), type "|O">}}, 'links': {}}}, 'device': root/processing/NeuroPAL/ImagingVolume/device LinkBuilder {'builder': root/general/devices/Microscope GroupBuilder {'attributes': {'description': 'One-photon microscope Weill', 'manufacturer': 'Leica', 'namespace': 'core', 'neurodata_type': 'Device', 'object_id': '57c8bb89-a7c5-4a24-b07c-34f807e9a01e'}, 'groups': {}, 'datasets': {}, 'links': {}}}}}, "Could not construct ImagingVolume object due to: Field 'Order_optical_channels' on ImagingVolume must be named 'Order_optical_channels'.") - 'None' object with name 'None'
+       Message: Traceback (most recent call last):
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1258, in construct
+    obj = self.__new_container__(cls, builder.source, parent, builder.attributes.get(self.__spec.id_key()),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1271, in __new_container__
+    obj.__init__(**kwargs)
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/classgenerator.py", line 339, in __init__
+    setattr(self, f, arg_val)
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 528, in container_setter
+    ret[idx2](self, val)  # call the previous setter
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 518, in container_setter
+    raise ValueError(msg)
+ValueError: Field 'Order_optical_channels' on ImagingVolume must be named 'Order_optical_channels'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/site-packages/nwbinspector/nwbinspector.py", line 566, in inspect_nwbfile
+    nwbfile_object = robust_s3_read(command=io.read, max_retries=max_retries)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/nwbinspector/utils.py", line 173, in robust_s3_read
+    raise exc
+  File "/usr/lib/python3.11/site-packages/nwbinspector/utils.py", line 168, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/backends/hdf5/h5tools.py", line 479, in read
+    return super().read(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/backends/io.py", line 60, in read
+    container = self.__manager.construct(f_builder)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 284, in construct
+    result = self.__type_map.construct(builder, self, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 795, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1228, in construct
+    subspecs = self.__get_subspec_values(builder, self.spec, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1157, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1208, in __get_sub_builders
+    ret.update(self.__get_subspec_values(sub_builder, subspec, manager))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1157, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1200, in __get_sub_builders
+    sub_builder = self.__flatten(sub_builder, subspec, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1213, in __flatten
+    tmp = [manager.construct(b) for b in sub_builder]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1213, in <listcomp>
+    tmp = [manager.construct(b) for b in sub_builder]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 280, in construct
+    result = self.__type_map.construct(builder, self, parent)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 795, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1228, in construct
+    subspecs = self.__get_subspec_values(builder, self.spec, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1151, in __get_subspec_values
+    ret[subspec] = manager.construct(links[subspec.name].builder)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 280, in construct
+    result = self.__type_map.construct(builder, self, parent)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 795, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1262, in construct
+    raise ConstructError(builder, msg) from ex
+hdmf.build.errors.ConstructError: (root/processing/NeuroPAL/ImagingVolume GroupBuilder {'attributes': {'grid_spacing_unit': 'micrometers', 'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'ImagingVolume', 'object_id': 'd721b19c-ed96-4df9-8e39-b38f1e7b6570', 'origin_coords_unit': 'micrometers'}, 'groups': {'CyOFP1': root/processing/NeuroPAL/ImagingVolume/CyOFP1 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '1d68040e-bda6-495e-95f1-1d8e740180d2'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/CyOFP1/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'GFP-GCaMP': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '496f2c63-b35e-4e3d-a8ee-83a2da359b49'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 525/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_lambda DatasetBuilder {'attributes': {}, 'data': 525.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'Tag RFP-T': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'f587e6bd-a449-4368-9594-13138cba5fb9'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '90996bdb-ae92-4227-96c8-a9d2f4ca5f29'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5-far red': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '30399d3d-ed6b-419a-9edc-a2326a8cf084'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 639.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mTagBFP2': root/processing/NeuroPAL/ImagingVolume/mTagBFP2 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'c29f8019-29e5-4ba1-bbc5-d62f026a785e'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 460/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_lambda DatasetBuilder {'attributes': {}, 'data': 460.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 405.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/description DatasetBuilder {'attributes': {}, 'data': 'NeuroPAL image of C elegan brain'}, 'grid_spacing': root/processing/NeuroPAL/ImagingVolume/grid_spacing DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "grid_spacing": shape (3,), type "<f8">}, 'location': root/processing/NeuroPAL/ImagingVolume/location DatasetBuilder {'attributes': {}, 'data': 'head'}, 'origin_coords': root/processing/NeuroPAL/ImagingVolume/origin_coords DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "origin_coords": shape (3,), type "<f8">}, 'reference_frame': root/processing/NeuroPAL/ImagingVolume/reference_frame DatasetBuilder {'attributes': {}, 'data': 'origin = anterior, dorsal, left'}}, 'links': {'Order_optical_channels': root/processing/NeuroPAL/ImagingVolume/Order_optical_channels LinkBuilder {'builder': root/processing/NeuroPAL/OpticalChannelRefs GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelReferences', 'object_id': '10306469-af49-45f1-979e-0ee68b22ea9c'}, 'groups': {}, 'datasets': {'channels': root/processing/NeuroPAL/OpticalChannelRefs/channels DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "channels": shape (6,), type "|O">}}, 'links': {}}}, 'device': root/processing/NeuroPAL/ImagingVolume/device LinkBuilder {'builder': root/general/devices/Microscope GroupBuilder {'attributes': {'description': 'One-photon microscope Weill', 'manufacturer': 'Leica', 'namespace': 'core', 'neurodata_type': 'Device', 'object_id': '57c8bb89-a7c5-4a24-b07c-34f807e9a01e'}, 'groups': {}, 'datasets': {}, 'links': {}}}}}, "Could not construct ImagingVolume object due to: Field 'Order_optical_channels' on ImagingVolume must be named 'Order_optical_channels'.")
+
+
+0.1  /tmp/nwb_versions/sub-2022-04-01-w00-NP1_ses-20220401.nwb: During io.read() - <class 'hdmf.build.errors.ConstructError'>: (root/processing/NeuroPAL/ImagingVolume GroupBuilder {'attributes': {'grid_spacing_unit': 'micrometers', 'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'ImagingVolume', 'object_id': 'ce8895a6-a44c-4792-8fbb-2eaa0638ab0d', 'origin_coords_unit': 'micrometers'}, 'groups': {'CyOFP1': root/processing/NeuroPAL/ImagingVolume/CyOFP1 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '99eb4252-414a-4797-98c8-c43f4859819a'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/CyOFP1/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'GFP-GCaMP': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'c32b2926-939e-433e-ad94-a2c0e4616c3c'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 525/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_lambda DatasetBuilder {'attributes': {}, 'data': 525.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'Tag RFP-T': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '1480af91-1954-4ec7-b17a-8650b314b5f4'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '6a562725-ce61-4450-ad1a-48ce7afe7072'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5-far red': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '0e6c5be4-1863-46ed-8c85-508bb64b1c9d'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 639.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mTagBFP2': root/processing/NeuroPAL/ImagingVolume/mTagBFP2 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'b383d93d-ce6c-45db-9a82-abe0b3d93d7d'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 460/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_lambda DatasetBuilder {'attributes': {}, 'data': 460.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 405.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/description DatasetBuilder {'attributes': {}, 'data': 'NeuroPAL image of C elegan brain'}, 'grid_spacing': root/processing/NeuroPAL/ImagingVolume/grid_spacing DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "grid_spacing": shape (3,), type "<f8">}, 'location': root/processing/NeuroPAL/ImagingVolume/location DatasetBuilder {'attributes': {}, 'data': 'head'}, 'origin_coords': root/processing/NeuroPAL/ImagingVolume/origin_coords DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "origin_coords": shape (3,), type "<f8">}, 'reference_frame': root/processing/NeuroPAL/ImagingVolume/reference_frame DatasetBuilder {'attributes': {}, 'data': 'origin = anterior, dorsal, left'}}, 'links': {'Order_optical_channels': root/processing/NeuroPAL/ImagingVolume/Order_optical_channels LinkBuilder {'builder': root/processing/NeuroPAL/OpticalChannelRefs GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelReferences', 'object_id': '0cae6298-9b32-4764-b791-166a878a175b'}, 'groups': {}, 'datasets': {'channels': root/processing/NeuroPAL/OpticalChannelRefs/channels DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "channels": shape (6,), type "|O">}}, 'links': {}}}, 'device': root/processing/NeuroPAL/ImagingVolume/device LinkBuilder {'builder': root/general/devices/Microscope GroupBuilder {'attributes': {'description': 'One-photon microscope Weill', 'manufacturer': 'Leica', 'namespace': 'core', 'neurodata_type': 'Device', 'object_id': 'ce98051d-7851-410e-9724-dcbf0172b1e2'}, 'groups': {}, 'datasets': {}, 'links': {}}}}}, "Could not construct ImagingVolume object due to: Field 'Order_optical_channels' on ImagingVolume must be named 'Order_optical_channels'.") - 'None' object with name 'None'
+       Message: Traceback (most recent call last):
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1258, in construct
+    obj = self.__new_container__(cls, builder.source, parent, builder.attributes.get(self.__spec.id_key()),
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1271, in __new_container__
+    obj.__init__(**kwargs)
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/classgenerator.py", line 339, in __init__
+    setattr(self, f, arg_val)
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 528, in container_setter
+    ret[idx2](self, val)  # call the previous setter
+    ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 518, in container_setter
+    raise ValueError(msg)
+ValueError: Field 'Order_optical_channels' on ImagingVolume must be named 'Order_optical_channels'.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.11/site-packages/nwbinspector/nwbinspector.py", line 566, in inspect_nwbfile
+    nwbfile_object = robust_s3_read(command=io.read, max_retries=max_retries)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/nwbinspector/utils.py", line 173, in robust_s3_read
+    raise exc
+  File "/usr/lib/python3.11/site-packages/nwbinspector/utils.py", line 168, in robust_s3_read
+    return command(*command_args, **command_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/backends/hdf5/h5tools.py", line 479, in read
+    return super().read(**kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/backends/io.py", line 60, in read
+    container = self.__manager.construct(f_builder)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 284, in construct
+    result = self.__type_map.construct(builder, self, None)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 795, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1228, in construct
+    subspecs = self.__get_subspec_values(builder, self.spec, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1157, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1208, in __get_sub_builders
+    ret.update(self.__get_subspec_values(sub_builder, subspec, manager))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1157, in __get_subspec_values
+    self.__get_sub_builders(groups, spec.groups, manager, ret)
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1200, in __get_sub_builders
+    sub_builder = self.__flatten(sub_builder, subspec, manager)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1213, in __flatten
+    tmp = [manager.construct(b) for b in sub_builder]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1213, in <listcomp>
+    tmp = [manager.construct(b) for b in sub_builder]
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 280, in construct
+    result = self.__type_map.construct(builder, self, parent)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 795, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1228, in construct
+    subspecs = self.__get_subspec_values(builder, self.spec, manager)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1151, in __get_subspec_values
+    ret[subspec] = manager.construct(links[subspec.name].builder)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 280, in construct
+    result = self.__type_map.construct(builder, self, parent)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/manager.py", line 795, in construct
+    return obj_mapper.construct(builder, build_manager, parent)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
+    return func(args[0], **pargs)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/site-packages/hdmf/build/objectmapper.py", line 1262, in construct
+    raise ConstructError(builder, msg) from ex
+hdmf.build.errors.ConstructError: (root/processing/NeuroPAL/ImagingVolume GroupBuilder {'attributes': {'grid_spacing_unit': 'micrometers', 'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'ImagingVolume', 'object_id': 'ce8895a6-a44c-4792-8fbb-2eaa0638ab0d', 'origin_coords_unit': 'micrometers'}, 'groups': {'CyOFP1': root/processing/NeuroPAL/ImagingVolume/CyOFP1 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '99eb4252-414a-4797-98c8-c43f4859819a'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/CyOFP1/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/CyOFP1/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'GFP-GCaMP': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'c32b2926-939e-433e-ad94-a2c0e4616c3c'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 525/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_lambda DatasetBuilder {'attributes': {}, 'data': 525.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 488.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/GFP-GCaMP/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'Tag RFP-T': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '1480af91-1954-4ec7-b17a-8650b314b5f4'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 605/70'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_lambda DatasetBuilder {'attributes': {}, 'data': 605.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/Tag RFP-T/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '6a562725-ce61-4450-ad1a-48ce7afe7072'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 561.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mNeptune 2.5-far red': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': '0e6c5be4-1863-46ed-8c85-508bb64b1c9d'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 700/75'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_lambda DatasetBuilder {'attributes': {}, 'data': 700.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 639.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mNeptune 2.5-far red/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}, 'mTagBFP2': root/processing/NeuroPAL/ImagingVolume/mTagBFP2 GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelPlus', 'object_id': 'b383d93d-ce6c-45db-9a82-abe0b3d93d7d'}, 'groups': {}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/description DatasetBuilder {'attributes': {}, 'data': 'Chroma ET 460/50'}, 'emission_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_lambda DatasetBuilder {'attributes': {}, 'data': 460.0}, 'emission_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/emission_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "emission_range": shape (2,), type "<f8">}, 'excitation_lambda': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_lambda DatasetBuilder {'attributes': {}, 'data': 405.0}, 'excitation_range': root/processing/NeuroPAL/ImagingVolume/mTagBFP2/excitation_range DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "excitation_range": shape (2,), type "<f8">}}, 'links': {}}}, 'datasets': {'description': root/processing/NeuroPAL/ImagingVolume/description DatasetBuilder {'attributes': {}, 'data': 'NeuroPAL image of C elegan brain'}, 'grid_spacing': root/processing/NeuroPAL/ImagingVolume/grid_spacing DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "grid_spacing": shape (3,), type "<f8">}, 'location': root/processing/NeuroPAL/ImagingVolume/location DatasetBuilder {'attributes': {}, 'data': 'head'}, 'origin_coords': root/processing/NeuroPAL/ImagingVolume/origin_coords DatasetBuilder {'attributes': {}, 'data': <HDF5 dataset "origin_coords": shape (3,), type "<f8">}, 'reference_frame': root/processing/NeuroPAL/ImagingVolume/reference_frame DatasetBuilder {'attributes': {}, 'data': 'origin = anterior, dorsal, left'}}, 'links': {'Order_optical_channels': root/processing/NeuroPAL/ImagingVolume/Order_optical_channels LinkBuilder {'builder': root/processing/NeuroPAL/OpticalChannelRefs GroupBuilder {'attributes': {'namespace': 'ndx-multichannel-volume', 'neurodata_type': 'OpticalChannelReferences', 'object_id': '0cae6298-9b32-4764-b791-166a878a175b'}, 'groups': {}, 'datasets': {'channels': root/processing/NeuroPAL/OpticalChannelRefs/channels DatasetBuilder {'attributes': {}, 'data': <StrDataset for HDF5 dataset "channels": shape (6,), type "|O">}}, 'links': {}}}, 'device': root/processing/NeuroPAL/ImagingVolume/device LinkBuilder {'builder': root/general/devices/Microscope GroupBuilder {'attributes': {'description': 'One-photon microscope Weill', 'manufacturer': 'Leica', 'namespace': 'core', 'neurodata_type': 'Device', 'object_id': 'ce98051d-7851-410e-9724-dcbf0172b1e2'}, 'groups': {}, 'datasets': {}, 'links': {}}}}}, "Could not construct ImagingVolume object due to: Field 'Order_optical_channels' on ImagingVolume must be named 'Order_optical_channels'.")
 
 
