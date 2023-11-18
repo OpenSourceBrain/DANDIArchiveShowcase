@@ -1,22 +1,22 @@
 # Summary statistics for available Dandisets
-Last updated: 2023-11-17
+Last updated: 2023-11-18
 
 ## BIDS Dandisets
 
-- Total number of BIDS Dandisets: 8
+- Total number of BIDS Dandisets: 7
 
-- Median number of files in each BIDS Dandiset: 33.5
+- Median number of files in each BIDS Dandiset: 17.0
 
-- Median number of bytes in each BIDS Dandiset: 1,718,372,028
+- Median number of bytes in each BIDS Dandiset: 381,654,798
 
 
 ## NWB Dandisets
 
-- Total number of NWB Dandisets: 194
+- Total number of NWB Dandisets: 195
 
-- Median number of files in each NWB Dandiset: 39.5
+- Median number of files in each NWB Dandiset: 39.0
 
-- Median number of bytes in each NWB Dandiset: 17,879,586,575
+- Median number of bytes in each NWB Dandiset: 18,379,955,860
 
 - 6 most commonly measured variables: ProcessingModule, Units, ElectrodeGroup, ElectricalSeries, BehavioralTimeSeries, PlaneSegmentation
 
@@ -535,11 +535,9 @@ Last updated: 2023-11-17
 
 <a id="000026">*[DANDI:000026](https://dandiarchive.org/dandiset/000026/draft)*: **Human brain cell census for BA 44/45**</a>
 
-- Data type: **Brain Imaging Data Structure (BIDS)**, file count: **57170**, total size (MB): **20,609,153.8**
+, file count: **1**, total size (MB): **0.0**
 
 - Keywords: **multi-modal imaging**, **MRI**, **OCT**, **SPIM**, **human cortex**, **Broca's area**, **Motor cortex**, **Stereology**
-
-- Variables measured: 
 
 - Source paper: *Mazzamuto, Giacomo; Costantini, Irene; Gavryusev, Vladislav; Castelli, Filippo Maria; Pesce, Luca; Scardigli, Marina; Pavone, Francesco Saverio; Roffilli, Matteo; Silvestri, Ludovico; Brady, Niamh; Ramazzotti, Josephine; Hof, Patrick R.; Boas, David A.; Fischl, Bruce; Morgan, Leah; Yang, Jiarui; Chang, Shuaibin; Laffey, Jessie; Magnain, Caroline; Varadarajan, Divya; Wang, Hui; Frost, Robert; Kouwe, Andre van der; Player, Allison Stevens; Atzeni, Alessia; Gonzalez, Juan Eugenio Iglesias; Balbastre, Yael; Vera, Matthew; Cordero, Devani; Nestor, Kimberly; Ammon, William; Nolan, Jackson; Mora, Jocelyn; Pallares, Erendira Garcia; Augustinack, Jean; Diamond, Bram; Fogarty, Morgan; Boyd, Emma; Varghese, Merina; Dalca, Adrian V.; Edlow, Brian; Frosche, Matthew; Wicinski, Bridget; Chen, I-Chun Anderson (2023) Human brain cell census for BA 44/45*
 
@@ -2825,7 +2823,7 @@ Last updated: 2023-11-17
 
 <a id="000246">*[DANDI:000246](https://dandiarchive.org/dandiset/000246/draft)*: **developing CaMPARI3**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.4.0**), file count: **790**, total size (MB): **1,159,191.05**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.4.0**), file count: **978**, total size (MB): **2,108,455.63**
 
 - Species: **Mus musculus - House mouse**
 
@@ -3641,7 +3639,7 @@ Last updated: 2023-11-17
 
 <a id="000409">*[DANDI:000409](https://dandiarchive.org/dandiset/000409/draft)*: **IBL - Brain Wide Map**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1581**, total size (MB): **34,205,318.85**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1582**, total size (MB): **34,256,200.51**
 
 - Species: **Mus musculus - House mouse**
 
@@ -5433,26 +5431,28 @@ Last updated: 2023-11-17
 
 <a id="000640">*[DANDI:000640](https://dandiarchive.org/dandiset/000640/draft)*: **32-CH Local Field Potential Data During Probabilistic Reversal Learning Task**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **247**, total size (MB): **18,708.67**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **339**, total size (MB): **30,511.57**
 
 - Species: **Rattus norvegicus - Norway rat**
 
+- Keywords: **electrophysiology**, **rodent behavior**, **reversal learning**, **traumatic brain injury**
+
 - Variables measured: 
 
-- Source paper: *Koloski, Miranda  (2023) 32-CH Local Field Potential Data During Probabilistic Reversal Learning Task*
+- Source paper: *Koloski, Miranda ; Ramanathan, Dhakshin (2023) 32-CH Local Field Potential Data During Probabilistic Reversal Learning Task*
 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000640_validation.txt) 
 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 1: **LL-V**  
    Size: 0.21 MB | 
-[File info](https://api.dandiarchive.org/api/assets/eb4e47c2-8d84-47c9-8505-cebd1955d3a3) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-185%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/eb4e47c2-8d84-47c9-8505-cebd1955d3a3/download/) 
+[File info](https://api.dandiarchive.org/api/assets/48b3edb1-d70f-4cba-9c0f-e601dd0d2d88) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-199%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/48b3edb1-d70f-4cba-9c0f-e601dd0d2d88/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.21 MB | 
-[File info](https://api.dandiarchive.org/api/assets/344f3952-9bc8-4787-bd88-57004adf1e72) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-178%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/344f3952-9bc8-4787-bd88-57004adf1e72/download/) 
+[File info](https://api.dandiarchive.org/api/assets/f2af98a7-41cf-4b8b-b53d-e2affb10118a) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-201%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f2af98a7-41cf-4b8b-b53d-e2affb10118a/download/) 
 ---
 
 <a id="000674">*[DANDI:000674](https://dandiarchive.org/dandiset/000674/draft)*: **Volumetric multiplex imaging of whole human and non-human primate brains**</a>
@@ -5515,15 +5515,9 @@ Last updated: 2023-11-17
 
 <a id="000680">*[DANDI:000680](https://dandiarchive.org/dandiset/000680/draft)*: **Whole brain spontaneous activity plus NeuroPAL images of semi-restricted worms**</a>
 
-- Data type: **Neurodata Without Borders (NWB)**, file count: **1**, total size (MB): **8,689.79**
-
-- Species: **Caenorhabditis elegans**
-
-- Variables measured: **PlaneSegmentation**, **ProcessingModule**
+, file count: **0**, total size (MB): **0.0**
 
 - Source paper: *Kimura, Kotaro (2023) Whole brain spontaneous activity plus NeuroPAL images of semi-restricted worms*
-
-- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
 
 ---
 
@@ -5553,11 +5547,17 @@ Last updated: 2023-11-17
 
 <a id="000687">*[DANDI:000687](https://dandiarchive.org/dandiset/000687/draft)*: **similarity-weighted interleaved learning**</a>
 
-, file count: **0**, total size (MB): **0.0**
+- Data type: **Neurodata Without Borders (NWB)**, file count: **4**, total size (MB): **1,602,849.05**
 
-- Keywords: **hippocampus, neocortex, memory replay, memory consolidation, learning**
+- Species: **Mus musculus - House mouse**
+
+- Keywords: **cortex layers**, **hippocampus**, **learning **, **memory**, **memory replay**, **memory consolidation**
+
+- Variables measured: **ElectrodeGroup**, **ElectricalSeries**
 
 - Source paper: *Saxena, Rajat; Shobe, Justin; McNaughton, Bruce (2023) similarity-weighted interleaved learning*
+
+- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
 
 ---
 
@@ -5576,6 +5576,66 @@ Last updated: 2023-11-17
 - Keywords: **in vivo electrophysiology**, **mouse**, ** Pavlovian discrimination**, **deeplabcut**, **basolateral amygdala (BLA)**, **paraventricular nucleus of the thalamus (PVT)**, **neutotensin**, **valence assignment**
 
 - Source paper: *Keyes, Laurel (2023) Data supporting Neurotensin orchestrates valence  assignment in the amygdala*
+
+---
+
+<a id="000691">*[DANDI:000691](https://dandiarchive.org/dandiset/000691/draft)*: **An optical design enabling lightweight and large field-of-view head-mounted microscopes**</a>
+
+, file count: **1**, total size (MB): **105.33**
+
+- Variables measured: 
+
+- Source paper: *Scherrer, Joseph R.; Lynch, Galen F.; Zhang, Jie J.; Fee, Michale S. (2023) An optical design enabling lightweight and large field-of-view head-mounted microscopes*
+
+---
+
+<a id="000692">*[DANDI:000692](https://dandiarchive.org/dandiset/000692/draft)*: **Whole-brain spontaneous GCaMP activity with NeuroPAL cell ID information of semi-restricted worms**</a>
+
+- Data type: **Neurodata Without Borders (NWB)**, file count: **9**, total size (MB): **80,536.8**
+
+- Species: **Caenorhabditis elegans**
+
+- Variables measured: **ProcessingModule**, **PlaneSegmentation**
+
+- Source paper: *Suzuki, Ryoga; Wen, Chentao; Sprague, Daniel; Onami, Shuichi; Kimura, Koutarou D (2023) Whole-brain spontaneous GCaMP activity with NeuroPAL cell ID information of semi-restricted worms*
+
+- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
+
+---
+
+<a id="000693">*[DANDI:000693](https://dandiarchive.org/dandiset/000693/draft)*: **Characterizing the effect of environmental enrichment on representational complexity and functional synaptic connectivity**</a>
+
+, file count: **0**, total size (MB): **0.0**
+
+- Keywords: **memory consolidation**, **cognitive reserve**, **environmental enrichment**, **learning**, **schema**, **cortex layers**
+
+- Source paper: *Saxena, Rajat; Shobe, Justin; McNaughton, Bruce; National Institute of Health (BRAIN) (2023) Characterizing the effect of environmental enrichment on representational complexity and functional synaptic connectivity*
+
+---
+
+<a id="000694">*[DANDI:000694](https://dandiarchive.org/dandiset/000694/draft)*: **Brainstem recordings**</a>
+
+, file count: **0**, total size (MB): **0.0**
+
+- Source paper: *De Preter, Caitlynn (2023) Brainstem recordings*
+
+---
+
+<a id="000695">*[DANDI:000695](https://dandiarchive.org/dandiset/000695/draft)*: **Circadian regulation of dopamine 1 receptor signaling in the Nucleus Accumbens**</a>
+
+, file count: **0**, total size (MB): **0.0**
+
+- Keywords: **Circadian rhythms, kcnq, excitability, medium spiny neuron, spiny projection neuron, dopamine, ventral tegmental area**
+
+- Source paper: *Francis , Chase (2023) Circadian regulation of dopamine 1 receptor signaling in the Nucleus Accumbens*
+
+---
+
+<a id="000696">*[DANDI:000696](https://dandiarchive.org/dandiset/000696/draft)*: **The organization of context versus content coding in the hippocampus and neocortex**</a>
+
+, file count: **1**, total size (MB): **0.0**
+
+- Source paper: *Ning, Wing (2023) The organization of context versus content coding in the hippocampus and neocortex*
 
 ---
 
