@@ -1,0 +1,31 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-12-13 06:07:52.220193+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
+NWBInspector version: 0.4.31
+
+Found 8 issues over 2 files:
+       2 - CRITICAL
+       6 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-524926_ses-20200611T100817_image.nwb and 1 other file: check_data_orientation - 'StimulusTemplate' object at location '/stimulus/templates/grating'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+1  BEST_PRACTICE_VIOLATION
+==========================
+
+1.1  /tmp/nwb_versions/sub-524926_ses-20200611T100817_image.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/grating'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+1.2  /tmp/nwb_versions/sub-524926_ses-20200611T100817_image.nwb and 1 other file: check_regular_timestamps - 'StimulusTemplate' object at location '/stimulus/templates/grating'
+       Message: TimeSeries appears to have a constant sampling rate. Consider specifying starting_time=nan and rate=nan instead of timestamps.
+
+1.3  /tmp/nwb_versions/sub-524926_ses-20200611T100817_image.nwb and 1 other file: check_timestamps_ascending - 'StimulusTemplate' object at location '/stimulus/templates/grating'
+       Message: grating timestamps are not ascending.
+

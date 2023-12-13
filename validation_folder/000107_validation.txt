@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-11-17 17:03:14.818382+00:00
+Timestamp: 2023-12-12 21:11:34.392971+00:00
 Platform: Linux-5.15.0-86-generic-x86_64-with
 NWBInspector version: 0.4.31
 

@@ -1,0 +1,21 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2023-12-13 06:14:15.816097+00:00
+Platform: Linux-5.15.0-86-generic-x86_64-with
+NWBInspector version: 0.4.31
+
+Found 4 issues over 2 files:
+       4 - BEST_PRACTICE_VIOLATION
+**************************************************
+
+
+0  BEST_PRACTICE_VIOLATION
+==========================
+
+0.0  /tmp/nwb_versions/sub-570077427_ses-585078375-StimC2_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/natural_movie_two_stimulus'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
+0.1  /tmp/nwb_versions/sub-570077427_ses-585078375-StimC2_behavior+image+ophys.nwb and 1 other file: check_index_series_points_to_image - 'IndexSeries' object at location '/stimulus/presentation/natural_movie_one_stimulus'
+       Message: Pointing an IndexSeries to a TimeSeries will be deprecated. Please point to an Images container instead.
+
