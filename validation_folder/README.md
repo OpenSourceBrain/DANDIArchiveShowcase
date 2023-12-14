@@ -71,12 +71,12 @@ Last updated: 2023-12-13
    Size: 54.65 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a831c980-7b5a-4ad2-9687-7caf5ae27c56) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000004/draft/files?location=sub-P16HMH%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a831c980-7b5a-4ad2-9687-7caf5ae27c56/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a831c980-7b5a-4ad2-9687-7caf5ae27c56/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 54.68 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e22c078c-43d9-4713-84f5-02d2e1db707c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000004/draft/files?location=sub-P15HMH%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e22c078c-43d9-4713-84f5-02d2e1db707c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e22c078c-43d9-4713-84f5-02d2e1db707c/download/) 
 ---
 
 <a id="000005">*[DANDI:000005](https://dandiarchive.org/dandiset/000005/draft)*: **Electrophysiology data from thalamic and cortical neurons during somatosensation**</a>
@@ -95,12 +95,12 @@ Last updated: 2023-12-13
    Size: 46.54 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3ee6887c-1462-4d39-a3f3-e0e356e673d5) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000005/draft/files?location=sub-anm266945%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3ee6887c-1462-4d39-a3f3-e0e356e673d5/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3ee6887c-1462-4d39-a3f3-e0e356e673d5/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 58.12 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b73da40b-a5bf-4f1c-9cfc-479b1ea4d0f3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000005/draft/files?location=sub-anm266951%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b73da40b-a5bf-4f1c-9cfc-479b1ea4d0f3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b73da40b-a5bf-4f1c-9cfc-479b1ea4d0f3/download/) 
 ---
 
 <a id="000006">*[DANDI:000006](https://dandiarchive.org/dandiset/000006/draft)*: **Mouse anterior lateral motor cortex (ALM) in delay response task**</a>
@@ -119,12 +119,12 @@ Last updated: 2023-12-13
    Size: 0.28 MB | 
 [File info](https://api.dandiarchive.org/api/assets/32cb0ae9-49fd-4bf9-b939-3960df7aeca2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000006/draft/files?location=sub-anm369963%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/32cb0ae9-49fd-4bf9-b939-3960df7aeca2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/32cb0ae9-49fd-4bf9-b939-3960df7aeca2/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.32 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e949d5c5-ed3d-4e17-9adf-a7facab36870) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000006/draft/files?location=sub-anm372795%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e949d5c5-ed3d-4e17-9adf-a7facab36870/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e949d5c5-ed3d-4e17-9adf-a7facab36870/download/) 
 ---
 
 <a id="000007">*[DANDI:000007](https://dandiarchive.org/dandiset/000007/draft)*: **A cortico-cerebellar loop for motor planning**</a>
@@ -143,12 +143,12 @@ Last updated: 2023-12-13
    Size: 0.54 MB | 
 [File info](https://api.dandiarchive.org/api/assets/558d1353-a52e-4d06-a027-cadbbffaa25c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000007/draft/files?location=sub-anm00314758%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/558d1353-a52e-4d06-a027-cadbbffaa25c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/558d1353-a52e-4d06-a027-cadbbffaa25c/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.8 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c093327c-6a1f-4290-a972-ef9976a48576) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000007/draft/files?location=sub-BAYLORCD13%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c093327c-6a1f-4290-a972-ef9976a48576/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c093327c-6a1f-4290-a972-ef9976a48576/download/) 
 ---
 
 <a id="000008">*[DANDI:000008](https://dandiarchive.org/dandiset/000008/draft)*: **Phenotypic variation within and across transcriptomic cell types in mouse motor cortex**</a>
@@ -169,12 +169,12 @@ Last updated: 2023-12-13
    Size: 3.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/6810513d-2d2e-4ed0-b5b5-f221025d766e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000008/draft/files?location=sub-mouse-KKXUD%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/6810513d-2d2e-4ed0-b5b5-f221025d766e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/6810513d-2d2e-4ed0-b5b5-f221025d766e/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 3.25 MB | 
 [File info](https://api.dandiarchive.org/api/assets/874c6994-6535-41af-9d20-3a9763fb6df2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000008/draft/files?location=sub-mouse-UALZV%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/874c6994-6535-41af-9d20-3a9763fb6df2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/874c6994-6535-41af-9d20-3a9763fb6df2/download/) 
 ---
 
 <a id="000009">*[DANDI:000009](https://dandiarchive.org/dandiset/000009/draft)*: **Maintenance of persistent activity in a frontal thalamocortical loop**</a>
@@ -193,12 +193,12 @@ Last updated: 2023-12-13
    Size: 0.44 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8ce1a50f-11bd-4a75-a510-64c3f32bb529) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000009/draft/files?location=sub-anm00264942%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8ce1a50f-11bd-4a75-a510-64c3f32bb529/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8ce1a50f-11bd-4a75-a510-64c3f32bb529/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.45 MB | 
 [File info](https://api.dandiarchive.org/api/assets/10f60b99-4286-4780-a767-f0267d877abd) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000009/draft/files?location=sub-anm00237800%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/10f60b99-4286-4780-a767-f0267d877abd/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/10f60b99-4286-4780-a767-f0267d877abd/download/) 
 ---
 
 <a id="000010">*[DANDI:000010](https://dandiarchive.org/dandiset/000010/draft)*: **A motor cortex circuit for motor planning and movement**</a>
@@ -217,12 +217,12 @@ Last updated: 2023-12-13
    Size: 26.71 MB | 
 [File info](https://api.dandiarchive.org/api/assets/427d4e22-35b3-4775-8d82-f4598ecdcc87) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000010/draft/files?location=sub-217951%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/427d4e22-35b3-4775-8d82-f4598ecdcc87/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/427d4e22-35b3-4775-8d82-f4598ecdcc87/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 27.77 MB | 
 [File info](https://api.dandiarchive.org/api/assets/348c64a2-381a-470b-891d-d5de316b3ad8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000010/draft/files?location=sub-226244%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/348c64a2-381a-470b-891d-d5de316b3ad8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/348c64a2-381a-470b-891d-d5de316b3ad8/download/) 
 ---
 
 <a id="000011">*[DANDI:000011](https://dandiarchive.org/dandiset/000011/draft)*: **Robust neuronal dynamics in premotor cortex during motor planning**</a>
@@ -241,12 +241,12 @@ Last updated: 2023-12-13
    Size: 89.88 MB | 
 [File info](https://api.dandiarchive.org/api/assets/354d36fd-fa87-4bc4-adaf-ba5b846d38ef) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000011/draft/files?location=sub-291064%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/354d36fd-fa87-4bc4-adaf-ba5b846d38ef/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/354d36fd-fa87-4bc4-adaf-ba5b846d38ef/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 164.32 MB | 
 [File info](https://api.dandiarchive.org/api/assets/bc019955-f5d3-4fec-ab7a-e01ed12f493b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000011/draft/files?location=sub-291063%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/bc019955-f5d3-4fec-ab7a-e01ed12f493b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/bc019955-f5d3-4fec-ab7a-e01ed12f493b/download/) 
 ---
 
 <a id="000012">*[DANDI:000012](https://dandiarchive.org/dandiset/000012/draft)*: **Kriegstein2020**</a>
@@ -265,12 +265,12 @@ Last updated: 2023-12-13
    Size: 0.26 MB | 
 [File info](https://api.dandiarchive.org/api/assets/06a78426-1ea5-4a66-b4df-3fb112387dc5) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000012/draft/files?location=sub-2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/06a78426-1ea5-4a66-b4df-3fb112387dc5/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/06a78426-1ea5-4a66-b4df-3fb112387dc5/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.47 MB | 
 [File info](https://api.dandiarchive.org/api/assets/82eaa51c-c79f-4219-bc06-b0aa330ccbce) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000012/draft/files?location=sub-1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/82eaa51c-c79f-4219-bc06-b0aa330ccbce/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/82eaa51c-c79f-4219-bc06-b0aa330ccbce/download/) 
 ---
 
 <a id="000013">*[DANDI:000013](https://dandiarchive.org/dandiset/000013/draft)*: **Low-noise encoding of active touch by layer 4 in the somatosensory cortex**</a>
@@ -289,13 +289,13 @@ Last updated: 2023-12-13
    Size: 47.98 MB | 
 [File info](https://api.dandiarchive.org/api/assets/061d6422-018a-4fe0-b914-119b9297be7d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000013/draft/files?location=sub-anm244024%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/061d6422-018a-4fe0-b914-119b9297be7d/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/061d6422-018a-4fe0-b914-119b9297be7d/download/) | 
 [File Summary](Summaries/000013/file_0/README.md) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 59.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b8b1b393-e001-452f-b48f-a7b78b09a582) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000013/draft/files?location=sub-anm266945%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b8b1b393-e001-452f-b48f-a7b78b09a582/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b8b1b393-e001-452f-b48f-a7b78b09a582/download/) | 
 [File Summary](Summaries/000013/file_1/README.md) 
 ---
 
@@ -315,13 +315,13 @@ Last updated: 2023-12-13
    Size: 16.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/70c2d486-4f4b-4821-9f37-540cb1e28de2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000015/draft/files?location=sub-an044%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/70c2d486-4f4b-4821-9f37-540cb1e28de2/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/70c2d486-4f4b-4821-9f37-540cb1e28de2/download/) | 
 [File Summary](Summaries/000015/file_0/README.md) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 30.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/72138f7e-5f52-43f8-be08-8cd608764166) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000015/draft/files?location=sub-an043%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/72138f7e-5f52-43f8-be08-8cd608764166/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/72138f7e-5f52-43f8-be08-8cd608764166/download/) | 
 [File Summary](Summaries/000015/file_1/README.md) 
 ---
 
@@ -339,13 +339,13 @@ Last updated: 2023-12-13
    Size: 199.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/913646f8-4d02-45f5-b830-85dfc69ae74a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000016/draft/files?location=sub-mouse2-fni17%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/913646f8-4d02-45f5-b830-85dfc69ae74a/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/913646f8-4d02-45f5-b830-85dfc69ae74a/download/) | 
 [File Summary](Summaries/000016/file_0/README.md) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 214.5 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b24bfa76-2a06-440f-9b3a-8e06de9ce493) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000016/draft/files?location=sub-mouse1-fni16%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b24bfa76-2a06-440f-9b3a-8e06de9ce493/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b24bfa76-2a06-440f-9b3a-8e06de9ce493/download/) | 
 [File Summary](Summaries/000016/file_1/README.md) 
 ---
 
@@ -367,13 +367,13 @@ Last updated: 2023-12-13
    Size: 216.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Lederberg%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3722e6b8-d47f-4feb-a9ae-9c368e41166b/download/) | 
 [File Summary](Summaries/000017/file_0/README.md) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 272.08 MB | 
 [File info](https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000017/draft/files?location=sub-Richards%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/9a19c19e-c91d-4d3c-ac97-ad98c621634f/download/) | 
 [File Summary](Summaries/000017/file_1/README.md) 
 ---
 
@@ -403,12 +403,12 @@ Last updated: 2023-12-13
    Size: 1099.89 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fbd3bc15-d716-495f-814d-1aa14f8d3b45) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000019/draft/files?location=sub-GP31%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fbd3bc15-d716-495f-814d-1aa14f8d3b45/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fbd3bc15-d716-495f-814d-1aa14f8d3b45/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 1551.06 MB | 
 [File info](https://api.dandiarchive.org/api/assets/911776e7-aebc-4206-b8f3-01f66c7bf747) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000019/draft/files?location=sub-GP33%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/911776e7-aebc-4206-b8f3-01f66c7bf747/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/911776e7-aebc-4206-b8f3-01f66c7bf747/download/) 
 ---
 
 <a id="000020">*[DANDI:000020](https://dandiarchive.org/dandiset/000020/draft)*: **Patch-seq recordings from mouse visual cortex**</a>
@@ -429,13 +429,13 @@ Last updated: 2023-12-13
    Size: 11.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/17f31e2b-26b4-4c3e-8e98-423769cc3912) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000020/draft/files?location=sub-639391596%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/17f31e2b-26b4-4c3e-8e98-423769cc3912/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/17f31e2b-26b4-4c3e-8e98-423769cc3912/download/) | 
 [File Summary](Summaries/000020/file_0/README.md) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 12.05 MB | 
 [File info](https://api.dandiarchive.org/api/assets/df0ed794-e7b5-45a0-9f7f-5aa75e70348d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000020/draft/files?location=sub-643830482%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/df0ed794-e7b5-45a0-9f7f-5aa75e70348d/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/df0ed794-e7b5-45a0-9f7f-5aa75e70348d/download/) | 
 [File Summary](Summaries/000020/file_1/README.md) 
 ---
 
@@ -457,12 +457,12 @@ Last updated: 2023-12-13
    Size: 72.29 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4d5f1bda-3d20-46f0-a0c8-20f3a3ee9d54) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000021/draft/files?location=sub-703279277%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4d5f1bda-3d20-46f0-a0c8-20f3a3ee9d54/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4d5f1bda-3d20-46f0-a0c8-20f3a3ee9d54/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 898.78 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e1f0127e-f5d7-4cac-a42c-bb76127f2ddc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000021/draft/files?location=sub-719828686%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e1f0127e-f5d7-4cac-a42c-bb76127f2ddc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e1f0127e-f5d7-4cac-a42c-bb76127f2ddc/download/) 
 ---
 
 <a id="000022">*[DANDI:000022](https://dandiarchive.org/dandiset/000022/draft)*: **20191003_AIBS_mouse_ecephys_functional_connectivity**</a>
@@ -499,13 +499,13 @@ Last updated: 2023-12-13
    Size: 13.5 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7687363f-dd32-4325-9f40-705227fd470c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000023/draft/files?location=sub-695464588%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7687363f-dd32-4325-9f40-705227fd470c/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7687363f-dd32-4325-9f40-705227fd470c/download/) | 
 [File Summary](Summaries/000023/file_0/README.md) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 14.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/20991256-4a71-48bb-ae0a-e4ccaf29a192) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000023/draft/files?location=sub-731978186%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/20991256-4a71-48bb-ae0a-e4ccaf29a192/download/) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/20991256-4a71-48bb-ae0a-e4ccaf29a192/download/) | 
 [File Summary](Summaries/000023/file_1/README.md) 
 ---
 
@@ -561,7 +561,7 @@ Last updated: 2023-12-13
    Size: 0.02 MB | 
 [File info](https://api.dandiarchive.org/api/assets/838bab7b-9ab4-4d66-97b3-898a367c9c7e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000027/draft/files?location=sub-RAT123%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/838bab7b-9ab4-4d66-97b3-898a367c9c7e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/838bab7b-9ab4-4d66-97b3-898a367c9c7e/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -597,12 +597,12 @@ Last updated: 2023-12-13
    Size: 0.02 MB | 
 [File info](https://api.dandiarchive.org/api/assets/356b20b7-ae80-4d42-9715-075492eb025d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000029/draft/files?location=) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/356b20b7-ae80-4d42-9715-075492eb025d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/356b20b7-ae80-4d42-9715-075492eb025d/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 6.39 MB | 
 [File info](https://api.dandiarchive.org/api/assets/669355cb-a494-4106-a394-347d424fddf8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000029/draft/files?location=) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/669355cb-a494-4106-a394-347d424fddf8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/669355cb-a494-4106-a394-347d424fddf8/download/) 
 ---
 
 <a id="000030">*[DANDI:000030](https://dandiarchive.org/dandiset/000030/draft)*: **Allen Brain Observatory Neuropixels recording**</a>
@@ -655,12 +655,12 @@ Last updated: 2023-12-13
    Size: 11.73 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c696fc2b-d2e6-4e27-8775-01657193c4a2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000034/draft/files?location=sub-mouse412804%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c696fc2b-d2e6-4e27-8775-01657193c4a2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c696fc2b-d2e6-4e27-8775-01657193c4a2/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 6470.91 MB | 
 [File info](https://api.dandiarchive.org/api/assets/9822a813-0dec-4d07-810b-1c13341c168d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000034/draft/files?location=sub-P29-16-05-14-retina02-left%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/9822a813-0dec-4d07-810b-1c13341c168d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/9822a813-0dec-4d07-810b-1c13341c168d/download/) 
 ---
 
 <a id="000035">*[DANDI:000035](https://dandiarchive.org/dandiset/000035/draft)*: **Temperature-controlled intracellular Patch-seq recordings in mouse motor cortex**</a>
@@ -681,12 +681,12 @@ Last updated: 2023-12-13
    Size: 4.63 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f1fe5b46-ca4d-4884-83e1-25e3b008bdb2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000035/draft/files?location=sub-mouse-WPOGH%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f1fe5b46-ca4d-4884-83e1-25e3b008bdb2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f1fe5b46-ca4d-4884-83e1-25e3b008bdb2/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 5.69 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d3f3b662-45ee-4c14-88b5-2c96caa28b9a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000035/draft/files?location=sub-mouse-MITSU%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d3f3b662-45ee-4c14-88b5-2c96caa28b9a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d3f3b662-45ee-4c14-88b5-2c96caa28b9a/download/) 
 ---
 
 <a id="000036">*[DANDI:000036](https://dandiarchive.org/dandiset/000036/draft)*: **Allen Institute Openscope - Measuring Stimulus-Evoked Neurophysiological Differentiation in Distinct Populations of Neurons in Mouse Visual Cortex**</a>
@@ -705,12 +705,12 @@ Last updated: 2023-12-13
    Size: 1306.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3ff75d8e-318f-47d1-805a-1b409b1600e2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000036/draft/files?location=sub-406876%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3ff75d8e-318f-47d1-805a-1b409b1600e2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3ff75d8e-318f-47d1-805a-1b409b1600e2/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 1310.77 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3988673a-e876-4a0e-83c3-12dc35229a7f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000036/draft/files?location=sub-389014%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3988673a-e876-4a0e-83c3-12dc35229a7f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3988673a-e876-4a0e-83c3-12dc35229a7f/download/) 
 ---
 
 <a id="000037">*[DANDI:000037](https://dandiarchive.org/dandiset/000037/draft)*: **Allen Institute Openscope - Responses to inconsistent stimuli in somata and distal apical dendrites in primary visual cortex**</a>
@@ -731,12 +731,12 @@ Last updated: 2023-12-13
    Size: 150.7 MB | 
 [File info](https://api.dandiarchive.org/api/assets/af450eea-0023-445e-9ea2-3dc5bd5538fd) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000037/draft/files?location=sub-418779%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/af450eea-0023-445e-9ea2-3dc5bd5538fd/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/af450eea-0023-445e-9ea2-3dc5bd5538fd/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 206.84 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3749be7d-96cf-4cd5-afc7-11a4882943ec) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000037/draft/files?location=sub-411771%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3749be7d-96cf-4cd5-afc7-11a4882943ec/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3749be7d-96cf-4cd5-afc7-11a4882943ec/download/) 
 ---
 
 <a id="000038">*[DANDI:000038](https://dandiarchive.org/dandiset/000038/draft)*: **Testytest**</a>
@@ -765,12 +765,12 @@ Last updated: 2023-12-13
    Size: 31.31 MB | 
 [File info](https://api.dandiarchive.org/api/assets/645adfe1-7fdf-48f0-9c61-304df785e92d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000039/draft/files?location=sub-664605504%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/645adfe1-7fdf-48f0-9c61-304df785e92d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/645adfe1-7fdf-48f0-9c61-304df785e92d/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 31.32 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7b8def8d-69aa-44e3-be02-057c8f1864f0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000039/draft/files?location=sub-678530120%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7b8def8d-69aa-44e3-be02-057c8f1864f0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7b8def8d-69aa-44e3-be02-057c8f1864f0/download/) 
 ---
 
 <a id="000040">*[DANDI:000040](https://dandiarchive.org/dandiset/000040/draft)*: **Neuropixels recordings in mouse visual system**</a>
@@ -825,12 +825,12 @@ Last updated: 2023-12-13
    Size: 14.76 MB | 
 [File info](https://api.dandiarchive.org/api/assets/26f67672-5162-4f43-86cb-402aed8c582d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000043/draft/files?location=sub-M19-01-001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/26f67672-5162-4f43-86cb-402aed8c582d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/26f67672-5162-4f43-86cb-402aed8c582d/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 16.17 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d715f810-df3f-42b4-8650-e0c64a236ac1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000043/draft/files?location=sub-Q19-26-018%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d715f810-df3f-42b4-8650-e0c64a236ac1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d715f810-df3f-42b4-8650-e0c64a236ac1/download/) 
 ---
 
 <a id="000044">*[DANDI:000044](https://dandiarchive.org/dandiset/000044/draft)*: **Diversity in neural firing dynamics supports both rigid and learned hippocampal sequences**</a>
@@ -865,12 +865,12 @@ Last updated: 2023-12-13
    Size: 0.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7946c765-52e4-44e2-90ae-9652f8a956e2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000045/draft/files?location=sub-354e6122-de4a-4945-bafd-d46df65768f6%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7946c765-52e4-44e2-90ae-9652f8a956e2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7946c765-52e4-44e2-90ae-9652f8a956e2/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.32 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3d982a78-0f0d-4313-a9ed-60a9bdf42db9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000045/draft/files?location=sub-00778394-c956-408d-8a6c-ca3b05a611d5%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3d982a78-0f0d-4313-a9ed-60a9bdf42db9/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3d982a78-0f0d-4313-a9ed-60a9bdf42db9/download/) 
 ---
 
 <a id="000046">*[DANDI:000046](https://dandiarchive.org/dandiset/000046/draft)*: **asdf**</a>
@@ -903,7 +903,7 @@ Last updated: 2023-12-13
    Size: 590.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/827b4c2f-4235-4350-b40f-02e120211dcd) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000048/draft/files?location=sub-222549%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/827b4c2f-4235-4350-b40f-02e120211dcd/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/827b4c2f-4235-4350-b40f-02e120211dcd/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -925,12 +925,12 @@ Last updated: 2023-12-13
    Size: 33.39 MB | 
 [File info](https://api.dandiarchive.org/api/assets/38cf16f0-0f4c-44ec-b04e-0b0c0b02781b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000049/draft/files?location=sub-760940732%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/38cf16f0-0f4c-44ec-b04e-0b0c0b02781b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/38cf16f0-0f4c-44ec-b04e-0b0c0b02781b/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 50.59 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7f81af9c-fab1-4a4a-9ca6-992bbbb0a4b3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000049/draft/files?location=sub-759066288%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7f81af9c-fab1-4a4a-9ca6-992bbbb0a4b3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7f81af9c-fab1-4a4a-9ca6-992bbbb0a4b3/download/) 
 ---
 
 <a id="000050">*[DANDI:000050](https://dandiarchive.org/dandiset/000050/draft)*: **Allen Institute - Run Tuning in the Mouse Visual Cortex**</a>
@@ -949,12 +949,12 @@ Last updated: 2023-12-13
    Size: 94.81 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f3de94e9-6af4-4169-b911-1e7028ca2021) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000050/draft/files?location=sub-673580710%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f3de94e9-6af4-4169-b911-1e7028ca2021/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f3de94e9-6af4-4169-b911-1e7028ca2021/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 155.38 MB | 
 [File info](https://api.dandiarchive.org/api/assets/55583159-e897-4b77-8a81-48c78e8b6227) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000050/draft/files?location=sub-753847689%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/55583159-e897-4b77-8a81-48c78e8b6227/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/55583159-e897-4b77-8a81-48c78e8b6227/download/) 
 ---
 
 <a id="000051">*[DANDI:000051](https://dandiarchive.org/dandiset/000051/draft)*: **pons8-yo_16xdownsampled**</a>
@@ -973,7 +973,7 @@ Last updated: 2023-12-13
    Size: 585.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/203fdd15-60d6-41c4-b964-3439163e4e3a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000051/draft/files?location=) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/203fdd15-60d6-41c4-b964-3439163e4e3a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/203fdd15-60d6-41c4-b964-3439163e4e3a/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1005,12 +1005,12 @@ Last updated: 2023-12-13
    Size: 2.45 MB | 
 [File info](https://api.dandiarchive.org/api/assets/cefaf356-0f24-4ebb-8970-3ca91d97b405) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000053/draft/files?location=sub-Ella%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/cefaf356-0f24-4ebb-8970-3ca91d97b405/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/cefaf356-0f24-4ebb-8970-3ca91d97b405/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 2.48 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fcce9de1-149d-4ab3-b3a8-9803239fa70a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000053/draft/files?location=sub-Barbara%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fcce9de1-149d-4ab3-b3a8-9803239fa70a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fcce9de1-149d-4ab3-b3a8-9803239fa70a/download/) 
 ---
 
 <a id="000054">*[DANDI:000054](https://dandiarchive.org/dandiset/000054/draft)*: **Plitt & Giocomo (2021) Experience Dependent Contextual Codes in the Hippocampus. Nat Neuro**</a>
@@ -1059,12 +1059,12 @@ Last updated: 2023-12-13
    Size: 1306.16 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ada02790-6eb6-48ee-902d-9ba017303586) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000056/draft/files?location=sub-Mouse24%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ada02790-6eb6-48ee-902d-9ba017303586/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ada02790-6eb6-48ee-902d-9ba017303586/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 1892.07 MB | 
 [File info](https://api.dandiarchive.org/api/assets/748aa5de-c0de-4aa7-a7ef-2aad2f87a7eb) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000056/draft/files?location=sub-Mouse20%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/748aa5de-c0de-4aa7-a7ef-2aad2f87a7eb/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/748aa5de-c0de-4aa7-a7ef-2aad2f87a7eb/download/) 
 ---
 
 <a id="000057">*[DANDI:000057](https://dandiarchive.org/dandiset/000057/draft)*: **foobar**</a>
@@ -1101,12 +1101,12 @@ Last updated: 2023-12-13
    Size: 3.52 MB | 
 [File info](https://api.dandiarchive.org/api/assets/cb30bd19-f8e8-40f8-aaab-21d45ba76c63) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000059/draft/files?location=sub-MS10%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/cb30bd19-f8e8-40f8-aaab-21d45ba76c63/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/cb30bd19-f8e8-40f8-aaab-21d45ba76c63/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 10.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4800ef4e-6161-4612-be95-9371ee6d2daf) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000059/draft/files?location=sub-MS22%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4800ef4e-6161-4612-be95-9371ee6d2daf/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4800ef4e-6161-4612-be95-9371ee6d2daf/download/) 
 ---
 
 <a id="000060">*[DANDI:000060](https://dandiarchive.org/dandiset/000060/draft)*: **Dataset for Finkelstein, Fontolan et al. "Attractor dynamics gate cortical information flow during decision-making"**</a>
@@ -1127,12 +1127,12 @@ Last updated: 2023-12-13
    Size: 1.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1ecaa50a-5751-46ae-9fef-5e381472b108) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000060/draft/files?location=sub-353938%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1ecaa50a-5751-46ae-9fef-5e381472b108/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1ecaa50a-5751-46ae-9fef-5e381472b108/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 1.98 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f2dd0e64-2c91-4ef6-92b8-84dd3141119e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000060/draft/files?location=sub-365942%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f2dd0e64-2c91-4ef6-92b8-84dd3141119e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f2dd0e64-2c91-4ef6-92b8-84dd3141119e/download/) 
 ---
 
 <a id="000061">*[DANDI:000061](https://dandiarchive.org/dandiset/000061/draft)*: **Reactivations of emotional memory in the hippocampus–amygdala system during sleep**</a>
@@ -1171,7 +1171,7 @@ Last updated: 2023-12-13
    Size: 218.37 MB | 
 [File info](https://api.dandiarchive.org/api/assets/bb61e86d-e28f-4da7-b07a-44dfa377cf32) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000064/draft/files?location=sub-001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/bb61e86d-e28f-4da7-b07a-44dfa377cf32/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/bb61e86d-e28f-4da7-b07a-44dfa377cf32/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1213,12 +1213,12 @@ Last updated: 2023-12-13
    Size: 5.55 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ee7ccc96-3eac-484f-9cc3-2845fee5138b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000067/draft/files?location=sub-EE%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ee7ccc96-3eac-484f-9cc3-2845fee5138b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ee7ccc96-3eac-484f-9cc3-2845fee5138b/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 5300.47 MB | 
 [File info](https://api.dandiarchive.org/api/assets/19691835-bb2e-4aff-ad3e-a7c29407c81e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000067/draft/files?location=sub-GG%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/19691835-bb2e-4aff-ad3e-a7c29407c81e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/19691835-bb2e-4aff-ad3e-a7c29407c81e/download/) 
 ---
 
 <a id="000068">*[DANDI:000068](https://dandiarchive.org/dandiset/000068/draft)*: **Testing**</a>
@@ -1235,7 +1235,7 @@ Last updated: 2023-12-13
    Size: 0.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8771aac6-7eb9-4cc5-a1cf-2f0ed366e240) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000068/draft/files?location=sub-abcd%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8771aac6-7eb9-4cc5-a1cf-2f0ed366e240/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8771aac6-7eb9-4cc5-a1cf-2f0ed366e240/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1255,7 +1255,7 @@ Last updated: 2023-12-13
    Size: 297.61 MB | 
 [File info](https://api.dandiarchive.org/api/assets/45aead0c-5666-4c1e-b9b3-83ca00dcd883) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000069/draft/files?location=sub-anm106211%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/45aead0c-5666-4c1e-b9b3-83ca00dcd883/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/45aead0c-5666-4c1e-b9b3-83ca00dcd883/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1323,7 +1323,7 @@ Last updated: 2023-12-13
    Size: 39.29 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d2107928-cf16-43a3-a547-691ae3419de9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000107/draft/files?location=) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d2107928-cf16-43a3-a547-691ae3419de9/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d2107928-cf16-43a3-a547-691ae3419de9/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1353,12 +1353,12 @@ Last updated: 2023-12-13
    Size: 12.73 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4a6344f7-e557-41e6-aec2-93e7fff8bd15) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000109/draft/files?location=sub-720619787%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4a6344f7-e557-41e6-aec2-93e7fff8bd15/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4a6344f7-e557-41e6-aec2-93e7fff8bd15/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 12.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/07e51937-1cb0-41b1-9b3c-af4d277ad9c7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000109/draft/files?location=sub-651940947%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/07e51937-1cb0-41b1-9b3c-af4d277ad9c7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/07e51937-1cb0-41b1-9b3c-af4d277ad9c7/download/) 
 ---
 
 <a id="000110">*[DANDI:000110](https://dandiarchive.org/dandiset/000110/draft)*: **Foobar**</a>
@@ -1411,12 +1411,12 @@ Last updated: 2023-12-13
    Size: 12.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/6d3e01db-4f0a-440c-b411-39e7bfb10d96) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000114/draft/files?location=sub-ROV49%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/6d3e01db-4f0a-440c-b411-39e7bfb10d96/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/6d3e01db-4f0a-440c-b411-39e7bfb10d96/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 13.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1a1e6b88-5392-453b-9645-c18d30acb876) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000114/draft/files?location=sub-ROV43%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1a1e6b88-5392-453b-9645-c18d30acb876/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1a1e6b88-5392-453b-9645-c18d30acb876/download/) 
 ---
 
 <a id="000115">*[DANDI:000115](https://dandiarchive.org/dandiset/000115/draft)*: **Gillespie et al (2021) Hippocampal replay reflects specific past experiences rather than a plan for subsequent choice**</a>
@@ -1457,12 +1457,12 @@ Last updated: 2023-12-13
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/feaa8040-8f0b-47fb-abc2-6d50a434fd13) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000117/draft/files?location=sub-20210511003-2021-05-11-0012%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/feaa8040-8f0b-47fb-abc2-6d50a434fd13/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/feaa8040-8f0b-47fb-abc2-6d50a434fd13/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/29817159-63a3-4da4-986d-ff751ee1b067) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000117/draft/files?location=sub-20210615003-2021-06-15-0018%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/29817159-63a3-4da4-986d-ff751ee1b067/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/29817159-63a3-4da4-986d-ff751ee1b067/download/) 
 ---
 
 <a id="000118">*[DANDI:000118](https://dandiarchive.org/dandiset/000118/draft)*: **user test**</a>
@@ -1513,12 +1513,12 @@ Last updated: 2023-12-13
    Size: 8.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3af36329-5e0c-4c20-a283-87207b5569f1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000122/draft/files?location=sub-P2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3af36329-5e0c-4c20-a283-87207b5569f1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3af36329-5e0c-4c20-a283-87207b5569f1/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 10.7 MB | 
 [File info](https://api.dandiarchive.org/api/assets/911c75ab-51b5-4caa-b930-911b89d2c990) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000122/draft/files?location=sub-P5%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/911c75ab-51b5-4caa-b930-911b89d2c990/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/911c75ab-51b5-4caa-b930-911b89d2c990/download/) 
 ---
 
 <a id="000123">*[DANDI:000123](https://dandiarchive.org/dandiset/000123/draft)*: **test**</a>
@@ -1561,7 +1561,7 @@ Last updated: 2023-12-13
    Size: 36.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e303dfac-48b1-44de-a847-9cf6154d5ad7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000126/draft/files?location=sub-1001658946%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e303dfac-48b1-44de-a847-9cf6154d5ad7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e303dfac-48b1-44de-a847-9cf6154d5ad7/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1599,7 +1599,7 @@ Last updated: 2023-12-13
    Size: 690.61 MB | 
 [File info](https://api.dandiarchive.org/api/assets/26e85f09-39b7-480f-b337-278a8f034007) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000128/draft/files?location=sub-Jenkins%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/26e85f09-39b7-480f-b337-278a8f034007/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/26e85f09-39b7-480f-b337-278a8f034007/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1621,7 +1621,7 @@ Last updated: 2023-12-13
    Size: 49.76 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2ae6bf3c-788b-4ece-8c01-4b4a5680b25b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000129/draft/files?location=sub-Indy%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2ae6bf3c-788b-4ece-8c01-4b4a5680b25b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2ae6bf3c-788b-4ece-8c01-4b4a5680b25b/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1643,7 +1643,7 @@ Last updated: 2023-12-13
    Size: 14.12 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c90cbccc-31a5-4815-88e6-822d8c5ca68c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000130/draft/files?location=sub-Haydn%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c90cbccc-31a5-4815-88e6-822d8c5ca68c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c90cbccc-31a5-4815-88e6-822d8c5ca68c/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1721,7 +1721,7 @@ Last updated: 2023-12-13
    Size: 148.59 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e67b57b2-e9ad-4d95-b9e3-1262997360dc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000138/draft/files?location=sub-Jenkins%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e67b57b2-e9ad-4d95-b9e3-1262997360dc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e67b57b2-e9ad-4d95-b9e3-1262997360dc/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1743,7 +1743,7 @@ Last updated: 2023-12-13
    Size: 76.6 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7ef450a8-8684-42e2-8598-cd38ca2b2e50) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000139/draft/files?location=sub-Jenkins%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7ef450a8-8684-42e2-8598-cd38ca2b2e50/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7ef450a8-8684-42e2-8598-cd38ca2b2e50/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1765,7 +1765,7 @@ Last updated: 2023-12-13
    Size: 29.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7821971e-c6a4-4568-8773-1bfa205c13f8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000140/draft/files?location=sub-Jenkins%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7821971e-c6a4-4568-8773-1bfa205c13f8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7821971e-c6a4-4568-8773-1bfa205c13f8/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1795,12 +1795,12 @@ Last updated: 2023-12-13
    Size: 12.72 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7efbccf6-b551-4919-a2a2-00790d80bedc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000142/draft/files?location=sub-707724503%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7efbccf6-b551-4919-a2a2-00790d80bedc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7efbccf6-b551-4919-a2a2-00790d80bedc/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 13.49 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1eec66c2-c7f4-4c43-8204-c9e5fbc09f8d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000142/draft/files?location=sub-643277950%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1eec66c2-c7f4-4c43-8204-c9e5fbc09f8d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1eec66c2-c7f4-4c43-8204-c9e5fbc09f8d/download/) 
 ---
 
 <a id="000143">*[DANDI:000143](https://dandiarchive.org/dandiset/000143/draft)*: **IHC Validation Data**</a>
@@ -1827,7 +1827,7 @@ Last updated: 2023-12-13
    Size: 524.48 MB | 
 [File info](https://api.dandiarchive.org/api/assets/bd754a60-c4a8-43fc-b514-87eb4511f29d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000144/draft/files?location=sub-8675309%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/bd754a60-c4a8-43fc-b514-87eb4511f29d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/bd754a60-c4a8-43fc-b514-87eb4511f29d/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -1865,12 +1865,12 @@ Last updated: 2023-12-13
    Size: 5.68 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d4c985da-5c04-4c39-874b-0c6e22598716) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000147/draft/files?location=sub-P1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d4c985da-5c04-4c39-874b-0c6e22598716/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d4c985da-5c04-4c39-874b-0c6e22598716/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 6.1 MB | 
 [File info](https://api.dandiarchive.org/api/assets/675e49ed-04f2-4281-a4cb-5a1d3363e773) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000147/draft/files?location=sub-P1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/675e49ed-04f2-4281-a4cb-5a1d3363e773/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/675e49ed-04f2-4281-a4cb-5a1d3363e773/download/) 
 ---
 
 <a id="000148">*[DANDI:000148](https://dandiarchive.org/dandiset/000148/draft)*: **Electrophysiological properties of adult mouse spinal cord neurons - 01_Oct_2021**</a>
@@ -1889,12 +1889,12 @@ Last updated: 2023-12-13
    Size: 10.26 MB | 
 [File info](https://api.dandiarchive.org/api/assets/96cab2be-2416-4fae-8204-618983fe5fcc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000148/draft/files?location=sub-20210728003%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/96cab2be-2416-4fae-8204-618983fe5fcc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/96cab2be-2416-4fae-8204-618983fe5fcc/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 10.42 MB | 
 [File info](https://api.dandiarchive.org/api/assets/89f37b43-76e0-45a3-8c88-3ce7f640016c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000148/draft/files?location=sub-20210709003%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/89f37b43-76e0-45a3-8c88-3ce7f640016c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/89f37b43-76e0-45a3-8c88-3ce7f640016c/download/) 
 ---
 
 <a id="000149">*[DANDI:000149](https://dandiarchive.org/dandiset/000149/draft)*: **IBL ephys data**</a>
@@ -2051,12 +2051,12 @@ Last updated: 2023-12-13
    Size: 47.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b560b456-3473-42dd-9fe2-e7f3cc506731) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000165/draft/files?location=sub-Parsley%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b560b456-3473-42dd-9fe2-e7f3cc506731/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b560b456-3473-42dd-9fe2-e7f3cc506731/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 51.8 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e3a976f9-505f-477f-8ab8-db901dc606b6) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000165/draft/files?location=sub-Sage%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e3a976f9-505f-477f-8ab8-db901dc606b6/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e3a976f9-505f-477f-8ab8-db901dc606b6/download/) 
 ---
 
 <a id="000166">*[DANDI:000166](https://dandiarchive.org/dandiset/000166/draft)*: **Layer-Specific Physiological Features and Interlaminar Interactions in the Primary Visual Cortex of the Mouse**</a>
@@ -2091,12 +2091,12 @@ Last updated: 2023-12-13
    Size: 190.53 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4b934f5d-bb2c-425e-ac99-bb40f22302ae) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000167/draft/files?location=sub-7%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4b934f5d-bb2c-425e-ac99-bb40f22302ae/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4b934f5d-bb2c-425e-ac99-bb40f22302ae/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 201.35 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3b16b193-7afa-4479-ad5d-cfb09f5f6776) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000167/draft/files?location=sub-164%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3b16b193-7afa-4479-ad5d-cfb09f5f6776/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3b16b193-7afa-4479-ad5d-cfb09f5f6776/download/) 
 ---
 
 <a id="000168">*[DANDI:000168](https://dandiarchive.org/dandiset/000168/draft)*: **Simultaneous loose seal cell-attached recordings  and two-photon imaging of GCaMP8 expressing mouse V1 neurons with drifting gratings visual stimuli**</a>
@@ -2117,12 +2117,12 @@ Last updated: 2023-12-13
    Size: 1430.99 MB | 
 [File info](https://api.dandiarchive.org/api/assets/026e2006-8779-4d04-83db-7590b47c1afa) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000168/draft/files?location=XCaMPgf%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/026e2006-8779-4d04-83db-7590b47c1afa/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/026e2006-8779-4d04-83db-7590b47c1afa/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 1709.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c442f0bf-49e1-46b8-b9c8-e9d1d7cdcc35) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000168/draft/files?location=jGCaMP8f%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c442f0bf-49e1-46b8-b9c8-e9d1d7cdcc35/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c442f0bf-49e1-46b8-b9c8-e9d1d7cdcc35/download/) 
 ---
 
 <a id="000169">*[DANDI:000169](https://dandiarchive.org/dandiset/000169/draft)*: **Milti-probe Neuropixels recordings in mouse visual system (additional data)**</a>
@@ -2177,12 +2177,12 @@ Last updated: 2023-12-13
    Size: 0.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/748b0311-ec11-49ef-a9c2-e7b1afef72dc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000173/draft/files?location=sub-BH279%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/748b0311-ec11-49ef-a9c2-e7b1afef72dc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/748b0311-ec11-49ef-a9c2-e7b1afef72dc/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.28 MB | 
 [File info](https://api.dandiarchive.org/api/assets/cebb65cf-e933-470d-87b4-6660eac86b3e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000173/draft/files?location=sub-BH269%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/cebb65cf-e933-470d-87b4-6660eac86b3e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/cebb65cf-e933-470d-87b4-6660eac86b3e/download/) 
 ---
 
 <a id="000206">*[DANDI:000206](https://dandiarchive.org/dandiset/000206/draft)*: **Visual cortical activity in mice performing naturalistic virtual foraging task**</a>
@@ -2201,7 +2201,7 @@ Last updated: 2023-12-13
    Size: 118.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e0e142bc-cf1e-4a38-8d24-b54111c404db) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000206/draft/files?location=sub-TIGRE296%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e0e142bc-cf1e-4a38-8d24-b54111c404db/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e0e142bc-cf1e-4a38-8d24-b54111c404db/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -2223,12 +2223,12 @@ Last updated: 2023-12-13
    Size: 1.39 MB | 
 [File info](https://api.dandiarchive.org/api/assets/88e33ca7-2e46-411f-8f5f-1826dfef5bbc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000207/draft/files?location=sub-6%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/88e33ca7-2e46-411f-8f5f-1826dfef5bbc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/88e33ca7-2e46-411f-8f5f-1826dfef5bbc/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 1.45 MB | 
 [File info](https://api.dandiarchive.org/api/assets/22a64207-e573-4324-99ae-345f8a71b7b9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000207/draft/files?location=sub-10%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/22a64207-e573-4324-99ae-345f8a71b7b9/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/22a64207-e573-4324-99ae-345f8a71b7b9/download/) 
 ---
 
 <a id="000208">*[DANDI:000208](https://dandiarchive.org/dandiset/000208/draft)*: **UHN_mouse_L5_patchclamp**</a>
@@ -2257,12 +2257,12 @@ Last updated: 2023-12-13
    Size: 16.44 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2d665bd8-9b7b-4315-be44-cc48fb91a4a7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000209/draft/files?location=sub-731978186%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2d665bd8-9b7b-4315-be44-cc48fb91a4a7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2d665bd8-9b7b-4315-be44-cc48fb91a4a7/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 19.03 MB | 
 [File info](https://api.dandiarchive.org/api/assets/10e78b16-a771-44e4-bd9a-395cade15c84) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000209/draft/files?location=sub-1032184063%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/10e78b16-a771-44e4-bd9a-395cade15c84/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/10e78b16-a771-44e4-bd9a-395cade15c84/download/) 
 ---
 
 <a id="000210">*[DANDI:000210](https://dandiarchive.org/dandiset/000210/draft)*: **Visual cortical activity in mice performing naturalistic virtual foraging task**</a>
@@ -2301,12 +2301,12 @@ Last updated: 2023-12-13
    Size: 7.16 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b53cc570-a02b-41c8-bce2-7351816b76b2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000212/draft/files?location=sub-0-200-Dop1R2-mutant-2-fly#-21%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b53cc570-a02b-41c8-bce2-7351816b76b2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b53cc570-a02b-41c8-bce2-7351816b76b2/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 7.16 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8a916887-b90e-4de4-9895-e2bed5adaf1b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000212/draft/files?location=sub-0-200-Dop1R2-mutant-2-fly#-20%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8a916887-b90e-4de4-9895-e2bed5adaf1b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8a916887-b90e-4de4-9895-e2bed5adaf1b/download/) 
 ---
 
 <a id="000213">*[DANDI:000213](https://dandiarchive.org/dandiset/000213/draft)*: **Transformation of a Spatial Map across the Hippocampal-Lateral Septal Circuit**</a>
@@ -2327,12 +2327,12 @@ Last updated: 2023-12-13
    Size: 746.95 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d09a9733-41d8-4696-86bb-e041668247b6) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000213/draft/files?location=sub-DT7%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d09a9733-41d8-4696-86bb-e041668247b6/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d09a9733-41d8-4696-86bb-e041668247b6/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 826.17 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1d183c70-082d-4ce8-b017-05620cc9254f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000213/draft/files?location=sub-DT5%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1d183c70-082d-4ce8-b017-05620cc9254f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1d183c70-082d-4ce8-b017-05620cc9254f/download/) 
 ---
 
 <a id="000214">*[DANDI:000214](https://dandiarchive.org/dandiset/000214/draft)*: **Jan_2022_DANDI**</a>
@@ -2377,12 +2377,12 @@ Last updated: 2023-12-13
    Size: 0.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/32be659d-80fa-4021-8d6e-4b8cb7e21c2c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000217/draft/files?location=sub-Mouse 2071%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/32be659d-80fa-4021-8d6e-4b8cb7e21c2c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/32be659d-80fa-4021-8d6e-4b8cb7e21c2c/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d3e786a8-787c-4a80-9dd6-ffeca84a8577) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000217/draft/files?location=sub-Mouse 2083%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d3e786a8-787c-4a80-9dd6-ffeca84a8577/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d3e786a8-787c-4a80-9dd6-ffeca84a8577/download/) 
 ---
 
 <a id="000218">*[DANDI:000218](https://dandiarchive.org/dandiset/000218/draft)*: **Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum**</a>
@@ -2403,12 +2403,12 @@ Last updated: 2023-12-13
    Size: 570.69 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a6cf3b13-1220-415c-93ad-05d0eeff0f46) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000218/draft/files?location=sub-DT7%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a6cf3b13-1220-415c-93ad-05d0eeff0f46/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a6cf3b13-1220-415c-93ad-05d0eeff0f46/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 638.46 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5eb882bd-9242-47bd-bcd0-da548afe01d1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000218/draft/files?location=sub-DT5%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/5eb882bd-9242-47bd-bcd0-da548afe01d1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/5eb882bd-9242-47bd-bcd0-da548afe01d1/download/) 
 ---
 
 <a id="000219">*[DANDI:000219](https://dandiarchive.org/dandiset/000219/draft)*: **Two photon calcium imaging in the CA1 region of the hippocampus in neonatal mice.**</a>
@@ -2427,12 +2427,12 @@ Last updated: 2023-12-13
    Size: 813.61 MB | 
 [File info](https://api.dandiarchive.org/api/assets/30aee0ab-a751-4646-9e13-6032be28a0df) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000219/draft/files?location=sub-210226-210308-1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/30aee0ab-a751-4646-9e13-6032be28a0df/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/30aee0ab-a751-4646-9e13-6032be28a0df/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 814.67 MB | 
 [File info](https://api.dandiarchive.org/api/assets/113a60b6-bfde-4c63-b4cf-10a7821b48c5) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000219/draft/files?location=sub-210226-210307-1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/113a60b6-bfde-4c63-b4cf-10a7821b48c5/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/113a60b6-bfde-4c63-b4cf-10a7821b48c5/download/) 
 ---
 
 <a id="000220">*[DANDI:000220](https://dandiarchive.org/dandiset/000220/draft)*: **Electrophysiological properties of adult mouse spinal cord neurons - 25_Jan_2022**</a>
@@ -2451,12 +2451,12 @@ Last updated: 2023-12-13
    Size: 12.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/55463159-6466-48ac-9a7d-c05e2624ef3f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000220/draft/files?location=sub-20190117002%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/55463159-6466-48ac-9a7d-c05e2624ef3f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/55463159-6466-48ac-9a7d-c05e2624ef3f/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 12.44 MB | 
 [File info](https://api.dandiarchive.org/api/assets/161cdf76-8cd7-45ce-9551-6a0d15870edf) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000220/draft/files?location=sub-20190315001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/161cdf76-8cd7-45ce-9551-6a0d15870edf/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/161cdf76-8cd7-45ce-9551-6a0d15870edf/download/) 
 ---
 
 <a id="000221">*[DANDI:000221](https://dandiarchive.org/dandiset/000221/draft)*: **A midbrain-thalamus-cortex circuit reorganizes cortical dynamics to initiate movement**</a>
@@ -2477,12 +2477,12 @@ Last updated: 2023-12-13
    Size: 0.41 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f02ab674-44f5-4c87-8679-04fa049c7674) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000221/draft/files?location=sub-HI204%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f02ab674-44f5-4c87-8679-04fa049c7674/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f02ab674-44f5-4c87-8679-04fa049c7674/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.88 MB | 
 [File info](https://api.dandiarchive.org/api/assets/de094939-990a-4d6e-af29-dde24936420c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000221/draft/files?location=sub-SC020%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/de094939-990a-4d6e-af29-dde24936420c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/de094939-990a-4d6e-af29-dde24936420c/download/) 
 ---
 
 <a id="000222">*[DANDI:000222](https://dandiarchive.org/dandiset/000222/draft)*: **O'Hare et al 2022**</a>
@@ -2535,12 +2535,12 @@ Last updated: 2023-12-13
    Size: 19.48 MB | 
 [File info](https://api.dandiarchive.org/api/assets/9c90c18a-8e66-4644-a402-e5f849fc08a1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000226/draft/files?location=sub-KSt91%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/9c90c18a-8e66-4644-a402-e5f849fc08a1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/9c90c18a-8e66-4644-a402-e5f849fc08a1/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 19.88 MB | 
 [File info](https://api.dandiarchive.org/api/assets/0cfad5c5-e44b-424d-bffc-da64ac30fe12) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000226/draft/files?location=sub-KSt119%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/0cfad5c5-e44b-424d-bffc-da64ac30fe12/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/0cfad5c5-e44b-424d-bffc-da64ac30fe12/download/) 
 ---
 
 <a id="000227">*[DANDI:000227](https://dandiarchive.org/dandiset/000227/draft)*: **Electrophysiological recordings in protein hunger neurons of Drosophila Melanogaster**</a>
@@ -2569,12 +2569,12 @@ Last updated: 2023-12-13
    Size: 35.66 MB | 
 [File info](https://api.dandiarchive.org/api/assets/bdc5f608-caa8-4ac0-a70d-b03a1739ba66) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000228/draft/files?location=sub-H18-28-022%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/bdc5f608-caa8-4ac0-a70d-b03a1739ba66/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/bdc5f608-caa8-4ac0-a70d-b03a1739ba66/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 43.37 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e42540ff-da70-4dfa-aa9e-05b8512e1e20) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000228/draft/files?location=sub-H20-28-022%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e42540ff-da70-4dfa-aa9e-05b8512e1e20/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e42540ff-da70-4dfa-aa9e-05b8512e1e20/download/) 
 ---
 
 <a id="000229">*[DANDI:000229](https://dandiarchive.org/dandiset/000229/draft)*: **xxx**</a>
@@ -2601,12 +2601,12 @@ Last updated: 2023-12-13
    Size: 24.29 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a8f7ef2e-c311-44d8-a72b-2d7bc7e5dc09) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000230/draft/files?location=sub-70375%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a8f7ef2e-c311-44d8-a72b-2d7bc7e5dc09/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a8f7ef2e-c311-44d8-a72b-2d7bc7e5dc09/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 25.5 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d8e0ccfb-fc0d-4fd2-8b26-be8f187cc2c0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000230/draft/files?location=sub-58313%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d8e0ccfb-fc0d-4fd2-8b26-be8f187cc2c0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d8e0ccfb-fc0d-4fd2-8b26-be8f187cc2c0/download/) 
 ---
 
 <a id="000231">*[DANDI:000231](https://dandiarchive.org/dandiset/000231/draft)*: **A detailed behavioral, videographic, and neural dataset on object recognition in mice**</a>
@@ -2627,12 +2627,12 @@ Last updated: 2023-12-13
    Size: 378.69 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2374f6b9-babe-4fbd-8cca-df4f8b4ec4c0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000231/draft/files?location=sub-KF119%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2374f6b9-babe-4fbd-8cca-df4f8b4ec4c0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2374f6b9-babe-4fbd-8cca-df4f8b4ec4c0/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 382.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d45acf3d-aaa9-4f70-ae5d-f70cbc411950) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000231/draft/files?location=sub-219CR%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d45acf3d-aaa9-4f70-ae5d-f70cbc411950/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d45acf3d-aaa9-4f70-ae5d-f70cbc411950/download/) 
 ---
 
 <a id="000232">*[DANDI:000232](https://dandiarchive.org/dandiset/000232/draft)*: **Rule-based modulation of  a sensorimotor transformation across cortical areas**</a>
@@ -2651,12 +2651,12 @@ Last updated: 2023-12-13
    Size: 280.12 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a1bf6c0a-f424-4491-84b6-596852a2fcae) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000232/draft/files?location=sub-JL005%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a1bf6c0a-f424-4491-84b6-596852a2fcae/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a1bf6c0a-f424-4491-84b6-596852a2fcae/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 284.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a4385201-8913-442c-ba03-41150bf4172d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000232/draft/files?location=sub-YT071%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a4385201-8913-442c-ba03-41150bf4172d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a4385201-8913-442c-ba03-41150bf4172d/download/) 
 ---
 
 <a id="000233">*[DANDI:000233](https://dandiarchive.org/dandiset/000233/draft)*: **A metabolic function of the hippocampal sharp wave-ripple**</a>
@@ -2677,12 +2677,12 @@ Last updated: 2023-12-13
    Size: 18.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7acfe0c2-1fc1-4060-a423-25ebdd0b3a11) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000233/draft/files?location=sub-CGM57%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7acfe0c2-1fc1-4060-a423-25ebdd0b3a11/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7acfe0c2-1fc1-4060-a423-25ebdd0b3a11/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 19.76 MB | 
 [File info](https://api.dandiarchive.org/api/assets/80ea45a5-c84c-4b18-aa1d-d9f6b4658c35) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000233/draft/files?location=sub-CGM41%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/80ea45a5-c84c-4b18-aa1d-d9f6b4658c35/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/80ea45a5-c84c-4b18-aa1d-d9f6b4658c35/download/) 
 ---
 
 <a id="000235">*[DANDI:000235](https://dandiarchive.org/dandiset/000235/draft)*: **Thermoregulatory Responses Forebrain**</a>
@@ -2757,12 +2757,12 @@ Last updated: 2023-12-13
    Size: 0.25 MB | 
 [File info](https://api.dandiarchive.org/api/assets/656d2d9f-01f5-41b7-8703-31a6a0840302) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000239/draft/files?location=sub-MX180602%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/656d2d9f-01f5-41b7-8703-31a6a0840302/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/656d2d9f-01f5-41b7-8703-31a6a0840302/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.26 MB | 
 [File info](https://api.dandiarchive.org/api/assets/05096d27-a83c-427d-b88a-3801bcf9e63a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000239/draft/files?location=sub-MX180804%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/05096d27-a83c-427d-b88a-3801bcf9e63a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/05096d27-a83c-427d-b88a-3801bcf9e63a/download/) 
 ---
 
 <a id="000241">*[DANDI:000241](https://dandiarchive.org/dandiset/000241/draft)*: **ngff testing**</a>
@@ -2813,12 +2813,12 @@ Last updated: 2023-12-13
    Size: 8.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2ff065c2-9991-4b46-a4d6-474f602b891e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000245/draft/files?location=sub-20220317004%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2ff065c2-9991-4b46-a4d6-474f602b891e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2ff065c2-9991-4b46-a4d6-474f602b891e/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 8.8 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a8bec861-62fa-4f23-bd8a-5cdf83f1695b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000245/draft/files?location=sub-20220119003%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a8bec861-62fa-4f23-bd8a-5cdf83f1695b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a8bec861-62fa-4f23-bd8a-5cdf83f1695b/download/) 
 ---
 
 <a id="000246">*[DANDI:000246](https://dandiarchive.org/dandiset/000246/draft)*: **developing CaMPARI3**</a>
@@ -2837,12 +2837,12 @@ Last updated: 2023-12-13
    Size: 188.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/eba75a10-6e3c-4c3f-b7d7-f8d95633f343) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000246/draft/files?location=sub-phpV7-6%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/eba75a10-6e3c-4c3f-b7d7-f8d95633f343/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/eba75a10-6e3c-4c3f-b7d7-f8d95633f343/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 260.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c1bf3dcd-7615-4fc4-8f6e-d84a2aa53e78) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000246/draft/files?location=sub-mouse20-C1 -19degree%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c1bf3dcd-7615-4fc4-8f6e-d84a2aa53e78/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c1bf3dcd-7615-4fc4-8f6e-d84a2aa53e78/download/) 
 ---
 
 <a id="000247">*[DANDI:000247](https://dandiarchive.org/dandiset/000247/draft)*: **Calcium imaging of egg-laying related neurons in head-fixed Drosophila**</a>
@@ -2863,12 +2863,12 @@ Last updated: 2023-12-13
    Size: 4.11 MB | 
 [File info](https://api.dandiarchive.org/api/assets/0c6e778d-9b87-4fa4-8bd4-8a189fb534db) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000247/draft/files?location=sub-oviDNSS1-driving-GCaMP7f-fly-ID#6010%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/0c6e778d-9b87-4fa4-8bd4-8a189fb534db/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/0c6e778d-9b87-4fa4-8bd4-8a189fb534db/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 4.23 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3e047be3-d417-4f8e-81cd-5c44254f5cba) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000247/draft/files?location=sub-oviDNSS1-driving-GCaMP7f-fly-ID#7006%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3e047be3-d417-4f8e-81cd-5c44254f5cba/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3e047be3-d417-4f8e-81cd-5c44254f5cba/download/) 
 ---
 
 <a id="000249">*[DANDI:000249](https://dandiarchive.org/dandiset/000249/draft)*: **Innate and plastic mechanisms for maternal behaviour in auditory cortex**</a>
@@ -2889,12 +2889,12 @@ Last updated: 2023-12-13
    Size: 36.28 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7f25d292-0365-4e7d-ae7b-68c8c2124615) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000249/draft/files?location=sub-NV106%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7f25d292-0365-4e7d-ae7b-68c8c2124615/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7f25d292-0365-4e7d-ae7b-68c8c2124615/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 38.08 MB | 
 [File info](https://api.dandiarchive.org/api/assets/01fdbd6c-abef-4097-988f-270d45db5ffb) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000249/draft/files?location=sub-NV33%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/01fdbd6c-abef-4097-988f-270d45db5ffb/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/01fdbd6c-abef-4097-988f-270d45db5ffb/download/) 
 ---
 
 <a id="000250">*[DANDI:000250](https://dandiarchive.org/dandiset/000250/draft)*: **High-resolution tracking of Drosophila during egg-laying**</a>
@@ -2915,7 +2915,7 @@ Last updated: 2023-12-13
    Size: 35.81 MB | 
 [File info](https://api.dandiarchive.org/api/assets/029d73d2-e3d0-497f-92d5-1122327024d1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000250/draft/files?location=sub-CS-fly#-1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/029d73d2-e3d0-497f-92d5-1122327024d1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/029d73d2-e3d0-497f-92d5-1122327024d1/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -2935,12 +2935,12 @@ Last updated: 2023-12-13
    Size: 1.04 MB | 
 [File info](https://api.dandiarchive.org/api/assets/df495f09-bd0e-4276-871e-51775cb57e43) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000251/draft/files?location=sub-3021%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/df495f09-bd0e-4276-871e-51775cb57e43/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/df495f09-bd0e-4276-871e-51775cb57e43/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 1.42 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b3327f7f-6e06-4dca-88c4-c489ee0fed74) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000251/draft/files?location=sub-3045%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b3327f7f-6e06-4dca-88c4-c489ee0fed74/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b3327f7f-6e06-4dca-88c4-c489ee0fed74/download/) 
 ---
 
 <a id="000252">*[DANDI:000252](https://dandiarchive.org/dandiset/000252/draft)*: **Finger_RL: human intracortical recordings during attempted finger movements of right and left hands**</a>
@@ -2961,12 +2961,12 @@ Last updated: 2023-12-13
    Size: 1.52 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c9f1cd09-a210-413f-9c82-b43bdfdd19a3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000252/draft/files?location=sub-P1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c9f1cd09-a210-413f-9c82-b43bdfdd19a3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c9f1cd09-a210-413f-9c82-b43bdfdd19a3/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 9.39 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d5bd9c5e-9410-4d58-8684-2c01b1a11b2a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000252/draft/files?location=sub-N1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d5bd9c5e-9410-4d58-8684-2c01b1a11b2a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d5bd9c5e-9410-4d58-8684-2c01b1a11b2a/download/) 
 ---
 
 <a id="000255">*[DANDI:000255](https://dandiarchive.org/dandiset/000255/draft)*: **A unified 3D map of microscopic architecture and MRI of the human brain**</a>
@@ -2995,12 +2995,12 @@ Last updated: 2023-12-13
    Size: 13.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/6ffde7c8-11de-44c7-a1fb-f8fff95cee14) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000288/draft/files?location=sub-H18.03.003%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/6ffde7c8-11de-44c7-a1fb-f8fff95cee14/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/6ffde7c8-11de-44c7-a1fb-f8fff95cee14/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 19.14 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f78bc98d-ca3a-4398-a60a-f579734de177) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000288/draft/files?location=sub-H19.03.316%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f78bc98d-ca3a-4398-a60a-f579734de177/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f78bc98d-ca3a-4398-a60a-f579734de177/download/) 
 ---
 
 <a id="000290">*[DANDI:000290](https://dandiarchive.org/dandiset/000290/draft)*: **Diaz-Torga_Sfig1**</a>
@@ -3029,12 +3029,12 @@ Last updated: 2023-12-13
    Size: 0.94 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5eba84f6-1459-4833-9de2-102c65734e4e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000292/draft/files?location=sub-18208024%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/5eba84f6-1459-4833-9de2-102c65734e4e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/5eba84f6-1459-4833-9de2-102c65734e4e/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 1.04 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d98b0dcf-4299-4c06-8843-97750a12d53a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000292/draft/files?location=sub-2018-02-08-0001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d98b0dcf-4299-4c06-8843-97750a12d53a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d98b0dcf-4299-4c06-8843-97750a12d53a/download/) 
 ---
 
 <a id="000293">*[DANDI:000293](https://dandiarchive.org/dandiset/000293/draft)*: **UHN whole-cell patch-clamp excitability recordings from human cortical neurons**</a>
@@ -3055,12 +3055,12 @@ Last updated: 2023-12-13
    Size: 0.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/497b0b7f-cf8e-48eb-b949-e730720568a3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000293/draft/files?location=sub-1914-2019-11-28-0038%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/497b0b7f-cf8e-48eb-b949-e730720568a3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/497b0b7f-cf8e-48eb-b949-e730720568a3/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.88 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e3024e2a-fd3e-447e-9caa-94470aeebc4a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000293/draft/files?location=sub-1911-19o10045%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e3024e2a-fd3e-447e-9caa-94470aeebc4a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e3024e2a-fd3e-447e-9caa-94470aeebc4a/download/) 
 ---
 
 <a id="000294">*[DANDI:000294](https://dandiarchive.org/dandiset/000294/draft)*: **A multi-modal fitting approach to construct single-neuron models with patch-clamp and high-density microelectrode arrays**</a>
@@ -3095,12 +3095,12 @@ Last updated: 2023-12-13
    Size: 9.15 MB | 
 [File info](https://api.dandiarchive.org/api/assets/75fa33f2-c744-41ff-938b-c16bd345e39d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000295/draft/files?location=sub-20220701004%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/75fa33f2-c744-41ff-938b-c16bd345e39d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/75fa33f2-c744-41ff-938b-c16bd345e39d/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 12.35 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5e43b224-33ff-4502-9291-d0a8b57579e1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000295/draft/files?location=sub-20220512002%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/5e43b224-33ff-4502-9291-d0a8b57579e1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/5e43b224-33ff-4502-9291-d0a8b57579e1/download/) 
 ---
 
 <a id="000296">*[DANDI:000296](https://dandiarchive.org/dandiset/000296/draft)*: **Drosophila visual neural responses to stochastic stimuli**</a>
@@ -3119,12 +3119,12 @@ Last updated: 2023-12-13
    Size: 160.44 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8269630b-c5c9-4f6c-ba46-f69b007b998d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000296/draft/files?location=sub-3204989286909019890%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8269630b-c5c9-4f6c-ba46-f69b007b998d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8269630b-c5c9-4f6c-ba46-f69b007b998d/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 170.79 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a6254199-b24a-4dca-9296-4ad1b2f94528) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000296/draft/files?location=sub-3342064158402930368%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a6254199-b24a-4dca-9296-4ad1b2f94528/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a6254199-b24a-4dca-9296-4ad1b2f94528/download/) 
 ---
 
 <a id="000297">*[DANDI:000297](https://dandiarchive.org/dandiset/000297/draft)*: **UHN whole-cell patch-clamp excitability recordings from human cortical neurons**</a>
@@ -3145,12 +3145,12 @@ Last updated: 2023-12-13
    Size: 0.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/0722fb00-ede2-4dcc-8f5d-005319c92e7e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000297/draft/files?location=sub-1914-2019-11-28-0038%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/0722fb00-ede2-4dcc-8f5d-005319c92e7e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/0722fb00-ede2-4dcc-8f5d-005319c92e7e/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.88 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d2763c7d-a040-4c14-9327-fe8aca272a81) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000297/draft/files?location=sub-1911-19o10045%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d2763c7d-a040-4c14-9327-fe8aca272a81/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d2763c7d-a040-4c14-9327-fe8aca272a81/download/) 
 ---
 
 <a id="000298">*[DANDI:000298](https://dandiarchive.org/dandiset/000298/draft)*: **Brain_stim_and_FSCV_and_ensemble_recording_anesthetized**</a>
@@ -3179,7 +3179,7 @@ Last updated: 2023-12-13
    Size: 0.23 MB | 
 [File info](https://api.dandiarchive.org/api/assets/12bb96be-3535-4144-82b5-4f23abe76b32) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000299/draft/files?location=sub-Rat203%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/12bb96be-3535-4144-82b5-4f23abe76b32/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/12bb96be-3535-4144-82b5-4f23abe76b32/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -3199,12 +3199,12 @@ Last updated: 2023-12-13
    Size: 1356.8 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3fc83f98-5c71-4891-b5a2-4b00760402e4) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000301/draft/files?location=sub-M26%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3fc83f98-5c71-4891-b5a2-4b00760402e4/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3fc83f98-5c71-4891-b5a2-4b00760402e4/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 1920.28 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d2a9c61e-ec6a-4d37-8d93-70ff23b37a6d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000301/draft/files?location=sub-M43%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d2a9c61e-ec6a-4d37-8d93-70ff23b37a6d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d2a9c61e-ec6a-4d37-8d93-70ff23b37a6d/download/) 
 ---
 
 <a id="000302">*[DANDI:000302](https://dandiarchive.org/dandiset/000302/draft)*: **Habenular neurophysiology**</a>
@@ -3223,12 +3223,12 @@ Last updated: 2023-12-13
    Size: 10.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/6f12e5fb-f864-4349-a31b-3d5a258acada) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000302/draft/files?location=sub-ANM-0172%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/6f12e5fb-f864-4349-a31b-3d5a258acada/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/6f12e5fb-f864-4349-a31b-3d5a258acada/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 12.43 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8fb0ec6c-bf5a-446f-b2bb-9bdf30b21f2e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000302/draft/files?location=sub-ANM-0174%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8fb0ec6c-bf5a-446f-b2bb-9bdf30b21f2e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8fb0ec6c-bf5a-446f-b2bb-9bdf30b21f2e/download/) 
 ---
 
 <a id="000335">*[DANDI:000335](https://dandiarchive.org/dandiset/000335/draft)*: **My Test Dataset**</a>
@@ -3255,12 +3255,12 @@ Last updated: 2023-12-13
    Size: 27.46 MB | 
 [File info](https://api.dandiarchive.org/api/assets/44998ede-ef66-4017-bb7c-8be8a77bfba8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000337/draft/files?location=sub-1089233462%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/44998ede-ef66-4017-bb7c-8be8a77bfba8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/44998ede-ef66-4017-bb7c-8be8a77bfba8/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 29.8 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5e32b8af-e756-406f-a195-67889b611fe3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000337/draft/files?location=sub-701201569%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/5e32b8af-e756-406f-a195-67889b611fe3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/5e32b8af-e756-406f-a195-67889b611fe3/download/) 
 ---
 
 <a id="000338">*[DANDI:000338](https://dandiarchive.org/dandiset/000338/draft)*: **groupweight BMI**</a>
@@ -3281,7 +3281,7 @@ Last updated: 2023-12-13
    Size: 418.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/721133ab-a29b-4533-9fc8-823e290e7d84) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000338/draft/files?location=sub-001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/721133ab-a29b-4533-9fc8-823e290e7d84/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/721133ab-a29b-4533-9fc8-823e290e7d84/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -3303,12 +3303,12 @@ Last updated: 2023-12-13
    Size: 702.78 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f4a055e5-6fcd-4390-a3f0-52d6d44be2a2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000339/draft/files?location=sub-BH275%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f4a055e5-6fcd-4390-a3f0-52d6d44be2a2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f4a055e5-6fcd-4390-a3f0-52d6d44be2a2/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 703.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/eaf70c0d-f3f2-465a-9fda-783a24abc4c3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000339/draft/files?location=sub-BH266%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/eaf70c0d-f3f2-465a-9fda-783a24abc4c3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/eaf70c0d-f3f2-465a-9fda-783a24abc4c3/download/) 
 ---
 
 <a id="000340">*[DANDI:000340](https://dandiarchive.org/dandiset/000340/draft)*: **Allen Institute Openscope - Credit Assignment project with stimuli templates**</a>
@@ -3337,12 +3337,12 @@ Last updated: 2023-12-13
    Size: 13.05 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ffe2911b-f8a4-48ea-98be-8b2910719c50) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000341/draft/files?location=sub-1809131og%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ffe2911b-f8a4-48ea-98be-8b2910719c50/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ffe2911b-f8a4-48ea-98be-8b2910719c50/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 16.42 MB | 
 [File info](https://api.dandiarchive.org/api/assets/dd31e463-89d3-4531-850a-c2dfd4e12e4d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000341/draft/files?location=sub-20120627%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/dd31e463-89d3-4531-850a-c2dfd4e12e4d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/dd31e463-89d3-4531-850a-c2dfd4e12e4d/download/) 
 ---
 
 <a id="000343">*[DANDI:000343](https://dandiarchive.org/dandiset/000343/draft)*: **da_network_2022**</a>
@@ -3423,12 +3423,12 @@ Last updated: 2023-12-13
    Size: 0.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1cbaaedf-d013-4366-b099-878566b003c9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000351/draft/files?location=sub-DB-longITI-C1-M1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1cbaaedf-d013-4366-b099-878566b003c9/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1cbaaedf-d013-4366-b099-878566b003c9/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.22 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fbd6d414-ece1-4f50-b653-a55ec99f24b8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000351/draft/files?location=sub-DB-longITI-C1-M2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fbd6d414-ece1-4f50-b653-a55ec99f24b8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fbd6d414-ece1-4f50-b653-a55ec99f24b8/download/) 
 ---
 
 <a id="000359">*[DANDI:000359](https://dandiarchive.org/dandiset/000359/draft)*: **Human brain mapping with multithousand-channel PtNRGrids resolves spatiotemporal dynamics**</a>
@@ -3469,12 +3469,12 @@ Last updated: 2023-12-13
    Size: 159.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/445029d5-0023-4915-9d7d-25eb11451adc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000363/draft/files?location=sub-440958%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/445029d5-0023-4915-9d7d-25eb11451adc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/445029d5-0023-4915-9d7d-25eb11451adc/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 171.34 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2953ce80-883a-48b6-9750-c6de9d0028a5) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000363/draft/files?location=sub-442571%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2953ce80-883a-48b6-9750-c6de9d0028a5/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2953ce80-883a-48b6-9750-c6de9d0028a5/download/) 
 ---
 
 <a id="000364">*[DANDI:000364](https://dandiarchive.org/dandiset/000364/draft)*: **M1_waterGrab**</a>
@@ -3515,12 +3515,12 @@ Last updated: 2023-12-13
    Size: 106.35 MB | 
 [File info](https://api.dandiarchive.org/api/assets/591a4423-cc24-40c6-966e-20d782d68a53) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000398/draft/files?location=sub-San2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/591a4423-cc24-40c6-966e-20d782d68a53/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/591a4423-cc24-40c6-966e-20d782d68a53/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 113.04 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5b5adae9-82e0-44aa-9faa-c827351d117a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000398/draft/files?location=sub-San4%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/5b5adae9-82e0-44aa-9faa-c827351d117a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/5b5adae9-82e0-44aa-9faa-c827351d117a/download/) 
 ---
 
 <a id="000399">*[DANDI:000399](https://dandiarchive.org/dandiset/000399/draft)*: **All-optical physiology resolves a synaptic basis for behavioral time scale plasticity**</a>
@@ -3539,12 +3539,12 @@ Last updated: 2023-12-13
    Size: 0.46 MB | 
 [File info](https://api.dandiarchive.org/api/assets/14df4c07-159e-471c-afae-7af889d01539) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000399/draft/files?location=sub-1-7%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/14df4c07-159e-471c-afae-7af889d01539/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/14df4c07-159e-471c-afae-7af889d01539/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.51 MB | 
 [File info](https://api.dandiarchive.org/api/assets/608a8f55-7628-4d7f-ad0e-8515cd05bd7f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000399/draft/files?location=sub-19%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/608a8f55-7628-4d7f-ad0e-8515cd05bd7f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/608a8f55-7628-4d7f-ad0e-8515cd05bd7f/download/) 
 ---
 
 <a id="000400">*[DANDI:000400](https://dandiarchive.org/dandiset/000400/draft)*: **test**</a>
@@ -3595,12 +3595,12 @@ Last updated: 2023-12-13
    Size: 18.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/53815e58-0703-4912-ac72-4244bd4a85b0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000404/draft/files?location=sub-monk-g%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/53815e58-0703-4912-ac72-4244bd4a85b0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/53815e58-0703-4912-ac72-4244bd4a85b0/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 71.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fc69022c-ccdc-49ef-a5bb-662f3cb87ee0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000404/draft/files?location=sub-monk-j%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fc69022c-ccdc-49ef-a5bb-662f3cb87ee0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fc69022c-ccdc-49ef-a5bb-662f3cb87ee0/download/) 
 ---
 
 <a id="000405">*[DANDI:000405](https://dandiarchive.org/dandiset/000405/draft)*: **Gonzalez & Giocomo (2022) Parahippocampal neurons encode task-relevant information for goal-directed navigation**</a>
@@ -3619,12 +3619,12 @@ Last updated: 2023-12-13
    Size: 0.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/40fc445d-7fc8-4de4-81f2-1ccee6d97347) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000405/draft/files?location=sub-s2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/40fc445d-7fc8-4de4-81f2-1ccee6d97347/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/40fc445d-7fc8-4de4-81f2-1ccee6d97347/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 1.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b7d4e75e-5477-4d53-a4b0-1688fd0f1260) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000405/draft/files?location=sub-s4%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b7d4e75e-5477-4d53-a4b0-1688fd0f1260/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b7d4e75e-5477-4d53-a4b0-1688fd0f1260/download/) 
 ---
 
 <a id="000406">*[DANDI:000406](https://dandiarchive.org/dandiset/000406/draft)*: **Spyglass sample data**</a>
@@ -3655,12 +3655,12 @@ Last updated: 2023-12-13
    Size: 124.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/37a85ccc-1bc2-4c5e-aa87-2b2ecaacf71f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000409/draft/files?location=sub-ibl-witten-19%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/37a85ccc-1bc2-4c5e-aa87-2b2ecaacf71f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/37a85ccc-1bc2-4c5e-aa87-2b2ecaacf71f/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 131.91 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8098c7a7-9a4e-4ff4-94a0-5a46d499fb75) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000409/draft/files?location=sub-ibl-witten-17%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8098c7a7-9a4e-4ff4-94a0-5a46d499fb75/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8098c7a7-9a4e-4ff4-94a0-5a46d499fb75/download/) 
 ---
 
 <a id="000410">*[DANDI:000410](https://dandiarchive.org/dandiset/000410/draft)*: **Joshi et al (2023) Dynamic Synchronization between Hippocampal Spatial Representations and the Stepping Rhythm**</a>
@@ -3693,7 +3693,7 @@ Last updated: 2023-12-13
    Size: 0.23 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c3d0b58d-e5d8-4913-92fd-dc98927ce696) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000411/draft/files?location=sub-001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c3d0b58d-e5d8-4913-92fd-dc98927ce696/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c3d0b58d-e5d8-4913-92fd-dc98927ce696/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -3755,12 +3755,12 @@ Last updated: 2023-12-13
    Size: 173.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/50f1e8fa-f1c3-48d9-9f62-3fe536daa49e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000448/draft/files?location=sub-007-F%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/50f1e8fa-f1c3-48d9-9f62-3fe536daa49e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/50f1e8fa-f1c3-48d9-9f62-3fe536daa49e/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 174.49 MB | 
 [File info](https://api.dandiarchive.org/api/assets/00b115be-670d-4ee8-b2bb-8fa65aaea6ec) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000448/draft/files?location=sub-009-F%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/00b115be-670d-4ee8-b2bb-8fa65aaea6ec/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/00b115be-670d-4ee8-b2bb-8fa65aaea6ec/download/) 
 ---
 
 <a id="000449">*[DANDI:000449](https://dandiarchive.org/dandiset/000449/draft)*: **Moving_C_Elegans_Corrected_Voleti_2019**</a>
@@ -3803,12 +3803,12 @@ Last updated: 2023-12-13
    Size: 352.52 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ffc82542-17e0-4559-a253-a3fb07205485) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000454/draft/files?location=sub-rbp4-jRGECO1a-21%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ffc82542-17e0-4559-a253-a3fb07205485/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ffc82542-17e0-4559-a253-a3fb07205485/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 3408.07 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b4bdca75-6b2d-460a-b616-175ef3ed2cf3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000454/draft/files?location=sub-SST-tdTomato-1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b4bdca75-6b2d-460a-b616-175ef3ed2cf3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b4bdca75-6b2d-460a-b616-175ef3ed2cf3/download/) 
 ---
 
 <a id="000455">*[DANDI:000455](https://dandiarchive.org/dandiset/000455/draft)*: **Coregistration of heading to visual cues in retrosplenial cortex**</a>
@@ -3853,12 +3853,12 @@ Last updated: 2023-12-13
    Size: 428.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ec27a42e-098f-418e-b5e6-1424d5bbdb90) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000458/draft/files?location=sub-521887%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ec27a42e-098f-418e-b5e6-1424d5bbdb90/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ec27a42e-098f-418e-b5e6-1424d5bbdb90/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 504.31 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d77558e6-1b16-49c2-9f61-885d63701331) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000458/draft/files?location=sub-521886%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d77558e6-1b16-49c2-9f61-885d63701331/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d77558e6-1b16-49c2-9f61-885d63701331/download/) 
 ---
 
 <a id="000461">*[DANDI:000461](https://dandiarchive.org/dandiset/000461/draft)*: **Cohen Tickertapes Exploratory Data 1**</a>
@@ -3877,12 +3877,12 @@ Last updated: 2023-12-13
    Size: 1.33 MB | 
 [File info](https://api.dandiarchive.org/api/assets/764320de-4730-4897-b353-a5fdefbdc860) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000461/draft/files?location=sub-005%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/764320de-4730-4897-b353-a5fdefbdc860/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/764320de-4730-4897-b353-a5fdefbdc860/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1.33 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2fabf7bb-da97-46a1-a4f3-45df19466e73) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000461/draft/files?location=sub-003%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2fabf7bb-da97-46a1-a4f3-45df19466e73/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2fabf7bb-da97-46a1-a4f3-45df19466e73/download/) 
 ---
 
 <a id="000462">*[DANDI:000462](https://dandiarchive.org/dandiset/000462/draft)*: **HippocampusRewardDataset**</a>
@@ -3903,12 +3903,12 @@ Last updated: 2023-12-13
    Size: 193.96 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f7d5fa97-49ab-4f68-b2c0-326e57c22dd4) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000462/draft/files?location=sub-NR6%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f7d5fa97-49ab-4f68-b2c0-326e57c22dd4/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f7d5fa97-49ab-4f68-b2c0-326e57c22dd4/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 221.95 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8fe4507e-2257-4604-abab-a2c2c8519192) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000462/draft/files?location=sub-NR32%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8fe4507e-2257-4604-abab-a2c2c8519192/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8fe4507e-2257-4604-abab-a2c2c8519192/download/) 
 ---
 
 <a id="000463">*[DANDI:000463](https://dandiarchive.org/dandiset/000463/draft)*: **Electrophysiological Recordings in Anesthetized Rats in the Primary Somatosensory Cortex with Phased Ultrasound Array Stimulation**</a>
@@ -3927,12 +3927,12 @@ Last updated: 2023-12-13
    Size: 1067.46 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b4f4fc91-51e5-41e9-9a0a-130df842f3dd) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000463/draft/files?location=sub-BH396%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b4f4fc91-51e5-41e9-9a0a-130df842f3dd/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b4f4fc91-51e5-41e9-9a0a-130df842f3dd/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
    Size: 1839.54 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2e6b590a-a2a4-4455-bb9b-45cc3d7d7cc0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000463/draft/files?location=sub-BH395%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2e6b590a-a2a4-4455-bb9b-45cc3d7d7cc0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2e6b590a-a2a4-4455-bb9b-45cc3d7d7cc0/download/) 
 ---
 
 <a id="000465">*[DANDI:000465](https://dandiarchive.org/dandiset/000465/draft)*: **Human brain mapping with multithousand-channel PtNRGrids resolves spatiotemporal dynamics**</a>
@@ -3977,12 +3977,12 @@ Last updated: 2023-12-13
    Size: 84.09 MB | 
 [File info](https://api.dandiarchive.org/api/assets/0ac27aba-b8a8-41e4-841b-4cfce7f26ea4) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000467/draft/files?location=sub-ant3-m4-d26-y2022%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/0ac27aba-b8a8-41e4-841b-4cfce7f26ea4/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/0ac27aba-b8a8-41e4-841b-4cfce7f26ea4/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 84.09 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4f1d1f8e-c557-4f21-8913-581d1eca9089) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000467/draft/files?location=sub-ant3-m4-d21-y2022%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4f1d1f8e-c557-4f21-8913-581d1eca9089/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4f1d1f8e-c557-4f21-8913-581d1eca9089/download/) 
 ---
 
 <a id="000468">*[DANDI:000468](https://dandiarchive.org/dandiset/000468/draft)*: **Human single-neuron activity during the Treasure Hunt spatial navigation task**</a>
@@ -4011,12 +4011,12 @@ Last updated: 2023-12-13
    Size: 27.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d452ea33-5135-47f8-9448-f6293e8fbea7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000469/draft/files?location=sub-19%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d452ea33-5135-47f8-9448-f6293e8fbea7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d452ea33-5135-47f8-9448-f6293e8fbea7/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 33.15 MB | 
 [File info](https://api.dandiarchive.org/api/assets/d1970c9a-628e-4880-a67c-9c70108456ab) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000469/draft/files?location=sub-20%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/d1970c9a-628e-4880-a67c-9c70108456ab/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/d1970c9a-628e-4880-a67c-9c70108456ab/download/) 
 ---
 
 <a id="000470">*[DANDI:000470](https://dandiarchive.org/dandiset/000470/draft)*: **Test**</a>
@@ -4035,7 +4035,7 @@ Last updated: 2023-12-13
    Size: 128.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e2448bb8-9c73-49f8-a033-7d456dba83b2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000470/draft/files?location=sub-NR6%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e2448bb8-9c73-49f8-a033-7d456dba83b2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e2448bb8-9c73-49f8-a033-7d456dba83b2/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -4055,12 +4055,12 @@ Last updated: 2023-12-13
    Size: 197.07 MB | 
 [File info](https://api.dandiarchive.org/api/assets/76a095cd-2bcf-401f-ab25-db25bcb22944) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000472/draft/files?location=sub-2021-12-03-w00-NP1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/76a095cd-2bcf-401f-ab25-db25bcb22944/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/76a095cd-2bcf-401f-ab25-db25bcb22944/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-0**  
    Size: 197.07 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c261a889-4cd3-4c31-bdfe-c9c5750a3a0a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000472/draft/files?location=sub-2022-01-22-w04-NP1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c261a889-4cd3-4c31-bdfe-c9c5750a3a0a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c261a889-4cd3-4c31-bdfe-c9c5750a3a0a/download/) 
 ---
 
 <a id="000473">*[DANDI:000473](https://dandiarchive.org/dandiset/000473/draft)*: **Esr1+ hypothalamic-habenula neurons shape aversive states.**</a>
@@ -4153,7 +4153,7 @@ Last updated: 2023-12-13
    Size: 3.23 MB | 
 [File info](https://api.dandiarchive.org/api/assets/830ba7f9-1272-4279-ba7c-bd8aab0b89d8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000481/draft/files?location=sub-525%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/830ba7f9-1272-4279-ba7c-bd8aab0b89d8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/830ba7f9-1272-4279-ba7c-bd8aab0b89d8/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -4173,7 +4173,7 @@ Last updated: 2023-12-13
    Size: 79.94 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f3c828ca-8ecd-4179-b70c-969b6107917f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000482/draft/files?location=sub-Elon%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f3c828ca-8ecd-4179-b70c-969b6107917f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f3c828ca-8ecd-4179-b70c-969b6107917f/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -4217,12 +4217,12 @@ Last updated: 2023-12-13
    Size: 1219.9 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3f523944-d0de-4f30-ba91-79656ca3ad26) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000488/draft/files?location=sub-437812%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3f523944-d0de-4f30-ba91-79656ca3ad26/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3f523944-d0de-4f30-ba91-79656ca3ad26/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 1236.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/63bf5bd6-9765-45ae-b5da-91eba0665bb9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000488/draft/files?location=sub-439885%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/63bf5bd6-9765-45ae-b5da-91eba0665bb9/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/63bf5bd6-9765-45ae-b5da-91eba0665bb9/download/) 
 ---
 
 <a id="000489">*[DANDI:000489](https://dandiarchive.org/dandiset/000489/draft)*: **The impact of the second phase amplitude (% to the first phase) on the electroporation efficiency (measured as YP emission)**</a>
@@ -4241,12 +4241,12 @@ Last updated: 2023-12-13
    Size: 1021.67 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1e7fcc84-e5eb-4ead-802f-c26c91621306) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000489/draft/files?location=sub-Fig2-0-03%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1e7fcc84-e5eb-4ead-802f-c26c91621306/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1e7fcc84-e5eb-4ead-802f-c26c91621306/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1022.35 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f914475a-f6e3-4aef-b408-1acf9a679278) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000489/draft/files?location=sub-Fig2-0-06%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f914475a-f6e3-4aef-b408-1acf9a679278/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f914475a-f6e3-4aef-b408-1acf9a679278/download/) 
 ---
 
 <a id="000490">*[DANDI:000490](https://dandiarchive.org/dandiset/000490/draft)*: **test set**</a>
@@ -4273,12 +4273,12 @@ Last updated: 2023-12-13
    Size: 240.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a6c04ef2-21d9-451f-bdbe-859636968e5c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000491/draft/files?location=sub-BPN-OLD-M3%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a6c04ef2-21d9-451f-bdbe-859636968e5c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a6c04ef2-21d9-451f-bdbe-859636968e5c/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 249.27 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3610bb59-13ea-4f4f-971f-68092354e1fe) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000491/draft/files?location=sub-BPN-M7%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3610bb59-13ea-4f4f-971f-68092354e1fe/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3610bb59-13ea-4f4f-971f-68092354e1fe/download/) 
 ---
 
 <a id="000492">*[DANDI:000492](https://dandiarchive.org/dandiset/000492/draft)*: **Accelerated signal propagation speed in human neocortical microcircuits**</a>
@@ -4305,12 +4305,12 @@ Last updated: 2023-12-13
    Size: 0.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/88e6f549-aea2-4087-ae48-68638b05cafa) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000529/draft/files?location=sub-SIROF%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/88e6f549-aea2-4087-ae48-68638b05cafa/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/88e6f549-aea2-4087-ae48-68638b05cafa/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/dfc9240a-541e-490a-8a46-fc7dc7ca6d2f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000529/draft/files?location=sub-RuOx%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/dfc9240a-541e-490a-8a46-fc7dc7ca6d2f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/dfc9240a-541e-490a-8a46-fc7dc7ca6d2f/download/) 
 ---
 
 <a id="000530">*[DANDI:000530](https://dandiarchive.org/dandiset/000530/draft)*: **Extracellular electrophysiology unit data from mouse Superior Colliculus during whisker guided virtual navigation**</a>
@@ -4355,12 +4355,12 @@ Last updated: 2023-12-13
    Size: 7.94 MB | 
 [File info](https://api.dandiarchive.org/api/assets/63b6a1be-3da5-4997-ae92-278401b0b5fe) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000535/draft/files?location=sub-509641%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/63b6a1be-3da5-4997-ae92-278401b0b5fe/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/63b6a1be-3da5-4997-ae92-278401b0b5fe/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 7.94 MB | 
 [File info](https://api.dandiarchive.org/api/assets/59eef0bb-cdc3-475a-933c-cd64cdb68022) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000535/draft/files?location=sub-525492%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/59eef0bb-cdc3-475a-933c-cd64cdb68022/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/59eef0bb-cdc3-475a-933c-cd64cdb68022/download/) 
 ---
 
 <a id="000536">*[DANDI:000536](https://dandiarchive.org/dandiset/000536/draft)*: **test**</a>
@@ -4387,12 +4387,12 @@ Last updated: 2023-12-13
    Size: 43.29 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c02995ae-a2ed-441b-b3e4-a0dc8c65a9c1) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000537/draft/files?location=sub-172658cell5q6a-900-700filter%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c02995ae-a2ed-441b-b3e4-a0dc8c65a9c1/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c02995ae-a2ed-441b-b3e4-a0dc8c65a9c1/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 43.29 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1fa16e7b-85da-446f-b7e4-91a161c4f916) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000537/draft/files?location=sub-175154cell14q6a-900-700filter%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1fa16e7b-85da-446f-b7e4-91a161c4f916/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1fa16e7b-85da-446f-b7e4-91a161c4f916/download/) 
 ---
 
 <a id="000538">*[DANDI:000538](https://dandiarchive.org/dandiset/000538/draft)*: **Comparing the 1P and 2P Voltage Contrast of JEDI2P and Voltron2_JF525**</a>
@@ -4411,12 +4411,12 @@ Last updated: 2023-12-13
    Size: 177.66 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a3b08f3a-46d6-466c-9763-5b5c3f57c322) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000538/draft/files?location=sub-180242Voltron2JF525cell3%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a3b08f3a-46d6-466c-9763-5b5c3f57c322/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a3b08f3a-46d6-466c-9763-5b5c3f57c322/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 177.66 MB | 
 [File info](https://api.dandiarchive.org/api/assets/0e26ddd2-1fd2-4bd5-b216-2d2d595eb695) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000538/draft/files?location=sub-182405Voltron2JF525cell4t1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/0e26ddd2-1fd2-4bd5-b216-2d2d595eb695/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/0e26ddd2-1fd2-4bd5-b216-2d2d595eb695/download/) 
 ---
 
 <a id="000539">*[DANDI:000539](https://dandiarchive.org/dandiset/000539/draft)*: **EDtest2**</a>
@@ -4445,12 +4445,12 @@ Last updated: 2023-12-13
    Size: 89.87 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e5a87e92-d243-4224-bf4a-f32c89b3fc34) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000540/draft/files?location=sub-SLR110%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e5a87e92-d243-4224-bf4a-f32c89b3fc34/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e5a87e92-d243-4224-bf4a-f32c89b3fc34/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 104.7 MB | 
 [File info](https://api.dandiarchive.org/api/assets/52ab55b7-09d6-40f1-93db-e1a39f961ecb) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000540/draft/files?location=sub-SLR090%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/52ab55b7-09d6-40f1-93db-e1a39f961ecb/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/52ab55b7-09d6-40f1-93db-e1a39f961ecb/download/) 
 ---
 
 <a id="000541">*[DANDI:000541](https://dandiarchive.org/dandiset/000541/draft)*: **NeuroPAL Microfluidic Chip Images and GCaMP activity**</a>
@@ -4469,12 +4469,12 @@ Last updated: 2023-12-13
    Size: 1452.7 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e5f33fb4-3f23-4128-b19c-137c14378071) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000541/draft/files?location=sub-20190928-07%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e5f33fb4-3f23-4128-b19c-137c14378071/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e5f33fb4-3f23-4128-b19c-137c14378071/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-0**  
    Size: 1453.95 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f6ebc65c-53bb-4f94-be41-c64209c4c9fb) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000541/draft/files?location=sub-20190925-04%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f6ebc65c-53bb-4f94-be41-c64209c4c9fb/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f6ebc65c-53bb-4f94-be41-c64209c4c9fb/download/) 
 ---
 
 <a id="000542">*[DANDI:000542](https://dandiarchive.org/dandiset/000542/draft)*: **test**</a>
@@ -4509,7 +4509,7 @@ Last updated: 2023-12-13
    Size: 485.78 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a87aab18-75dd-4c4c-b4f4-942ccfccb594) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000544/draft/files?location=sub-484677%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a87aab18-75dd-4c4c-b4f4-942ccfccb594/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a87aab18-75dd-4c4c-b4f4-942ccfccb594/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -4529,7 +4529,7 @@ Last updated: 2023-12-13
    Size: 0.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/1f30f802-17dc-47db-abb9-da663e959ec0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000545/draft/files?location=sub-001%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/1f30f802-17dc-47db-abb9-da663e959ec0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/1f30f802-17dc-47db-abb9-da663e959ec0/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -4563,12 +4563,12 @@ Last updated: 2023-12-13
    Size: 176.98 MB | 
 [File info](https://api.dandiarchive.org/api/assets/06c72ea1-a3de-4c52-895c-b21f6bc9da78) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000547/draft/files?location=sub-310%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/06c72ea1-a3de-4c52-895c-b21f6bc9da78/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/06c72ea1-a3de-4c52-895c-b21f6bc9da78/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 177.73 MB | 
 [File info](https://api.dandiarchive.org/api/assets/aef47a7d-979a-4491-bb62-f08bd0e16aa5) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000547/draft/files?location=sub-309%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/aef47a7d-979a-4491-bb62-f08bd0e16aa5/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/aef47a7d-979a-4491-bb62-f08bd0e16aa5/download/) 
 ---
 
 <a id="000548">*[DANDI:000548](https://dandiarchive.org/dandiset/000548/draft)*: **Effect of the number of pulses on electroporation by unipolar and 50 % bipolar pulses**</a>
@@ -4587,12 +4587,12 @@ Last updated: 2023-12-13
    Size: 1022.35 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ad15a104-b574-4855-b70a-903fb46c37ed) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000548/draft/files?location=sub-Fig3-Uni5-06%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ad15a104-b574-4855-b70a-903fb46c37ed/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ad15a104-b574-4855-b70a-903fb46c37ed/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1032.1 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4f327e1a-ab34-4d27-8650-65707978003c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000548/draft/files?location=sub-Fig3-Bi5-10%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4f327e1a-ab34-4d27-8650-65707978003c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4f327e1a-ab34-4d27-8650-65707978003c/download/) 
 ---
 
 <a id="000549">*[DANDI:000549](https://dandiarchive.org/dandiset/000549/draft)*: **Effect of the pulse duration on electroporation by unipolar and 50% bipolar pulses**</a>
@@ -4611,12 +4611,12 @@ Last updated: 2023-12-13
    Size: 1010.86 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ecd4cc5c-41bb-4c07-b20f-9b3036da1109) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000549/draft/files?location=sub-Fig4-5-Bi300ns-04%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ecd4cc5c-41bb-4c07-b20f-9b3036da1109/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ecd4cc5c-41bb-4c07-b20f-9b3036da1109/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1013.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/948fe67d-2b46-4902-8f06-21a24f6c0fc2) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000549/draft/files?location=sub-Fig4-5-Bi300ns-08%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/948fe67d-2b46-4902-8f06-21a24f6c0fc2/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/948fe67d-2b46-4902-8f06-21a24f6c0fc2/download/) 
 ---
 
 <a id="000550">*[DANDI:000550](https://dandiarchive.org/dandiset/000550/draft)*: **Pulse repetition rate**</a>
@@ -4635,12 +4635,12 @@ Last updated: 2023-12-13
    Size: 1027.67 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ab88ec8f-eda9-4ba9-af0d-a4f8c0e299cd) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000550/draft/files?location=sub-Fig6-5xBi-0,83MHz-13%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ab88ec8f-eda9-4ba9-af0d-a4f8c0e299cd/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ab88ec8f-eda9-4ba9-af0d-a4f8c0e299cd/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1028.45 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b443d5fb-c8ae-4257-aa97-349db34cd9a0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000550/draft/files?location=sub-Fig6-5xBi-100kHz-11%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b443d5fb-c8ae-4257-aa97-349db34cd9a0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b443d5fb-c8ae-4257-aa97-349db34cd9a0/download/) 
 ---
 
 <a id="000551">*[DANDI:000551](https://dandiarchive.org/dandiset/000551/draft)*: **Probing subthreshold dynamics of hippocampal neurons by pulsed optogenetics**</a>
@@ -4669,12 +4669,12 @@ Last updated: 2023-12-13
    Size: 19.47 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b2bc6332-5cf3-4a65-b1a4-0a712dd4b873) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000552/draft/files?location=sub-e13-1m1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b2bc6332-5cf3-4a65-b1a4-0a712dd4b873/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b2bc6332-5cf3-4a65-b1a4-0a712dd4b873/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 22.45 MB | 
 [File info](https://api.dandiarchive.org/api/assets/66b3cd92-13f7-4411-aae4-f1a06875dc98) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000552/draft/files?location=sub-e14-1m1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/66b3cd92-13f7-4411-aae4-f1a06875dc98/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/66b3cd92-13f7-4411-aae4-f1a06875dc98/download/) 
 ---
 
 <a id="000554">*[DANDI:000554](https://dandiarchive.org/dandiset/000554/draft)*: **Human brain mapping with multithousand-channel PtNRGrids resolves spatiotemporal dynamics**</a>
@@ -4741,12 +4741,12 @@ Last updated: 2023-12-13
    Size: 130.02 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c36cbd7d-e2e1-44f9-aaec-4c52b1b6ebfa) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000559/draft/files?location=sub-5891%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c36cbd7d-e2e1-44f9-aaec-4c52b1b6ebfa/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c36cbd7d-e2e1-44f9-aaec-4c52b1b6ebfa/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
    Size: 131.04 MB | 
 [File info](https://api.dandiarchive.org/api/assets/95c758de-9ffb-4965-9ea3-da6958882320) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000559/draft/files?location=sub-HEK293%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/95c758de-9ffb-4965-9ea3-da6958882320/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/95c758de-9ffb-4965-9ea3-da6958882320/download/) 
 ---
 
 <a id="000560">*[DANDI:000560](https://dandiarchive.org/dandiset/000560/draft)*: **Calcium imaging of odor responses in the fruit fly mushroom body**</a>
@@ -4773,12 +4773,12 @@ Last updated: 2023-12-13
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/906749cb-a294-42d5-8879-2a5673501840) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000561/draft/files?location=sub-192%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/906749cb-a294-42d5-8879-2a5673501840/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/906749cb-a294-42d5-8879-2a5673501840/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/355e758a-90fc-4828-bef0-7d2842104b20) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000561/draft/files?location=sub-185%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/355e758a-90fc-4828-bef0-7d2842104b20/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/355e758a-90fc-4828-bef0-7d2842104b20/download/) 
 ---
 
 <a id="000564">*[DANDI:000564](https://dandiarchive.org/dandiset/000564/draft)*: **microwave neuromodulation**</a>
@@ -4805,12 +4805,12 @@ Last updated: 2023-12-13
    Size: 253.71 MB | 
 [File info](https://api.dandiarchive.org/api/assets/79d3a9d6-8314-431f-b320-98bad02cef8c) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221106-21-00-09%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/79d3a9d6-8314-431f-b320-98bad02cef8c/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/79d3a9d6-8314-431f-b320-98bad02cef8c/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-0**  
    Size: 253.71 MB | 
 [File info](https://api.dandiarchive.org/api/assets/3515cee9-b3d5-4b50-8b8b-40f5a7c44af7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000565/draft/files?location=sub-20221028-18-48-00%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/3515cee9-b3d5-4b50-8b8b-40f5a7c44af7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/3515cee9-b3d5-4b50-8b8b-40f5a7c44af7/download/) 
 ---
 
 <a id="000566">*[DANDI:000566](https://dandiarchive.org/dandiset/000566/draft)*: **ASAP4 data**</a>
@@ -4829,7 +4829,7 @@ Last updated: 2023-12-13
    Size: 631.79 MB | 
 [File info](https://api.dandiarchive.org/api/assets/91a4b9c2-17e5-4da4-a718-d3682873f6e6) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000566/draft/files?location=sub-fly01%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/91a4b9c2-17e5-4da4-a718-d3682873f6e6/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/91a4b9c2-17e5-4da4-a718-d3682873f6e6/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -4857,12 +4857,12 @@ Last updated: 2023-12-13
    Size: 7.16 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e7e5f461-ae0a-4d56-aed4-b89ff2ca8a22) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000568/draft/files?location=sub-fCamk2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e7e5f461-ae0a-4d56-aed4-b89ff2ca8a22/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e7e5f461-ae0a-4d56-aed4-b89ff2ca8a22/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 18.01 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fa6cff6b-633b-4fbe-a1e0-737a23458a6d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000568/draft/files?location=sub-fCamk1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fa6cff6b-633b-4fbe-a1e0-737a23458a6d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fa6cff6b-633b-4fbe-a1e0-737a23458a6d/download/) 
 ---
 
 <a id="000569">*[DANDI:000569](https://dandiarchive.org/dandiset/000569/draft)*: **20230630_AIBS_Patchseq_nonhuman_primate**</a>
@@ -4883,12 +4883,12 @@ Last updated: 2023-12-13
    Size: 25.65 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c69ed191-c27c-4e63-901a-38c414875342) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000569/draft/files?location=sub-1223010848%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c69ed191-c27c-4e63-901a-38c414875342/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c69ed191-c27c-4e63-901a-38c414875342/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 25.97 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f9a896d5-a007-4f19-a80c-6d0650e9356a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000569/draft/files?location=sub-1257702203%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f9a896d5-a007-4f19-a80c-6d0650e9356a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f9a896d5-a007-4f19-a80c-6d0650e9356a/download/) 
 ---
 
 <a id="000570">*[DANDI:000570](https://dandiarchive.org/dandiset/000570/draft)*: **20230630_AIBS_Patchseq_human**</a>
@@ -4909,12 +4909,12 @@ Last updated: 2023-12-13
    Size: 13.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2ecbc097-e4bc-408b-afab-9cf43ab57e14) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000570/draft/files?location=sub-665691251%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2ecbc097-e4bc-408b-afab-9cf43ab57e14/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2ecbc097-e4bc-408b-afab-9cf43ab57e14/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 14.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/8f529ffc-2433-423f-b37c-65fc4371933f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000570/draft/files?location=sub-731978186%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/8f529ffc-2433-423f-b37c-65fc4371933f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8f529ffc-2433-423f-b37c-65fc4371933f/download/) 
 ---
 
 <a id="000571">*[DANDI:000571](https://dandiarchive.org/dandiset/000571/draft)*: **Intracranial recordings using BCI2000 and the CorTec BrainInterchange**</a>
@@ -4943,12 +4943,12 @@ Last updated: 2023-12-13
    Size: 400.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/34b041ef-876d-4f6e-87d5-2a74ab8ad83a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000572/draft/files?location=sub-BAYLORZJP01%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/34b041ef-876d-4f6e-87d5-2a74ab8ad83a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/34b041ef-876d-4f6e-87d5-2a74ab8ad83a/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 424.89 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a65ef979-276e-495f-ae84-a9fe0d1df203) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000572/draft/files?location=sub-BAYLORNL28%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a65ef979-276e-495f-ae84-a9fe0d1df203/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a65ef979-276e-495f-ae84-a9fe0d1df203/download/) 
 ---
 
 <a id="000574">*[DANDI:000574](https://dandiarchive.org/dandiset/000574/draft)*: **Dataset of human medial temporal lobe neurons, scalp and intracranial EEG during a verbal working memory task**</a>
@@ -4969,12 +4969,12 @@ Last updated: 2023-12-13
    Size: 1355.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4fa2605b-16dd-47e9-a083-5a853f46c000) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000574/draft/files?location=sub-05%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4fa2605b-16dd-47e9-a083-5a853f46c000/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4fa2605b-16dd-47e9-a083-5a853f46c000/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 1381.36 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a557a7a9-2bb2-4b89-832d-934e77a77c73) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000574/draft/files?location=sub-01%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a557a7a9-2bb2-4b89-832d-934e77a77c73/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a557a7a9-2bb2-4b89-832d-934e77a77c73/download/) 
 ---
 
 <a id="000575">*[DANDI:000575](https://dandiarchive.org/dandiset/000575/draft)*: **Dataset of human medial temporal lobe neurons during a visual working memory task**</a>
@@ -4993,12 +4993,12 @@ Last updated: 2023-12-13
    Size: 0.72 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ba30fc51-fabb-4f09-b773-b783b6f17d95) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000575/draft/files?location=sub-12%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ba30fc51-fabb-4f09-b773-b783b6f17d95/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ba30fc51-fabb-4f09-b773-b783b6f17d95/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.82 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e96a31c3-b4c2-434b-979e-8d7b56f0b635) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000575/draft/files?location=sub-02%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e96a31c3-b4c2-434b-979e-8d7b56f0b635/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e96a31c3-b4c2-434b-979e-8d7b56f0b635/download/) 
 ---
 
 <a id="000576">*[DANDI:000576](https://dandiarchive.org/dandiset/000576/draft)*: **Dataset of neurons and intracranial EEG from human amygdala during aversive dynamic visual stimulation**</a>
@@ -5017,12 +5017,12 @@ Last updated: 2023-12-13
    Size: 14.06 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f1b3e78b-adfb-414c-96ea-7a3cea89a6cb) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000576/draft/files?location=sub-08%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f1b3e78b-adfb-414c-96ea-7a3cea89a6cb/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f1b3e78b-adfb-414c-96ea-7a3cea89a6cb/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 14.06 MB | 
 [File info](https://api.dandiarchive.org/api/assets/20f45cda-1732-4692-a18f-51f3ea3e1d1e) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000576/draft/files?location=sub-05%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/20f45cda-1732-4692-a18f-51f3ea3e1d1e/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/20f45cda-1732-4692-a18f-51f3ea3e1d1e/download/) 
 ---
 
 <a id="000577">*[DANDI:000577](https://dandiarchive.org/dandiset/000577/draft)*: **Emergence of Agency in Human Infants**</a>
@@ -5053,12 +5053,12 @@ Last updated: 2023-12-13
    Size: 267.0 MB | 
 [File info](https://api.dandiarchive.org/api/assets/2332537e-2b80-4a52-a1f0-aa38f9b43399) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000579/draft/files?location=sub-10%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/2332537e-2b80-4a52-a1f0-aa38f9b43399/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/2332537e-2b80-4a52-a1f0-aa38f9b43399/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 267.0 MB | 
 [File info](https://api.dandiarchive.org/api/assets/080f2b2e-a591-4353-bcbe-573c1cb29846) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000579/draft/files?location=sub-6%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/080f2b2e-a591-4353-bcbe-573c1cb29846/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/080f2b2e-a591-4353-bcbe-573c1cb29846/download/) 
 ---
 
 <a id="000582">*[DANDI:000582](https://dandiarchive.org/dandiset/000582/draft)*: **Conjunctive Representation of Position, Direction, and Velocity in Entorhinal Cortex**</a>
@@ -5077,12 +5077,12 @@ Last updated: 2023-12-13
    Size: 3.75 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4718021c-98c7-4241-95b8-09be6e7dbacb) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000582/draft/files?location=sub-10884%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4718021c-98c7-4241-95b8-09be6e7dbacb/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4718021c-98c7-4241-95b8-09be6e7dbacb/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 10.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/a1b081bb-7d0a-4c2f-8fb7-5639fce88aa8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000582/draft/files?location=sub-10697%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/a1b081bb-7d0a-4c2f-8fb7-5639fce88aa8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/a1b081bb-7d0a-4c2f-8fb7-5639fce88aa8/download/) 
 ---
 
 <a id="000615">*[DANDI:000615](https://dandiarchive.org/dandiset/000615/draft)*: **A Novel Neuropathic Pain Treatment: Achieving Neuronal Inhibition with a Splti Ring Resonator**</a>
@@ -5115,12 +5115,12 @@ Last updated: 2023-12-13
    Size: 0.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/99fcc628-1cf2-46f2-bfdc-0fe8985b42c7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000618/draft/files?location=) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/99fcc628-1cf2-46f2-bfdc-0fe8985b42c7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/99fcc628-1cf2-46f2-bfdc-0fe8985b42c7/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 25.41 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fa7562ee-e978-425e-a07a-02165a698612) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000618/draft/files?location=) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fa7562ee-e978-425e-a07a-02165a698612/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fa7562ee-e978-425e-a07a-02165a698612/download/) 
 ---
 
 <a id="000619">*[DANDI:000619](https://dandiarchive.org/dandiset/000619/draft)*: **Benisty_Higley_2023**</a>
@@ -5147,12 +5147,12 @@ Last updated: 2023-12-13
    Size: 548.2 MB | 
 [File info](https://api.dandiarchive.org/api/assets/aea3c535-a69a-41a6-9ffc-ceea9c7e6bae) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000623/draft/files?location=sub-CS62%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/aea3c535-a69a-41a6-9ffc-ceea9c7e6bae/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/aea3c535-a69a-41a6-9ffc-ceea9c7e6bae/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 803.88 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ffcb1836-587e-42f4-887b-50b02948b779) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000623/draft/files?location=sub-CS41%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ffcb1836-587e-42f4-887b-50b02948b779/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ffcb1836-587e-42f4-887b-50b02948b779/download/) 
 ---
 
 <a id="000624">*[DANDI:000624](https://dandiarchive.org/dandiset/000624/draft)*: **A brainstem circuit for the expression of defensive facial reactions in rat**</a>
@@ -5171,12 +5171,12 @@ Last updated: 2023-12-13
    Size: 0.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e095fd65-120b-4ed0-83d8-23bc279d0b42) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000624/draft/files?location=sub-Rat335%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e095fd65-120b-4ed0-83d8-23bc279d0b42/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e095fd65-120b-4ed0-83d8-23bc279d0b42/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.19 MB | 
 [File info](https://api.dandiarchive.org/api/assets/43d3c226-05fc-414c-8bb1-c86a83f2bb29) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000624/draft/files?location=sub-Rat332%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/43d3c226-05fc-414c-8bb1-c86a83f2bb29/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/43d3c226-05fc-414c-8bb1-c86a83f2bb29/download/) 
 ---
 
 <a id="000625">*[DANDI:000625](https://dandiarchive.org/dandiset/000625/draft)*: **Molecularly Identified CA1 Interneuron Dynamics**</a>
@@ -5197,7 +5197,7 @@ Last updated: 2023-12-13
    Size: 24.71 MB | 
 [File info](https://api.dandiarchive.org/api/assets/274df0e2-a678-4d74-8e6a-99953eefbb47) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000625/draft/files?location=sub-tg19%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/274df0e2-a678-4d74-8e6a-99953eefbb47/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/274df0e2-a678-4d74-8e6a-99953eefbb47/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -5227,12 +5227,12 @@ Last updated: 2023-12-13
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e9f25cc3-bc88-4c4f-8543-12173c6084cc) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000628/draft/files?location=sub-Bf%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e9f25cc3-bc88-4c4f-8543-12173c6084cc/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e9f25cc3-bc88-4c4f-8543-12173c6084cc/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/02c2a27e-ce0a-4b23-b789-b88ac00ea1f7) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000628/draft/files?location=sub-Ve%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/02c2a27e-ce0a-4b23-b789-b88ac00ea1f7/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/02c2a27e-ce0a-4b23-b789-b88ac00ea1f7/download/) 
 ---
 
 <a id="000629">*[DANDI:000629](https://dandiarchive.org/dandiset/000629/draft)*: **Gillespie et al (2023) Neurofeedback training can modulate task-relevant memory replay rate in rats**</a>
@@ -5267,12 +5267,12 @@ Last updated: 2023-12-13
    Size: 15.15 MB | 
 [File info](https://api.dandiarchive.org/api/assets/0f28edea-b0b3-46de-bef6-bd061b6b564f) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000630/draft/files?location=sub-700619648%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/0f28edea-b0b3-46de-bef6-bd061b6b564f/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/0f28edea-b0b3-46de-bef6-bd061b6b564f/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 15.55 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b6894865-4680-4851-be6e-1d7e29619418) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000630/draft/files?location=sub-596832620%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b6894865-4680-4851-be6e-1d7e29619418/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b6894865-4680-4851-be6e-1d7e29619418/download/) 
 ---
 
 <a id="000631">*[DANDI:000631](https://dandiarchive.org/dandiset/000631/draft)*: **Effect of the electric field vector change on the electroporation efficiency of paired-pulse trains compared to single-pulse trains**</a>
@@ -5291,12 +5291,12 @@ Last updated: 2023-12-13
    Size: 1040.65 MB | 
 [File info](https://api.dandiarchive.org/api/assets/5c4ff26e-bced-4632-bffa-9db2c182c122) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000631/draft/files?location=sub-600ns-5kV-1HzUP-7-31-21-BPAE-10%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/5c4ff26e-bced-4632-bffa-9db2c182c122/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/5c4ff26e-bced-4632-bffa-9db2c182c122/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1041.97 MB | 
 [File info](https://api.dandiarchive.org/api/assets/cfb37f51-3ef6-41d3-8b38-1f39c56cd704) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000631/draft/files?location=sub-600ns-5kV-1HzUP-8-9-21-BPAE-14%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/cfb37f51-3ef6-41d3-8b38-1f39c56cd704/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/cfb37f51-3ef6-41d3-8b38-1f39c56cd704/download/) 
 ---
 
 <a id="000632">*[DANDI:000632](https://dandiarchive.org/dandiset/000632/draft)*: **Electroporation efficiency of co-directional and cross-directional paired pulses**</a>
@@ -5329,7 +5329,7 @@ Last updated: 2023-12-13
    Size: 1077.54 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e227c013-22d7-4bd9-a567-85468e85b2e3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000633/draft/files?location=sub-Single-pulse-trains%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e227c013-22d7-4bd9-a567-85468e85b2e3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e227c013-22d7-4bd9-a567-85468e85b2e3/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -5349,12 +5349,12 @@ Last updated: 2023-12-13
    Size: 101.4 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7dc56eb6-8258-4678-98c7-fc1e1cdd7983) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000634/draft/files?location=sub-ground2204-15%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7dc56eb6-8258-4678-98c7-fc1e1cdd7983/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7dc56eb6-8258-4678-98c7-fc1e1cdd7983/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 101.47 MB | 
 [File info](https://api.dandiarchive.org/api/assets/80a9300a-d680-40d6-8279-f19a5c4db450) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000634/draft/files?location=sub-ground2204-16%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/80a9300a-d680-40d6-8279-f19a5c4db450/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/80a9300a-d680-40d6-8279-f19a5c4db450/download/) 
 ---
 
 <a id="000635">*[DANDI:000635](https://dandiarchive.org/dandiset/000635/draft)*: **20230930_AIBS_Patchseq_nonhuman_primate**</a>
@@ -5375,12 +5375,12 @@ Last updated: 2023-12-13
    Size: 25.99 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e610a258-634a-458a-b635-e6c2641b7228) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000635/draft/files?location=sub-1271976045%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e610a258-634a-458a-b635-e6c2641b7228/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e610a258-634a-458a-b635-e6c2641b7228/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 26.9 MB | 
 [File info](https://api.dandiarchive.org/api/assets/eaaae56e-99d5-4203-aae8-2cd08fa0994b) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000635/draft/files?location=sub-1273579455%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/eaaae56e-99d5-4203-aae8-2cd08fa0994b/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/eaaae56e-99d5-4203-aae8-2cd08fa0994b/download/) 
 ---
 
 <a id="000636">*[DANDI:000636](https://dandiarchive.org/dandiset/000636/draft)*: **Human interneuron patch-seq electrophysiology**</a>
@@ -5401,12 +5401,12 @@ Last updated: 2023-12-13
    Size: 12.73 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c40d0858-94b7-454d-80bc-9d7836c6c294) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000636/draft/files?location=sub-720619787%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c40d0858-94b7-454d-80bc-9d7836c6c294/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c40d0858-94b7-454d-80bc-9d7836c6c294/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 13.18 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7507c554-12ab-4a97-a51e-06f8e995c6ad) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000636/draft/files?location=sub-643488707%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7507c554-12ab-4a97-a51e-06f8e995c6ad/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7507c554-12ab-4a97-a51e-06f8e995c6ad/download/) 
 ---
 
 <a id="000637">*[DANDI:000637](https://dandiarchive.org/dandiset/000637/draft)*: **Neural Spike Time Response Data in Anesthetized Rats in the Primary Somatosensory Cortex with Phased Ultrasound Array Stimulation**</a>
@@ -5425,12 +5425,12 @@ Last updated: 2023-12-13
    Size: 0.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/95bd02f9-c380-44d6-ad0b-19e065990546) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000637/draft/files?location=sub-BH460%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/95bd02f9-c380-44d6-ad0b-19e065990546/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/95bd02f9-c380-44d6-ad0b-19e065990546/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 1.01 MB | 
 [File info](https://api.dandiarchive.org/api/assets/cb9c155d-17a8-4c36-901f-5773735eb3d3) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000637/draft/files?location=sub-BH457%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/cb9c155d-17a8-4c36-901f-5773735eb3d3/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/cb9c155d-17a8-4c36-901f-5773735eb3d3/download/) 
 ---
 
 <a id="000638">*[DANDI:000638](https://dandiarchive.org/dandiset/000638/draft)*: **Hippocampus/Entorhinal Cortex Dual Region Silicon Probe recording**</a>
@@ -5467,12 +5467,12 @@ Last updated: 2023-12-13
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/48b3edb1-d70f-4cba-9c0f-e601dd0d2d88) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-199%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/48b3edb1-d70f-4cba-9c0f-e601dd0d2d88/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/48b3edb1-d70f-4cba-9c0f-e601dd0d2d88/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 0.21 MB | 
 [File info](https://api.dandiarchive.org/api/assets/f2af98a7-41cf-4b8b-b53d-e2affb10118a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000640/draft/files?location=sub-201%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/f2af98a7-41cf-4b8b-b53d-e2affb10118a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/f2af98a7-41cf-4b8b-b53d-e2affb10118a/download/) 
 ---
 
 <a id="000674">*[DANDI:000674](https://dandiarchive.org/dandiset/000674/draft)*: **Volumetric multiplex imaging of whole human and non-human primate brains**</a>
@@ -5517,12 +5517,12 @@ Last updated: 2023-12-13
    Size: 5.51 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4a0482ec-e9ad-41cc-a2fa-e65c6e0e0de9) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000678/draft/files?location=sub-BW053%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4a0482ec-e9ad-41cc-a2fa-e65c6e0e0de9/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4a0482ec-e9ad-41cc-a2fa-e65c6e0e0de9/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 5.53 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b2e2aa29-b4a0-4f83-8047-1f317df31b65) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000678/draft/files?location=sub-BW051%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b2e2aa29-b4a0-4f83-8047-1f317df31b65/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b2e2aa29-b4a0-4f83-8047-1f317df31b65/download/) 
 ---
 
 <a id="000679">*[DANDI:000679](https://dandiarchive.org/dandiset/000679/draft)*: **Oxytocin receptors on human dorsal root and trigeminal ganglia neurons**</a>
@@ -5697,12 +5697,12 @@ Last updated: 2023-12-13
    Size: 51.03 MB | 
 [File info](https://api.dandiarchive.org/api/assets/b1bb596f-6980-4393-9be5-b7fb6098587a) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000711/draft/files?location=sub-498972%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/b1bb596f-6980-4393-9be5-b7fb6098587a/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/b1bb596f-6980-4393-9be5-b7fb6098587a/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 51.56 MB | 
 [File info](https://api.dandiarchive.org/api/assets/ade7fe9e-2c70-4351-b5ce-65eb767bd990) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000711/draft/files?location=sub-412036%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/ade7fe9e-2c70-4351-b5ce-65eb767bd990/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ade7fe9e-2c70-4351-b5ce-65eb767bd990/download/) 
 ---
 
 <a id="000712">*[DANDI:000712](https://dandiarchive.org/dandiset/000712/draft)*: **test**</a>
@@ -5729,12 +5729,12 @@ Last updated: 2023-12-13
    Size: 51.42 MB | 
 [File info](https://api.dandiarchive.org/api/assets/6affb667-753b-447a-b83a-3f5e4447a6f0) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000713/draft/files?location=sub-524926%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/6affb667-753b-447a-b83a-3f5e4447a6f0/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/6affb667-753b-447a-b83a-3f5e4447a6f0/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 51.42 MB | 
 [File info](https://api.dandiarchive.org/api/assets/7ca1f528-413d-4ee0-a67b-1a02fb01deca) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000713/draft/files?location=sub-550324%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/7ca1f528-413d-4ee0-a67b-1a02fb01deca/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7ca1f528-413d-4ee0-a67b-1a02fb01deca/download/) 
 ---
 
 <a id="000714">*[DANDI:000714](https://dandiarchive.org/dandiset/000714/draft)*: **Segmented and labeled NeuroPAL structural images**</a>
@@ -5753,12 +5753,12 @@ Last updated: 2023-12-13
    Size: 50.92 MB | 
 [File info](https://api.dandiarchive.org/api/assets/4cb34249-316f-413b-9e69-1356ba09097d) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000714/draft/files?location=sub-7%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/4cb34249-316f-413b-9e69-1356ba09097d/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/4cb34249-316f-413b-9e69-1356ba09097d/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-0**  
    Size: 50.93 MB | 
 [File info](https://api.dandiarchive.org/api/assets/eb250ec0-ff30-45f2-a328-674a872251f6) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000714/draft/files?location=sub-9%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/eb250ec0-ff30-45f2-a328-674a872251f6/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/eb250ec0-ff30-45f2-a328-674a872251f6/download/) 
 ---
 
 <a id="000715">*[DANDI:000715](https://dandiarchive.org/dandiset/000715/draft)*: **NeuroPAL: Atlas of C. elegans neuron locations and colors in NeuroPAL worm**</a>
@@ -5793,7 +5793,7 @@ Last updated: 2023-12-13
    Size: 0.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/90270d2c-0961-4992-91e2-8d575907b602) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000717/draft/files?location=sub-mouse2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/90270d2c-0961-4992-91e2-8d575907b602/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/90270d2c-0961-4992-91e2-8d575907b602/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -5813,7 +5813,7 @@ Last updated: 2023-12-13
    Size: 0.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/06ead224-745f-45e9-b20a-0ed2253a8280) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000718/draft/files?location=sub-mouse2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/06ead224-745f-45e9-b20a-0ed2253a8280/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/06ead224-745f-45e9-b20a-0ed2253a8280/download/) 
 - ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
@@ -5833,12 +5833,12 @@ Last updated: 2023-12-13
    Size: 0.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/fc532497-87fd-4469-9a17-924fd6cc0596) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000719/draft/files?location=sub-mouse1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/fc532497-87fd-4469-9a17-924fd6cc0596/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fc532497-87fd-4469-9a17-924fd6cc0596/download/) 
 - ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
    Size: 0.64 MB | 
 [File info](https://api.dandiarchive.org/api/assets/e56d0046-9b75-42d6-83e3-49c460093863) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000719/draft/files?location=sub-mouse2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/e56d0046-9b75-42d6-83e3-49c460093863/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e56d0046-9b75-42d6-83e3-49c460093863/download/) 
 ---
 
 <a id="000722">*[DANDI:000722](https://dandiarchive.org/dandiset/000722/draft)*: **UNet Validation Data**</a>
@@ -5889,12 +5889,12 @@ Last updated: 2023-12-13
    Size: 117.33 MB | 
 [File info](https://api.dandiarchive.org/api/assets/cfde80fc-9864-4a8b-9fe8-ba6728a29f92) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000728/draft/files?location=sub-644572921%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/cfde80fc-9864-4a8b-9fe8-ba6728a29f92/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/cfde80fc-9864-4a8b-9fe8-ba6728a29f92/download/) 
 - ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
    Size: 119.12 MB | 
 [File info](https://api.dandiarchive.org/api/assets/c0707671-5a7b-4abe-8447-3e5ef4965ec8) | 
 [View on DANDI Web](https://dandiarchive.org/dandiset/000728/draft/files?location=sub-570077427%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org?nwbfile=https://api.dandiarchive.org/api/assets/c0707671-5a7b-4abe-8447-3e5ef4965ec8/download/) 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c0707671-5a7b-4abe-8447-3e5ef4965ec8/download/) 
 ---
 
 <a id="000730">*[DANDI:000730](https://dandiarchive.org/dandiset/000730/draft)*: **Testing sharing and upload**</a>

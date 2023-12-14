@@ -501,7 +501,7 @@ def update_readme(testdocker=None):
                         else: readme += STATUS_RED
                         readme += ' NWBE compatibility - example file '+str(i + 1) +': **' + compat + '**  \n'
                     if not pd.isna(dandi_metadata_readme['file_' + str(i)].iloc[row]):
-                        nwbe_link = 'http://nwbexplorer.opensourcebrain.org?nwbfile=' + dandi_metadata_readme['file_' + str(i)].iloc[
+                        nwbe_link = 'http://nwbexplorer.opensourcebrain.org/nwbfile=' + dandi_metadata_readme['file_' + str(i)].iloc[
                             row]
                         if not pd.isna(dandi_metadata_readme['parent_folder_' + str(i)].iloc[row]):
                             dandi_link = dandi_metadata_readme['url'].iloc[row] + '/files?location=' + dandi_metadata_readme['parent_folder_' + str(i)].iloc[row] +'%2F'
