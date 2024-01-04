@@ -1,5 +1,5 @@
 # Summary statistics for available Dandisets
-Last updated: 2023-12-13
+Last updated: 2024-01-04
 
 ## BIDS Dandisets
 
