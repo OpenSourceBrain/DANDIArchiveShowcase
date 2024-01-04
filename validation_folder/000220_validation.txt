@@ -1,8 +1,8 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2023-12-12 23:38:25.868293+00:00
-Platform: Linux-5.15.0-86-generic-x86_64-with
+Timestamp: 2024-01-04 12:06:29.461689+00:00
+Platform: Linux-5.15.0-91-generic-x86_64-with
 NWBInspector version: 0.4.31
 
 Found 4 issues over 2 files:
