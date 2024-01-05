@@ -1,5 +1,5 @@
 # Summary statistics for available Dandisets
-Last updated: 2024-01-04
+Last updated: 2024-01-05
 
 ## BIDS Dandisets
 
@@ -12,17 +12,17 @@ Last updated: 2024-01-04
 
 ## NWB Dandisets
 
-- Total number of NWB Dandisets: 206
+- Total number of NWB Dandisets: 205
 
-- Median number of files in each NWB Dandiset: 37.5
+- Median number of files in each NWB Dandiset: 37.0
 
-- Median number of bytes in each NWB Dandiset: 18,487,189,077
+- Median number of bytes in each NWB Dandiset: 18,379,955,860
 
 - 6 most commonly measured variables: ProcessingModule, Units, ElectrodeGroup, ElectricalSeries, PlaneSegmentation, BehavioralTimeSeries
 
 - NWB Dandisets that pass NWBInspector and thus are possibly NWBE compatible
 
-[000005](#000005), [000008](#000008), [000010](#000010), [000012](#000012), [000013](#000013), [000015](#000015), [000019](#000019), [000021](#000021), [000027](#000027), [000034](#000034), [000035](#000035), [000037](#000037), [000043](#000043), [000045](#000045), [000048](#000048), [000053](#000053), [000056](#000056), [000059](#000059), [000064](#000064), [000067](#000067), [000068](#000068), [000069](#000069), [000107](#000107), [000114](#000114), [000117](#000117), [000122](#000122), [000126](#000126), [000128](#000128), [000129](#000129), [000130](#000130), [000138](#000138), [000139](#000139), [000140](#000140), [000144](#000144), [000148](#000148), [000165](#000165), [000168](#000168), [000173](#000173), [000212](#000212), [000213](#000213), [000217](#000217), [000218](#000218), [000220](#000220), [000221](#000221), [000226](#000226), [000230](#000230), [000232](#000232), [000233](#000233), [000239](#000239), [000245](#000245), [000247](#000247), [000249](#000249), [000250](#000250), [000251](#000251), [000292](#000292), [000293](#000293), [000295](#000295), [000296](#000296), [000297](#000297), [000299](#000299), [000301](#000301), [000302](#000302), [000338](#000338), [000339](#000339), [000341](#000341), [000351](#000351), [000363](#000363), [000398](#000398), [000399](#000399), [000404](#000404), [000405](#000405), [000409](#000409), [000411](#000411), [000454](#000454), [000458](#000458), [000462](#000462), [000463](#000463), [000469](#000469), [000470](#000470), [000481](#000481), [000482](#000482), [000488](#000488), [000489](#000489), [000529](#000529), [000535](#000535), [000537](#000537), [000538](#000538), [000544](#000544), [000545](#000545), [000547](#000547), [000548](#000548), [000549](#000549), [000550](#000550), [000552](#000552), [000561](#000561), [000566](#000566), [000572](#000572), [000574](#000574), [000575](#000575), [000579](#000579), [000582](#000582), [000618](#000618), [000623](#000623), [000625](#000625), [000631](#000631), [000633](#000633), [000637](#000637), [000640](#000640), [000678](#000678), [000717](#000717), [000718](#000718), [000719](#000719), [000728](#000728)
+[000005](#000005), [000008](#000008), [000010](#000010), [000012](#000012), [000013](#000013), [000015](#000015), [000019](#000019), [000021](#000021), [000027](#000027), [000034](#000034), [000035](#000035), [000037](#000037), [000043](#000043), [000045](#000045), [000048](#000048), [000053](#000053), [000056](#000056), [000059](#000059), [000064](#000064), [000067](#000067), [000068](#000068), [000069](#000069), [000107](#000107), [000114](#000114), [000117](#000117), [000122](#000122), [000126](#000126), [000128](#000128), [000129](#000129), [000130](#000130), [000138](#000138), [000139](#000139), [000140](#000140), [000144](#000144), [000148](#000148), [000165](#000165), [000168](#000168), [000173](#000173), [000212](#000212), [000213](#000213), [000217](#000217), [000218](#000218), [000220](#000220), [000221](#000221), [000226](#000226), [000230](#000230), [000232](#000232), [000233](#000233), [000239](#000239), [000245](#000245), [000247](#000247), [000249](#000249), [000250](#000250), [000251](#000251), [000292](#000292), [000293](#000293), [000295](#000295), [000296](#000296), [000297](#000297), [000299](#000299), [000301](#000301), [000302](#000302), [000338](#000338), [000339](#000339), [000341](#000341), [000351](#000351), [000363](#000363), [000398](#000398), [000399](#000399), [000404](#000404), [000405](#000405), [000409](#000409), [000411](#000411), [000454](#000454), [000458](#000458), [000462](#000462), [000463](#000463), [000469](#000469), [000470](#000470), [000481](#000481), [000482](#000482), [000488](#000488), [000489](#000489), [000529](#000529), [000535](#000535), [000537](#000537), [000538](#000538), [000544](#000544), [000545](#000545), [000547](#000547), [000548](#000548), [000549](#000549), [000550](#000550), [000552](#000552), [000561](#000561), [000566](#000566), [000572](#000572), [000574](#000574), [000575](#000575), [000579](#000579), [000582](#000582), [000618](#000618), [000623](#000623), [000625](#000625), [000631](#000631), [000633](#000633), [000637](#000637), [000640](#000640), [000678](#000678), [000728](#000728), [000732](#000732)
 
 - NWBE compatibility terminology: 
   - **LL-P**: Likely plottable - file whose datatypes extend TimeSeries that can be viewed and plotted 
@@ -4725,28 +4725,12 @@ Last updated: 2024-01-04
 
 <a id="000559">*[DANDI:000559](https://dandiarchive.org/dandiset/000559/draft)*: **Spontaneous behaviour is structured by reinforcement without explicit reward**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **2937**, total size (MB): **9,087,583.65**
-
-- Species: **Homo sapiens - Human**
+, file count: **1**, total size (MB): **0.0**
 
 - Keywords: **Basal Ganglia**, **Neural circuits**, **Reward**
 
-- Variables measured: **ImagingPlane**, **OpticalChannel**, **Position**, **SpatialSeries**, **CompassDirection**, **OptogeneticSeries**, **ProcessingModule**
+- Source paper: *Markowitz, Jeffrey E.; Gillis, Winthrop; Jay, Maya; Wood, Jeffrey; Harris, Ryley W.; Cieszkowski, Robert; Scott, Rebecca; Brann, David; Koveal, Dorothy; Kula, Tomasz; Weinreb, Caleb; Osman, Mohammed Abdal Monium ; Pinto, Sandra Romero ; Uchida, Naoshige ; Linderman, Scott W.; Sabatini, Bernardo; Datta, Sandeep Robert  (2024) Spontaneous behaviour is structured by reinforcement without explicit reward*
 
-- Source paper: *Markowitz, Jeffrey E.; Gillis, Winthrop; Jay, Maya; Wood, Jeffrey; Harris, Ryley W.; Cieszkowski, Robert; Scott, Rebecca; Brann, David; Koveal, Dorothy; Kula, Tomasz; Weinreb, Caleb; Osman, Mohammed Abdal Monium ; Pinto, Sandra Romero ; Uchida, Naoshige ; Linderman, Scott W.; Sabatini, Bernardo; Datta, Sandeep Robert  (2023) Spontaneous behaviour is structured by reinforcement without explicit reward*
-
-- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [ERROR](000559_validation.txt) 
-
-- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 1: **NC-0**  
-   Size: 130.02 MB | 
-[File info](https://api.dandiarchive.org/api/assets/c36cbd7d-e2e1-44f9-aaec-4c52b1b6ebfa) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000559/draft/files?location=sub-5891%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c36cbd7d-e2e1-44f9-aaec-4c52b1b6ebfa/download/) 
-- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NC-1**  
-   Size: 131.04 MB | 
-[File info](https://api.dandiarchive.org/api/assets/95c758de-9ffb-4965-9ea3-da6958882320) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000559/draft/files?location=sub-HEK293%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/95c758de-9ffb-4965-9ea3-da6958882320/download/) 
 ---
 
 <a id="000560">*[DANDI:000560](https://dandiarchive.org/dandiset/000560/draft)*: **Calcium imaging of odor responses in the fruit fly mushroom body**</a>
@@ -4791,7 +4775,7 @@ Last updated: 2024-01-04
 
 <a id="000565">*[DANDI:000565](https://dandiarchive.org/dandiset/000565/draft)*: **C. elegans whole-brain neuroPAL and immobilized calcium imaging**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **39**, total size (MB): **102,885.62**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **37**, total size (MB): **75,296.8**
 
 - Species: **Caenorhabditis elegans**
 
@@ -5235,17 +5219,11 @@ Last updated: 2024-01-04
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/02c2a27e-ce0a-4b23-b789-b88ac00ea1f7/download/) 
 ---
 
-<a id="000629">*[DANDI:000629](https://dandiarchive.org/dandiset/000629/draft)*: **Gillespie et al (2023) Neurofeedback training can modulate task-relevant memory replay rate in rats**</a>
+<a id="000629">*[DANDI:000629](https://dandiarchive.org/dandiset/000629/draft)*: **Gillespie et al (2024) Neurofeedback training can modulate task-relevant memory replay rate in rats**</a>
 
-- Data type: **Neurodata Without Borders (NWB)**, file count: **113**, total size (MB): **16,604,822.16**
+, file count: **1**, total size (MB): **0.0**
 
-- Species: **Rattus norvegicus - Norway rat**
-
-- Variables measured: **Position**, **ElectricalSeries**, **ProcessingModule**, **SpatialSeries**, **BehavioralEvents**
-
-- Source paper: *Gillespie, Anna (2023) Gillespie et al (2023) Neurofeedback training can modulate task-relevant memory replay rate in rats*
-
-- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
+- Source paper: *Gillespie, Anna; Denovellis, Eric; Frank, Loren; Desse, Sachi; Astudillo Maya, Daniela (2023) Gillespie et al (2024) Neurofeedback training can modulate task-relevant memory replay rate in rats*
 
 ---
 
@@ -5601,11 +5579,15 @@ Last updated: 2024-01-04
 
 <a id="000691">*[DANDI:000691](https://dandiarchive.org/dandiset/000691/draft)*: **An optical design enabling lightweight and large field-of-view head-mounted microscopes**</a>
 
-, file count: **1**, total size (MB): **105.33**
+- Data type: **Neurodata Without Borders (NWB)**, file count: **2**, total size (MB): **15,338.09**
 
-- Variables measured: 
+- Species: **Mus musculus - House mouse**
+
+- Variables measured: **TwoPhotonSeries**, **ImagingPlane**, **ProcessingModule**, **PlaneSegmentation**, **OpticalChannel**
 
 - Source paper: *Scherrer, Joseph R.; Lynch, Galen F.; Zhang, Jie J.; Fee, Michale S. (2023) An optical design enabling lightweight and large field-of-view head-mounted microscopes*
+
+- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) Validation results summary: NULL_FILE_LIMIT
 
 ---
 
@@ -5779,66 +5761,26 @@ Last updated: 2024-01-04
 
 <a id="000717">*[DANDI:000717](https://dandiarchive.org/dandiset/000717/draft)*: **CatalystNeuro Placeholder 1**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1**, total size (MB): **0.64**
-
-- Species: **Mus musculus - House mouse**
-
-- Variables measured: **ElectricalSeries**, **Units**, **ElectrodeGroup**
+, file count: **0**, total size (MB): **0.0**
 
 - Source paper: *Flynn, Garrett (2023) CatalystNeuro Placeholder 1*
 
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000717_validation.txt) 
-
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 1: **LL-P**  
-   Size: 0.64 MB | 
-[File info](https://api.dandiarchive.org/api/assets/90270d2c-0961-4992-91e2-8d575907b602) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000717/draft/files?location=sub-mouse2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/90270d2c-0961-4992-91e2-8d575907b602/download/) 
-- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
 <a id="000718">*[DANDI:000718](https://dandiarchive.org/dandiset/000718/draft)*: **CatalystNeuro Placeholder 2**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1**, total size (MB): **0.64**
-
-- Species: **Mus musculus - House mouse**
-
-- Variables measured: **ElectricalSeries**, **Units**, **ElectrodeGroup**
+, file count: **0**, total size (MB): **0.0**
 
 - Source paper: *Flynn, Garrett (2023) CatalystNeuro Placeholder 2*
 
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000718_validation.txt) 
-
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 1: **LL-P**  
-   Size: 0.64 MB | 
-[File info](https://api.dandiarchive.org/api/assets/06ead224-745f-45e9-b20a-0ed2253a8280) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000718/draft/files?location=sub-mouse2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/06ead224-745f-45e9-b20a-0ed2253a8280/download/) 
-- ![#dd0000](https://via.placeholder.com/15/dd0000/dd0000.png) NWBE compatibility - example file 2: **NI**  
 ---
 
 <a id="000719">*[DANDI:000719](https://dandiarchive.org/dandiset/000719/draft)*: **CatalystNeuro Placeholder 3**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **4**, total size (MB): **2.57**
-
-- Species: **Mus musculus - House mouse**
-
-- Variables measured: **ElectricalSeries**, **Units**, **ElectrodeGroup**
+, file count: **0**, total size (MB): **0.0**
 
 - Source paper: *Flynn, Garrett (2023) CatalystNeuro Placeholder 3*
 
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000719_validation.txt) 
-
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 1: **LL-P**  
-   Size: 0.64 MB | 
-[File info](https://api.dandiarchive.org/api/assets/fc532497-87fd-4469-9a17-924fd6cc0596) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000719/draft/files?location=sub-mouse1%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/fc532497-87fd-4469-9a17-924fd6cc0596/download/) 
-- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
-   Size: 0.64 MB | 
-[File info](https://api.dandiarchive.org/api/assets/e56d0046-9b75-42d6-83e3-49c460093863) | 
-[View on DANDI Web](https://dandiarchive.org/dandiset/000719/draft/files?location=sub-mouse2%2F) | 
-[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e56d0046-9b75-42d6-83e3-49c460093863/download/) 
 ---
 
 <a id="000722">*[DANDI:000722](https://dandiarchive.org/dandiset/000722/draft)*: **UNet Validation Data**</a>
@@ -5875,7 +5817,7 @@ Last updated: 2024-01-04
 
 <a id="000728">*[DANDI:000728](https://dandiarchive.org/dandiset/000728/draft)*: **Allen Institute - Visual Coding - Optical Physiology**</a>
 
-- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1101**, total size (MB): **377,541.54**
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **1103**, total size (MB): **378,236.14**
 
 - Species: **Mus musculus - House mouse**
 
@@ -5897,12 +5839,106 @@ Last updated: 2024-01-04
 [View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/c0707671-5a7b-4abe-8447-3e5ef4965ec8/download/) 
 ---
 
-<a id="000730">*[DANDI:000730](https://dandiarchive.org/dandiset/000730/draft)*: **Testing sharing and upload**</a>
+<a id="000730">*[DANDI:000730](https://dandiarchive.org/dandiset/000730/draft)*: **General data test**</a>
 
 , file count: **0**, total size (MB): **0.0**
 
-- Source paper: *Platholi, Jimcy (2023) Testing sharing and upload*
+- Keywords: **general**
 
+- Source paper: *Platholi, Jimcy (2023) General data test*
+
+---
+
+<a id="000732">*[DANDI:000732](https://dandiarchive.org/dandiset/000732/draft)*: **Protosequences in human cortical organoids model intrinsic states in the developing cortex**</a>
+
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.6.0**), file count: **36**, total size (MB): **112,811.77**
+
+- Species: **Homo sapiens - Human**
+
+- Variables measured: **Units**, **ElectrodeGroup**, **ElectricalSeries**
+
+- Source paper: *Molen, Tjitse van der; Spaeth, Alex; Chini, Mattia; Bartram, Julian; Dendukuri, Adi; Zhang, Zongren; Bhaskaran-Nair, Kiran; Petzold, Linda R.; Hansma, Paul K.; Teodorescu, Mircea; Hierlemann, Andreas; Hengen, Keith B.; Hanganu-Opatz, Ileana L.; Kosik, Kenneth S.; Blauvelt, Lon; Sharf, Tal (2023) Protosequences in human cortical organoids model intrinsic states in the developing cortex*
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) Validation results summary: [PASSED_VALIDATION](000732_validation.txt) 
+
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 1: **LL-V**  
+   Size: 0.24 MB | 
+[File info](https://api.dandiarchive.org/api/assets/ac632a6f-17d2-45e0-ab58-d56837290b85) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000732/draft/files?location=sub-U%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/ac632a6f-17d2-45e0-ab58-d56837290b85/download/) 
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) NWBE compatibility - example file 2: **LL-V**  
+   Size: 0.28 MB | 
+[File info](https://api.dandiarchive.org/api/assets/e46da05c-611f-4074-9f75-fc0a44d1e6be) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000732/draft/files?location=sub-U%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/e46da05c-611f-4074-9f75-fc0a44d1e6be/download/) 
+---
+
+<a id="000733">*[DANDI:000733](https://dandiarchive.org/dandiset/000733/draft)*: **h5ad test**</a>
+
+, file count: **0**, total size (MB): **0.0**
+
+- Source paper: *Jarecka, Dorota (2023) h5ad test*
+
+---
+
+<a id="000766">*[DANDI:000766](https://dandiarchive.org/dandiset/000766/draft)*: **Novel genetically encoded tools for imaging or silencing neuropeptide release from presynaptic terminals in vivo**</a>
+
+, file count: **0**, total size (MB): **0.0**
+
+- Source paper: *Kim , Dongil (2023) Novel genetically encoded tools for imaging or silencing neuropeptide release from presynaptic terminals in vivo*
+
+---
+
+<a id="000768">*[DANDI:000768](https://dandiarchive.org/dandiset/000768/draft)*: **20231222_AIBS_Patchseq_nonhuman_primate**</a>
+
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.3.0**), file count: **51**, total size (MB): **3,153.3**
+
+- Species: **Macaca nemestrina**
+
+- Keywords: **Patch-seq**, **non-human primate**, **multimodal**
+
+- Variables measured: **CurrentClampStimulusSeries**, **CurrentClampSeries**, **ProcessingModule**, **VoltageClampStimulusSeries**, **VoltageClampSeries**
+
+- Source paper: *Soliman, Sherif; Lee, Brian; National Institute of Mental Health; Kalmbach, Brian; Dalley, Rachel; Lein, Ed (2023) 20231222_AIBS_Patchseq_nonhuman_primate*
+
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [PYNWB_VALIDATION, BEST_PRACTICE_VIOLATION](000768_validation.txt) 
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 1: **LL-P**  
+   Size: 41.21 MB | 
+[File info](https://api.dandiarchive.org/api/assets/7d2103a6-6e32-4956-88f6-1fb4b51a9441) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000768/draft/files?location=sub-1288510508%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7d2103a6-6e32-4956-88f6-1fb4b51a9441/download/) 
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
+   Size: 44.12 MB | 
+[File info](https://api.dandiarchive.org/api/assets/8cb4a324-55c5-4451-ab93-ea6994553fba) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000768/draft/files?location=sub-1285385365%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/8cb4a324-55c5-4451-ab93-ea6994553fba/download/) 
+---
+
+<a id="000769">*[DANDI:000769](https://dandiarchive.org/dandiset/000769/draft)*: **20231222_AIBS_Patchseq_human**</a>
+
+- Data type: **Neurodata Without Borders (NWB)** (**version 2.3.0**), file count: **177**, total size (MB): **10,299.06**
+
+- Species: **Homo sapiens - Human**
+
+- Keywords: **Patch-seq**, **human**, **multimodal**
+
+- Variables measured: **CurrentClampStimulusSeries**, **VoltageClampSeries**, **VoltageClampStimulusSeries**, **ProcessingModule**, **CurrentClampSeries**
+
+- Source paper: *Soliman, Sherif; Lee, Brian; Allen Institute for Brian Science; National Institute of Mental Health; Kalmbach, Brian; Dalley, Rachel; Lein, Ed (2023) 20231222_AIBS_Patchseq_human*
+
+- ![#ec9706](https://via.placeholder.com/15/ec9706/ec9706.png) Validation results summary: [PYNWB_VALIDATION, BEST_PRACTICE_VIOLATION](000769_validation.txt) 
+
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 1: **LL-P**  
+   Size: 23.63 MB | 
+[File info](https://api.dandiarchive.org/api/assets/7b5348c1-4b25-41f3-ab48-5301851cc2b8) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000769/draft/files?location=sub-1269274954%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/7b5348c1-4b25-41f3-ab48-5301851cc2b8/download/) 
+- ![#00dd00](https://via.placeholder.com/15/00dd00/00dd00.png) NWBE compatibility - example file 2: **LL-P**  
+   Size: 25.68 MB | 
+[File info](https://api.dandiarchive.org/api/assets/29e6a714-e15f-43c4-a138-3e5b55532626) | 
+[View on DANDI Web](https://dandiarchive.org/dandiset/000769/draft/files?location=sub-1260690332%2F) | 
+[View on NWB Explorer](http://nwbexplorer.opensourcebrain.org/nwbfile=https://api.dandiarchive.org/api/assets/29e6a714-e15f-43c4-a138-3e5b55532626/download/) 
 ---
 
 </p></details>
