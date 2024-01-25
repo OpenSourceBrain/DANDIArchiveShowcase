@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2024-01-04 23:43:36.617296+00:00
+Timestamp: 2024-01-24 18:53:58.857098+00:00
 Platform: Linux-5.15.0-91-generic-x86_64-with
 NWBInspector version: 0.4.31
 
@@ -25,10 +25,10 @@ Found 2 issues over 2 files:
            ^^^^^^^^^^^^^^^^^^^^^^
   File "/usr/lib/python3.11/site-packages/hdmf/build/classgenerator.py", line 339, in __init__
     setattr(self, f, arg_val)
-  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 528, in container_setter
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 529, in container_setter
     ret[idx2](self, val)  # call the previous setter
     ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 518, in container_setter
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 519, in container_setter
     raise ValueError(msg)
 ValueError: Field 'order_optical_channels' on ImagingVolume must be named 'order_optical_channels'.
 
@@ -43,7 +43,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.11/site-packages/nwbinspector/utils.py", line 168, in robust_s3_read
     return command(*command_args, **command_kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/site-packages/hdmf/backends/hdf5/h5tools.py", line 479, in read
+  File "/usr/lib/python3.11/site-packages/hdmf/backends/hdf5/h5tools.py", line 481, in read
     return super().read(**kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^
   File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call
@@ -139,10 +139,10 @@ hdmf.build.errors.ConstructError: (root/general/optophysiology/CalciumImVol Grou
            ^^^^^^^^^^^^^^^^^^^^^^
   File "/usr/lib/python3.11/site-packages/hdmf/build/classgenerator.py", line 339, in __init__
     setattr(self, f, arg_val)
-  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 528, in container_setter
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 529, in container_setter
     ret[idx2](self, val)  # call the previous setter
     ^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 518, in container_setter
+  File "/usr/lib/python3.11/site-packages/hdmf/container.py", line 519, in container_setter
     raise ValueError(msg)
 ValueError: Field 'order_optical_channels' on ImagingVolume must be named 'order_optical_channels'.
 
@@ -157,7 +157,7 @@ Traceback (most recent call last):
   File "/usr/lib/python3.11/site-packages/nwbinspector/utils.py", line 168, in robust_s3_read
     return command(*command_args, **command_kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/usr/lib/python3.11/site-packages/hdmf/backends/hdf5/h5tools.py", line 479, in read
+  File "/usr/lib/python3.11/site-packages/hdmf/backends/hdf5/h5tools.py", line 481, in read
     return super().read(**kwargs)
            ^^^^^^^^^^^^^^^^^^^^^^
   File "/usr/lib/python3.11/site-packages/hdmf/utils.py", line 664, in func_call

@@ -1,7 +1,7 @@
 **************************************************
 NWBInspector Report Summary
 
-Timestamp: 2024-01-05 00:23:26.174859+00:00
+Timestamp: 2024-01-24 21:08:30.858503+00:00
 Platform: Linux-5.15.0-91-generic-x86_64-with
 NWBInspector version: 0.4.31
 

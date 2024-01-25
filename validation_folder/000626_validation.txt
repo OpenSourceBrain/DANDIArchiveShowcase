@@ -1,0 +1,51 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2024-01-24 23:38:42.453369+00:00
+Platform: Linux-5.15.0-91-generic-x86_64-with
+NWBInspector version: 0.4.31
+
+Found 12 issues over 1 files:
+      12 - CRITICAL
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4560_decoder_ssKG'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.1  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4560_decoder_ssF'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.2  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4560_decoder_W'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.3  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4560_decoder_Q'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.4  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4560_decoder_C'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.5  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4560_decoder_A'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.6  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4558_decoder_ssKG'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.7  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4558_decoder_ssF'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.8  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4558_decoder_W'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.9  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4558_decoder_Q'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.10  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4558_decoder_C'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
+0.11  /tmp/nwb_versions/sub-monk-g.nwb: check_data_orientation - 'TimeSeries' object at location '/processing/behavior/teblk_4558_decoder_A'
+        Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+

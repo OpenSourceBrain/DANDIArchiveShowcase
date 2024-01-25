@@ -1,0 +1,18 @@
+**************************************************
+NWBInspector Report Summary
+
+Timestamp: 2024-01-25 00:26:28.145281+00:00
+Platform: Linux-5.15.0-91-generic-x86_64-with
+NWBInspector version: 0.4.31
+
+Found 2 issues over 2 files:
+       2 - CRITICAL
+**************************************************
+
+
+0  CRITICAL
+===========
+
+0.0  /tmp/nwb_versions/sub-1p-x4-10cycles-CC-600ns-200ms-6-4kV-(dish2-2)_ses-1p-x-10cycles-CanCan-600ns-200ms-6-4kV_image.nwb and 1 other file: check_data_orientation - 'ImageSeries' object at location '/acquisition/ScanningImaging'
+       Message: Data may be in the wrong orientation. Time should be in the first dimension, and is usually the longest dimension. Here, another dimension is longer.
+
