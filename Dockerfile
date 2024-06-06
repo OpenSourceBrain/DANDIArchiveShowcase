@@ -1,4 +1,4 @@
-FROM docker:dind
+FROM docker:20.10-dind
 
 ENV NODE_OPTIONS="--openssl-legacy-provider"
 
