@@ -2,7 +2,7 @@
 wheel
 pandas
 pyyaml
-pynwb==2.1.0
+pynwb
 nwbinspector
 dandi
 matplotlib

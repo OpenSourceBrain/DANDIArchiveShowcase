@@ -35,6 +35,7 @@ RUN apk add python3 py3-pip
 RUN pip install --upgrade pip setuptools wheel
 RUN apk update && apk add --no-cache hdf5-dev
 RUN pip install h5py
+RUN apk add py3-pandas
 
 
 COPY ./requirements.txt $HOME/requirements.txt
@@ -64,7 +65,9 @@ RUN git clone https://github.com/OpenSourceBrain/OSBv2.git -b develop
 RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/nwb-explorer/Dockerfile
 
 WORKDIR /tmp
-RUN datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
+#RUN datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
+RUN datalad install -s https://github.com/dandi/dandisets.git
+RUN cd dandisets; tools/list-matching-access-status public | xargs datalad install . --jobs 4
 WORKDIR / 
 
 RUN echo "Built the Docker image!"
