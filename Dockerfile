@@ -61,13 +61,13 @@ RUN echo '\n\nalias cd..="cd .."\nalias h=history\nalias ll="ls -alt"\nalias pyt
 
 RUN pip install --upgrade numpy
 
-RUN git clone https://github.com/OpenSourceBrain/OSBv2.git -b fix_dockerfile
+RUN git clone https://github.com/OpenSourceBrain/OSBv2.git -b dev_test_nwbdocker
 RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/nwb-explorer/Dockerfile
 
 WORKDIR /tmp
 #RUN datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
 RUN datalad install -s https://github.com/dandi/dandisets.git
-RUN cd dandisets; tools/list-matching-access-status public | xargs datalad install . --jobs 4
+RUN cd dandisets; tools/list-matching-access-status public | xargs datalad install . --recursive --recursion-limit 1 --jobs 4
 WORKDIR / 
 
 RUN echo "Built the Docker image!"
