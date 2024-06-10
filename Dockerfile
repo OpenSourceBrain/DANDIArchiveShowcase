@@ -67,7 +67,8 @@ RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/
 WORKDIR /tmp
 #RUN datalad install -s https://github.com/dandi/dandisets.git --recursive --recursion-limit 1 --jobs 4
 RUN datalad install -s https://github.com/dandi/dandisets.git
-RUN cd dandisets; ls -alt tools; ./tools/list-matching-access-status public | xargs datalad install . --recursive --recursion-limit 1 --jobs 4
+RUN cd dandisets; ls -alt ./tools/list-matching-access-status; /bin/sh -e tools/list-matching-access-status public
+RUN cd dandisets; ls -alt tools; /bin/sh -e tools/list-matching-access-status public | xargs datalad install  --recursive --recursion-limit 1 --jobs 4
 WORKDIR / 
 
 RUN echo "Built the Docker image!"
