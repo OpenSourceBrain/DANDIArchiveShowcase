@@ -61,7 +61,7 @@ RUN echo '\n\nalias cd..="cd .."\nalias h=history\nalias ll="ls -alt"\nalias pyt
 
 RUN pip install --upgrade numpy
 
-RUN git clone https://github.com/OpenSourceBrain/OSBv2.git -b develop
+RUN git clone https://github.com/OpenSourceBrain/OSBv2.git -b fix_dockerfile
 RUN sed -i '27d;27i\RUN mkdir /home/jovyan/nwb-explorer/tmp' OSBv2/applications/nwb-explorer/Dockerfile
 
 WORKDIR /tmp
